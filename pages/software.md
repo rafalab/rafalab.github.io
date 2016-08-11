@@ -9,11 +9,11 @@ Software is an effective way to disseminate statistical methodology. I try to de
 [Bioconductor](http://www.bioconductor.org) is an open source and open development
 software project for the analysis and comprehension of genomic data. Because genomics is the focus of most of my work, the majority of my software is availalbe through Bioconductor. You can find these software packages by visiting [Bioconductor](http://www.bioconductor.org). Examples of some of the packages my lab has contributed to are:
 
-_ _alpine_: modeling systematic bias to improve quantification from RNA-Seq 
-_ _CQN_: removing GC-content bias from expression level RNA-Seq data
-_ _rnaseqcomp_: implementation of benchmarks for RNA-seq quantification pipelines. 
-_ _minfi_: Preprocessin and analysis of Illumina methylation arrays
-_ _bumphunter_: Software for detectig differentially methylated regions (DMR)
+- _alpine_: modeling systematic bias to improve quantification from RNA-Seq 
+- _CQN_: removing GC-content bias from expression level RNA-Seq data
+- _rnaseqcomp_: implementation of benchmarks for RNA-seq quantification pipelines. 
+- _minfi_: Preprocessin and analysis of Illumina methylation arrays
+- _bumphunter_: Software for detectig differentially methylated regions (DMR)
 -  _affy_: preprocessing methods for Affymetrix expression arrays, e.g. RMA
 - _gcrma_: sequence based background correction for
 - _frma_: frozen RMA and gene expression barcode 
