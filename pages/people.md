@@ -3,7 +3,7 @@ layout: default
 title: people
 ---
 
-## Lab Members
+### Lab Members
 
 - Stephanie Chan (Graduate Student, joint with Tianxi Cai)
 - Yered Hammurabi Pita-Juarez (Graduate Student)
@@ -19,7 +19,7 @@ title: people
 - Mingxiang Teng (Postdoc)
 - Will Townes (Graduate Student)
 
-## Past Postdocs, Joint Postdocs and Research Associates
+### Past Postdocs
 
 - Héctor Corrada-Bravo (University of Maryland, Associate Professor)
 - Martin Aryee (MGH, Assistant Professor)
@@ -33,7 +33,7 @@ title: people
 - Di Wu (University of North Carolina, Assistant Professor)
 - Michael Love (University of North Carolina, Assistant Professor)
 
-## PhD Alumni
+### PhD Alumni
 
 - Zhijin Wu 2005 (Brown University, Full Professor)
 - Benilton Carvalho 2008 (Universidade Estadual de Campinas, Assistant Professor)
@@ -43,7 +43,7 @@ title: people
                       Professor)
 - Eitan Halper-Sromberg 2013 (University of Colorado, Medical Studente)
 
-## Past Visitors 
+### Past Visitors 
 - Ana Ciconelle
 - Lieven Clement
 - Julia Engelmann
