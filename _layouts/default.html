@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ BASE_PATH }}/css/main.css" rel="stylesheet">
+    <link href="{{ BASE_PATH }}/css/style.css" rel="stylesheet" type="text/css" media="all">
     <!-- ------------------------------------------------------------------------>
     <title>{{ page.title }}</title>
 
@@ -16,7 +16,7 @@
       }
     </style>
 
-    <link rel="SHORTCUT ICON" href="assets/favicon.ico"/>
+    <link rel="SHORTCUT ICON" href="{{ BASE_PATH }}/assets/favicon.ico"/>
 
   </head>
   <body>
@@ -25,8 +25,8 @@
       <div class="navbar-inner">
         <div class="container-narrow"> <a class="brand" href="index">Rafalab</a>
           <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="people.html">People</a></li>
+            <li><a href="{{ BASE_PATH }}/index.html">Home</a></li>
+            <li><a href="{{ BASE_PATH }}/pages/people.html">People</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="software.html">Software</a></li>
             <li><a href="courses.html">Courses</a></li>
