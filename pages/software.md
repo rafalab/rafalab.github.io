@@ -7,7 +7,13 @@ title: Software
 
 Software is an effective way to disseminate statistical methodology. I try to develop R packages for the statistical ideas I publish. 
 [Bioconductor](http://www.bioconductor.org) is an open source and open development
-software project for the analysis and comprehension of genomic data. Because genomics is the focus of most of my work, the majority of my software is availalbe through Bioconductor. You can find these software packages by visiting [Bioconductor](http://www.bioconductor.org). Examples of some of the packages my lab has contributed to are:
+software project for the analysis and comprehension of genomic
+data. Because genomics is the focus of most of my work, the majority
+of my software is availalbe through Bioconductor and you can find
+these software packages by visiting the projects
+[portal](http://www.bioconductor.org) where you will find packages for pretty
+much any genomics data analysis need. Examples of some of the
+packages my lab has contributed to are: 
 
 - _alpine_: modeling systematic bias to improve quantification from RNA-Seq 
 - _CQN_: removing GC-content bias from expression level RNA-Seq data
