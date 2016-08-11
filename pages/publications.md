@@ -59,9 +59,9 @@ Effects in Copy Number Estimation Using SNP Arrays [PMID: 20625178]
 
 
 ### Others
+
 - [Local Harmonic Estimation in Musical Sound Signals](http://pubs.amstat.org/doi/abs/10.1198/016214501753168082)
 - [Information Criteria](http://pubs.amstat.org/doi/abs/10.1198/016214501750332875)
 - [Dengue in Thailand](http://www.ncbi.nlm.nih.gov/pubmed/14737166)[PMID: 14737166]
-- [Circadian Patterns](http://www.ncbi.nlm.nih.gov/pubmed/11764264)
-[PMID: 11764264]
+- [Circadian Patterns](http://www.ncbi.nlm.nih.gov/pubmed/11764264) [PMID: 11764264]
 - [Fetal Monitoring](http://www.ncbi.nlm.nih.gov/pubmed/1174491)[PMID: 11744919]
