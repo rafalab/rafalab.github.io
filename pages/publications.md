@@ -3,10 +3,11 @@ layout: default
 title: Publications
 ---
 
+## Selected Publication
+
 Below are some examples of the type of papers I publish. To see a list
 with all my papers you can visit [Google Scholar](href="http://scholar.google.com/citations?user=nFW-2Q8AAAAJ&amp;hl=en) or [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA")
 
-## Selected Publication
 
 ### Next Generation Sequencing
 
