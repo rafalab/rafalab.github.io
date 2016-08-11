@@ -1,6 +1,48 @@
----
-theme :
-  name : twitter
----
-{% include JB/setup %}
-{% include themes/twitter/default.html %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- ------------------------------------------------------------------------>
+    <title>{{ page.title }}</title>
+    <style>
+      table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ------------------------------------------------------------------------>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow"> <a class="brand" href="index">Rafalab</a>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------>
+    <div class="container-narrow">
+      <div class="content">
+        <div class="row-fluid">
+          <div class="span12">
+          <!--  <div class="navbar"> </div> -->
+            <!-- ------------------------------------------------------------------------>
+
+	    {{ content }}
+
+	  </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
