@@ -49,7 +49,7 @@ title: people
 - Julia Engelmann
 - Matt Ritchie
 
-## Summer Students
+### Summer Students
 - 2014:  Esther Fervrier, Markus Havell, and  Savion Smith 
 - 2015: Pedro Mu&ntilde;oz Agrinsoni, Kevin Kupiec, and  Randy Williams 
 - 2016:  Alejandra DeJesús-Soto, Mark Ruprecht and  Patricia Vera-González
