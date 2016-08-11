@@ -32,17 +32,17 @@ resolutio [PMID: 24398039]
 
 
 ### Preprocessing Microarrays
+
 - [frozen RMA](http://www.ncbi.nlm.nih.gov/pubmed/20097884) [PMID: 20097884]
 - [RMA](http://www.ncbi.nlm.nih.gov/pubmed/12925520) [PMID: 12925520]
 - [RMA comparison](http://www.ncbi.nlm.nih.gov/pubmed/12582260) [PMID: 12582260]
 - [GCRMA](http://pubs.amstat.org/doi/abs/10.1198/016214504000000683):
 Background model based on sequence information
 - [GCRMA comparison](http://www.ncbi.nlm.nih.gov/pubmed/15175677)[PMID: 15175677]
--
-[Unified Model for Preprocessing and Differential Expression](http://projecteuclid.org/DPubS?service=UI&amp;version=1.0&amp;verb=Display&amp;handle=euclid.aoas/1196438021)
+- [Unified Model for Preprocessing and Differential Expression](http://projecteuclid.org/DPubS?service=UI&amp;version=1.0&amp;verb=Display&amp;handle=euclid.aoas/1196438021)
 - [Quantile Normalization](http://www.ncbi.nlm.nih.gov/pubmed/12538238)[PMID: 12538238]
 
-## Gene Expression Analysis
+### Gene Expression Analysis
 
 - [Batch Efffects](http://www.ncbi.nlm.nih.gov/pubmed/20838408) [PMID: 20838408]
 - [Gene Expression Barcode](http://www.ncbi.nlm.nih.gov/pubmed/17906632)[PMID: 17906632]
@@ -51,8 +51,8 @@ Background model based on sequence information
 -
 [Pooling](http://www.ncbi.nlm.nih.gov/pubmed/15755808)[PMID: 15755808]
 
-## SNP Chips
-- (Batch Effects) (http://www.ncbi.nlm.nih.gov/pubmed/20625178"):
+### SNP Chips
+- [Batch Effects](http://www.ncbi.nlm.nih.gov/pubmed/20625178"):
 Effects in Copy Number Estimation Using SNP Arrays [PMID: 20625178]
 - [CRLMM](http://www.ncbi.nlm.nih.gov/pubmed/17189563) [PMID: 17189563]
 -
@@ -60,7 +60,7 @@ Effects in Copy Number Estimation Using SNP Arrays [PMID: 20625178]
 [PMID: 18707534]
 
 
-## Others
+### Others
 - [Local Harmonic Estimation in Musical Sound Signals](http://pubs.amstat.org/doi/abs/10.1198/016214501753168082)
 -
 [Information Criteria](http://pubs.amstat.org/doi/abs/10.1198/016214501750332875)
