@@ -3,7 +3,7 @@ layout: default
 title: people
 ---
 
-## Lab Members</h2
+## Lab Members
 
 - Stephanie Chan (Graduate Student, joint with Tianxi Cai)
 - Yered Hammurabi Pita-Juarez (Graduate Student)
