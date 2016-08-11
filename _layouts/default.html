@@ -20,31 +20,33 @@
 
   </head>
   <body>
-    <!-- ------------------------------------------------------------------------>
+    <!-- -------------------------------------------------------------------->
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-narrow"> <a class="brand" href="index">Rafalab</a>
           <ul class="nav">
+	    <li><a href="{{ BASE_PATH }}/about.html">About</a></li>
             <li><a href="{{ BASE_PATH }}/index.html">Home</a></li>
             <li><a href="{{ BASE_PATH }}/pages/people.html">People</a></li>
             <li><a href="{{ BASE_PATH }}/pages/publications.html">Publications</a></li>
-            <li><a href="software.html">Software</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="{{ BASE_PATH }}/software.html">Software</a></li>
+            <li><a href="{{ BASE_PATH }}/courses.html">Courses</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <!-- ------------------------------------------------------------------------>
+    <!-- --------------------------------------------------------------------->
     <div class="container-narrow">
       <div class="content">
         <div class="row-fluid">
           <div class="span12">
-          <!--  <div class="navbar"> </div> -->
-            <!-- ------------------------------------------------------------------------>
-
+            <!-- -------------------------------------------------------------->
+	    
+	    <!-- CONTENT GOES HERE -->
 	    {{ content }}
+	    <!-- CONTENT GOES HERE -->
 
+	    
 	  </div>
         </div>
       </div>
