@@ -48,15 +48,13 @@ Background model based on sequence information
 - [Gene Expression Barcode](http://www.ncbi.nlm.nih.gov/pubmed/17906632)[PMID: 17906632]
 - [Across Lab Comparison](http://www.ncbi.nlm.nih.gov/pubmed/15846361)[PMID:15846361]
 - [Affycomp](http://www.ncbi.nlm.nih.gov/pubmed/16410320) [PMID: 16410320]
--
-[Pooling](http://www.ncbi.nlm.nih.gov/pubmed/15755808)[PMID: 15755808]
+- [Pooling](http://www.ncbi.nlm.nih.gov/pubmed/15755808)[PMID: 15755808]
 
 ### SNP Chips
 - [Batch Effects](http://www.ncbi.nlm.nih.gov/pubmed/20625178"):
 Effects in Copy Number Estimation Using SNP Arrays [PMID: 20625178]
 - [CRLMM](http://www.ncbi.nlm.nih.gov/pubmed/17189563) [PMID: 17189563]
--
-[Copy Number Estimation](http://www.ncbi.nlm.nih.gov/pubmed/18707534)
+- [Copy Number Estimation](http://www.ncbi.nlm.nih.gov/pubmed/18707534)
 [PMID: 18707534]
 
 
