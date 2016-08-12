@@ -4,11 +4,6 @@ h1, h2, h3, h4 {
     color: darkslateblue;
 }
 
-/* size of page */
-.container-narrow {
-  margin: 0 auto;
-  max-width: 700px; }
-
 
 /* this I had from somewhere else */
 
@@ -21,7 +16,7 @@ html {
 
 .container-narrow {
 margin: 0 auto;
-max-width: 820px; }
+max-width: 700px; }
 
 .container-narrow > hr {
 margin: 30px 0; }
