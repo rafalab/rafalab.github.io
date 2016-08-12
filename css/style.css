@@ -7,7 +7,7 @@ h1, h2, h3, h4 {
 /* size of page */
 .container-narrow {
   margin: 0 auto;
-  max-width: 700px; }
+  max-width: 200px; }
 
 
 /* this I had from somewhere else */
