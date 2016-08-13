@@ -1,25 +1,18 @@
 name:               "Ink"
-description:        "Rafael Irizarry's research page"
+description:        "rafalab"
 
-url:                ""
+
 author:             "rafalab"
-email:              ""
-gravatar_hash:      ""
 twitter:            "rafalab"
-email:              ""
 github:             "rafalab"
-linkedin:           ""
-facebook:           ""
 
-disqus_shortname:   ""
 
 background:         "http://docs.oracle.com/javafx/2/get_started/background.jpg"
 
 paginate:           5
 paginate_path:      "/page:num/"
 
-baseurl:            ""
-permalink:          /:year/:month/:day/:title/
+baseurl:            "http://rafalab.github.io"
 
 markdown:           kramdown
 
