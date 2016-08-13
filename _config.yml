@@ -1,0 +1,50 @@
+name:               "Ink"
+description:        "Rafael Irizarry's research page"
+
+url:                ""
+author:             "rafalab"
+email:              ""
+gravatar_hash:      ""
+twitter:            "rafalab"
+email:              ""
+github:             "rafalab"
+linkedin:           ""
+facebook:           ""
+
+disqus_shortname:   ""
+
+background:         "http://docs.oracle.com/javafx/2/get_started/background.jpg"
+
+paginate:           5
+paginate_path:      "/page:num/"
+
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
+
+markdown:           kramdown
+
+nav:
+  - name:           "About"
+    href:           "/about"
+  - name:           "Download"
+    href:           "/releases"
+
+sass:
+  style:            :compressed
+
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-paginate
