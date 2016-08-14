@@ -31,9 +31,11 @@ desc: Sample Description
 # List of links in the navigation bar
 nav-links:
   Home: ""
+  About: "pages/about.html"
   People: "pages/people.html"
-  About: "aboutme"
-  Contact: "contact"  
+  Research: "pages/research.html"
+  Publications: "pages/software.html"
+  Courses: "pages/courses.html"
   
 # --- Footer options --- #
 
