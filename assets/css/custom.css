@@ -22,3 +22,9 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+/* Added by rafa */
+h1, h2, h3, h4 {
+    color: darkslateblue;
+}
+
