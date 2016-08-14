@@ -9,12 +9,12 @@ gems:
 # If you are hosting it on Github for some project with name 'projectname', then the url and baseurl should look like:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
-url: "http://rafalab.github.io"
+url: ""
 enforce_ssl: ""
-baseurl: "/"
+baseurl: "/jekyllBasic"
 
 # Title of website
-title: rafalab
+title: Project Name
 
 #Default keywords (used if no keywords are specified on a page basis)
 keywords: test1, test2, etc
