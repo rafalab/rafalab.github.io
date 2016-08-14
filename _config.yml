@@ -11,7 +11,7 @@ gems:
 #baseurl: "/"
 url: "http://rafalib.github.io"
 enforce_ssl: ""
-baseurl: "/"
+baseurl: ""
 
 # Title of website
 title: rafalab
