@@ -31,7 +31,7 @@ desc: Sample Description
 # List of links in the navigation bar
 nav-links:
   Home: ""
-  About Me: "aboutme"
+  About: "aboutme"
   Contact: "contact"  
   
 # --- Footer options --- #
