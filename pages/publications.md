@@ -1,20 +1,19 @@
 ---
-layout: default
+layout: template1
 title: Publications
 ---
 
 ## Selected Publication
 
-Below are some examples of the type of papers I publish. To see a list
-with all my papers you can visit [**Google Scholar**](https://scholar.google.com/citations?user=nFW-2Q8AAAAJ&hl=en&oi=ao) or [**PubMed**](http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA")
-
+Below are links to the papers describing some of our best known work. To see a list
+with all my papers you can visit [**Google Scholar**](https://scholar.google.com/citations user=nFW-2Q8AAAAJ&hl=en&oi=ao) or [**PubMed**](http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA")
 
 ### Next Generation Sequencing
 
-- [DerFinder](http://www.ncbi.nlm.nih.gov/pubmed/24398039"):
+- [DerFinder](http://www.ncbi.nlm.nih.gov/pubmed/24398039):
 Differential expression analysis of RNA-seq data at single-base
 resolutio [PMID: 24398039]
-- [BSmooth](http://www.ncbi.nlm.nih.gov/pubmed/23034175"):
+- [BSmooth](http://www.ncbi.nlm.nih.gov/pubmed/23034175):
                   Differential methylation finder for whole genome
                   bisulfite sequencing [PMID:23034175]
 - [Sequencing technology does not eliminate biological variability](http://www.ncbi.nlm.nih.gov/pubmed/23034175)[PMID:21747377]

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: template1
 title: Software
 ---
 
