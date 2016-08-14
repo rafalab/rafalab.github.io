@@ -72,7 +72,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "rafalab.orf"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "rafalab.o"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -85,7 +85,7 @@ url-pretty: "rafalab.orf"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Boston"
+timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
