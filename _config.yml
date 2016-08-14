@@ -41,13 +41,13 @@ nav-links:
 
 # If the values are empty, they are ignored 
 profile:
-  name: Babji Chetty
-  email: Your-Email
-  facebook: your-fb-id
-  github: your-github-id 
-  twitter: your-twitter-id
-  linkedin: your-linkedin-id
-  stackoverflow: your-stackoverflow-id
+  name: Rafael Irizarry
+  email: 
+  facebook: 
+  github: rafalab
+  twitter: rafalab
+  linkedin: 
+  stackoverflow: 
 
 # To display link in the footer section
 pretty-url: "bchetty.com"
@@ -55,13 +55,13 @@ pretty-url: "bchetty.com"
 # --- Misc --- #
 
 # Your Disqus profile (shortname) settings
-disqus: "Your-Disqus-Id"
+disqus: 
 
 # Google Analytics Settings
-google_analytics: "Your-GA-Id"
+google_analytics: 
 
 # Set these options as you need (For more information, check Jekyll's site)
-timezone: "Europe/Berlin"
+timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /blog/:title
