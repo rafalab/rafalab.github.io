@@ -35,7 +35,7 @@ nav-links:
     Research: "pages/research.html"
     Publications: "pages/publications.html"
     Software: "pages/software.html"
-    Courses: "pages/courses.html"
+    Teaching: "pages/teaching.html"
 # --- Footer options --- #
 
 # If the values are empty, they are ignored 

@@ -14,6 +14,7 @@ _bumphunter_, and _alpine_.
 
 
 The [Publications Section]({{ site.baseurl }}/pages/publications.html) provides links to papers on all
-these topics. The [Software Section]({{ site.baseurl }} provides
+these topics. The [Software Section]({{ site.baseurl }}/pages/software.html) provides
 Bioconductor tools. 
+
 

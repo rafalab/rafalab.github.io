@@ -3,6 +3,8 @@ layout: template1
 title: About
 ---
 
+#### Bio
+
 Rafael Irizarry received his bachelor’s in mathematics in 1993 from the University of Puerto Rico and went on to receive a Ph.D. in Statistics in 1998 from the University of California, Berkeley. His thesis work was on Statistical Models for Music Sound Signals. He joined the faculty of the Department of Biostatistics in the Johns Hopkins Bloomberg School of Public Health in 1998 and was promoted to Professor in 2007. He is now Professor of Biostatistics and Computational Biology at the Dana Farber Cancer Institue and a Professor of Biostatistics at Harvard School of Public Health. Since 1999, Rafael Irizarry’s work has focused on Genomics and Computational Biology problems. In particular, he has worked on the analysis and signal processing of microarray, next-generation sequencing, and genomic data. He is currently interested in leveraging his knowledge in translational work, e.g. developing diagnostic tools and discovering biomarkers.
 
 Professor Irizarry also develops open source software implementing his statistical methodology. His software tools are widely used and he is one of the leaders and founders of the Bioconductor Project, an open source and open development software project for the analysis of genomic data. Bioconductor provides one of the most widely used software tool for the analysis of microarray data.
@@ -13,4 +15,15 @@ Three of Rafael Irizarry’s numerous publications have been named Fast Breaking
 
 Professor Irizarry has developed seve online courses on data analysis that are offered by HarvardX which have been completed by thousands of studnets. These courses are divided into two series: [Data Analysis for the Life Sciences](https://www.edx.org/xseries/data-analysis-life-sciences) and [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis). Much of the material is included in a [book](https://amzn.com/1498775675) with a [online version](https://leanpub.com/dataanalysisforthelifesciences) available for free.
 
+
+<a 
+#### Contact Information
+
+Mailing address: CLSB 11007, 450 Brookline Ave, Boston, MA 02215
+
+email: irizarrylab at gmail dot com
+
+phone: 617-632-2454
+
+fax: 617-632-2444
 
