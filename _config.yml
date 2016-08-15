@@ -9,7 +9,7 @@ gems:
 # If you are hosting it on Github for some project with name 'projectname', then the url and baseurl should look like:
 #url: "http://rafalib.github.io"
 #baseurl: "/"
-url: "http://rafalib.github.io"
+url: "http://rafalab.github.io"
 enforce_ssl: ""
 baseurl: ""
 
@@ -17,7 +17,7 @@ baseurl: ""
 title: rafalab
 
 #Default keywords (used if no keywords are specified on a page basis)
-keywords: test1, test2, etc
+keywords: Irizarry, Rafael
 
 # Short description of your site
 desc: Sample Description
