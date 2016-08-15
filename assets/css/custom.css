@@ -23,6 +23,8 @@ body {
   padding-bottom: 15px;
 }
 
+#content { padding-bottom: 3em; }
+
 /* Added by rafa */
 h1, h2, h3, h4 {
     color: darkslateblue;
