@@ -25,8 +25,7 @@ resolutio [PMID: 24398039]
 ### Epigenetics
 
 - [Accounting for cellular heterogeneity is critical in epigenome-wide association studies](http://www.ncbi.nlm.nih.gov/pubmed/24495553) [PMID: 24495553]
-- [Hypomethylated blocks in colon cancer]
-(http://www.ncbi.nlm.nih.gov/pubmed/21706001) [PMID: 21706001]
+- [Hypomethylated blocks in colon cancer](http://www.ncbi.nlm.nih.gov/pubmed/21706001) [PMID: 21706001]
 - [Bumphunter](http://www.ncbi.nlm.nih.gov/pubmed/22422453)
 [PMID:22422453
 - [HMM CpG Islands](http://www.ncbi.nlm.nih.gov/pubmed/20212320)[PMID: 20212320]
