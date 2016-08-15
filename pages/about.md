@@ -16,7 +16,6 @@ Three of Rafael Irizarry’s numerous publications have been named Fast Breaking
 Professor Irizarry has developed seve online courses on data analysis that are offered by HarvardX which have been completed by thousands of studnets. These courses are divided into two series: [Data Analysis for the Life Sciences](https://www.edx.org/xseries/data-analysis-life-sciences) and [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis). Much of the material is included in a [book](https://amzn.com/1498775675) with a [online version](https://leanpub.com/dataanalysisforthelifesciences) available for free.
 
 
-<a 
 #### Contact Information
 
 Mailing address: CLSB 11007, 450 Brookline Ave, Boston, MA 02215
