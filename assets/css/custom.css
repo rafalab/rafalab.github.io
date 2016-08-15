@@ -8,7 +8,7 @@ body {
   /* For Fixed Nav Bar */
   padding-top: 70px;
   /* Margin bottom by footer height */
-  margin-bottom: 150px;
+  margin-bottom: auto/*150px;*/
  }
 .footer {
   position: absolute;
