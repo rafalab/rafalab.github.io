@@ -30,13 +30,12 @@ desc: Sample Description
 
 # List of links in the navigation bar
 nav-links:
-  Home: ""
-  About: "pages/about.html"
-  People: "pages/people.html"
-  Research: "pages/research.html"
-  Publications: "pages/software.html"
-  Courses: "pages/courses.html"
-  
+    About: "pages/about.html"
+    People: "pages/people.html"
+    Research: "pages/research.html"
+    Publications: "pages/publications.html"
+    Software: "pages/software.html"
+    Courses: "pages/courses.html"
 # --- Footer options --- #
 
 # If the values are empty, they are ignored 
