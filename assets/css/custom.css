@@ -11,8 +11,8 @@ body {
   margin-bottom: 80px;
 }
 .footer {
-/*  position: absolute; */
-    position: relative;
+  position: absolute; 
+/* position: relative; */
     bottom: 0;
     width: 100%;
   /* Set the fixed height of the footer here */
