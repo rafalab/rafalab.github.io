@@ -12,9 +12,10 @@ Google Scholar</a> or
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA">PubMed
 </a></p>
 
-<p> You can download our Data Analysis for the Life Science book
-<a href="https://leanpub.com/dataanalysisforthelifesciences">here</a> or
-buy a paper copy <a href="https://amzn.com/1498775675">here</a>.
+<p> You can <a
+href="https://leanpub.com/dataanalysisforthelifesciences">download</a>
+our Data Analysis for the Life Science book or
+buy a <a href="https://amzn.com/1498775675">paper copy</a>.
 </p>
 
 </div>
