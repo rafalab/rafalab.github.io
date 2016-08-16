@@ -14,7 +14,7 @@ title: Teaching
 
 #### [Introduction to Data Science](http://datasciencelabs.github.io/)
 
-#### [Blog post on teachin data scinece](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
+#### [Blog post on teaching data scinece](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
 
 #### Previous courses
 
