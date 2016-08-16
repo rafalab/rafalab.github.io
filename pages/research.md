@@ -3,9 +3,9 @@ layout: template1
 title: Research
 ---
 
-The unprecedented advance in digital technology during the second half
+The unprecedented advancements in digital technology during the second half
 of the 20th century has produced a measurement revolution that is
-transforming science. In biomedical research, the genomics revolution
+transforming science. In biomedical research, the Genomics revolution
 is being driven by new technologies that permit us to observe
 molecular entities analogous to identifying microorganisms and other
 breakthroughs permitted by the invention of the microscope.
@@ -21,8 +21,8 @@ or systematic errors that are hard to detect.
 
 Rafael Irizarry's lab is interested in the development of
 statistical tools that help researchers better interpret their
-data. The lab disseminats these tools though freely available open
-source. This software has tens of
+data. The lab disseminates these tools through open source that is available 
+for free online. This software has tens of
 thousands of users and the scientific publications in which these
 methods are highly cited.
 
@@ -45,14 +45,14 @@ infrastructure and packages.
 
 If you are graduating soon with a PhD in Statistics, Biostatistics or Computer
 Science and are interested in the topics listed above, consider applying to join
-the lab as postdoc. If you are a graduate student at Harvard consider
-doing a rotation. We don't always have positions but contacting us is
-the main way current members joined the lab.
+the lab as a postdoc. If you are a graduate student at Harvard you should consider
+doing a rotation. We don't always have positions available but contacting us is
+the most common way that current members have joined the lab.
 
 To succeed in our lab you need to have vast experience in data
-analysis, strong programming skills (we prefer R). Although Professor
+analysis and strong programming skills (we prefer R). Although Professor
 Irizarry makes time to meet each trainee weekly and the lab is highly
-collaborative, we expect group members to be independent.
+collaborative, group members are expected to be independent.
 
 
 
