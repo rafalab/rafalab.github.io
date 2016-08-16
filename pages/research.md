@@ -3,8 +3,6 @@ layout: template1
 title: Research
 ---
 
-## Main research activities
-
 The unprecedented advance in digital technology during the second half
 of the 20th century has produced a measurement revolution that is
 transforming science. In biomedical research, the genomics revolution
