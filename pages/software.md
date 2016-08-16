@@ -9,7 +9,7 @@ Software is an effective way to disseminate statistical methodology. I try to de
 [Bioconductor](http://www.bioconductor.org) is an open source and open development
 software project for the analysis and comprehension of genomic
 data. Because genomics is the focus of most of my work, the majority
-of my software is availalbe through Bioconductor and you can find
+of my software is available through Bioconductor and you can find
 these software packages by visiting the projects
 [portal](http://www.bioconductor.org) where you will find packages for pretty
 much any genomics data analysis need. Examples of some of the
@@ -18,7 +18,7 @@ packages my lab has contributed to are:
 - _alpine_: modeling systematic bias to improve quantification from RNA-Seq 
 - _CQN_: removing GC-content bias from expression level RNA-Seq data
 - _rnaseqcomp_: implementation of benchmarks for RNA-seq quantification pipelines. 
-- _minfi_: Preprocessin and analysis of Illumina methylation arrays
+- _minfi_: Preprocessing and analysis of Illumina methylation arrays
 - _bumphunter_: Software for detectig differentially methylated regions (DMR)
 -  _affy_: preprocessing methods for Affymetrix expression arrays, e.g. RMA
 - _gcrma_: sequence based background correction for
@@ -30,7 +30,7 @@ packages my lab has contributed to are:
 
 ### GitHub
 
-Several of my projects, including this website, are developed on [GitHub](https://github.com/rafalab). This include
+Several of my projects, including this website, are developed on [GitHub](https://github.com/rafalab). This includes
 
 
 - [The code for DALS](https://github.com/genomicsclass)
