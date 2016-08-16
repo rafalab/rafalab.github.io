@@ -8,10 +8,9 @@ title: Publications
 <p> Below are links to the papers describing some of our best known work.
 To see a list with all my papers you can visit 
 <a href="https://scholar.google.com/citations?user=nFW-2Q8AAAAJ&hl=en&oi=ao">
-Google Scholar
-	</a> or
+Google Scholar</a> or
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA">PubMed
-</a>
+</a></p>
 
 <p> You can download our Data Analysis for the Life Science book <a
 href=https://leanpub.com/dataanalysisforthelifesciences"">here</a> or
