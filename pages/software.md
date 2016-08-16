@@ -28,10 +28,17 @@ packages my lab has contributed to are:
 - _crlmm_: genotype calling and copy number analysis for SNP arrays
 - _affycomp_: engine software for affycomp website
 
+### GitHub
 
-### rafalib
+Several of my projects, including this website, are developed on [GitHub](https://github.com/rafalab). This include
 
-The _rafalib_ package contains sseries of shortcuts for routine tasks originally developed to facilitate data exploration. It is available on [CRAN](https://cran.r-project.org/web/packages/rafalib/). The code is also hosted on [GitHub](https://github.com/rafalab/rafalib).
+
+- [The code for DALS](https://github.com/genomicsclass)
+- [bumphunter](https://github.com/rafalab/bumphunter)
+- [THe code for my Data Science Class](https://github.com/datasciencelabs)
+- [This webpage](https://github.com/rafalab/rafalab.github.io)
+- [rafalib](https://github.com/rafalab/rafalib)
+
 
 
 ### Data Analysis for the Life Sciences (DALS) code
@@ -39,12 +46,9 @@ The _rafalib_ package contains sseries of shortcuts for routine tasks originally
 All the code used to create the figures, tables and results in the _Data Analysis for the Life Sciences_ [book](https://leanpub.com/dataanalysisforthelifesciences) are hosted on GitHub and served off [this page](http://genomicsclass.github.io/book/),
 
 
-### GitHub
 
-Several of my projects, including this website, are developed on [GitHub](https://github.com/rafalab). This include
 
-- [rafalib](https://github.com/rafalab/rafalib)
-- [The code for DALS](https://github.com/genomicsclass)
-= [bumphunter](https://github.com/rafalab/bumphunter)
-- [THe code for my Data Science Class](https://github.com/datasciencelabs)
-- [This webpage](https://github.com/rafalab/rafalab.github.io)
+### rafalib
+
+The _rafalib_ package contains sseries of shortcuts for routine tasks originally developed to facilitate data exploration. It is available on [CRAN](https://cran.r-project.org/web/packages/rafalib/). The code is also hosted on [GitHub](https://github.com/rafalab/rafalib).
+
