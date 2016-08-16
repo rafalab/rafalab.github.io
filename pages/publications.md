@@ -5,11 +5,14 @@ title: Publications
 
 ## Selected Publication
 
+<div class="jumbotron">
+
 Below are links to the papers describing some of our best known work. To see a list
 with all my papers you can visit 
 [**Google Scholar**](https://scholar.google.com/citations?user=nFW-2Q8AAAAJ&hl=en&oi=ao) or 
 [**PubMed**](http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA")
 
+</div>
 ### Next Generation Sequencing
 
 - [DerFinder](http://www.ncbi.nlm.nih.gov/pubmed/24398039):
