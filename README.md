@@ -1,7 +1,7 @@
-# jekyllBasic
+# rafalab website
 
-A simple, minimal, responsive theme built using Jekyll.
+A simple, minimal, responsive theme built using Jekyll adapted from a jekyll theem by [bchetty](https://github.com/bchetty/jekyllBasic)
 
-You can use this template/theme to build your new or existing site.
+You can see it here: http://rafalab.github.io
 
-DEMO: https://bchetty.com/jekyllBasic/
+
