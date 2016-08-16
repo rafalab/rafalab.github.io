@@ -22,8 +22,8 @@ buy a <a href="https://amzn.com/1498775675">paper copy</a>.
 
 ### Next Generation Sequencing
 
-- [DerFinder](http://www.ncbi.nlm.nih.gov/pubmed/24398039):
-- [BSmooth](http://www.ncbi.nlm.nih.gov/pubmed/23034175):
+- [DerFinder](http://www.ncbi.nlm.nih.gov/pubmed/24398039)
+- [BSmooth](http://www.ncbi.nlm.nih.gov/pubmed/23034175)
 - [Sequencing technology does not eliminate biological variability](http://www.ncbi.nlm.nih.gov/pubmed/23034175)
 - [CQN](http://www.ncbi.nlm.nih.gov/pubmed/21747377)
 
