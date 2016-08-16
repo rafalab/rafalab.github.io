@@ -16,6 +16,8 @@ title: Teaching
 
 #### [Blog post on teaching data science](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
 
+<br></br>
+<br></br>
 #### Previous courses
 
 - [Statistical Learning: Nonparametric and
