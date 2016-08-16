@@ -13,7 +13,7 @@ Google Scholar</a> or
 </a></p>
 
 <p> You can download our Data Analysis for the Life Science book <a
-href=https://leanpub.com/dataanalysisforthelifesciences"">here</a> or
+href=https://leanpub.com/dataanalysisforthelifesciences">here</a> or
 buy a paper copy <a href="https://amzn.com/1498775675">here</a>.
 </p>
 
