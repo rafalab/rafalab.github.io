@@ -7,9 +7,13 @@ title: Publications
 
 <p> Below are links to the papers describing some of our best known work.
 To see a list with all my papers you can visit 
-<a
-href="https://scholar.google.com/citations?user=nFW-2Q8AAAAJ&hl=en&oi=ao")><b>Google
-Scholar</b></a> or <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA"><b>PubMed</b></a>
+<a href="https://scholar.google.com/citations?user=nFW-2Q8AAAAJ&hl=en&oi=ao">
+	<b>Google Scholar</b>
+	</a> or
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA"><b>PubMed</b>
+</a>
+</p>
+
 </div>
 
 ### Next Generation Sequencing
