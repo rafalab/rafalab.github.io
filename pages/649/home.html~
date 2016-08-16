@@ -1,0 +1,311 @@
+<html>
+<style type="text/css">
+ADDRESS	{font-family: Arial, Helvetica;}
+BODY	{font-family: Arial, Helvetica;}
+TD      {font-family: Arial, Helvetica;}
+P       {font-family: Arial, Helvetica; text-align: justify;}
+A:link  {text-decoration:none;}
+A:vlink  {text-decoration:none;}
+</style>
+
+<head>
+   <title>Statistical Learning: Algorithmic and Nonparametric Approaches  </title>
+</head>
+<body>
+<A name="Outline"></a>
+<h1>
+<Center>
+<b>Statistical Learning: Algorithmic and Nonparametric Approaches </b>
+</Center>
+</h1>
+
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<!--  <br> Class number: 140.649 (Fourth term) -->
+<!--  <br> Taught by: Rafael A. Irizarry -->
+<!--  <br> Office: E3620 -->
+
+<br>
+In this web page you will find
+<UL>
+  <li> The <A href="#outline"> class outline</a>. For each section, you can obtain the class
+      notes in pdf and the R 
+      code used to generate the analyses and graphs.
+  <li> Links for <a href="#homework"> homework </a>: data needed,
+      assignments sheets in pdf, and the latex files. 
+  <li> <a href="#books"> Books </a> often referenced
+  <li> <a href="#computing"> Computing resource</a>.
+  <li> <a href="#info"> Class general information</a>.
+</UL> 
+<br>
+<CENTER><HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<A name="outline"><b> Class outline:</b> </a> 
+
+<table border=3>
+
+<TR>
+<TH>Lecture</TH>
+<TH>Title</TH>
+<TH>Description</TH>
+<TH>Notes</TH>
+<TH>Code</TH>
+</TR>
+
+<TR>
+<TD>NA</TD>
+<TD>Review</TD>
+<TD>Stuff you should know: Basics of probability, the central limit
+theorem, and inference</TD>
+<TD>  <a href="section-01.pdf">PDF</a></TD>
+<TD>NA</TD>
+</TR>
+
+
+<TR>
+<td>1</td>
+<td> Introduction to Regression and Prediction</td>
+<td> We will describe linear regression in the context of a prediction
+problem.</td>
+<td><a href="section-02.pdf">PDF</a></td>
+<td><a href="code-02.R">R</a></td>
+</tr>
+
+<TR>
+<td>2</td>
+<TD>Overview of Supervised Learning</td>
+<td>Regression for predicting bivariate data, K nearest neighbors
+(KNN), bin smoothers, and an introduction to the bias/variance
+trade-off.</td>
+<td><a href="section-03.pdf">PDF</a></td>
+<td><a href="code-03.R">R</a></td?
+</tr>
+
+<tr>
+<td>3-4</td>
+<td>Linear Methods for Regression</td>
+<td> Subset selection and ridge regression. We will use  singular
+value decomposition (SVD) and principal component analysis (PCA) to understand
+these methods.</td>
+<td><a href="section-04.pdf">PDF</a></td>
+<td><a href="code-04.R">R</a><td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Linear Methods for Classification</td>
+<td>Linear Regression, Linear Discriminant Analysis (LDA), and
+Logisitc Regression</td>
+<td><a href="section-05.pdf">PDF</a></td>
+<td><a href="code-05.R">R</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Kernel Methods</td>
+<td> Kernal smoothers including loess. We will briefly describe 2
+dimensional smoothers. We will also define degrees of freedom in the
+context of smoothing and learn about density estimators.</td>
+<td><a href="section-06.pdf">PDF</a></td>
+<td><a href="code-06.R">R</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Model Assessment and Selection</td>
+<td> We revist the
+bias-variance tradeoff. We describe how monte-carlo simulations can be
+used to assess bias and variance. We then introduce cross-validation,
+AIC, and BIC.</td> 
+<td><a href="section-07.pdf">PDF</a></td>
+<td><a href="code-07.R">R</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>The Bootstrap</td>
+<td>We give a short introduction to the bootstrap and demonstrate its
+utility in smoothing problems.</td> 
+<td><a href="section-08.pdf">PDF</a></td>
+<td><a href="code-08.R">R</a></td>
+</tr>
+
+<tr>
+<td>9-10</td>
+<td>Splines, Wavelets, and Friends</td>
+<td>We give intuitive and mathematical description of Splines and
+Wavelets. We use the SVD to understand these better and see
+connections with signal processing methods.</td> 
+<td><a href="section-09.pdf">PDF</a></td>
+<td><a href="code-09.R">R</a></td>
+</tr>
+
+
+<tr>
+<td>11-12</td>
+<td>Additive Models, GAM and Neural Networks</td>
+<td>We move back to cases with many covariates. We introduce
+projection pursuit, additive
+models as well as generalized additive models. We breifly describe
+neural networks and explain the connection to projection pursuit.</td> 
+<td><a href="section-10.pdf">PDF</a></td>
+<td>NA</td>
+</tr>
+
+ 
+<tr>
+<td>13-14</td>
+<td>CART, Boosting and Additive Trees</td>
+<td>We introduce classification algorithms and regression trees (CART)
+as well as the more modern versions such as random forrests.</td> 
+<td><a href="section-0.pdf">PDF</a></td>
+<td><a href="code-0.R">R</a></td>
+</tr>
+
+<tr>
+<td>15</td>
+<td>Model Averaging</td>
+<td>Bayesian Statistics, Boosting and Bagging</td> 
+<td><a href="section-0.pdf">PDF</a></td>
+<td><a href="code-0.R">R</a></td>
+</tr>
+
+<tr>
+<td>16</td>
+<td>Clustering algorithms</td>
+<td></td> 
+<td><a href="section-0.pdf">PDF</a></td>
+<td><a href="code-0.R">R</a></td>
+</tr>
+
+</TABLE>
+
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<p><b>Homework:</b>
+<ul>
+<li>Homework 1 [Due 4/10]: 
+Look through the top journal in your field for a paper
+ in which a regression analysis was performed, many covariates were
+ available, and p-values were reported. 
+
+<p>If your field is mathematical (statistics, biostatistics, engineering,etc..) then look through the top journal of your favorite public health application. If you don't have one then use American Journal of Epidemiology (there should be plenty of regrssion analyses in this journal).
+
+<ul>
+<li> Discuss how the model was motivated. Deductively, empirically,
+both or neither? 
+<li> Give me your thoughts on their model choice? Could they 
+have done something differently? Are the results described model
+driven? 
+<li> Where does the p in p-value come from? i.e. Where does the
+randomness come from? Random sample, randomization, or nature...? If
+nature, then write a paragraph explain how.
+</ul>
+<li>Homework 2 [Due 4/17]
+<ul> 
+<li>Use this <a href="train.txt">training data</a> to predict the outcomes for <a href="predict.txt">this data</a>. You should give the 500 predictions and an estimate of the number of mistakes you've made. Please send a text file with only the  predictions (separated by spaces). Include a description of what you did. Whomever predicts best wins first prize. Whomever best estimates the number of mistakes they make comes in second. Prizes will be handed out.
+<li>Derive the discrimination function for LDA (third equation on page 75) and show it is linear. 
+<li>Show that LDA and regression are equivalent when the outcomes are binary.
+</ul> 
+<li>Homework 3 [Due 4/24]
+<ul> 
+<li>Dowload the  Strontium Data [<a href="Data/Sr.dat">text file</a>] 
+and fit a polynomial of degree 1,2,3,4,6,12, a spline (you pick the knots) and smoothing splines. Make plots of the data and the fitted curves.
+<li> Write a paragraph describing your project.
+</ul>
+<li> Homework 4 [Due 5/1] 
+<UL> 
+<LI> From this <a href="xydata.txt">data</a>, get your best estimate
+of y (yhat) and confidence bands, for each of the given x-values.   
+First prize goes to the smallest RSS,
+second prize goes to true f(x) entirely inside the confidence bands with smallest area between
+bands.
+
+<LI> Turn in project first draft.
+</UL>
+<li> Project [Last day of class] 
+</ul>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<p><b>Data-sets:</b>
+<ul>
+<li> All data except vowel training[<a href="Data/alldata.zip">Zip file</a>]
+<li> Prostate Cancer Data [<a href="prostate.html">Description</a>,
+<a href="Data/prostate.RData">R image</a>, 
+<a href="Data/prostate.csv">CSV file</a>]  ]
+<li> Vowel Training Data [<a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.info">Description</a>, <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.train"> Train</a>, <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.test"> Test</a>,  <a href="vowel.RData">R Image</a>]
+<li> Strontium data[<a href="Data/Sr.dat">text file</a>] 
+<li> CD4 data[<a href="Data/cd4.data">text file</a>] 
+<li> All Mouse data [<a href="Data/all-mouse-bt.dat">text file</a>]
+<li> Mouse Body Temperature data [<a href="Data/mouse-bt.dat">text file</a>]
+<li> Diabetes data [<a href="Data/diabetes.dat ">text file</a>]
+<li> Kyphosis data [<a href="Data/kyphosis.dat">text file</a>]
+<li> Microarray data [<a href="Data/microarray.dat">text file</a>]
+<li> Cholostyramine data [<a href="Data/cholostyramine.dat">text file</a>]
+<li> Intensity data [<a href="Data/intensity.dat">text file</a>]
+<li> gam.datasets data [<a href="Data/gam.datasets">Splus file</a>]
+</ul>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<a name="books"> <b>Recommended Books</b>
+<UL>
+<li> T. Hastie, R. Tibshirani, and J. H. Fried. (2001) The Elements of
+  Statistical Learning.  Springer-Verlag: New York. [ <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/">Web Page</a>]
+  <li> Venables, W.N. and Ripley, B.D. (2002) <i> Modern Applied
+      Statistics with S-Plus. </i> Springer-Verlag: New York.
+  <li>  Brian D. Ripley. (1996) Pattern Recognition and Neural
+  Networks. Cambridge University Press.
+</UL>
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<a name="computing"> <b> Resources</b>
+
+<UL>
+  <LI><a href="http://www.biostat.jhsph.edu/~kbroman/Rintro/">R</a>
+</UL>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<a name="info"> <b> Class General Info</b>
+<br>
+
+<UL>
+<li> Course title: Statistical Learning: Algorithmic and
+Nonparametric Approaches (140.649)
+<li> Lab Hour: 
+<li> Instructor: <A HREF="http://www.biostat.jhsph.edu/~ririzarr">Rafael Irizarry</a>
+<li> <A HREF="http://www.biostat.jhsph.edu/">
+Department of Biostatistics</a>
+<li> Phone 410-614-5157, email: <a href="mailto:rafa@jhu.edu">rafa@jhu.edu</a>
+<li> I assume you know: Linear algebra and statistical principles at
+  a 651--654 level.
+<li> It will be useful to learn one of the following programming
+  languages:
+  R (recommended), S-Plus, or MATLAB. 
+<li> Grading: 3 homeworks 60%, 2 quizzes 20%, 1 project 20%
+<li> Course description: Teaches public health students to use modern,
+computationally-based methods for exploring and drawing inferences
+from data.  After a brief review of probability, the central limit
+theorem, and inference, the course covers resampling methods,
+non-parametric regression, prediction, and dimension reduction and
+clustering.  Specifically covers: Monte Carlo simulation, bootstrap
+cross-validation, splines, local weighted regression, CART, random
+forests, neural networks, support vector machines, and hierarchical
+clustering.  
+
+
+</UL>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+Last updated: 4/18/2006
+
+<BR>
+<BR>
+<BR>
+<p>You are visitor number <img SRC="http://counter.digits.com/wc/-d/4/rafelon" HSPACE=4 VSPACE=2 BORDER=0 height=10 width=40 align=CENTER> 
+
+
+</body>
+</html>

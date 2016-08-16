@@ -1,0 +1,96 @@
+\section{Splines}
+In many situations, breakpoints in the regression function do not make sense.
+Would forcing the piecewise polynomials to be continuous suffice? What
+about continuous first derivatives? 
+
+We start by consider the subspaces of the piecewise polynomial 
+space. We will denote it with ${\cal
+  PP}_k(\bt)$ with $\bt = (t_1,\dots,t_m)'$ the break-points or
+interior knots. Different break points define different spaces.
+ 
+We can put constrains on the behavior of the functions
+$g$ at the break points. (We can construct tests to see if these
+constrains are suggested by the data but, will not go into this here)
+
+Here is  a trick for forcing the constrains and keeping the linear
+model set-up. We can write any function $g \in {\cal PP}_k(\bt)$ in
+{\it the truncated basis power}:
+\begin{eqnarray*}
+g(x) &=& \theta_{0,1} + \theta_{0,2} x + \dots + \theta_{0,k} x^{k-1}
++\\
+&\,&  \theta_{1,1}(x-t_1)^0_+ + \theta_{1,2} (x-t_1)^1_+ + \dots +
+\theta_{1,k} (x-t_1)^{k-1}_+ +\\
+&& \vdots\\
+&& \theta_{m,1}(x-t_m)^0_+ + \theta_{m,2} (x-t_m)^1_+ + \dots +
+\theta_{m,k} (x-t_m)^{k-1}_+
+\end{eqnarray*}
+where $(\cdot)_+ = \max(\cdot,0)$. Written in this way the
+coefficients $\theta_{1,1},\dots,\theta_{1,k}$ record the jumps in the
+different derivative from the first piece to the second. 
+
+Notice that the constrains reduce the number of parameters. This is in
+agreement with the fact that we are forcing more smoothness.
+
+Now we can force constrains, such as continuity, by putting constrains
+like $\theta_{1,1}=0$ etc... 
+
+We will concentrate on the cubic splines which are continuous
+and have continuous first and second derivatives. In this case we can
+write:
+\begin{eqnarray*}
+g(x) &=& \theta_{0,1} + \theta_{0,2} x + \dots + \theta_{0,4} x^3
++ \theta_{1,k} (x-t_1)^{3}+ \dots + \theta_{m,k} (x-t_m)^{3}
+\end{eqnarray*}
+How many ``parameters'' in this space? 
+
+Note: It is always possible to have less restrictions at knots where we
+believe the behavior is ``less smooth'', e.g for the Sr ratios, we
+may have ``unsmoothness'' around KTB. 
+
+We can write this as a linear space. This setting is not
+computationally convenient. In S-Plus there is a function {\tt bs()}
+that makes a basis that is convenient for computations. 
+
+There is asymptotic theory that goes along with all this but we will
+not go into the details. We will just notice that 
+\[
+\E[ f(x) - g(x) ] = O(h_l^{2k} + 1/n_l)
+\]
+where $h_l$ is the size of the interval where $x$ is in and $n_l$ is
+the number of points in it. What does this say?
+
+
+\subsection{Splines in terms of Spaces and sub-spaces}
+The$p$-dimensional
+spaces described in Section 4.1 were defined through basis function
+$B_j(\bx), j=1,\dots,p$. So 
+in general we defined for a given range $I \subset {\mathbb R}^k$
+\[
+{\cal G} =\{ g: g(\bx) = \sum_{j=1}^p \theta_j \beta_j(\bx), \bx \in I,
+(\theta_1,\dots,\theta_p) \in {\mathbb R}^p \}
+\]
+
+In the previous section we concentrated on $\bx \in \mathbb R$. 
+
+In practice we have design points $x_1,\dots,x_n$ and a vector of
+responses $\by = (y_1,\dots,y_n)$. We can think of $\by$ as an element
+in the $n$-dimensional vector space ${\mathbb R}^n$. In fact we can go
+a step further and define a Hilbert space with the usual inner product
+definition that gives us the norm
+\[
+||\by|| = \sum_{i=1}^n y_i^2
+\]
+Now we can think of least squares estimation as the projection of the
+data $\by$ to the sub-space $\bG \subset {\mathbb R}^n$ defined by $\cal
+G$ in the following way 
+\[
+\bG = \{ \g \in {\mathbb R}^n: \g = [g(x_1),\dots,g(x_n)]', g \in
+{\cal G} \}
+\]
+Because this space is spanned by the vectors 
+$[B_1(x_1),\dots,B_p(x_n) ]$ the projection of $\by$ onto $\bG$ is 
+\[
+\bB(\bB'\bB)^{-}\bB'\by
+\]
+as learned in 751. Here $[\bB]_{ij} = B_j(x_i)$.
+

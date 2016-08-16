@@ -1,0 +1,223 @@
+\section{Additive Models}
+Additive models are specific application of projection pursuit. They
+are more useful in scientific applications.
+
+In additive models we assume that the response is linear in the
+predictors effects and that there is an additive error. This allows us to study the effect of each
+predictor separately. The model is like (\ref{guasreg}) with
+\[
+f(X_1,\dots,X_p) = \sum_{j=1}^p f_j(X_j).
+\]
+Notice that this is projection pursuit with the projection
+\[
+\bg{\alpha}_j'\bX = X_j.
+\]
+The assumption made here is not as strong as in linear regression, but
+its still quite strong. It's saying that the effect of each covariate
+is additive. In practice this may not make sense.
+
+Example: In the diabetes example consider an additive model that
+models log(C-peptide)
+in terms of age  $X_1$ and base deficit $X_2$. The additive
+model assumes that for two
+different ages $x_1$ and $x_1'$ the conditional expectation of $Y$
+(seen as a random variable depending on base deficit):
+\[
+\E(Y | X_1=x_1, X_2) = f_1(x_1) + f_2(X_2) 
+\]
+and
+\[
+\E(Y | X_1=x_1', X_2) = f_1(x_1') + f_2(X_2).
+\]
+This say that the way C-peptide depends on base deficit only varies by a
+constant for different ages. It is not easy to disregard the
+possibility that this dependence changes. For example, at
+older ages the effect of high base deficit can be dramatically bigger. However,
+in practice we have too make assumptions lik these in order to get
+some kind of useful description of the data. 
+
+Comparing the non-additive smooth (seen above) and the additive model
+smooth shows that it is not completely crazy to assume
+additivity. 
+
+\centerline{\epsfig{figure=Plots/plot-07-04.ps,angle=270,width=\textwidth}}
+
+Notice that in the first plots the curves defined for the different
+ages are different. In the second plot they are all the same.
+
+How did we create this last plot? How did we fit the additive
+surface. We need to estimate $f_1$ and $f_2$. We will see this in the
+next section.
+
+Notice that one of the advantages of additive model is that no matter
+the dimension of the covariates we know what the surface
+$f(X_1,\dots,X_p)$ is like by drawing each $f_j(X_j)$ separately.
+
+\centerline{\epsfig{figure=Plots/plot-07-05.ps,angle=270,width=.8\textwidth}}
+
+\subsection{Fitting Additive Models: The Backfitting Algorithm}
+Conditional expectations provide a simple intuitive motivation for the
+backfitting algorithm.
+
+If the additive model is correct then for any $k$
+\[
+\E\left(\left. Y - \alpha - \sum_{j\neq k} f_j(X_j) \, \right| \,X_k
+\right) = f_k(X_k) 
+\]
+This suggest an iterative algorithm for computing all the $f_j$. 
+
+Why? Let's say we have estimates $\hat{f}_1,\dots,\hat{f}_{p-1}$ and we
+think they are ``good'' estimates in the sense that $\E\{{f}_j(X_j) -
+f_j(X_j)\}$ is ``close to 0''. Then we have that 
+\[ 
+\E\left(\left.Y - \hat{\alpha} - \sum_{j=1}^{p-1} \hat{f}_j(X_j) \,
+  \right| \, X_p \right) 
+\approx f_p(X_p).
+\]
+This means that the partial residuals $\hat{\epsilon} = Y -
+\hat{\alpha} - \sum_{j=1}^{p-1} \hat{f}_j(X_j) $ 
+\[
+\hat{\epsilon}_i \approx f_p(X_{ip}) + \delta_i
+\]
+with the $\delta_i$ approximately IID mean 0 independent of the
+$X_p$'s. We have already discussed various ``smoothing'' techniques
+for estimating $f_p$ in a model as the above.
+
+Once we choose what type of smoothing technique we are using
+for each covariate, say its defined by $S_j(\cdot)$, we obtain an
+estimate for our 
+additive model following these steps 
+\begin{enumerate}
+\item Define $\f_j = \{f_j(x_{1j}),\dots,f_j(x_{nj})\}'$ for all $j$.
+\item Initialize: $\alpha^{(0)} = \mbox{ave}(y_i)$, $\f_j^{(0)} = $ linear
+  estimate. 
+\item Cycle over $j=1,\dots,p$
+\[
+\f_j^{(1)} = S_j\left(\left. \by - \alpha^{(0)} - \sum_{k\neq j}
+  \mathbf{f}^{(0)}_k
+  \, \right| \bx_j \right)
+\]
+\item Continue previous step until functions ``don't change'', for
+  example until 
+\[
+\max_{j} \left|\left| \f_j^{(n)} - \f_j^{(n-1)} \right|\right| < \delta
+\]
+with $\delta$ is the smallest number recognized by your computer. In
+my computer using S-Plus its: \begin{verbatim} .Machine$double.eps = 2.220446e-16 \end{verbatim} %$
+
+
+\end{enumerate}  
+
+Things to think about:
+
+Why is this algorithm valid? Is it the solution to some minimization
+criterion?  Its not MLE or LS. 
+
+\subsection{Justifying the backfitting algorithm}
+The backfitting algorithm seems to make sense. We can say that we have
+given an intuitive justification.
+
+
+However statisticians usually like to have more than this. In most
+cases we can find a ``rigorous'' justification. In many cases
+the assumptions made for the ``rigorous'' justifications too work are
+carefully chosen so that we get the answer we want, in this case that the
+back-fitting algorithm ``converges'' to the ``correct'' answer.
+
+In the GAM book, H\&T find three ways to justify it: Finding
+projections in $L^2$ function spaces, minimizing certain criterion
+with solutions from reproducing-kernel Hilbert spaces, and as
+the solution to penalized least squares. We will look at this last
+one. 
+
+
+We extend the idea of penalized least squares by considering the
+following criterion 
+\[
+\sum_{i=1}^n \left\{ y_i - \sum_{j=1}^p f_j(x_{ij}) \right\}^2 +
+  \sum_{j=1}^p \lambda_j \int \{f_j''(t)\}^2 \, dt
+\]
+over all p-tuples of functions $(f_1,\dots,f_p)$ that are twice
+differentiable. 
+
+As before we can show that the solution to this problem is a p-tuple
+of cubic splines with knots ``at the data'', thus we may rewrite the
+criterion as
+\[
+\left(\by - \sum_{j=1}^p \f_j \right)'\left(\by - \sum_{j=1}^p \f_j
+\right) + \sum_{j=1}^p \lambda_j \f_j \bK_j \f_j
+\]
+where the $\bK_j$s are penalty matrices for each predictor defined
+analogously to the $\bK$ of section 3.3.
+
+If we differentiate the above equation with respect to the function
+$\f_j$ we obtain $-2(\by - \sum_k \f_k) + 2 \lambda_j \bK_j \f_j =
+0$. The $\hat{\f}_j$'s that solve the above equation must satisfy:
+\[
+\hat{\f}_j = \left(\bI + \lambda_j \bK_j\right)^{-1}\left(\by -
+\sum_{k\neq j} \hat{\f}_k\right), j=1,\dots,p 
+\]
+If we define the smoother operator $\bS_j = \left(\bI + \lambda_j
+\bK_j\right)^{-1}$ we can write out this equation in matrix notation as
+\[
+\left(
+\begin{array}{cccc}
+\bI&\bS_1&\dots&\bS_1\\
+\bS_2&\bI&\dots&\bS_2\\
+\vdots&\vdots&\ddots&\vdots\\
+\bS_p&\bS_p&\dots&\bI
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+\f_1\\
+\f_2\\
+\vdots\\
+\f_p
+\end{array}
+\right)
+=
+\left(
+\begin{array}{c}
+\bS_1 \by\\
+\bS_2 \by\\
+\vdots\\
+\bS_p \by
+\end{array}
+\right)
+\]
+One way to solve this equation is to use the Gauss-Seidel algorithm
+which in turn is  equivalent to
+solving the back-fitting algorithm. See Buja, Hastie \& Tibshirani
+(1989) Ann. Stat. 17, 435--555 for details.
+
+Remember that 
+ that for any set of linear smoother
+\[
+\hat{\f}_j = \bS_j\by
+\]
+we can argue in reverse that it minimizes some penalized least squares
+criteria of the form
+\[
+(\by - \sum_j\f_j)'(\by - \sum_j\f_j) + \sum_j \f_j'(\bS_j^{-} - I)\f_j
+\]
+and conclude that it is the solution to some penalized least squared
+problem.
+
+\subsection{Standard Error}
+When using {\tt gam()} in S-Plus we get point-wise standard
+errors. How are these obtained?
+
+Notice that our estimates 
+$\hat{\f}_j$ are no longer of the form $\bS_j \by$ since we have used a
+complicated backfitting algorithm. However, at convergence we can
+express $\hat{\f}_j$ as $\bR_j \by$ for some $n \times n$ matrix
+$\bR_j$. In practice this $\bR_j$ is obtained from the last calculation
+of the $\hat{\f}_j$'s but finding a closed form is rarely
+possible. 
+
+Ways of constructing confidence sets is not straight forward, and (to the best
+of my knowledge) is an open area of research.
+
+
+

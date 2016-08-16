@@ -1,0 +1,73 @@
+\section{Spectral Analysis}
+
+Sometimes it is useful to describe the properties of the time series
+in a frequency domain. The spectrum is defined as 
+\[
+f_{ab}(\lambda) = \frac{\sigma^2}{2\pi} \sum_{h = -\infty}^{\infty} \gamma_{ab}(h) \exp
+( -i \lambda h)
+\]
+
+There is a one-to-one correspondence between the spectrum and the
+autocovariance function 
+\[
+\sigma^2 \gamma_{ab}(h) = \int_{-\pi}^{\pi} f(\lambda) \exp ( i\lambda h) d\lambda
+\]
+
+We call $|f_{aa}|^2$ the power spectrum. A natural way of estimating a
+power 
+spectrum is using the periodogram which 
+is the modulus of the Fourier transform of the data
+\[
+I(\lambda) = \frac{1}{2\pi T} | \sum_{t=1}^T Y_t \exp (-i \lambda t) |^2
+\]
+We usually compute the periodogram at the Fourier frequencies
+$\lambda_j = (2 \pi j)/T, j=1,\dots,T/2$. These have desirable
+statistical properties
+
+The periodogram is also useful for detecting periodicities
+(deterministic ones) in the signal. It is a mathematical fact that if
+the data $Y_1,...Y_T$ has a period $p$, the the periodogram will have
+peaks at frequencies $\lambda = 2 \pi T/p$ and its multiples. 
+
+\centerline{\epsfig{figure=Plots/plot-10-04.ps,angle=270,width=\textwidth}}
+
+
+\subsection{An Application}
+Figured 4a and 4c shows recorded ECoG signal for two channels for
+a subject that has received a sensory stimulus at some point
+during the recording. A straightforward way of estimating the
+spectrum of a stationary process is the periodogram
+\[
+I(\lambda) = \frac{1}{2\pi T} \left| \sum_t Y(t) \exp(i\lambda t)
+\right|^2.\]
+In Figures 4b and 4c the periodogram of this data is shown. Brain
+researchers have speculated that the so-called $\alpha$ $(8-13
+Hz.)$, $\beta$ $(15-25 Hz.)$, and $\gamma$ $(>30 Hz.)$ bands of
+human brain signals can indicate functional activation of
+sensorimotor cortex. Notice that the
+periodogram exhibits a peak around frequencies 10 Hz., 20 Hz. and
+60 Hz.. If we were to approximate the ECoG signal as a stationary
+processes, we would describe it as having periodic components
+around these frequencies. However, we are interested in learning
+how the signal changes when the subjects are given a stimuli. Thus
+it seems more appropriate to model the signal as a non-stationary
+processes and study the time-varying spectral density.
+
+A straightforward estimate of a time-varying spectral density
+would be the dynamic periodogram. Basically, for each time $t_0$
+we consider a window around that point of size $h(t_0)$ and
+estimate a weighted periodogram
+\[
+I(t_0;\lambda) = \frac{1}{2\pi h(t_0)} \left| \sum_t
+w\left(\frac{t-t_0}{h(t_0)}\right) Y(t) \exp(i\lambda t) \right|^2.
+\]
+Figures 4c and 4e show the estimated time-varying spectral
+densities for the signals of channels 19 and 20 (lighter colors
+represent higher values)
+The figure seems to suggest that the $\alpha$ band changes power
+and frequency after the stimulus (time 0).
+
+
+\centerline{\epsfig{figure=Plots/plot-10-05.ps,width=\textwidth}}
+\centerline{\epsfig{figure=Plots/plot-10-06.ps,width=\textwidth}}
+\centerline{\epsfig{figure=Plots/plot-10-07.ps,width=\textwidth}}

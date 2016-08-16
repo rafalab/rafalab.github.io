@@ -1,0 +1,94 @@
+\section{Posterior Probability Criteria}
+Objections have been raised that minimizing Akaike's criterion does
+not produce asymptotically consistent estimates of the correct model
+Notice that if 
+we consider Model($p^*$) as the correct model then we have
+for any $p>p*$ 
+\begin{equation}
+\label{prob}
+\Pr\left[ AIC(p) < AIC(p^*) \right] = \Pr\left[ 2 \{l(\bbh_{p}) - l(\bbh_{p^*})
+\} > 2(p - p^*)\right].
+\end{equation}
+Notice that, in this case, the random variable $2\{l(\bbh_{p}) -
+l(\bbh_{p^*})\}$ is  
+the logarithm of the likelihood ratio of two competing models which,
+under certain regularity 
+conditions, is known to converge in 
+distribution to $\chi^2_{p-p^*}$, and thus it follows that the
+probability in Equation (\ref{prob}) is not 0
+asymptotically.  
+Some have suggested multiplying
+the penalty term in the 
+AIC by some increasing function of $n$, say $a(n)$, that makes the
+probability
+\[
+ \Pr\left[ 2 \{l(\bbh_{p}) - l(\bbh_{p^*})
+\} > 2a(n)(p - p^*)\right] 
+\]
+asymptotically equal to 0. There are many choices of $a(n)$ that would
+work in this context. However, some of the choices made in the
+literature seem arbitrary.
+
+Schwarz (1978) \nocite{schw:1978} and Kashyap (1982) \nocite{kash:1982} suggest using a
+Bayesian approach 
+to the problem of model selection which, in the IID case,  results in a 
+criterion that is similar to AIC in that it is based on a penalized
+log-likelihood function evaluated at the maximum likelihood estimate
+for the model in question. The
+penalty term in the Bayesian Information Criteria (BIC) obtained by
+Schwarz (1978) \nocite{schw:1978} 
+is the AIC penalty term $p$ multiplied by the function $a(n)
+=\frac{1}{2}\log(N)$.   
+
+The Bayesian approach to model selection is based on maximizing the
+posterior probabilities of the alternative models, given the
+observations. To do this we must define a strictly positive prior
+probability 
+$\pi_p = \Pr[\mbox{Model}(p)] $ for each model and a conditional prior
+$d\mu_p(\bb)$ for the parameter given it is in $\Omega_p$, the subspace
+defined by Model(p). Let $\bY = (Y_1,\dots,Y_n)$ be the
+response variable and define the distribution given $\bb$
+following (\ref{parsimodel}) 
+\[
+f_{\bY}(\by| \bX,\bb) \equiv \prod_{i=1}^n f(y_i;\bx_i,\bb)
+\]
+The posterior probability that we look to
+maximize is  
+\[
+\Pr\left[\mbox{Model}(p) | \bY=\by \right] = 
+\frac{\int_{\Omega_p} \pi_p f_{\bY}(\by|\bX,\bb) d\mu_p(\bb)}
+{\sum_{q=1}^P \int_{\Omega_q} \pi_q f_{\bY}(\by|\bX,\bb) d\mu_q(\bb)}
+\]
+Notice that the denominator depends neither on the model nor the data,
+so we need only to maximize the numerator when choosing models.
+
+Schwarz (1978) \nocite{schw:1978} and Kashyap (1982)
+\nocite{kash:1982} suggest criteria derived 
+by taking a Taylor expansion of the log posterior probabilities of the 
+alternative models. Schwarz (1978) \nocite{schw:1978} presents the following
+approximation for the IID case
+\[
+\log \int_{\Omega_p} \pi_p f_{\bY}(\by|\bX,\bb) d\mu_p(\bb)
+\approx  l(\bbh_{p}) - \frac{1}{2} p
+\log n 
+\] 
+with $\bbh_p$ the maximum likelihood estimate obtained under Model(p).
+
+This fact leads to the Bayesian Information Criteria (BIC) which is
+\begin{equation}
+\label{BIC}
+\mbox{BIC}(p) = - 2 l(\bbh_{p}) + p\log n
+\end{equation}
+
+
+\subsection{Kyphosis Example}
+The AIC
+and BIC obtained for the gam are: 
+
+
+\begin{verbatim}
+AIC(Age) =  83              BIC(Age) = 90
+AIC(Age,Start) = 64         BIC(Age,Start) = 78
+AIC(Age,Number) = 73        BIC(Age,Number) = 86
+AIC(Age,Start,Number) = 60  BIC(Age,Start,Number) = 81
+\end{verbatim}  

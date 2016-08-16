@@ -1,0 +1,125 @@
+\section{Kernel smoothers}
+One of the reasons why the previous smoothers is wiggly is because
+when we move from $x_i$ to $x_{i+1}$ two points are usually changed in
+the group we average. If the new two points
+are very different then  $s(x_i)$ and $s(x_{i+1})$ may be quite
+different. One way to try and fix this is by making the transition
+smoother. That's the idea behind kernel smoothers.
+
+Generally speaking a kernel smoother defines a set of weights
+$\{W_i(x)\}_{i=1}^{n}$ for each $x$ and defines 
+\[
+s(x) = \sum_{i=1}^n W_i(x) y_i.
+\]
+
+We will see that most scatter plot smoothers can be considered to be
+kernel smoothers in this very general definition. 
+
+What is called a kernel smoother in practice has a simple approach to
+represent the weight sequence $\{W_i(x)\}_{i=1}^{n}$ by describing the
+shape of the weight function $W_i(x)$ by a density function with a
+scale parameter that adjusts the size and the form of the weights near
+$x$. It is common to refer to this shape function as a {\it kernel}
+$K$. The kernel is a continuous, bounded, and symmetric real function
+$K$ which integrates to one,
+
+\[
+\int K(u)\,du = 1.
+\]
+
+For a given scale parameter $h$, the weight sequence is then defined
+by
+\[
+W_{hi}(x) = \frac{K\left( \frac{x - x_i}{h} \right) }{ \sum_{i=1}^n K\left
+  ( \frac{ x - x_i }{h} \right)}
+\]
+
+Notice: $\sum_{i=1}^n W_{hi} (x_i) = 1$
+
+
+The kernel smoother is then defined for any $x$ as before by
+\[
+s(x) = \sum_{i=1}^n W_{hi}(x) Y_i.
+\]
+
+Notice: if we consider $x$ and $y$ to be observations of random
+variables $X$ and $Y$ then one can get an intuition for why this would
+work because
+\[
+E[ Y | X ] = \int y f_{X,Y}(x,y) \, dy / f_X(x),
+\]
+with $f_X(x)$ the marginal distribution of $X$ and $f_{X,Y}(x,y)$ the joint
+distribution of $(X,Y)$, and 
+\[
+s(x) = \frac{ n^{-1}\sum_{i=1}^n K\left( \frac{x - x_i}{h} \right) y_i }
+  { n^{-1}\sum_{i=1}^n K\left   ( \frac{ x - x_i }{h} \right)}
+\]
+
+Because we think points that are close together are similar, a kernel
+smoother usually defines weights that decrease in  
+a smooth fashion as one moves away from the target point. 
+
+Running mean smoothers are kernel smoothers that use a ``box'' kernel. A
+natural candidate for $K$ is the standard Gaussian density. (This is 
+very inconvenient computationally because its never 0).  This smooth
+is shown in Figure \ref{f2.5} for $h=1$ year.
+
+
+\begin{figure}[htp]
+\caption{\label{f2.5} CD4 cell count since seroconversion for HIV infected men.}
+\centerline{\epsfig{figure=Plots/plot-02-05.ps,angle=270,width=.8\textwidth}}
+\end{figure}
+
+In Figure \ref{f2.6} we can see the weight sequence for the box and Gaussian
+kernels for three values of $x$.
+
+\begin{figure}[htp]
+\caption{\label{f2.6} CD4 cell count since seroconversion for HIV infected men.}
+\centerline{\epsfig{figure=Plots/plot-02-06.ps,angle=270,width=.8\textwidth}}
+\end{figure}
+
+
+\newpage
+
+\subsection{An Asymptotic result}
+For the asymptotic theory presneted here we will assume the stochastic
+design model with a one-dimensional covariate. 
+
+For the first time in this Chapter we will set down a specific
+stochastic model. Assume we have $n$ IID observations of the random
+variables $(X,Y)$ 
+and that  
+\begin{equation}
+\label{simplemodel}
+Y_i = f(X_i) + \varepsilon_i, i=1,\dots,n
+\end{equation}
+where $X$ has marginal distribution $f_X(x)$ and the $\varepsilon_i$ IID
+errors independent of the $X$. A common extra assumption is that the
+errors are normally distributed.
+We are now going to
+let $n$ go to infinity... What does that mean?
+
+For each $n$ we define an estimate for $f(x)$ using the kernel
+smoother with scale parameter $h_n$.
+
+\begin{theorem}
+\label{t2.1}
+Under the following assumptions
+\begin{enumerate}
+\item $\int |K(u)| \, du < \infty$
+\item $\lim_{|u| \rightarrow \infty} uK(u) = 0$
+\item $\E(Y^2) \leq \infty$
+\item $n \rightarrow \infty, h_n \rightarrow 0, nh_n \rightarrow
+  \infty$
+\end{enumerate}
+
+Then, at every point of continuity of $f(x)$ and  $f_X(x)$ we have
+\[
+ \frac{ \sum_{i=1}^n K\left( \frac{x - x_i}{h} \right) y_i }
+  { \sum_{i=1}^n K\left   ( \frac{ x - x_i }{h} \right)}
+  \rightarrow f(x) \mbox{ in probability.}
+\]
+\end{theorem}
+
+{\bf Proof:} Homework. Hint: Start by proving the fixed design model.
+

@@ -1,0 +1,113 @@
+\chapter{High Dimensional Problems}
+In observational studies we usually have  observed predictors or covariates
+$X_1,X_2,\dots,X_p$ and a response variable $Y$. A scientist is
+interested in the relation between the covariates and the response, a
+statistician summarizes the relationship with
+\begin{equation}
+\label{regdef}
+E(Y|X_1,\dots,X_p) = f(X_1,\dots,X_n)
+\end{equation}
+Knowing the above expectation helps us
+\begin{itemize}
+\item understand the process producing $Y$
+\item assess the relative contribution of each of the predictors
+\item predict the $Y$ for some set of values $X_1,\dots,X_n$.
+\end{itemize}
+
+One example is the air pollution and mortality data. The response
+variable $Y$ is daily mortality counts. Covariates that are measured
+are daily 
+measurements of particulate air pollution $X_1$, temperature $X_2$,
+humidity $X_3$, and other pollutants $X_4$,\dots,$X_p$. 
+ 
+Note: In this particular example we can consider the past
+as covariates. GAM is more appropriate for data for which this doesn't
+happen. 
+
+In this section we will be looking at a diabetes data set which comes
+from a study of the factors affecting patterns in insulin-dependent
+diabetes mellitus in children.  The objective was to investigate the
+dependence of the level of serum C-peptide on various other factors in
+order to understand the patterns of residual insulin secretion. The
+response measurements $Y$ is the logarithm of C-peptide concentration
+(mol/ml) at diagnosis, and the predictor measurements are age and base
+deficit, a measurement of acidity.
+
+A model that has the form of (\ref{regdef}) and is often used is
+\begin{equation}
+\label{guasreg}
+Y = f(X_1,\dots,X_n) + \varepsilon
+\end{equation}
+with $\varepsilon$ a random error with mean 0 and variance $\sigma^2$
+independent from all the $X_1,\dots,X_p$.
+
+Usually we make a further assumption, that $\varepsilon$ is normally
+distributed. Now we are not only saying something about the
+relationship between the response and covariates but also about the
+distribution of $Y$.
+
+Given some data, ``estimating'' $f(x_1,\dots,x_n)$ can be
+``hard''. Statisticians like to make it easy assuming a linear
+regression model
+\[
+f(X_1,\dots,X_n)  = \alpha + \beta_1 X_1 + \dots + \beta_p X_p
+\]
+This is useful because it
+\begin{itemize}
+\item is very simple
+\item summarizes the contribution of each predictor with one
+  coefficient
+\item provides an easy way to predict $Y$ for a set of covariates
+$X_1,\dots,X_n$. 
+\end{itemize}
+
+
+It is not common to have an observational study with continuous
+predictors where there is ``science'' justifying this model. In many
+situations it is more useful to let the data ``say''  what the regression
+function is like. We may want to stay away from linear regression
+because it forces linearity and we may never see what
+$f(x_1,\dots,x_n)$ is really like.
+
+In the diabetes example we get the following result:
+
+\centerline{\epsfig{figure=Plots/plot-07-01.ps,angle=270,width=.8\textwidth}}
+
+So does the data agree with the fits? Let's see if a ``smoothed''
+version of the data agrees with this result. 
+
+But how do we smooth? Some of the smoothing procedures we have
+discussed may be generalized to cases where we have multiple covariates.
+
+There are ways to define
+splines so that $g: I \subset {\mathbb R}^p \rightarrow \mathbb R$. We
+need to define knots in $I \subset {\mathbb R}^p$  and restrictions on the multiple partial
+derivative which is difficult but can be done.
+
+It is much easier to generalize loess. The only difference is that
+there are many more polynomials to choose from: 
+$\beta_0, \beta_0 + \beta_1 x, \beta_0 + \beta_1 x + \beta_2 y, 
+\beta_0 + \beta_1 x + \beta_2 y + \beta_3 xy, \beta_0 + \beta_1 x +
+\beta_2 y + \beta_3 xy + \beta_4 x^2$, etc...
+
+This is what we get when we fit local planes and use 15\% and 66\% of
+the data. 
+\begin{tabular}{cc}
+\epsfig{figure=Plots/plot-07-02.ps,angle=270,width=.5\textwidth}&
+\epsfig{figure=Plots/plot-07-03.ps,angle=270,width=.5\textwidth}
+\end{tabular}
+However, when the number of covariates is larger than 2 looking at
+small ``balls'' around the target points becomes difficult.
+
+Imagine we have equally spaced data and that each covariate is in
+$[0,1]$. We want to fit loess using
+$\lambda \times 100 \%$ of the data in the local fitting. If we have 
+$p$ covariates and we are forming $p-dimensional$ cubes, then each
+side of the cube must have size $l$ determined by $l^p = \lambda$. If 
+$\lambda=.10$ (so its supposed to be very
+local) and $p=10$ then $l = .1^{1/10} = .8$. So it really isn't
+local!  This is known as {\it the curse of dimensionality}.
+
+\input{section-07-01}
+\input{section-07-02}
+\input{section-07-03}

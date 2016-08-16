@@ -1,0 +1,29 @@
+\chapter{Introduction to Time Series Analysis}
+A {\sl time series} is a collection of observations made
+sequentially in time. Examples are daily mortality counts,
+particulate air pollution measurements, and temperature data.
+Figure 1 shows these for the city of Chicago from 1987 to 1994.
+The public health question is whether daily mortality is
+associated with particle levels, controlling for temperature.
+
+\centerline{\epsfig{figure=Plots/plot-10-01.ps,angle=270,width=\textwidth}}
+
+We represent time series measurements with $Y_1, \dots, Y_T$
+where $T$ is the total number of measurements. In order to analyze
+a time series, it is useful to set down a statistical model in the
+form of a {\sl stochastic process}. A stochastic process can be
+described as a statistical phenomenon
+that evolves in time. While most statistical problems are
+concerned with estimating properties of a population from a
+sample, in time series analysis there is a different situation.
+Although it might be possible to vary the length of the observed
+sample, it is usually impossible to make multiple observations at
+any single time (for example, one can't observe today's mortality
+count more than once). This makes the conventional statistical
+procedures, based on large sample estimates, inappropriate.
+Stationarity is a convenient assumption that permits us to
+describe the statistical properties of a time series.
+
+
+\input{section-10-01}
+\input{section-10-02}

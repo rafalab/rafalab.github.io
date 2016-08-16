@@ -1,0 +1,357 @@
+\section{Bootstrap Standard Errors and Confidence Sets }
+Statistical science is the science of learning from experience. 
+Efron and Tibshirani (1993) say ``Most people are not natural-born
+statisticians. Left to our own devices we are not very good at picking
+out patterns from a sea of noisy data. To put it another way, we are
+all too good at picking out non existing patterns that happen to suit
+our purposes.''
+
+%%%from efron and tibshi
+Suppose we find ourselves in the following common data-analytic
+situation: a random sample $\bx = (x_1,\dots,x_n)$ from an unknown
+probability distribution $F$ has been observed and we wish to estimate
+a parameter of interest $\theta = t(F)$ on the basis of $\bx$. For
+this purpose, we calculate an estimate $\hat{\theta} = s(\bx)$ from
+$\bx$. 
+
+A common estimate is the {\it plug-in} estimate $t(\hat{F})$
+where $\hat{F}$ is the empirical distribution defined by
+\[
+F(x) = \frac{\mbox{ number of values in } \bx \mbox{ equal
+    to }x}{n} 
+\]
+Can you think of a plug-in estimate that is commonly used?
+
+
+The bootstrap was introduced by Efron (1979) as a computer based
+method to estimate the standard deviation of $\hat{\theta}$. 
+
+What are the advantages:
+\begin{itemize}
+\item It is completely automatic
+\item Requires no theoretical calculations
+\item Not based on asymptotic results
+\item Available no matter how complicated the estimator $\hat{\theta}$
+  is.
+\end{itemize}
+
+A bootstrap sample is defined to be a random sample of size $n$ drawn
+from $\hat{F}$, say $\bx^* = (x_1^*,\dots,x_n^*)$.
+
+For each bootstrap sample $\bx^*$ there is a bootstrap replicate of
+$\hat{\theta}$, 
+\[
+\hat{\theta}^* = s(\bx^*).
+\]
+The bootstrap estimate of $\se_F(\hat{\theta})$ is defined by 
+\begin{equation}
+\label{ibe}
+\se_{\hat{F}}(\hat{\theta}^*).
+\end{equation}
+This is called the {\it ideal bootstrap estimate} of the standard
+error of $s(\bx)$.  
+
+Notice that for the case where $\theta$ is the
+expected value or mean of $\bx_1$ we have
+\[
+\se_{\hat{F}}(\bar{x}^*) = \se_{\hat{F}}(x^*_1)/\sqrt{n} =
+\sqrt{n^{-1} \sum_{i=1}^n (x_i - \hat{x})^2}/\sqrt{n}
+\]
+and the ideal bootstrap estimate is the estimate we are used
+to. However, for any other estimator other than the mean obtaining
+(\ref{ibe}) there is no neat formula that enables us to compute a
+numerical value in practice.
+
+The bootstrap algorithm is a computational way of obtaining a good
+approximation to the numerical value of (\ref{ibe}).
+
+\subsection{The bootstrap algorithm}
+The bootstrap algorithm works by drawing many independent bootstrap
+samples, evaluating the corresponding bootstrap replications, and
+estimating the standard error of $\hat{\theta}$ by the empirical standard
+error, denoted by $\hat{\se}_B$, where $B$ is the number of bootstrap
+samples used.
+
+\begin{enumerate}
+\item Select $B$ independent bootstrap samples
+  $\bx_1^*,\dots,\bx^*_B$, each consisting of $n$ data values drawing
+  with replacement from $\bx$. 
+\item Evaluate the bootstrap replication corresponding to each
+  bootstrap sample
+\[
+\hat{\theta}^*(b) = s(\bx_b^*), b=1,\dots,B
+\]
+\item Estimate the standard error $\se_{F}(\hat{\theta})$ by the
+  sample standard error of the $B$ replicates
+\[
+\hat{\se}_B = \left[ \frac{1}{B-1}\sum_{b=1}^B \{ \hat{\theta}^*(b) -
+  \hat{\theta}^*(\cdot) \}^2 \right]
+\]
+with
+\[
+\hat{\theta}^*(\cdot) = B^{-1} \sum_{b=1}^B  \hat{\theta}^*(b)
+\]
+\end{enumerate}
+The limit of $\hat{\se}_B$ as $B$ goes to infinity is the ideal
+bootstrap estimate of (\ref{ibe}). But how close is (\ref{ibe}) to
+$\se_F(\hat{\theta})$? See Efron and Tibshirani (1993) for more details.
+
+
+\subsection{Example: Curve fitting}
+In this example we will be estimating regression functions in two
+ways, by a standard least-squares line and by loess. 
+\begin{figure}
+\begin{center}
+\epsfig{figure=Plots/plot-05-06.ps,angle=270,width=.8\textwidth}
+\end{center}
+\caption{\label{f5.3.1} Estimated regression curves of Improvement on
+  Compliance.}
+\end{figure}
+
+
+A total of 164 mean took part in an experiment to see if the drug
+cholostyramine lowered blood cholesterol levels. The men were supposed
+to take six packets of cholostyramine per day, but many of them
+actually took much less. Figure \ref{f5.3.1} shows compliance plotted
+against percentage of the intended dose actually taken. We also show a
+fitted line and a loess fit (using span=2/3). Notice the curves
+similar from 0 to 60, a little different from 60 to 80 and quite
+different from 80 to 100. 
+
+Assume the points a regression model 
+\[
+y_i = f(x_i) + \varepsilon_i, i=1,\dots,n
+\]
+with the $\varepsilon_i$ IID. 
+
+Say we are interested in the difference in rate of change of $f(x)$ in
+the 60--80 and 80--100
+sections. We could define as the parameter to describe this.
+How can we do this?
+
+Notice that finding a standard error for this estimate is not
+straight-forward. We can use the bootstrap. 
+
+\begin{table}[htb]
+\caption{Estimates and bootstrap standard errors of $f(60), f(80),$
+  and $f(100)$.}
+\begin{tabular}{lcccccc}
+ &$\hat{f}_{\mbox{line}}(60)$&$\hat{f}_{\mbox{line}}(80)$&$
+ \hat{f}_{\mbox{line}}(100)$&$\hat{f}_{\mbox{loess}}(60)$&$
+   \hat{f}_{\mbox{loess}}(80)$&$\hat{f}_{\mbox{loess}}(100)$\\
+\hline
+value:&33&44&56&28&35&66\\
+$\hat{\se}_{50}$:&2&2&3&5&4&4
+\end{tabular}
+\end{table}
+
+As seen in Figure \ref{f5.3.2}. Even when there is no parameter of interest, the bootstrap estimates
+of $f$ give us an idea of what a confidence set is for the
+nonparametric estimates. We will see more of this in Chapter 7 and 8.
+
+\begin{figure}
+\begin{center}
+\epsfig{figure=Plots/plot-05-07.ps,angle=270,width=.8\textwidth}
+\end{center}
+\caption{\label{f5.3.2} 50 boostrap curves for each estimation techinique.}
+\end{figure}
+
+\subsection{Confidence ``intervals'' for linear smoothers}
+It is easy to show that the variance-covariance matrix of the vector
+of fitted values $\hat{\f} = \bS \by$ is
+\[
+\cov(\hat{\f}) = \bS \bS' \sigma^2
+\]
+and given an estimate of $\sigma^2$ this can be used to give
+point-wise standard errors, mainly by looking at
+$\mbox{diag}(\bS\bS')\sigma^2$.  
+
+Can we construct confidence intervals? What do we need?
+
+First of all we need to know the distribution (at least approximately)
+of $\hat{\f}$. If the errors are normal we know that $\bf{\f}$ is normally
+distributed. Why?
+
+In the normal case, what are the confidence intervals for? 
+
+Remember that our estimates are usually biased, $\E(\hat{\f}) = \bS \f
+\neq \f$. If our null hypothesis is $\bS \f = \f$ (in the case of splines
+this is equivalent to assuming $f \in \cal G$) then our confidence
+intervals are for $\f$ otherwise it is much more convinient to compute
+them for $\bS \f$. We will start
+using the notation $\tilde{\f} = \bS \f$. We can think of $\tilde{\f}$
+as the best possilble approximation to ``the truth'' $\f$ when using
+the $\bS$ as a smoother.
+
+To see how point-wise estimates can be useful, notice that we can get
+an idea of how variable $\hat{\f}(x_0)$ is. However, it isn't very
+helpful when we want to see how variable $\hat{\f}$ is as a whole.
+
+What if we want to know if a certain function, say a line, is
+in our ``confidence interval''? Point-wise intervals don't really help
+us with this.
+
+\subsection{Global confidence bands}
+Remember that $\hat{\f} \in {\mathbb R}^n$. This means that 
+talking about confidence intervals doesn't make much sense. We need to
+consider confidence sets. 
+
+For example if the errors are normal we know that 
+\[
+\chi(\tilde{\f}) = (\hat{\f} - \tilde{\f})'(\bS \bS'
+\sigma^2)^{-1}(\hat{\f} - \tilde{\f}) 
+\]
+is $\chi^2_n$ distributed. This permits us to construct confidence
+sets (which you can think of as random $n$-dimensional balls) 
+for $\tilde{\f}$ of probability $\alpha$
+\[
+C_{\alpha} = \{ \g \in {\mathbb R}^b ; \chi(\g) \leq \chi_{1-\alpha}
+\}=\{ \g  \in {\mathbb R}^b; (\hat{\f}
+- \g)'(\bS \bS' \sigma^2)^{-1}(\hat{\f} - \g) \leq \chi_{1-\alpha} \}.
+\]
+Notice that the probability that the random ball doesn't fall on the
+approximate truth $\tilde{\f}$ is $\alpha$:
+\[
+\Pr(\tilde{\f} \not\in C_{\alpha}) = \Pr\left[(\hat{\f} - \tilde{\f})'(\bS \bS'
+\sigma^2)^{-1}(\hat{\f} - \tilde{\f}) > \chi_{1-\alpha}\right]= \alpha.
+\]
+This is only the case if we know $\sigma^2$. 
+
+Usually we construct an estimate 
+\[
+\hat{\sigma}^2 = (\by - \hat{\f})' (\by - \hat{\f})/ \{n - \tr(2\bS -
+\bS\bS')\}
+\]
+and define confidence sets 
+\[
+C(\tilde{\f}) = \{ \g  \in {\mathbb R}^b; \nu(\g) \leq G_{1-\alpha} \}
+\]
+based on 
+\[ 
+\nu(\tilde{\f}) =  (\hat{\f} - \tilde{\f})'(\bS \bS'
+\hat{\sigma}^2)^{-1}(\hat{\f} - \tilde{\f}). 
+\]
+Here $G_{1-\alpha}$ is the $(1-\alpha)$th quantile of the distribution
+of $\nu(\tilde{\f})$.
+
+Do we know $G$? Not necessarily.
+
+In the case of linear regression, where the gaussian model is correct
+and $\bS$ is a 
+p-dimensional projection, $\nu(\tilde{\f})=\nu(\f)$ has distribution
+$(n-p) + p F_{p,n-p}$. 
+
+When this is not the case we can argue that the
+distribution is approximately 
+\[
+\{n-\tr(2\bS - \bS\bS')\} + \tr(\bS\bS') F_{\tr(\bS\bS'),n-\tr(2\bS -
+  \bS\bS')}
+\]
+
+If we are not sure of the normality assumption or that $\tilde{\f}
+\approx \f$ we can use the bootstrap to construct an approximate
+distribution $\hat{G}$ of $G$.
+
+How do we do it?
+
+\begin{figure}[htb]
+\caption{The regression curve and an outcome with $n=100$ and
+  $\sigma^2=1$.}
+\begin{center}
+\epsfig{figure=Plots/plot-05-08.ps,angle=270,width=.8\textwidth}
+\end{center}
+\end{figure}
+
+\subsection{Bootstrap estimate of $G_{1-\alpha}$}
+A bootstrap sample is generated in the following way
+\begin{itemize}
+\item For some data $\by$ use some procedure (a linear smoother for
+  example) to obtain an estimate $\hat{\f}$ of some estimand (in this
+  case the regression function $\f$). 
+\item Obtain residuals $\hat{\bg{\varepsilon}} = \by - \hat{\f}$. 
+\item Take a simple random sample of size $B$ from the residuals
+  $\hat{\varepsilon}_1,\dots,\hat{\varepsilon}_n$. Notice that this makes
+  them IID just like the $\varepsilon$s.
+\item Construct a ``new'' data set 
+\[\by^* = \hat{\f} +  \hat{\bg{\varepsilon}}^*
+\]
+with $\hat{\bg{\varepsilon}}^*$ the vector of resampled residuals.
+\item From the new data form a new estimate $\hat{\f}^*$.
+\item Finally we obtain the value of 
+\[
+\nu^* = (\hat{\f}^* - \hat{\f})'(\bS \bS'
+\hat{\sigma}^{*2})^{-1}(\hat{\f}^* - \hat{\f})
+\]
+\item We repeat this procedure many times and form an approximate
+  distribution $\hat{G}$ with the values of $\nu^*$. We may use the $(1-\alpha)$th
+  quantile of $\hat{G}$ as an estimate of $G_{1-\alpha}$.
+\end{itemize}
+
+
+Let's consider the model $y_i = f(x_i) + \varepsilon_i, i=1,\dots,n$
+with $\varepsilon_i$ IID normal.  In Figure \ref{f5.8} we see
+qqplots of the true $G$, the bootstrap $G$ and the F-distribution
+approximation. 
+
+
+
+
+\subsection{Displaying the confidence sets}
+Displaying an $n-dimensional$ ball is not easy. 
+
+Global confidence
+bands usually show the projections of the confidence set onto each of
+the component sub-spaces. Notice that a
+function (now I'm using function and $n$-dimensional vector
+interchangeably) in this set would actually be in a confidence cube as opposed
+to a ball! So a vector within the confidence bands isn't necessarily in the confidence
+ball. However its true that being in the ball implies being within the
+band. 
+
+Another popular approach is selecting a few functions at random from
+$N(\hat{\f},\bS\bS'\hat{\sigma}^2)$ and checking to see if they are in
+the confidence set. If they are, we plot them. This enables us to see
+what kind of ``shape'' functions in the confidence set have. Maybe
+they all have a bump, maybe a large amount of them are close to being
+constant lines, etc...
+
+\begin{figure}[htb]
+\caption{\label{f5.8} QQ-plot of bootstrap vs. true $G$ and the
+  F-distribution approximation. We also see point-wise confidence
+  intervals and curves in (blue) and out (green) of the bootstrap
+  confidence set.}
+\begin{center}
+\epsfig{figure=Plots/plot-05-09.ps,angle=270,width=.8\textwidth}
+\end{center}
+\end{figure}
+
+\subsection{Approximate F-test}
+Using the F-distribution approximations we may construct F-tests for 
+testing various hypotheses.
+
+The p-value given by the S-Plus function {\tt gam()} is usually
+testing for linearity and using an F-distribution approximation.
+
+Suppose we wish to compare 2 smoothers $\hat{\f}_1 = \bS_1 \by$ and
+$\hat{\f}_2 = \bS_2 \by$. For example, $\hat{\f}_1$ may be linear
+regression and $\hat{\f}_2$ may be a ``rougher'' smoother. 
+
+Let $RSS_1$ and $RSS_2$ be the residual sum of squares obtained for
+each smoother. Which one do you expect to be bigger?
+ 
+and $\gamma_1$ and $\gamma_2$ be the degrees of freedom of each
+smoother, $\tr(2\bS_j - \bS_j\bS_j'), j=1,2$. An approximation that
+may be useful for this comparison is
+\[
+\frac{(RSS_1 - RSS_2)/(\gamma_2 - \gamma_1)}{RSS2/(n-\gamma_2)} \sim
+F_{\gamma_2-\gamma_1,n-\gamma_2}
+\]
+
+There are moment corrections that can make this a better
+approximation (see H\&T).
+\begin{figure}[htb]
+\caption{Same as previos figure but with t-distributed errors}
+\begin{center}
+\epsfig{figure=Plots/plot-05-10.ps,angle=270,width=.8\textwidth}
+\end{center}
+\end{figure}

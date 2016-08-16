@@ -1,0 +1,27 @@
+\section{Linear smoothers}
+Most of the smoother presented here are linear smoothers which means
+that the fit at any point $x_0$ can be written as 
+\[
+s(x) = \sum_{j=1}^n S_{j}(x) y_j.
+\]
+
+In practice we usually have the model 
+\[
+Y_i = f(X_i) + \epsilon_i
+\]
+and we have observations $\{(x_i, y_i)\}$. Many times it is the vector
+${\mathbf f} = \{f(x_1),\dots,f(x_n)\}'$ we are after. In this case
+the vector of estimates $\hat{\mathbf f} =
+\{\hat{f}(x_1),\dots,\hat{f}(x_n)\}'$ can be written as
+\[
+\hat{\mathbf f} = \bS \by
+\]
+with $\bS$ a matrix with the i,j-th entry $S_{j}(x_i)$. We will call
+$\hat{\mathbf f}$ the {\it smooth}.
+
+This makes it easy to figure out things like the variance of
+$\hat{\f}$ since 
+\[
+\var[\bS \by] = \bS \var[\by] \bS' 
+\]
+which in the case of IID data is $\sigma^2 \bS\bS'$.

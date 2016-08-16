@@ -1,0 +1,497 @@
+\section{Generalized Additive Models}
+We extend additive models to generalized additive models in a similar
+way to the extension of linear models to generalized linear models.
+
+Say $Y$ has conditional distribution from an exponential family and the
+conditional mean of
+the response $E(Y|X_1,\dots,X_p) = \mu(X_1,\dots,X_p)$ is related to
+an additive  model through some link functions
+\[
+g\{\mu_i\} = \eta_i = \alpha + \sum_{j=1}^p f_j(x_{ij}) 
+\]
+with $\mu_i$ the conditional expectation of $Y_i$ given
+$x_{i1},\dots,x_{ip}$. This motivates the use of the IRLS procedure used
+for GLMs but  incorporating the backfitting algorithms used for
+estimation in Additive Models. 
+
+As seen for GLM the estimation technique is again motivated by the
+approximation:
+\[
+g(y_i) \approx g(\mu_i) + (y_i - \mu_i) \frac{\partial \eta_i}{\partial
+  \mu_i}
+\]
+This motivates a weighted regression setting of the form
+\[
+z_i = \alpha + \sum_{j=1}^p f_j(x_{ij}) + \varepsilon_i, \, i=1,\dots,n
+\]
+with the $\varepsilon$s, the working residuals,  independent with
+$\E(\varepsilon_i) =0$ and 
+\[
+\var(\varepsilon_i) = w_i^{-1} = \left( \frac{\partial \eta_i}{\partial
+    \mu_i} \right)^2 V_i
+\]
+where $V_i$ is the variance of $Y_i$.
+
+The procedure for estimating the function $f_j$s is called the {\it
+  local scoring procedure}:
+\begin{enumerate}
+\item Initialize: Find initial values for our estimate:
+  \[ 
+  \alpha^{(0)}=g\left(\sum_{i=1}^n y_i/n\right); f^{(0)}_1 =
+  \dots,f^{(0)}_p = 0 
+  \]
+\item Update: 
+  \begin{itemize}
+  \item Construct an adjusted dependent variable
+    \[
+    z_i = \eta_i^{(0)} + (y_i - \mu_i^{(0)})  
+    \left( \frac{\partial \eta_i}{\partial \mu_i} \right)_0
+    \]
+    with $\eta_i^{(0)} = \alpha^{(0)} + \sum_{j=1}^p f^{(0)}_j(x_{ij})$ and $\mu_i^{(0)} =
+    g^{-1}(\eta_i^{(0)})$
+    
+  \item  Construct weights:
+    \[
+    w_i =  \left( \frac{\partial \mu_i}{\partial \eta_i} \right)^2_0
+    (V_i^{(0)})^{-1} 
+    \]
+    
+  \item  Fit a weighted additive model to $z_i$, to obtain estimated
+    functions $f_j^{(1)}$, additive predictor $\eta^{(1)}$ and fitted
+    values $\mu^{(1)}_i$.  
+
+    Keep in mind what a fit is.... $\hat{\f}$.
+  \item  Compute the convergence criteria
+    \[
+    \Delta(\eta^{(1)},\eta^{(0)}) = \frac{\sum_{j=1}^p || f_j^{(1)} -
+    f_j^{(0)} ||} {\sum_{j=1}^p ||f^{(0)}_j||}
+    \]
+  \item  A natural candidate for $||f||$ is $||\mathbf{f}||$, the
+    length of the vector of evaluations of $f$ at the $n$ sample points.
+  \end{itemize}
+\item Repeat previous step replacing $\eta^{(0)}$ by $\eta^{(1)}$ until
+  $\Delta(\eta^{(1)},\eta^{(0)})$ is below some small threshold.
+\end{enumerate}
+
+
+\subsection{Penalized Likelihood}
+How do we justify the local scoring algorithm? One way is to minimize
+a penalized likelihood criterion.
+
+Given a generalized additive model let 
+\[
+\eta_i = \alpha + \sum_{j=1}^p f_j(x_{ij})
+\]
+and consider the 
+likelihood $l(f_1,\dots,f_p)$ as a function $\be =
+(\eta_1,\dots,\eta_p)'$. 
+
+Consider the following optimization problem: Over p-tuples of
+functions $f_1,\dots,f_p$ with continuous first and second derivatives and
+integrable second derivatives find one that minimizes
+\[
+pl(f_1,\dots,f_p) = l(\be;\by) - \frac{1}{2}\sum_{j=1}^p \lambda_j
+\int \{f_j''(x)\}^2 \, dx
+\]
+where $\lambda_j \geq 0, j=1,\dots,p$ are smoothing parameters.
+
+Again we can show that 
+the solution is an additive cubic spline with knots at the unique
+values of the covariates.  
+
+
+In order to find the $\f$s that maximize this penalized likelihood
+we need some optimization algorithm. We will show that the
+Newton-Raphson algorithm is equivalent to the local-scoring
+procedure. 
+
+
+
+As before we can write the criterion as:
+\[
+pl(\f_1,\dots,\f_p) = l(\be,\by) - \frac{1}{2} \sum_{j=1}^p
+\lambda_j \f_j'\mathbf{K}_j \f_j.
+\]
+
+In order to use Newton-Raphson we
+let $\mathbf{u} = \partial l / \partial{\be}$ and $\mathbf{A} = -
+\partial^2 l/ \partial \be^2$. The first step is then taking
+derivatives and solving the 
+score equations:
+\[
+\left(
+\begin{array}{cccc}
+\mathbf{A} + \lambda_1 \mathbf{K}_1&\mathbf{A}&\dots&\mathbf{A}\\
+\mathbf{A}&\mathbf{A} + \lambda_2 \mathbf{K}_2&\dots&\mathbf{A}\\
+\vdots&\vdots&\ddots&\vdots\\
+\mathbf{A}&\mathbf{A}&\dots&\mathbf{A}+\lambda_p \mathbf{K}_p
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+\f_1^1 - \f_1^0\\
+\f_2^1 - \f_2^0\\
+\vdots\\
+\f_p^1 - \f_p^0
+\end{array}
+\right)
+=
+\left(
+\begin{array}{c}
+\mathbf{u} - \lambda_1 \mathbf{K}_1 \f_1^0\\
+\mathbf{u} - \lambda_1 \mathbf{K}_1 \f_2^0\\
+\vdots\\
+\mathbf{u} - \lambda_1 \mathbf{K}_1 \f_p^0
+\end{array}
+\right)
+\]
+where both $\mathbf{A}$ and $\mathbf{u}$ are evaluated at $\be^0$. In
+the exponential family with canonical family, the entries in the above
+matrices are of simple form, for example the matrix $\mathbf{A}$ is
+diagonal with diagonal elements $a_{ii} = (\partial \mu_i / \partial
+\eta_i)^2 V_i^{-1}$.
+
+To simplify this further, we let $\bz = \be^0 + \mathbf{A}^{-1}
+\mathbf{u}$, and $\bS_j = (\mathbf{A} + \lambda_j \mathbf{K}_j)^{-1}
+\mathbf{A}$, a weighted cubic smoothing-spline operator. Then we can
+write
+\[
+\left(
+\begin{array}{cccc}
+\mathbf{I}&\mathbf{S}_1&\dots&\mathbf{S}_1\\
+\mathbf{S}_2&\mathbf{I}&\dots&\mathbf{S}_2\\
+\vdots&\vdots&\ddots&\vdots\\
+\mathbf{S}_p&\mathbf{S}_p&\dots&\mathbf{I}
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+\f_1^1\\
+\f_2^1\\
+\vdots\\
+\f_p^1
+\end{array}
+\right)
+=
+\left(
+\begin{array}{c}
+\mathbf{S}_1 \mathbf{z}\\
+\mathbf{S}_2 \mathbf{z}\\
+\vdots\\
+\mathbf{S}_p \mathbf{z}
+\end{array}
+\right)
+\]
+
+Finally we may write this as
+\[
+\left(
+\begin{array}{c}
+\mathbf{f}_1^1\\
+\mathbf{f}_2^1\\
+\vdots\\
+\mathbf{f}_p^1
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cccc}
+\mathbf{S}_1(\bz - \sum_{j\neq 1} \f^1_j)\\
+\mathbf{S}_2(\bz - \sum_{j\neq 2} \f^1_j)\\
+\vdots\\
+\mathbf{S}_p(\bz - \sum_{j\neq p} \f^1_j)\\
+\end{array}
+\right)
+\]
+
+Thus the Newton-Raphson updates are an additive model fit; in fact
+they solve a weighted and penalized quadratic criterion which is the
+local approximation to the penalized log-likelihood. 
+
+Note: any linear smoother can be viewed as the solution to
+some penalized likelihood. So we can set-up to penalized likelihood
+criterion so that the solution is what we want it to be.
+
+This algorithm converges with any linear smoother.
+
+\subsection{Inference}
+\subsubsection{Deviance}
+The deviance or likelihood-ratio statistic, for a fitted model
+$\hat{\bg{\mu}}$ is defined by 
+\[
+D(\by;\hat{\bg{\mu}}) = 2\{l(\bg{\mu}_{max}; \by) - l(\hat{\bg{\mu}})\}
+\]
+where $\bg{\mu}_{max}$ is the parameter value that maximizes
+$l(\hat{\bg{\mu}})$ over all $\bg{\mu}$ (the saturated model). We
+sometimes unambiguously use $\hat{\bg{\eta}}$ as the argument of the
+deviance rather than $\hat{\bg{\mu}}$. 
+
+Remember for GLM if we have two linear models defined by $\eta_1$
+nested within $\eta_2$, then under appropriate regularity conditions,
+and assuming $\eta_1$ is correct, $D(\hat{\eta}_2;\hat{\eta}_1) =
+D(y;\hat{\eta}_1) - D(y;\hat{\eta}_2)$ has asymptotic $\chi^2$
+distribution with degrees of freedom equal to the difference in
+degrees of freedom of the two models. This result is used extensively
+in the analysis of deviance tables etc...
+
+For non-parametric we can still compute deviance and it still makes
+sense to compare the deviance obtained for different models. However,
+the asymptotic approximations are undeveloped. 
+
+H\&T present heuristic arguments for  the non-parametric case.
+
+\subsubsection{Standard errors}
+Each step of the local scoring algorithm consists of a backfitting
+loop applied to the adjusted dependent variables $\bz$ with weights
+$\bA$ given by the estimated information matrix. If $\bR$ is the
+weighted additive fit operator, then at convergence
+\[
+\hat{\bg{\eta}} = \bR(\hat{\bg{\eta}} + \bA^{-1}\hat{\bg{\mu}})
+\]
+\[
+= \bR \bz,
+\]
+where $\hat{\bu} = \partial l / \partial \hat{\bg{\eta}}$. The
+idea is to approximate $\bz$ by an asymptotically equivalent quantity
+$\bz_0$. We will not be precise and write $\approx$ meaning
+asymptotically equivalent.
+
+Expanding $\hat{\bu}$ to first order about the true
+$\bg{\eta}_0$, we get $\bz \approx \bz_0 + \bA_0^{-1}\bu_0$, which has
+mean $\bg{\eta}_0$ and variance $\bA_0^{-1} \phi \approx \bA
+\phi$. 
+
+Remember for additive models we had the fitted predictor
+$\hat{\bg{\eta}} = \bR\by$ where $\by$ has covariance
+$\sigma^2\bI$. Here $\hat{\bg{\eta}} = \bR\bz$, and $\bz$ has
+asymptotic covariance $\bA_0^{-1}$. $\bR$ is not a linear operator due
+to its dependence on $\hat{\mu}$ and thus $\by$ through the weights,
+so we need to use its asymptotic version $\bR_0$ as well. We therefore
+have
+\[
+\cov(\hat{\bg{\eta}}) \approx \bR_0 \bA_0^{-1} \bR_0 ' \phi \approx
+\bR \bA^{-1} \bR' \phi
+\]
+Similarly 
+\[
+\cov(\hat{\f}_j) \approx \bR_j \bA^{-1} \bR_j' \phi
+\]
+where $\bR_j$ is the matrix that produces $\hat{\f}_j$ from $z$.
+
+Under some regularity conditions we can further show that
+$\hat{\bg{\nu}}$ is asymptotically normal, and this permits us to
+construct confidence intervals.
+
+\subsection{Degrees of freedom}
+Previously we described how we defined the degrees of freedom of the
+residuals as the expected value of the residual sum of squares. The
+analogous quantity in generalized models is the deviance. We therefore
+use the expected value of the deviance to define the {\it relative
+degrees of freedom}.
+
+We don't know the exact or asymptotic distribution of the deviance so
+we need some approximation that will permit us to get an approximate
+expected value. 
+
+Using a second order Taylor approximation we have that
+\[
+\E[D(\by;\hat{\bg{\mu}})] \approx \E[(\by - \hat{\bg{\mu}})'\bA^{-1} (\by -
+\hat{\bg{\mu}})]
+\]
+with $\bA$ the Hessian matrix defined above. We now write this in terms of the
+``linear terms''.
+\[
+ \E[(\by - \hat{\bg{\mu}})'\bA (\by - \hat{\bg{\mu}})] \approx (\bz -
+ \hat{\bg{\eta}})'\bA (\bz - \hat{\bg{\eta}})
+\]
+and we can show that this implies that if the model is unbiased
+\[
+\E(D) = df \phi
+\]
+with 
+\[
+df = n - \tr(2\bR - \bR'\bA\bR\bA^{-1})
+\]
+
+This gives the degrees of freedom for the whole model not for each
+smoother. We can obtain the dfs for each smoother by adding them one
+at a time and obtaining
+\[
+\E[D(\hat{\bg{\eta}}_2;\hat{\bg{\eta}}_1)] \approx \tr(2\bR_1 -
+\bR_1'\bA_1\bR_1\bA_1^{-1}) - \tr( 2\bR_2 - \bR_2'\bA_2\bR_2\bA_2^{-1})
+\]
+
+In general, the crude approximation $df_j = \tr(\bS_j)$ is used.
+
+\subsection{An Example}
+ The kyphosis data frame has 81 rows representing  data on
+ 81  children  who have had corrective spinal surgery.  The binary
+ outcome Kyphosis indicates the presence or absence of a postoperative
+ deformity (called Kyphosis). The other three 
+ variables are {\tt Age} in months, {\tt Number} of vertebra involved in the
+ operation, and  the beginning of the range of vertebrae involved
+ ({\tt Start}). 
+ 
+
+Using GLM these are the results we obtain
+\renewcommand{\baselinestretch}{1}
+\begin{verbatim}
+                   Value  Std. Error   t value 
+(Intercept) -1.213433077 1.230078549 -0.986468
+        Age  0.005978783 0.005491152  1.088803
+     Number  0.298127803 0.176948601  1.684827
+      Start -0.198160722 0.065463582 -3.027038
+
+Null Deviance: 86.80381 on 82 degrees of freedom
+
+Residual Deviance: 65.01627 on 79 degrees of freedom
+\end{verbatim}
+\renewcommand{\baselinestretch}{2}
+
+\centerline{\epsfig{figure=Plots/plot-08-01.ps,angle=270,width=.8\textwidth}}
+
+The dotted lines are smooths of the residuals. This does not appear to
+be a very good fit. 
+
+We may be able to modify it a bit, by choosing a better model than a
+sum of lines. We'll use smoothing and GAM to see what ``the data says''.
+
+Here are some smooth versions of the data:
+
+\centerline{\epsfig{figure=Plots/plot-08-02.ps,angle=270,width=.8\textwidth}}
+
+And here are the gam results:
+
+\renewcommand{\baselinestretch}{1}
+\begin{verbatim}
+Null Deviance: 86.80381 on 82 degrees of freedom
+
+Residual Deviance: 42.74212 on 70.20851 degrees of freedom
+
+Number of Local Scoring Iterations: 7 
+
+DF for Terms and Chi-squares for Nonparametric Effects
+
+            Df Npar Df Npar Chisq    P(Chi) 
+(Intercept)  1                             
+     s(Age)  1     2.9   6.382833 0.0874180
+   s(Start)  1     2.9   5.758407 0.1168511
+  s(Number)  1     3.0   4.398065 0.2200849
+\end{verbatim}
+\renewcommand{\baselinestretch}{2}
+
+Notice that it is a much better fit and not many more degrees of
+freedom. Also notice that the tests for linearity are close to
+``rejection at the 0.05 level''.
+
+\centerline{\epsfig{figure=Plots/plot-08-03.ps,angle=270,width=.8\textwidth}}
+
+We can either be happy considering these plots as descriptions of the
+data, or we can use it to inspire a parametric model:
+
+Before doing so, we decide not to include Number becuase it seems to
+be associated with ``Start'' and not adding much to the fit. 
+This and other considerations suggest we not include {\tt Number}
+. The gam
+plots suggest the following ``parametric'' model.
+
+\renewcommand{\baselinestretch}{1}
+ 
+
+\begin{verbatim}
+glm2 <- glm(Kyphosis~poly(Age,2) + I((Start > 12) * (Start - 12)),
+            family=binomial)
+\end{verbatim}
+\renewcommand{\baselinestretch}{2}
+
+Here are the results of this fit... much better than the original
+GLM fit.
+
+\renewcommand{\baselinestretch}{1}
+\begin{verbatim}
+Coefficients:
+                                     Value Std. Error    t value 
+                   (Intercept)  -0.5421608  0.4172229 -1.2994512
+                 poly(Age, 2)1   2.3659699  4.1164283  0.5747628
+                 poly(Age, 2)2 -10.5250479  5.2840926 -1.9918364
+I((Start > 12) * (Start - 12))  -1.3840765  0.5145248 -2.6900094
+
+(Dispersion Parameter for Binomial family taken to be 1 )
+
+    Null Deviance: 86.80381 on 82 degrees of freedom
+
+Residual Deviance: 56.07235 on 79 degrees of freedom
+
+Number of Fisher Scoring Iterations: 6 
+\end{verbatim}
+\renewcommand{\baselinestretch}{1}
+
+Here are the residual plots:
+
+\centerline{\epsfig{figure=Plots/plot-08-04.ps,angle=270,width=.8\textwidth}}
+
+\subsection{Prediction using GAM}
+Often we wish to evaluate the fitted model at some new values.
+
+With parametric models this is simple because all we do is form a
+new design matrix and multiply by the estimated parameters.
+
+Some of the functions used to create design matrices in lm, glm a
+and gam are data dependent. For example {\tt bs()}, {\tt
+  poly()}, make some standardization of the covariate before fitting
+and therefore new covariates would change the meaning of the parameters.
+
+As an example look at what happens when we predict fitted values
+for new values of AGE in the Kyphosis example using {\tt predict()}.
+
+The solution is to use {\tt predict.gam()} that takes this into account 
+
+\centerline{\epsfig{figure=Plots/plot-08-05.ps,angle=270,width=.8\textwidth}}
+
+
+{\tt predict.gam} is especially useful when we want to make surface
+plots. For example:
+
+\centerline{\epsfig{figure=Plots/plot-08-06.ps,angle=270,width=\textwidth}}
+
+\newpage
+
+
+\subsection{Over-interpreting additive fits}
+One of the advantages of GAM is their flexibility. However, because of
+this flexibility we have to be careful  not to ``over-fit'' and interpret
+the results incorrectly. 
+
+Binary data is especially sensitive. We construct a simulated example
+to see this.
+
+The following figure shows the functional components $f_1$ and $f_2$
+of a GAM 
+\[
+\mbox{logit}\{\Pr(Y=1|U,V)\} = -1 + f_1(U) + f_2(V)
+\] 
+with $U$ and $V$ independent uniform(0,1).
+
+\centerline{\epsfig{figure=Plots/plot-08-07.ps,angle=270,width=\textwidth}}
+
+We also show the ``smooths'' obtained for a data set of 250
+observations and a data set of 50 observations. Notice how ``bad'' the
+second fit is. 
+
+If we make a plot of the mean $\mu(u,v)$ and of it's estimate we see
+why this happens.
+
+\centerline{\epsfig{figure=Plots/plot-08-08.ps,width=\textwidth}}
+
+We have relatively large neighborhoods of $[0,1] \times [0,1]$ that
+contain only 1s or only 0s. The estimates in these regions will have
+linear part close to infinity and minus infinity! 
+
+One way to detect this when we don't know ``the truth'' is to look at
+the estimates with standard errors and partial residuals. If the
+partial residuals follow the fit to closely and the standard errors
+``explode'' we know something is wrong.
+
+\centerline{\epsfig{figure=Plots/plot-08-09.ps,angle=270,width=\textwidth}}
+
+\newpage

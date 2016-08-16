@@ -1,0 +1,931 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage{amsmath}
+\usepackage{eucal}
+\usepackage[dvips]{graphicx}
+%\usepackage{epic}
+
+% revise margins
+\setlength{\headheight}{0in}
+\setlength{\topmargin}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{9.0in}
+\setlength{\footskip}{0.4in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\parindent}{0in}
+\setlength{\parsep}{12pt}
+\setlength{\textwidth}{6.5in}
+
+% san serif font
+\renewcommand{\familydefault}{cmss}
+
+% 3rd itemize level is + rather than *
+\renewcommand{\labelitemiii}{$\circ$}
+
+\newcommand{\E}{\text{E}}       % expected value
+\newcommand{\var}{\text{var}}   % variance
+\newcommand{\SD}{\text{SD}}     % SD
+\newcommand{\cov}{\text{cov}}   % covariance
+\newcommand{\cor}{\text{cor}}   % correlation
+\renewcommand{\Pr}{\text{Pr}}     % probability
+\newcommand{\iid}{\text{ iid }} % iid
+
+% spacing commands
+\newcommand{\HRule}{\rule{\linewidth}{4pt}}
+\newcommand{\hsphalf}{\hspace*{0.5cm}}
+\newcommand{\hspone}{\hspace*{1cm}}
+\newcommand{\hsptwo}{\hspace*{2cm}}
+\newcommand{\vsphalf}{\vspace*{0.5cm}}
+\newcommand{\vspone}{\vspace*{1cm}}
+\newcommand{\vsptwo}{\vspace*{2cm}}
+
+% page number centered at bottom
+\pagestyle{plain}
+
+\begin{document}
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Tree-based models}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+Suppose we have a scalar outcome, $y$, and a $p$-vector of explanatory
+variables, $x$. 
+
+
+\vsphalf
+
+\textbf{Regression tree}: $y \in \mathcal{R}$
+
+\vsphalf
+
+\begin{quote}
+  A regression tree partitions $x$-space into disjoint regions $A_k$
+  and provides a fitted value $\E(y | x \in A_k)$ within each region.
+\end{quote}
+
+\setlength{\unitlength}{1.0cm}
+\begin{center}
+\begin{picture}(12,11)
+
+% circles
+\thicklines
+\put(6,10){\circle{2}}
+\put(3.5,7.5){\circle{2}}
+\put(8.5,7.5){\circle{2}}
+\put(10.5,4.5){\circle{2}}
+
+% boxes
+\put(1.25,3.5){\framebox(1.5,1.5)[]{13}}
+\put(4.25,3.5){\framebox(1.5,1.5)[]{34}}
+\put(6.25,3.5){\framebox(1.5,1.5)[]{77}}
+\put(8.25,0.5){\framebox(1.5,1.5)[]{51}}
+\put(11.25,0.5){\framebox(1.5,1.5)[]{26}}
+
+% lines
+\put(5.5,9.5){\line(-1,-1){1.5}}
+\put(6.5,9.5){\line(1,-1){1.5}}
+\put(3,7){\line(-1,-2){1}}
+\put(4,7){\line(1,-2){1}}
+\put(8,7){\line(-1,-2){1}}
+\put(9,7){\line(1,-2){1}}
+\put(10,4){\line(-1,-2){1}}
+\put(11,4){\line(1,-2){1}}
+
+% text
+\put(6,10){\makebox(0,0)[]{$x_1$}}
+\put(3.5,7.5){\makebox(0,0)[]{$x_2$}}
+\put(8.5,7.5){\makebox(0,0)[]{$x_3$}}
+\put(10.5,4.5){\makebox(0,0)[]{$x_2$}}
+
+\put(4.25,9.25){\makebox(0,0)[]{$< 5$}}
+\put(7.75,9.25){\makebox(0,0)[]{$\ge 5$}}
+\put(1.75,6){\makebox(0,0)[]{$> 3$}}
+\put(5.25,6){\makebox(0,0)[]{$\le 3$}}
+\put(6.75,6){\makebox(0,0)[]{$= 2$}}
+\put(10.25,6){\makebox(0,0)[]{$\ne 2$}}
+\put(8.75,3){\makebox(0,0)[]{$> 1$}}
+\put(12.25,3){\makebox(0,0)[]{$\le 1$}}
+\end{picture} \end{center}
+
+\begin{quote}
+  In other words, this is a decision tree where the outcome is a
+  fitted value for $y$.
+\end{quote}
+
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Tree-based models} (continued)}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+\textbf{Classification tree}: $y \in \mathcal{K} = \{1, 2, \ldots, k\}$
+
+\vsphalf
+
+\begin{quote}
+  A classification tree partitions $x$-space and provides a predicted
+  value, perhaps $\arg \max_s \Pr(y = s | x \in A_k)$ in each region.
+\end{quote}
+
+\setlength{\unitlength}{1.0cm}
+\begin{center}
+\begin{picture}(12,11)
+
+% circles
+\thicklines
+\put(6,10){\circle{2}}
+\put(3.5,7.5){\circle{2}}
+\put(8.5,7.5){\circle{2}}
+\put(10.5,4.5){\circle{2}}
+
+% boxes
+\put(1.25,3.5){\framebox(1.5,1.5)[]{1}}
+\put(4.25,3.5){\framebox(1.5,1.5)[]{2}}
+\put(6.25,3.5){\framebox(1.5,1.5)[]{1}}
+\put(8.25,0.5){\framebox(1.5,1.5)[]{2}}
+\put(11.25,0.5){\framebox(1.5,1.5)[]{3}}
+
+% lines
+\put(5.5,9.5){\line(-1,-1){1.5}}
+\put(6.5,9.5){\line(1,-1){1.5}}
+\put(3,7){\line(-1,-2){1}}
+\put(4,7){\line(1,-2){1}}
+\put(8,7){\line(-1,-2){1}}
+\put(9,7){\line(1,-2){1}}
+\put(10,4){\line(-1,-2){1}}
+\put(11,4){\line(1,-2){1}}
+
+% text
+\put(6,10){\makebox(0,0)[]{$x_1$}}
+\put(3.5,7.5){\makebox(0,0)[]{$x_2$}}
+\put(8.5,7.5){\makebox(0,0)[]{$x_3$}}
+\put(10.5,4.5){\makebox(0,0)[]{$x_2$}}
+
+\put(4.25,9.25){\makebox(0,0)[]{$< 5$}}
+\put(7.75,9.25){\makebox(0,0)[]{$\ge 5$}}
+\put(1.75,6){\makebox(0,0)[]{$> 3$}}
+\put(5.25,6){\makebox(0,0)[]{$\le 3$}}
+\put(6.75,6){\makebox(0,0)[]{$= 2$}}
+\put(10.25,6){\makebox(0,0)[]{$\ne 2$}}
+\put(8.75,3){\makebox(0,0)[]{$> 1$}}
+\put(12.25,3){\makebox(0,0)[]{$\le 1$}}
+\end{picture} \end{center}
+
+\begin{quote}
+  In computer science, this business goes under the name
+  \emph{recursive partitioning}.
+\end{quote}
+
+\vsphalf
+
+\textbf{Ref}: Breiman et al (1984) Classification and regression
+trees.  Wadsworth.
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{General points}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+\begin{itemize}
+
+\item This is most natural when the explanatory variables are
+  categorical (and it is especially nice when they are \emph{binary}).
+
+\item There is nothing special about the tree structure...the tree
+  just partitions $x$-space, with a fitted value in each region.
+
+\item \textbf{Advantage}: These models go after
+  \emph{interactions\/} immediately, rather than as an afterthought.  
+
+\item \textbf{Advantage}: Trees can be easy to explain to
+  non-statisticians. 
+  
+\item \textbf{Disadvantage}: Tree-space is huge, so we may need
+  \emph{a lot\/} of data.
+  
+\item \textbf{Disadvantage}: It can be hard to assess uncertainty in
+  inference about trees.
+
+\item \textbf{Disadvantage}: The results can be quite variable.  (Tree
+  selection is not very \emph{stable}.)
+
+\item \textbf{Disadvantage}: Actual \emph{additivity\/} becomes a mess
+  in a binary tree.  This problem is somewhat alleviated by allowing
+  splits of the form $x_1 + b x_2 < (\ge) \; d$.
+
+\end{itemize}
+
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Model selection}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+The big issue here is \emph{model selection}.  In my view, the model
+selection problem consists of four orthogonal components.
+
+\begin{enumerate}
+
+\item Select a space of models
+
+\item Search through model space
+
+\item Compare models
+  \begin{itemize}
+    \item of the same size
+    \item of different sizes (penalize complexity)
+  \end{itemize}
+
+\item Assess the performance of a procedure
+
+\end{enumerate}
+
+\vsphalf
+
+\textbf{Important points}:
+\begin{itemize}
+\item Components 2 and 3 are often confused (e.g., in
+  stepwise regression).  That's bad.  
+
+\item People often forget component 1.
+  
+\item People almost always ignore component 4; it can be the hardest.
+
+\item I've drifted back into statistics (from statistical computing).
+
+\end{itemize} 
+
+
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Searching through trees}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+The search through trees is generally performed as follows:
+\begin{enumerate}
+\item \textbf{Grow} an overly large tree using forward selection.
+(At each step, find the \emph{best\/} split.)  
+
+Grow until all terminal nodes either 
+\begin{enumerate}
+\item have $< n$ (perhaps $n=1$) data points
+\item are ``pure'' (all points in a node have the same outcome)
+\end{enumerate}
+
+\item \textbf{Prune} the tree back, creating a nested sequence of
+  trees, decreasing in complexity.
+
+\end{enumerate}
+
+\vspone
+
+This suffers from the usual problems of forward selection, though
+things are somewhat better by growing up and pruning back rather than
+just growing up.
+
+\vsphalf
+
+Better trees may be found by doing a one-step ``look ahead,'' but this
+comes with the cost of a great increase in computation.
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Comparing trees}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+
+\textbf{Regression trees}
+
+\vsphalf
+
+For trees of the same size, we seek to minimize the residual sum of
+squares (or possibly the sum of absolute values) $= \sum (y -
+\hat{y})^2$.
+
+\vsphalf
+
+For trees of different sizes, one approach is to minimize an
+AIC/BIC-type criterion: for a tree, $\gamma$, with $q_\gamma$ terminal
+nodes, consider $\Psi(\gamma) = \log \text{RSS}(\gamma) + q_\gamma
+D(n) /n $.
+
+\hspone $D(n) = 2$ gives the AIC criterion.
+
+\hspone $D(n) = \log n$ gives the BIC criterion.
+
+These are both based on asymptotics.  One may also look at $D(n)=
+\delta \log n$, which I call BIC-$\delta$; it has the same asymptotic
+properties as BIC, but, with $\delta > 1$, puts greater penalty on
+model complexity and may have better small-sample properties.
+
+\vsphalf
+
+The focus is generally on \emph{minimizing prediction error}.
+
+\bigskip
+
+We use our observed data $(x,y)$ to estimate a tree
+$\hat{\gamma}(x,y)$.  We define the prediction error of the tree to be
+the mean squared error in a new value $(x^\star, y^\star)$:
+$\E\{[y^\star - \hat{y}(\hat{\gamma}, x^\star)]^2\}$.
+
+\bigskip
+
+The typical method is then to get an \emph{honest\/} estimate of the
+prediction error either using set-aside \emph{test\/} data or
+$m$-fold cross-validation.  
+
+
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Comparing trees} (continued)}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+\textbf{Classification trees}
+
+\vsphalf
+
+A classification tree defines a decision rule $d$, providing a
+predicted value $\hat{y} = d(x)$.
+
+\vsphalf
+
+Consider a \emph{loss\/} function $L(y, d)$, defining the cost
+associated with (incorrectly) predicting $d$ when the true class is
+$y$.  We wish to minimize the \emph{risk\/}: $R(d) = \E\{L[y,
+d(x)]\}$.
+
+\vsphalf
+
+In regression, we use squared error loss: $L[y, d(x)] = \{y -
+d(x)\}^2$.  
+
+\vsphalf
+
+In classfication, we create a matrix $L(y,d)$ where the diagonal
+elements (correct predictions) are 0.  (The simplest choice is to make
+all non-diagonal elements 1, but we have much flexibility here.)
+
+\vsphalf
+
+The risk (letting $d_x = d(x)$) is then
+\begin{eqnarray*}
+R(d) & = & \E\{L(y,d_x)\} \\
+& = & \E \{ \E [ L(y,d_x) | x ] \} \\
+& = & \E \{ \sum_y L(y, d_x) \Pr(y | x) \}
+\end{eqnarray*}
+
+The re-substitution estimate of $R(d)$ for a tree should be obvious.
+
+
+
+
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Honest estimates of risk}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+We wish to get an \emph{honest\/} estimate of the risk associated with
+trees.  We can then use that to pick from the nested sequence of trees
+that results from the pruning after the initial growing (minimize
+estimated risk).  
+
+\vsphalf
+
+\textbf{Learning and test sets}
+
+If you have a lot of data, you might split it into a \emph{learning
+set\/} (used to estimate the tree) and \emph{test set\/} (used to
+estimate the risk associated with a tree.  
+
+\bigskip
+
+``A lot of data'' depends on the program.  I'd think in the range of
+500+ observations.  The split need not be half/half: I seem to recall
+people recommending 2/3 learning, 1/3 test.  
+
+\bigskip
+
+\hspone \textbf{Advantage}: It's easy
+
+\hspone \textbf{Disadvantage}: Loss of efficiency by ignoring data
+
+\vsphalf
+
+\textbf{Cross-validation}
+
+\begin{enumerate}
+\item Estimate trees, dropping $k$ data points.
+\item Look at error in predicting the $k$ dropped points.
+\item Repeat many times (in a \emph{balanced\/} way).
+\end{enumerate}
+
+\hspone \textbf{Advantage}: Make efficient use of data
+
+\hspone \textbf{Disadvantage}: Heavy computation
+
+
+
+
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Computing with trees}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+\textbf{R}: \verb|library(tree)|; \verb|library(rpart)|  
+[MASS, ch 10]
+
+\vspone
+
+\textbf{An important issue}: Storing trees
+
+\vsphalf
+
+Binary trees are composed of nodes (root node, internal nodes and
+terminal nodes).
+
+\vsphalf
+
+\emph{Root and internal nodes}:
+\begin{itemize}
+\item Splitting rule (variable + what goes to right)
+\item Link to left and right daughter nodes
+\item Possibly a link to the parent node (null if this is the root
+  node)
+\end{itemize}
+
+\emph{Terminal nodes}:
+\begin{itemize}
+\item Fitted value
+\item Possibly a link to the parent node
+\end{itemize}
+
+\vspone
+
+\textbf{C}: Use pointers and structures (\verb|struct|)
+
+\vsphalf
+
+\textbf{R}: It beats me.  Take a look.
+
+
+  
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Neural networks}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+
+A generic feed forward neural network:
+
+\setlength{\unitlength}{1.0cm}
+\begin{center}
+\begin{picture}(16.5,10)
+
+% text
+\put(0,1){\makebox(0,0)[l]{Inputs}}
+\put(0,5.4){\makebox(0,0)[l]{Hidden}}
+\put(0,4.6){\makebox(0,0)[l]{layer}}
+\put(0,9){\makebox(0,0)[l]{Outputs}}
+
+% circles
+\thicklines
+\put(6,1){\circle{2.5}}
+\put(8,1){\circle{2.5}}
+\put(12,1){\circle{2.5}}
+\put(14,1){\circle{2.5}}
+\put(4,5){\circle{2.5}}
+\put(6,5){\circle{2.5}}
+\put(8,5){\circle{2.5}}
+\put(12,5){\circle{2.5}}
+\put(14,5){\circle{2.5}}
+\put(16,5){\circle{2.5}}
+\put(8,9){\circle{2.5}}
+\put(12,9){\circle{2.5}}
+
+% more text
+\fontsize{16}{16} \selectfont
+\put(6,1){\makebox(0,0)[]{$x_1$}}
+\put(8,1){\makebox(0,0)[]{$x_2$}}
+\put(12,1){\makebox(0,0)[]{$x_{N-1}$}}
+\put(14,1){\makebox(0,0)[]{$x_N$}}
+\put(4,5){\makebox(0,0)[]{$v_1$}}
+\put(6,5){\makebox(0,0)[]{$v_2$}}
+\put(8,5){\makebox(0,0)[]{$v_3$}}
+\put(12,5){\makebox(0,0)[]{$v_{M-2}$}}
+\put(14,5){\makebox(0,0)[]{$v_{M-1}$}}
+\put(16,5){\makebox(0,0)[]{$v_M$}}
+\put(8,9){\makebox(0,0)[]{$y_1$}}
+\put(12,9){\makebox(0,0)[]{$y_k$}}
+\fontsize{20}{25} \selectfont
+
+% arrows
+% x_1
+\put(6,1.7){\vector(-3,4){1.9}}
+\put(6,1.7){\vector(0,1){2.6}}
+\put(6,1.7){\vector(3,4){1.9}}
+\put(6,1.7){\vector(2,1){5.4}}
+\put(6,1.7){\vector(3,1){7.7}}
+\put(6,1.7){\vector(4,1){9.8}}
+% x_2
+\put(8,1.7){\vector(-3,2){3.8}}
+\put(8,1.7){\vector(-3,4){1.9}}
+\put(8,1.7){\vector(0,1){2.6}}
+\put(8,1.7){\vector(3,2){3.8}}
+\put(8,1.7){\vector(2,1){5.4}}
+\put(8,1.7){\vector(3,1){7.7}}
+% x_N-1
+\put(12,1.7){\vector(-3,1){7.7}}
+\put(12,1.7){\vector(-2,1){5.4}}
+\put(12,1.7){\vector(-3,2){3.8}}
+\put(12,1.7){\vector(0,1){2.6}}
+\put(12,1.7){\vector(3,4){1.9}}
+\put(12,1.7){\vector(3,2){3.8}}
+% x_N
+\put(14,1.7){\vector(-4,1){9.8}}
+\put(14,1.7){\vector(-3,1){7.7}}
+\put(14,1.7){\vector(-2,1){5.4}}
+\put(14,1.7){\vector(-3,4){1.9}}
+\put(14,1.7){\vector(0,1){2.6}}
+\put(14,1.7){\vector(3,4){1.9}}
+% v_1
+\put(4,5.7){\vector(3,2){3.8}}
+\put(4,5.7){\vector(3,1){7.7}}
+% v_2
+\put(6,5.7){\vector(3,4){1.9}}
+\put(6,5.7){\vector(2,1){5.4}}
+% v_3
+\put(8,5.7){\vector(0,1){2.6}}
+\put(8,5.7){\vector(3,2){3.8}}
+% v_M-2
+\put(12,5.7){\vector(-3,2){3.8}}
+\put(12,5.7){\vector(0,1){2.6}}
+% v_M-1
+\put(14,5.7){\vector(-2,1){5.4}}
+\put(14,5.7){\vector(-3,4){1.9}}
+% v_M
+\put(16,5.7){\vector(-3,1){7.7}}
+\put(16,5.7){\vector(-3,2){3.8}}
+
+% dots
+\put(9.5,1){\circle*{0.1}}
+\put(10,1){\circle*{0.1}}
+\put(10.5,1){\circle*{0.1}}
+\put(9.5,5){\circle*{0.1}}
+\put(10,5){\circle*{0.1}}
+\put(10.5,5){\circle*{0.1}}
+\put(9.5,9){\circle*{0.1}}
+\put(10,9){\circle*{0.1}}
+\put(10.5,9){\circle*{0.1}}
+
+\end{picture} \end{center}
+
+
+The output from each of the hidden units is of the form $ v_j = \phi_h
+( \alpha_j + \sum_j w_{ij} x_i )$.  The function $\phi_h$ is
+nearly always a logistic: $\phi_h(z) = \exp(z)/[1+\exp(z)]$.
+
+\bigskip
+
+The outputs, $y$, are of the form $ y_j = \phi_h ( \alpha'_j + \sum_j
+w'_{ij} v_i )$.  The function $\phi_0$ may be the identity, a
+logistic or an indicator/threshold function.
+
+\bigskip
+
+We have a total of $M(k+N+1) + k$ parameters here. 
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Neural networks} (continued)}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+We seek a good predictor of $y = (y_1, \ldots, y_k)$ given $x = (x_1,
+\ldots, x_N)$.
+
+\bigskip
+
+The conditional distribution $\Pr(y | x)$
+may be hugely complicated, with lots of interactions between the
+$x_j$'s.  
+
+\bigskip 
+
+Rather than (as a statistician might do) try to build up a model
+from little bits, we form a massive, overparameterized, impressively
+flexible model and use a pile of data to form a good ``black box''
+predictor.
+
+\bigskip
+
+There is theory to show that with a sufficiently large single layer,
+this sort of feed-forward network can well approximate \emph{any
+arbitrary function}.
+
+\vsphalf
+
+\textbf{Why do care about these things?}
+\begin{itemize}
+\item People use them.
+\item We might want to use them.
+\item We might want to make public statements trashing their use.
+\end{itemize}
+
+\vsphalf
+
+\textbf{Refs}: MASS \S 9.4;
+Cheng and Titterington (1994) Neural networks: A review from a
+statistical perspective.  Statistical Science 9:2--54. [Look
+especially at the comments from Breiman, Ripley and Tibshirani.]
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Neural networks} (continued)}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+\textbf{Applications}: Regression, classification, clustering
+
+\begin{itemize}
+\item Speech recognition and generation
+\item Handwriting recognition
+\item Predict financial indices
+\item Optimize chemical processes
+\item Military stuff
+\item Identify cell abnormalities
+\item Determine the sex of a face
+\end{itemize}
+
+\bigskip
+
+Classification and regression are forms of \emph{supervised
+learning\/} (we have data on $(x,y)$ pairs); clustering is a form of
+\emph{unsupervised learning\/} (we have data only on $x$'s).
+
+\vspone
+
+\textbf{Note}: While neural networks were originally developed to
+simulate the architecture of the brain (How does the brain work?  Can
+we get a machine to think like a brain?), noone seriously considers
+that aspect of things anymore.  Neural networks are just black-box
+predictors.
+
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{More}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+\textbf{What are the issues?}
+\begin{itemize}
+\item Form the outputs
+\item Form the neural network architecture
+\item Train/estimate/fit the thing
+\item Estimate prediction error honestly
+\item Figure out what's going on inside the black box.
+\end{itemize}
+
+\vsphalf
+
+\textbf{Regression}
+
+\bigskip
+
+You might take $\phi_0$ to be the identity, and use only one output.
+
+\vsphalf
+
+\textbf{Classification}
+
+\bigskip
+
+If the outcome set is $\{1, 2, \ldots, k\}$, you might use binary
+outputs with $j \to y = (0, \ldots, 0, 1, 0, \ldots, 0)$ (i.e., the
+$y$ corresponding to outcome $j$ has $y_i = \delta_{ij}$).
+
+\bigskip
+
+$\phi_0$ may be a threshold function or a logistic.
+
+\vsphalf
+
+\textbf{Note}: Some people work hard to create fancy architectures
+tailored to their particular problem.  Others just use the basic form
+I gave above, playing with the number of hidden nodes and maybe
+dropping some connections.
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Training/Fitting/Estimating}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+Gather $n$ data points $(x,y)$. 
+
+\bigskip
+
+Form some function to optimize, say $\sum_i [y_i - \hat{y}(x_i;
+\theta)]^2$
+
+\vsphalf
+
+\textbf{Method of fitting}: ``error backpropagation'' (basically a
+gradient descent algorithm).
+
+\vsphalf
+
+\textbf{The weird bit}: Since the model is \emph{way\/}
+overparameterized, we don't actually want to minimize the RSS for our
+data.  
+
+\bigskip
+
+We need to either add some sort of penalty or (this is the weird bit),
+halt the fitting procedure \emph{before\/} going into a local mode.  
+
+\bigskip
+
+\textbf{The procedure}: 
+
+\begin{itemize} 
+\item Set aside a test set
+\item Stop the fitting procedure at various times
+\item Check out the prediction on the test set at each stopping point
+\item Pick the stopping point with the minimal prediction error
+\end{itemize}
+
+\bigskip 
+
+\textbf{Another problem}: starting points.  You can't really try more
+than one (or two).  
+
+
+\newpage
+
+\fontsize{30}{30} \selectfont
+
+\centerline{\textbf{Summary}}
+
+\HRule
+
+\vsphalf
+
+\fontsize{20}{25} \selectfont
+
+Robert Tibshirani's comment on Cheng and Titterington:
+
+\bigskip
+
+\fontsize{18}{20} \selectfont
+
+\textbf{What the statistician can learn from neural network researchers}:
+
+\begin{enumerate}
+\item We should worry less about statistical optimality and more about
+  finding methods that work, especially with large data sets.
+\item We should tackle difficult real problems like some of those
+  addressed by neural network researchers.  
+\item Models with very large numbers of parameters can be useful for
+  prediction, especially for large data sets and problems exhibiting
+  high signal-to-noise ratios.
+\item Modelling linear combinations of input variables can be a very
+  effective approach because it provides both feature extraction and
+  dimension reduction.
+\item Iterative, nongreedy fitting algorithms can help to avoid
+  overfitting in models with large numbers of parameters.
+\item We (statisticians) should sell ourselves more.
+\end{enumerate}
+
+\bigskip
+
+\textbf{What the neural network research can learn from statisticians}
+
+\begin{enumerate}
+\item They should worry more about statistical optimality or at least
+  about the statistical properties of methods.
+\item They should spend more effort comparing their methods to simpler
+  statistical approaches.  They should not use a complicated model
+  where a simple one will do.
+\end{enumerate}
+
+\end{document}

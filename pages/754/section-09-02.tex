@@ -1,0 +1,107 @@
+\section{Information Criteria}
+In this section we review the concepts behind 
+Akaike's Information Criterion (AIC).
+
+Akaike's original work is for
+IID data, however it is extended to a regression type setting in a
+straight forward way. Suppose that the conditional distribution of $Y$
+given $\bx$ is know except for a $P$-dimensional parameter $\bb$. In
+this case,  the probability density function of $\bY =
+(Y_1,\dots,Y_n)$ can be written as 
+\begin{equation}
+\label{parsimodel}
+f_{\bY}(\by;\bX,\bb) \equiv \prod_{i=1}^n f(y_i;\bx_i,\bb)
+\end{equation}
+with $\bX$ the design matrix with rows $\bx_i$. 
+
+Assume that
+there exists a true parameter vector $\bb^*$ defining a true
+probability density denoted by
+$f_{\bY}(\by;\bX,\bb^*)$. Given these assumptions, we wish to select
+$\bb$, from one of the models 
+defined as in (\ref{modelpdef}), ``nearest'' to the true
+parameter $\bb^*$ based on the observed data $\by$.
+The principle behind Akaike's criterion is to
+define ``nearest'' as the model that minimizes the Kullback-Leibler 
+Information Quantity
+\begin{equation}
+\label{KLdef} 
+\Delta(\bb^*;\bX,\bb) = \int \left\{\log
+  f_\bY(\by;\bX,\bb^*) - \log
+  f_\bY(\by;\bX,\bb)\right\} f_{\bY}(\by;\bX,\bb^*) \, d\by.
+\end{equation}
+
+The analytical properties of the Kullback-Leibler Information Quantity
+are discussed in detail by Kullback (1959) \nocite{kull:1959}. Two
+important properties 
+for Akaike's criterion are
+\begin{enumerate}
+\item $\Delta(\bb^*;\bX,\bb) > 0$ if 
+$f_{\bY}(\by;\bX,\bb^*) \neq f_{\bY}(\by;\bX,\bb)$
+\item
+$\Delta(\bb^*;\bX,\bb) = 0$  if and only if $f_{\bY}(\by;\bX,\bb^*) =
+f_{\bY}(\by;\bX,\bb)$ 
+\end{enumerate}
+almost everywhere on the range of $\bY$. 
+The properties
+mentioned suggest that finding the model that 
+minimizes the Kullback-Leibler 
+Information Quantity is an appropriate way to choose the ``nearest''
+model.
+
+Since the first term on the
+right hand side of 
+(\ref{KLdef}) is constant over all models we consider, we may instead
+maximize
+\begin{eqnarray}
+\nonumber
+H(\bb) &=& \int \log
+  f_\bY(\by;\bX,\bb) f_{\bY}(\by;\bX,\bb^*) \, d\by\\
+\label{Hdef}
+&=& \sum_{i=1}^n \int \log f(y_i;\bX,\bb) \, f(y_i;\bx_i,\bb^*) \, dy_i.
+\end{eqnarray}
+
+Let $\bbh_p$ be the maximum likelihood estimate under
+Model(p). Akaike's procedure for model selection is based on choosing
+the model which produces the estimate that maximizes 
+$\E_{\bb^*}\left[H(\bbh_p)\right]$ amongst all
+competing models. Akaike then derives a criterion by constructing an
+asymptotically unbiased estimate of $\E_{\bb^*}\left[H(\bbh_p)\right]$ based
+on the observed data. 
+
+Notice that $H(\bbh_p)$ is a function,
+defined by (\ref{Hdef}),
+of the maximum likelihood estimate $\bbh_p$, which is a
+random variable obtained from the observed data.
+A natural estimator of 
+its expected value (under the true distribution of the data) is
+obtained by substituting the empirical distribution of the data into
+(\ref{Hdef}) 
+resulting in the log likelihood equation evaluated at the maximum
+likelihood estimate under model(p)
+\[
+l(\bbh_p) = \sum_{i=1}^n \log f(y_i;\bx_i,\bbh_p).
+\]
+Akaike noticed that in general  $l(\bbh_p)$ will 
+overestimate $\E_{\bb^*}\left[H(\bbh)\right]$.  In particular Akaike found
+that under some regularity conditions
+\[
+E_{\bb^*}\left[l(\bbh_p) - H(\bbh_p)\right] \approx p .
+\]
+This suggests that larger 
+values of $p$ will result in smaller values 
+of $l(\bbh_p)$, which may be
+incorrectly interpreted as a ``better'' 
+fit, regardless of the true model. We need to ``penalize'' for larger
+values of $p$ in order to obtain an unbiased estimate of
+the ``closeness'' of the model. 
+This fact leads to the Akaike Information Criteria which is a
+bias-corrected estimate given by 
+\begin{equation}
+\label{AIC}
+\mbox{AIC}(p) = - 2 l(\bbh_{p}) + 2p .
+\end{equation}
+See, for example, Akaike (1973) and Bozdogan (1987)  for
+the details.  
+
+

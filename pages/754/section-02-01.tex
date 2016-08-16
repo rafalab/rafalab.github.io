@@ -1,0 +1,19 @@
+\section{Parametric smoother}
+These are what you have seen already. We force a function defined by
+``few'' parameters on the data and use something like least squares to
+find the ``best'' estimates for the parameters. 
+
+For example, a regression line computed with least squares can be
+thought of as a smoother. In this case $S[\by|\bx](x_0) =
+(1 \, x_0) \, (\bX'\bX)^{-1}\bX'\by$ with $\bX$ a design matrix containing a
+column of 1's and $\bx$ ({\tt cbind(1,x)}).
+ 
+
+The lack of flexibility of these types of smoother can make them
+provide misleading results.
+
+
+\begin{figure}[htp]
+\caption{\label{f2.2} CD4 cell count since seroconversion for HIV infected men.}
+\centerline{\epsfig{figure=Plots/plot-02-02.ps,angle=270,width=.8\textwidth}}
+\end{figure}

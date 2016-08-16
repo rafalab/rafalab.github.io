@@ -1,0 +1,24 @@
+\section{Bin smoothers}
+A bin smoother, also known as a regressogram, mimics a categorical
+smoother by partitioning the predicted value into disjoint and
+exhaustive regions, then averaging the response in each
+region. Formally, we choose cut-points $c_0 < \dots <c_K$ where $c_0 =
+-\infty$ and $c_K = \infty$, and define
+\[
+R_k = \{i; c_k \leq x_i < c_{k+1} \}; k=0,\dots,K
+\]
+the indexes of the data points in each region. Then $S[\by|\bx]$ is
+given by 
+\[
+s(x_0) = \ave_{i \in R_k}\{ y_i \} \mbox{ if } x_0 \in R_k
+\]
+
+Notice that the bin smoother will have discontinuities. 
+
+
+\begin{figure}[htp]
+\caption{\label{f2.3} CD4 cell count since seroconversion for HIV
+  infected men.} 
+\centerline{\epsfig{figure=Plots/plot-02-03.ps,angle=270,width=.8\textwidth}}
+\end{figure}
+

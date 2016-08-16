@@ -1,0 +1,105 @@
+\section{Eigen analysis and spectral smoothing}
+
+For a smoother with symmetric smoother matrix $\bS$, the
+eigendecomposition of $\bS$ can be used to describe its
+behavior. 
+
+
+Let $\{ \bu_1,\dots,\bu_n \}$ be an orthonormal basis of eigenvectors
+of $\bS$ with eigenvalues $\theta_1\geq\theta_2\dots\geq\theta_n$:
+\[
+\bS\bu_j = \theta_j \bu_j, j=1,\dots,n
+\]
+or
+\[
+\bS=\bU \bD \bU' = \sum_{j=1}^n \theta_j \bu_j \bu_j'.
+\]
+Here $\bD$ is a diagonal matrix with the eigenvalues as the entries.
+
+For simple linear regression we only have two nonzero
+eigenvalues. Their eigenvectors are an orthonormal basis for lines.
+
+\begin{figure}[htb]
+  \caption{Eigenvalues and eigenvectors of the hat matrix for linear
+    regression.}
+\begin{center}
+\epsfig{figure=Plots/plot-06-04.ps,angle=270,width=.75\textwidth}
+\end{center}
+\end{figure}
+
+
+
+The cubic spline is an important example of a symmetric smoother, and
+its eigenvectors resemble polynomials of increasing degree.
+
+It is easy to show that the first two eigenvalues are unity, with
+eigenvectors which correspond to linear functions of the predictor on
+which the smoother is based. One can also show that the other
+eigenvalues are all strictly between zero and one. 
+
+The action of the smoother is now transparent: if presented with a
+response $\by = \bu_j$, it shrinks it by an amount $\theta_j$ as
+above. 
+
+
+\begin{figure}[htb]
+\caption{\label{f6.3.1} Eigenvalues and eigenvectors 1 through 10 of
+  $\bS$ for a smoothing spline.} 
+\begin{tabular}{cc}
+\epsfig{figure=Plots/plot-06-05.ps,angle=270,width=.5\textwidth}&
+\epsfig{figure=Plots/plot-06-06.ps,angle=270,width=.5\textwidth}
+\end{tabular}
+\end{figure}
+
+
+
+Cubic smoothing splines, regression splines, linear regression,
+polynomial regression are all symmetric smoothers. However, loess 
+and other ``nearest neighbor'' smoothers are not. 
+
+
+
+
+\begin{figure}[htb]
+\caption{Eigen vectors 11 through 30 for a smoothing spline for
+$n=30$.}
+\begin{tabular}{cc}
+\epsfig{figure=Plots/plot-06-07.ps,angle=270,width=.5\textwidth}&
+\epsfig{figure=Plots/plot-06-08.ps,angle=270,width=.5\textwidth}
+\end{tabular}
+\end{figure}
+
+If $\bS$ is not symmetric we have complex eigenvalues and the above
+decomposition is not as easy to interpret. However we can use the
+singular value decomposition 
+\[
+\bS = \bU \bD \bV'
+\]
+
+On can think of smoothing as performing a basis transformation $\bz =
+\bV'\by$, shrinking with $\hat{\bz} = \bD\bz$ the components that are
+related to ``unsmooth components'' and then transforming back to the
+basis $\hat{\by} = \bU \hat{\bz}$ we
+started out with... sort of.
+
+
+In signal processing signals are ``filtered'' using linear
+transformations. The transfer function describes how the power of
+certain frequency components are reduced. A low-pass filter will
+reduce the power of the higher frequency components. 
+We can view the eigen values of our
+smoother matrices as transfer functions.
+
+
+Notice that the smoothing spline can be considered a low-pass
+filter. If we look at the eigenvectors of the smoothing spline we
+notice they are similar to sinusoidal components of increasing
+frequency. Figure \ref{f6.3.1} shows the ``transfer function'' defined
+by the smoothing splines.
+
+
+
+The change of basis idea described above has been explored by Donoho
+and Johnston 1994, 1995) and  Beran
+(2000). In the following section we give a short introduction to these
+ideas.  

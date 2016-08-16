@@ -1,0 +1,200 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<body bgcolor="#fffff5" text="#000000" link="#cc3391" alink="#0000ff" vlink="#660066">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; SunOS 5.6 sun4u) [Netscape]">
+   <title>Applied Nonparametric and Modern Statistics</title>
+</head>
+<body>
+<A name="outline"></a>
+<h1>
+<Center>
+<b>Applied Nonparametric and Modern Statistics</b>
+</Center>
+</h1>
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<!--  <br> Class number: 140.754 (Fourth term) -->
+<!--  <br> Taught by: Rafael A. Irizarry -->
+<!--  <br> Office: E2008 -->
+
+<br>
+In this web page you will find
+<UL>
+  <li> The <A href="#outline"> class outline</a>. For each section, you can obtain the class
+      notes in pdf, the latex files for each section, and the R (or
+      S-Plus) code used to generate the analyses and graphs. You can
+      use this R code to generate the graphs used in the latex
+      documents or download the <a href="bs754.tar.gz"> compressed tar
+      file </a> and get them from
+      the Plots directory.
+  <li> Links for <a href="#homework"> homework </a>: data needed,
+      assignments sheets in pdf, and the latex files. 
+  <li> <a href="#books"> Books </a> often referenced
+  <li> <a href="#computing"> Computing resource</a>.
+  <li> <a href="#info"> Class general information</a>.
+</UL> 
+<br>
+<!--   Downloads: -->
+<!--  <br><a href="nclass-notes.pdf">Latest full-version of course notes in -->
+<!--  PDF</a> -->
+<!--  <br><a href="nbs754.tar.gz"> compressed tar</a> file with everything you -->
+<!--  need to compile it... and more -->
+<!--  <br><a href="my-commands.sty"> LaTeX style file</a> needed to compile LaTeX files. -->
+<!--  <br> -->
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<A name="outline"><b> Class outline:</b> </a> 
+<ol type="I">  
+<li> Introduction  [<a href="section-01.pdf">PDF</a>, <a
+    href="section-01.tex"> LaTeX</a>]
+<li> Overview of various smoothers [<a href="section-02.pdf">PDF</a>, <a
+    href="section-02.tex"> LaTeX</a>, <a href="code-02.r">
+    R-code</a>]
+    <ol type="1">
+      <li> Parametric smoothers [<a href="section-02-01.tex">LaTeX</a>]
+      <li> Bin smoothers  [<a href="section-02-02.tex">LaTeX</a>]
+      <li> Running mean/moving average smoothers [<a href="section-02-03.tex">LaTeX</a>]
+      <li> Kernel smoothers and some asymtotic results [<a href="section-02-04.tex">LaTeX</a>]
+      <li> Linear Smoother [<a href="section-02-05.tex">LaTeX</a>]
+    </ol>
+<li> Local Regression [<a href="section-03.pdf">PDF, <a
+    href="section-03.tex">LaTeX</a>, <a href="code-03.r">R-code</a>]
+      <ol><li> Bibliography [<a href="references-03.tex">LaTeX</a>]</ol>
+<li> Splines [<a href="section-04.pdf">PDF</a>, <a
+    href="section-04.tex"> LaTeX</a>, <a href="code-04.r">
+    R-code</a>]
+    <ol type="1">
+      <li> Linear Spaces (Parametric vs. Nonparametric) [<a href="section-04-01.tex">LaTeX</a>]
+      <li> Local Polynomials [<a href="section-04-02.tex">LaTeX</a>]
+      <li> Splines [<a href="section-04-03.tex">LaTeX</a>]
+      <li> Natural Smoothing Splines [<a href="section-04-04.tex">LaTeX</a>]
+      <li> Bibliography [<a href="references-04.tex">LaTeX</a>]
+    </ol>
+<li> Resampling methods: Bias, Variance, and their trade-off [<a href="section-05.pdf">PDF</a>, <a href="section-05.tex"> LaTeX</a>, <a href="code-05.r">
+    R-code</a>]
+    <ol type="1">
+      <li> Bias-Variance Trade-off  [<a href="section-05-01.tex">LaTeX</a>]
+      <li> Cross Validation: Choosing smoothness parameters [<a href="section-05-02.tex">LaTeX</a>]
+      <li> Bootstrap Standard Errors and Confidence Sets [<a href="section-05-03.tex">LaTeX</a>]
+    </ol>
+<li> Connections [<a href="section-06.pdf">PDF</a>, <a
+    href="section-06.tex"> LaTeX</a>, <a href="code-06.r">
+    R-code</a>, <a href="code-06.S">
+    Splus5-code</a>]
+    <ol type="1">
+      <li> Linear Smoothers: Influence, Variance, and  Degrees of Freedom [<a href="section-06-01.tex">LaTeX</a>]
+      <li> Smoothing and Penalized Least Squares [<a href="section-06-02.tex">LaTeX</a>]
+      <li> Eigen analysis and spectral smoothing [<a href="section-06-03.tex">LaTeX</a>]
+      <li> Economical Bases: Wavelets and REACT estimators [<a href="section-06-04.tex">LaTeX</a>]
+      <li> Bayesian Model for Cubic Splines [<a href="section-06-05.tex">LaTeX</a>]
+      <li> Mixed Models and Splines [<a href="section-06-06.tex">LaTeX</a>]
+    </ol>
+<li> High Dimensional Problems  [<a href="section-07.pdf">PDF</a>, <a
+    href="section-07.tex"> LaTeX</a>, <a href="code-07.S">
+    Splus5-code</a>]
+    <ol type="1">
+      <li> Projection Pursuit  [<a href="section-07-01.tex">LaTeX</a>]
+      <li> Additive Models [<a href="section-07-02.tex">LaTeX</a>]
+      <li> Classification and Regression Tress (CART) [<a href="section-07-03.tex">LaTeX</a>]
+<br> (guest lecturer: Ingo) [<a href="lbw.dat">Data</a>, <a href="ingo-code.R">code</a>]
+	   </ol>
+    <li> Generalized Models [<a href="section-08.pdf">PDF</a>, <a
+    href="section-08.tex"> LaTeX</a>, <a href="code-08.S">
+    Splus5-code</a>]
+    <ol type="1"> 
+      <li> Generalized Additive Models (GAM) [<a href="section-08-01.tex">LaTeX</a>]
+      <li> Local Likelihood [<a href="section-08-01.tex">LaTeX</a>]
+    </ol>
+<li> Model Selection [<a href="section-09.pdf">PDF</a> <a
+    href="section-09.tex"> LaTeX</a>]
+    <ol type="1">
+      <li> Mallow's Cp   [<a href="section-09-01.tex">LaTeX</a>]
+      <li> Information Criteria (e.g. AIC) [<a href="section-09-02.tex">LaTeX</a>]
+      <li> Posterior Probability Criteria (e.g. BIC) [<a href="section-09-03.tex">LaTeX</a>]
+    </ol>
+<li> Introduction to Time Series Analysis [<a href="section-10.pdf">PDF</a>, <a href="section-10.tex">LaTeX</a>]
+    <ol type="1">
+      <li> Stationarity
+      <li> Auto-correlation function 
+      <li> Spectral analysis
+    </ol>
+</ol>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<a name="homework"> <b> Homework </b> </a>
+<p><br><a href="sample.tex">Sample LaTeX document</a>
+<ul>
+<li>Homework 1 [<a href="homework1.pdf">PDF</a>, <a
+    href="homework1.tex">LaTeX</a>]: <a
+    href="http://www.jstor.org/cgi-bin/jstor/viewitem/00359246/di993200/99p04286/0?config=jstor&frame=noframe&userID=a2812c28@jhu.edu/01cc99331400506679f6&dpi=3"> Paper</a> refered to by first hint.
+<li>Homework 2 [<a href="homework2.pdf">PDF</a>, <a
+    href="homework2.tex">LaTeX</a>] 
+<li>Homework 3 [<a href="homework3.pdf">PDF</a>, <a
+    href="homework3.tex">LaTeX</a>] 
+</ul>
+
+<p><b>Data-sets:</b>
+<ul>
+<li> <a href="Data/cd4.data">CD4 cell count example</a>
+<li> <a href="Data/Sr.dat">Sr data set</a>
+<li> <a href="Data/intensity.dat"> Intensities data </a>
+<li> <a href="Data/microarray.dat"> Gene expression microarray data </a>
+<li> <a href="Data/diabetes.dat"> Diabetes study data </a>
+<li> <a href="Data/kyphosis.dat"> Kyphosis study data </a>
+</ul>
+
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<a name="books"> <b> Books that are referenced often</b>
+<UL>
+  <li> Hastie, T.J. and Tibshirani, R.J. (1990). <i> Generalized
+      Additive Models. </i> Chapman and Hall/CRC: New York
+  <li> Hardel, W. (1990) <i> Applied Nonparametric Regression. </i>
+      Cambridge University Press: New York
+  <li> Loader, C. (1999)<i> Local Regression and Likelihood. </i>
+      Sringer: New York
+  <li> Chambers, J.M. and Hasite, T.J. (1993). <i> Statistical Models
+      in S. </i> Chapman and Hall: New York.
+  <li> Venables, W.N. and Ripley, B.D. (1994) <i> Modern Applied
+      Statistics with S-Plus. </i> Springer-Verlag: New York.
+</UL>
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<a name="computing"> <b> Computer Resources</b>
+<BR>
+For this class you will need to learn:
+<UL>
+  <LI> <a href="http://www.biostat.jhsph.edu/~kbroman/Rintro/"> R</a>, S-Plus, or MATLAB.
+  <LI> <a
+      href="http://www.biostat.jhsph.edu/~ririzarr/BIT/latex.html"> LaTex</a> 
+  <LI> <a href="http://www.biostat.jhsph.edu/~brising/Emacs/">
+      Emcas</a> (recomended) 
+</UL>
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<a name="info"> <b> Class General Info</b>
+<br>
+Class Information:
+<UL>
+<li> Official course title: Advanced Generalized Linear Models IV 140.753-754
+<li> Unofficial title: Applied Nonparametric and Modern Statistics
+<li> Even less official title: GAM class
+<li> Instructor: Rafael A. Irizarry
+<li> Office hours by appointment, Room: E2008 
+<li> Phone 410-614-5157, email: <a href="mailto:rafa@jhu.edu">rafa@jhu.edu</a>
+<li> No Required book! 
+<li>  I assume you know: Linear Algebra (651--654 level), Statitical
+  theory (771--772 level), and GLM (751-753 level).
+<li> You are required to use one of the following computer packages:
+  R (recommended), S-Plus, or MATLAB. 
+<li> You are required to type up your homework in LaTeX
+<li> Grading: 4 homeworks 60%, 1 applied project 20%, Presentation
+  of project (in-class presentation) 20%.
+</UL>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+Last updated: 3/19/2001
+</body>
+</html>

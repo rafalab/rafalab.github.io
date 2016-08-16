@@ -1,0 +1,101 @@
+\section{Mallow's $C_p$}
+Mallow's  $\mbox{C}_p$  is a technique for model
+selection in regression (Mallows 1973). The $\mbox{C}_p$ statistic is
+defined  as a criteria 
+to assess fits when models with different numbers of parameters are being
+compared. It is given by
+\begin{equation}
+\label{Cpdef}
+\mbox{C}_p = \frac{\mbox{RSS}(p)}{\sigma^2} - N + 2p
+\end{equation}
+If model(p) is correct then  $\mbox{C}_p$ will tend to be close to or
+smaller than $p$. Therefore a simple plot of $\mbox{C}_p$ versus $p$ can be used
+to decide amongst models.
+
+In the case of ordinary linear regression, Mallow's method is based on 
+estimating the mean squared error (MSE) of 
+the estimator $\hat{\bg{\beta}\:}\!_p = {(\mathbf{X}_p'\mathbf{X}_p)^{-1}\mathbf{X}_p'\mathbf{Y}}$,
+\[
+\E [\hat{\bg{\beta}\:}\!_p - \bg{\beta}]^2
+\]
+via a quantity based on the residual sum of squares (RSS)
+\begin{eqnarray*}
+\mbox{RSS}(p) &=& \sum_{n=1}^N (y_n
+-\mathbf{x}_n\hat{\bg{\beta}\:}\!_p)^2\\ 
+&=& (\mathbf{Y}-\mathbf{X}_p\hat{\bg{\beta}\:}\!_p)'(\mathbf{Y}-\mathbf{X}_p\hat{\bg{\beta}\:}\!_p)\\
+&=& \mathbf{Y}' ( \mathbf{I}_N - \mathbf{X}_p(\mathbf{X}_p'\mathbf{X}_p)^{-1}\mathbf{X}_p') \mathbf{Y}
+\end{eqnarray*}
+Here $\mathbf{I}_N$ is an $N\times N$ identity matrix.
+By using a result for quadratic forms, presented for example as
+Theorem 1.17 in Seber's book, page 13, namely
+\[
+\E[\mathbf{Y'AY}] = \E\mathbf{[Y']A}\E[\mathbf{Y}] + \tr[\bg{\Sigma}
+\mathbf{A}] 
+\]
+$\bg{\Sigma}$ being the variance matrix of $\mathbf{Y}$,
+we find that  
+\begin{eqnarray*}
+\E [\mbox{RSS}(p)] 
+&=& \E[\mathbf{Y}' ( \mathbf{I}_N - \mathbf{X}_p(\mathbf{X}_p'\mathbf{X}_p)^{-1}\mathbf{X}_p') \mathbf{Y}]\\
+&=&\E [\hat{\bg{\beta}\:}\!_p - \bg{\beta}]^2 + \tr\left[\mathbf{I}_N - \mathbf{X}_p(\mathbf{X}_p'\mathbf{X}_p)^{-1}\mathbf{X}_p'\right]\sigma^2 \\
+&=& \E[ \hat{\bg{\beta}\:}\!_p - \bg{\beta}]^2 + \sigma^2\left(N - \tr
+\left[{(\mathbf{X}_p'\mathbf{X}_p)(\mathbf{X}_p'\mathbf{X}_p)^{-1}}\right]\right)\\
+&=& \E [\hat{\bg{\beta}\:}\!_p - \bg{\beta}]^2 + \sigma^2(N - p)
+\end{eqnarray*}
+where $N$ is the number of observations and $p$ is the number of
+parameters. Notice that when the true model has $p$ parameters
+$\E[\mbox{C}_p] = p$.  
+This shows why, if model(p) is correct, $\mbox{C}_p$ will
+tend to be close to $p$. 
+
+One problem with the $\mbox{C}_p$  criterion is that
+we have to find an 
+appropriate estimate of $\sigma^2$ to use for all values of $p$. 
+
+\subsection{$C_p$ for smoothers}
+A more direct way of constructing an estimate of PSE is to correct the
+ASR. It is easy to show that
+\[
+\E\{\mbox{ASR}(\lambda)\} = \left\{ 1 - n^{-1}\tr(2\bS_{\lambda} -
+    \bS_{\lambda} \bS_{\lambda}') \right\} \sigma^2 + n^{-1}
+    \bv_{\lambda}'\bv_{\lambda}
+\]
+notice that 
+\[
+\mbox{PSE}(\lambda) - \E\{\mbox{ASR}(\lambda)\} = n^{-1}
+2\tr(\bS_{\lambda}) \sigma^2
+\]
+
+This means that if we knew $\sigma^2$ we could find a ``corrected''
+ASR
+\[
+\mbox{ASR}(\lambda) + 2\tr(\bS_{\lambda}) \sigma^2
+\]
+with the right expected value. 
+
+For linear regression $\tr(\bS_{\lambda})$ is the number of parameters
+so we could think of $2\tr(\bS_{\lambda}) \sigma^2$ as a penalty
+for large number of parameters or for un-smooth estimates. 
+
+How do we obtain an estimate for $\sigma^2$? If we had a $\lambda^*$
+for which the bias is 0, then the usual unbiased estimate is
+\[
+\frac{\sum_{i=1}^n \{y_i - f_{\lambda^*}(x_i)\}^2}{n -
+  \tr(2\bS_{\lambda^*} -   \bS_{\lambda^*} \bS_{\lambda^*}')}
+\]
+The usual trick is to chose one a $\lambda^*$ that does little
+smoothing and consider the above estimate. Another estimate that has
+been proposed it the first order difference estimate
+\[
+\frac{1}{2(n-1)} \sum_{i=1}^{n-1} (y_{i+1} - y_i)^2
+\]
+
+Once we have an estimate $\hat{\sigma}^2$ then we can define 
+\[
+C_p = \mbox{ASR}(\lambda) + n^{-1} 2\tr(S_{\lambda})\hat{\sigma}^2
+\]
+Notice that the $p$ usually means number of parameters so it should be
+$C_{\lambda}$. 
+
+
+Notice this motivates a definition for degrees of freedoms.

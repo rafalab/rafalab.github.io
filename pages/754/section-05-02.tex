@@ -1,0 +1,162 @@
+\section{Cross Validation: Choosing smoothness parameters}
+In the section, and the rest of the class, we will denote with
+$\hat{f}_{\lambda}$ the
+estimate obtained using smoothing parameter
+$\lambda$. Notice that usually what we really have is the smooth
+$\hat{\f}_{\lambda}$. 
+
+We will use the model defined by (\ref{sinexample}). Figure \ref{f5.2.1}
+shows one outcome of this model with normal and t-distributed errors.
+
+\begin{figure}
+\begin{center}
+\epsfig{figure=Plots/plot-05-03.ps,angle=270,width=.8\textwidth}
+\end{center}
+\caption{\label{f5.2.1} Outcomes of model (\ref{sinexample})}
+\end{figure}
+
+We are trying to find the $\lambda$ that minimizes 
+\[
+\mbox{MSE}(\lambda) = n^{-1} \sum_{i=1}^n \E [ \hat{f}_{\lambda}(x_i) - f(x_i) ]^2
+\]
+Problem is we don't now $f$. 
+
+What if we could get a new set of data $y^*_1,\dots,y^*_n$ from the
+same model producing the $y_1,\dots,y_n$? This
+would be quite helpful because the {\it predictive squared error} 
+\[
+\mbox{PSE}(\lambda)=\E[ y^*_i - \hat{f}_{\lambda}(x_i) ]^2 = \E[ \{y^*_i - f(x_i)\} -
+\{\hat{f}_{\lambda}(x_i) - f(x_i)\} ] = \mbox{MSE}(\lambda) + \sigma^2.
+\]
+says that $n^{-1}\sum_{i=1}^n [ y^*_i - \hat{f}_{\lambda}(x_i) ]^2$ is 
+an average  having
+expected value the MSE plus a constant. We could view this quantity as
+an estimate of $\mbox{MSE}(\lambda) + \sigma^2$. Since $\sigma^2$
+doesn't depend on $\lambda$ we could find the $\lambda$ that minimizes
+it and think that we are close to the 
+$\lambda$ that minimizes the MSE. 
+
+Notice that the above calculation can be done because the $y^*_i$s are
+independent of the estimates 
+$\hat{f}_{\lambda}(x_i)$s, the same can't be said about the $y_i$s. 
+
+In practice it is not common to have a new set of data
+$y_i^*,i=1,\dots,n$. Cross-validation tries to imitate this by
+leaving out points
+$(x_i,y_i)$ one at a time and estimating the smooth at $x_i$ based
+on the remaining $n-1$ points. The cross-validation
+sum of squares is
+\[
+\mbox{CV}(\lambda) = n^{-1} \sum_{i=1}^n \{ y_i -
+\hat{f}_{\lambda}^{-i}(x_i) \}^2
+\]
+where $\hat{f}_{\lambda}^{-i}(x_i)$ indicates the fit at $x_i$
+computed by leaving out the $i-th$ point. 
+
+We can now use CV to choose $\lambda$ by considering a wide span of values
+of $\lambda$, computing CV($\lambda$) for each one, and choosing the
+$\lambda$ that minimizes it. Plots of CV($\lambda$) vs. $\lambda$ may
+be useful. 
+
+Why do we think this is good? First notice that 
+\begin{eqnarray*}
+\E\{y_i  - \hat{f}_{\lambda}^{-i}(x_i) \}^2 &=& \E \{ y_i - f(x_i) +
+f(x_i) - \hat{f}_{\lambda}^{-i}(x_i) \}^2\\
+&=& \sigma^2 + \E\{\hat{f}_{\lambda}^{-i}(x_i) - f(x_i)\}^2.
+\end{eqnarray*}
+Using the assumption that $\hat{f}_{\lambda}^{-i}(x_i) \approx
+\hat{f}_{\lambda}(x_i)$ we see that
+\[
+\E\{\mbox{CV}(\lambda)\} \approx \mbox{PSE}(\lambda)
+\]
+However, what we really want is
+\[
+\min_{\lambda} \E\{\mbox{CV}(\lambda)\} \approx \min_{\lambda} \mbox{PSE}(\lambda)
+\]
+but the law of large numbers says the above will do.
+
+Why not simply use the averaged squared residuals 
+\[
+\mbox{ASR}(\lambda)= n^{-1} \sum_{i=1}^n \{y_i - \hat{f}_{\lambda}(x_i)\}^2?
+\]
+It turns out this under-estimates the PSE. Notice in particular that 
+the estimate $\hat{f}(x_i) = y_i$ always has ASR equal to 0! We will
+see how we can adjust the ASR to form ``good'' estimates of the MSE. 
+
+\subsection{CV for linear smoothers}
+Now we will see some of the practical advantages of linear smoothers. 
+
+For linear smoothers in general it is not obvious what is meant by
+$\hat{f}_{\lambda}^{-i}(x_i)$. Let's give a definition...
+
+Notice that any reasonable smoother will smooth constants into
+constants, i.e. $\bS {\mathbf 1} = {\mathbf 1}$. If we think
+of the rows $\bS_{i\cdot}$ of $\bS$ as weights of a kernels,
+this condition is 
+requiring that all the $n$ weights in each of the $n$ kernels add up
+to 1. We can define 
+$\hat{f}_{\lambda}^{-i}(x_i)$ as the ``weighted average'' 
+\[
+\bS_{i\cdot} \by = \sum_{j=1}^n S_{ij} y_j
+\]
+but giving zero weight to the $i$th entry, i.e.
+\[
+\hat{f}_{\lambda}^{-i}(x_i) = \frac{1}{1 - S_{ii}}\sum_{j\neq i} S_{ij}
+y_j.
+\]
+From this definition we can find CV without actually making all the
+computations again. Lets see how:
+
+Notice that
+\[
+\hat{f}_{\lambda}^{-i}(x_i) = \sum_{j\neq i} S_{ij} y_j + S_{ii} 
+\hat{f}_{\lambda}^{-i}(x_i).
+\]
+The quantities we add up to obtain CV are the squares of
+\[
+y_i - \hat{f}_{\lambda}^{-i}(x_i) = y_i -  \sum_{j\neq i} S_{ij} y_j -
+S_{ii}  \hat{f}_{\lambda}^{-i}(x_i).
+\]
+Adding and subtracting $S_{ii} y_i$ we get
+\[
+y_i - \hat{f}_{\lambda}^{-i}(x_i) = y_i - \hat{f}_{\lambda}(x_i) + S_{ii}
+( y_i - \hat{f}_{\lambda}^{-i}(x_i))
+\]
+which implies
+\[
+y_i - \hat{f}_{\lambda}^{-i}(x_i) = \frac{ y_i -
+  \hat{f}_{\lambda}(x_i)}{1 - S_{ii}}
+\]
+and we can write
+\[
+\mbox{CV}(\lambda) = n^{-1} \sum_{i=1}^n  \left\{ \frac{ y_i -
+  \hat{f}_{\lambda}(x_i)}{1 - S_{ii}} \right\}^2
+\]
+so we don't have to compute $\hat{f}_{\lambda}^{-i}(x_i)$!
+
+Lets see how this definition of CV may be useful in finding the MSE.
+
+Notice that the above defined CV is similar to the ASR except for
+the division by $1 - S_{ii}$. To see what this is doing we notice that
+in many situations $S_{ii} \approx [\bS_{\lambda} \bS_{\lambda}]_{ii}$
+and $1/(1 - S_{ii})^2 \approx 1 + 2S_{ii}$ which implies
+\[
+\E[\mbox{CV}(\lambda)] \approx \mbox{PSE}(\lambda) + 2
+\ave[\mbox{diag}(\bS_{\lambda}) \bv^2].
+\]
+
+Thus CV adjusts ASR so that in expectation the variance term is
+correct but in doing so induces an error of $2S_{ii}$ into each of the
+bias components.
+
+In Figure \ref{f5.2.2} we see the CV and MSE for $n=100$ and $n=500$
+observatios 
+\begin{figure}
+\begin{tabular}{c}
+\epsfig{figure=Plots/plot-05-04.ps,angle=270,width=.8\textwidth}\\
+\epsfig{figure=Plots/plot-05-05.ps,angle=270,width=.8\textwidth}
+\end{tabular}
+\caption{\label{f5.2.2}CV, MSE, and fits obtained for the normal and t
+  models.}
+\end{figure}
+

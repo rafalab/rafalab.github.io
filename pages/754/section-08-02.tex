@@ -1,0 +1,155 @@
+\section{Local Likelihood}
+
+Suppose we have independent observation s
+$\{ (\bx_1,y_1),\dots,(\bx_n,y_n) \}$ that are the
+realization of a response random variable $Y$ given a 
+$P \times 1$ covariate vector $\bx$ which we  consider to be
+known. Given the 
+covariate $\bx$, the  response variable $Y$
+follows a parametric 
+distribution  
+$Y \sim g(y; \theta)$ where $\theta$ is a function of $\bx$. 
+We are interested in estimating $\theta$ using the observed data. 
+
+The log-likelihood function can be written as  
+\begin{equation}
+\label{llf}
+l(\theta_1,\dots,\theta_n) = \sum_{i=1}^n \log g(y_i; \theta_i)
+\end{equation}
+where $\theta_i = s(\bx_i)$. A standard modeling procedure
+would assume 
+a parsimonious form  for 
+the $\theta_i$s, say $\theta_i = \bx_i'\bb$,
+$\bb$ a $P \times 1$ parameter vector. In this case the log-likelihood
+$l(\theta_1,\dots,\theta_n)$ would be  a function of the
+parameter $\bb$ that could be estimated by maximum
+likelihood, that is by finding the $\bbh$ that maximizes 
+$l(\theta_1,\dots,\theta_n)$. 
+
+The local likelihood approach is based on a more general assumption,
+namely that  $s(\bx)$ is a ``smooth'' function of the
+covariate $\bx$. 
+Without more restrictive assumptions, the maximum likelihood estimate of 
+$\bth=\{s(\bx_1),\dots,s(\bx_n)\} $ is no
+longer useful because of over-fitting. Notice for example that for the
+case of regression with all the $\bx_i$s distinct the maximum likelihood estimate  would simply
+reproduce the data. 
+ 
+Suppose we are interested in estimating only
+$\theta_{0} = \theta(\bx_0)$ for a fixed covariate value $\bx_0$.   
+The local likelihood estimation approach is to assume that 
+there is some neighborhood $N_0$ of covariates that are ``close''
+enough to
+$\bx_0$ such that the
+ data $\{ (\bx_i,y_i) ; \bx_i \in N_0\}$ contain  
+information about $\theta_0$ through some {\sl link function} $\eta$ of the
+form  
+\begin{eqnarray}
+\label{etadef}
+\theta_0 &=& s(\bx_0) \equiv \eta(\bx_0, \bb) \mbox
+{ and }\\
+\label{etadef2}
+\theta_i &=& s(\bx_i) \approx \eta(\bx_i,\bb), \mbox
+{ for } \bx_i \in N_0 .
+\end{eqnarray}
+Notice that we are abusing notation here since we are considering a
+different $\bb$ for every $\bx_0$. Throughout the work we will be
+acting as if $\theta_0$ is the only parameter of interest and
+therefore not indexing variables that depend on the choice of
+$\bx_0$. 
+
+The local likelihood estimate of $\theta_0$ is obtained by 
+assuming that, for data in $N_0$, the true distribution of the data,
+$g(y_i;\theta_i)$ is approximated by
+\begin{equation}
+\label{approxdist}
+f(y_i;\bx_i,\bb) \equiv  g(y_i; \eta(\bx_i,\bb) ),
+\end{equation}
+finding the
+$\bbh$ maximizes the
+local log-likelihood equation
+\begin{equation}
+\label{lle} %local likelihood equation
+l_0(\bb) = \sum_{\bx_i \in N_0} w_i \, \log f(y_i; \bb),
+\end{equation}
+and then using Equation (\ref{etadef}) to obtain the local 
+likelihood estimate $\hat{\theta}_0$. Here $w_i$ is a weight
+coefficient related to the ``distance'' between $\bx_0$ and
+$\bx_i$. In order to obtain
+a useful estimate of $\theta_0$, we need $\bb$ to be of ``small''
+enough dimension so that we fit a parsimonious model within $N_0$.  
+
+Hastie and Tibshirani (1987) \nocite{hast:tibs:1987} discuss the case
+where the covariate $\bx$ 
+is a real 
+valued scalar and the link function is linear 
+\[
+\eta(x_i, \bb) = \beta_0 + x_i \beta_1
+\]  
+Notice that in this case, the assumption being made is that the 
+parameter function $s(x_i)$ is approximately linear within
+``small'' neighborhoods of $x_0$, i.e. locally linear.
+
+Staniswalis (1989) \nocite{stan:1989} presents a similar approach. In
+this case the 
+covariate $\bx$ is  allowed to be a vector, and the link function
+is a constant
+\[
+\eta(\bx_i, \beta) = \beta
+\]
+The assumption being made here is that the 
+parameter function $s(x_i)$ is locally constant.
+
+If we assumes a density function 
+of the form
+\begin{equation}
+\label{loess}
+\log g(y_i; \theta_i) = C  + (y_i - \theta_i)^2 / \phi
+\end{equation}
+where $K$ and $\phi$ are constants that do not depend on the
+$\theta_i$s,
+local regression may be considered a special case of local
+likelihood estimation.
+
+Notice that in this case the local likelihood estimate is going to be
+equivalent to the estimate obtained by 
+minimizing a sum of squares equation. The approach in
+Cleveland (1979) \nocite{clev:1979} and Cleveland and Devlin (1988)
+\nocite{clev:devl:1988} is to consider a real valued covariate 
+and the polynomial link function
+\[
+\eta(\bx_i,\bb) = \sum_{j=0}^d x_i^j \beta_j.
+\]
+
+In general, the approach of local likelihood estimation, including the
+three above-mentioned examples, is to assume that 
+for ``small'' neighborhoods around $\bx_0$, the distribution of
+the data is approximated by a distribution that depends on a constant
+parameter $\bb(\bx_0)$, i.e. we have locally parsimonious models. This
+allows us to  
+use the usual estimation technique of maximum likelihood. However, in
+the local version of maximum likelihood we often
+have an a priori belief that points  
+``closer'' to $\bx_0$ contain more information about
+$\theta_0$, which suggest a weighted approach. 
+
+The asymptotic theory presented in, for example,  Staniswalis (1989)
+\nocite{stan:1989} and 
+Loader (1986) \nocite{load:1996} is developed under the assumption that 
+as the size (or radius) of some neighborhood of the covariate of
+interest $\bx_0$ tends to 0, the difference between the true and
+approximating distributions within such neighborhood becomes
+negligible. Furthermore, we assume that despite the fact that the
+neighborhoods become arbitrarily small, the
+number of data points in the neighborhood somehow tends to $\infty$. 
+The idea is that, asymptotically, the behavior of the
+data within a given neighborhood, is like the  one assumed in
+classical asymptotic theory for non-IID data: The small window size
+assure that the difference between the true and approximating models is
+negligible and the large number of independent observations is
+available
+to estimate a parameter of fixed dimension that completely specifies
+the joint distribution. This concept motivates the
+approach taken in the following sections to derive a model selection
+criteria. 
+

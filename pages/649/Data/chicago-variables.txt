@@ -1,0 +1,11 @@
+date	date (YYYY-MM-DD)
+dow	day of the week (indicator)
+death 	count of deaths from all causes excluding external causes
+pm10tmean	PM10 detrended
+o3tmean	ozone detrended
+so2tmean	sulphur dioxide detrended
+no2tmean	nitrogen dioxide detrended
+cotmean	carbon monoxide detrended
+tmpd	average of maximum and minimum temperature (deg. F)
+dptp	dew point temperature (deg. F)
+rhum	relative humidity

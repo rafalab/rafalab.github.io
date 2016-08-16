@@ -1,0 +1,502 @@
+\newpage
+\section{Classification Algorithms and Regression Trees}
+This is from the book by Breiman et. al.
+
+At the university of California, San Diego Medical Center, when a
+heart attack patient is admitted, 19 variables are measured during the
+first 24 hours. They include BP, age and 17 other binary covariates
+summarizing the medical symptoms considered as important indicators of
+the patient's condition.
+
+The goal of a medical study can be to develop a method to identify
+high risk patients on the basis of the initial 24-hour data.
+
+The next figure shows  a picture of a tree structured classification
+rule that was produced in the study. The letter F means no high and
+the letter G means high risk.
+
+\centerline{\epsfig{figure=Plots/plot-07-06.ps,width=\textwidth}}
+
+How can we use data to construct trees that give us useful
+answers. There is a large amount of work done in this type of problem.
+We will give a brief description in this section.
+
+%%%Karl's notes
+\subsection{Classifiers as Partitions}
+Suppose we have a categorical outcome
+$y \in \mathcal{C} = \{1, 2, \ldots, J\}$. We call ${\cal C}$ the set
+of classes. Denote  with ${\cal X}$ the space 
+of all possible covariates.
+
+We can define a classification rule as a function $d(\bx)$ defined on
+${\cal X}$ so that for every $\bx$, $d(\bx)$ is equal to one of the numbers
+$1,\dots,J$. 
+
+This could be considered a systematic way of predicting class
+membership from the covariates.
+
+Another way to define classifiers is to partition  ${\cal X}$
+into disjoint sets $A_1,\dots,A_j$ with $d(\bx)=j$ for all $\bx \in A_j$.
+
+But how do we construct these classifiers from data? 
+
+\subsection{What is truth?}
+We are now going to describe how to construct classification rules
+from data. The 
+data we use to construct the tree is called the training set $\cal L$
+which is simply $\{ (\bx_1,j_1),\dots,(\bx_n,j_n) \}$.
+
+Once a classification rule $d(X)$ is constructed how do we define it's
+accuracy? 
+
+In this section we will define the {\it true misclassification rate}
+$R^*(d)$.
+
+
+One way to estimate $R^*(d)$ is to draw another very large subset
+(virtually infinite) from the same population as $\cal L$ and observe
+the rate of correct classification in that set. The proportion
+misclassified by $d$ is our estimate of $R^*(d)$. 
+
+To make this definition more precise, define the space ${\cal X} \times
+{\cal C}$ as the set of all couples 
+$(\bx,j)$ where $\bx \in {\cal X}$ and $j \in {\cal C}$. Let
+$\Pr(A,j)$ be a probability distribution on  ${\cal X} \times {\cal
+  C}$. Assume each element of $\cal L$ is an iid outcome
+from this distribution. 
+
+We define the misclassification rate as 
+\begin{equation}
+\label{mr}
+R^*(d) = \Pr[d(\bx) \neq j | {\cal L}]
+\end{equation}
+with $(\bx,j)$ an outcome independent of $\cal L$.
+
+How do we obtain an estimate of this?
+
+The {\it substitution estimate} simply counts how many times we are
+right with the data we have, i.e.
+\[
+R(d) = \frac{1}{N} \sum_{n=1}^N 1_{d(\bx_n) \neq j_n}.
+\]
+The problem with this estimate is that most classification algorithms
+construct $d$ trying to minimize the above equation. If we have enough
+covariates we can define a rule that always has $d(\bx_n) = j_n$ and
+randomly allocates any other $\bx$. This has an $R(d)=0$ but one can
+see that, in general, $R^*(d)$ will be much bigger.
+
+Another popular approach is the {\it test sample} estimate. Here we
+divide the data $\cal L$ into two groups ${\cal L}_1$ and
+${\cal L}_2$. We then use ${\cal L}_1$ to define $d$ and ${\cal L}_2$
+to estimate $R^*(d)$ with
+\[
+R(d) =\frac{1}{N_2} \sum_{\bx_n \in {\cal L}_2} 1_{d(\bx_n) \neq j_n}
+\]
+with $N_2$ the size of ${\cal L}_2$. A popular choice for $N_2$ is
+1/3 of $N$, the size of $\cal L$.
+
+A problem with this procedure is that we don't use 1/3 of the data
+when constructing $d$. In situations where $N$ is very large this may
+not be such a big problem.
+
+The third approach is cross validation. We divide the data into many
+subsets of equal (or approximately equal) size ${\cal L}_1,\dots{\cal
+  L}_V$, define a $d_v$ for each of these groups, and use the estimate
+\[
+R(d) = \frac{1}{V}\sum_{v=1}^V \frac{1}{N_v} \sum_{\bx_n \in {\cal L}_v} 
+ 1_{d(\bx_n) \neq j_n}.
+\]
+
+\subsection{Bayes Rule}
+The major guide that has been used in the construction of classifiers
+is the concept of the Bayes rule. A Bayes rule is the $d_B$ for which
+\[
+\Pr[d_B(\bx) \neq j) \leq \Pr[d(\bx) \neq y].
+\]
+for all classification rules $d(\bx)$.
+
+If we assume that $\Pr(A | j)$ has a probability density  $f_j(\bx)$
+such that
+\[
+\Pr(A|j) = \int_A f_j(\bx) \, dx
+\]
+then we can show
+that
+\[
+d_B(\bx) = j \mbox{ on } A_j = \{\bx; f_j(\bx)\Pr(j) = \max_i
+f_i(\bx)\Pr(j) \}.
+\]
+
+
+Discriminant analysis, kernel density estimation, and $k$-th nearest
+neighbor smoothing attempt to estimate $f_j(\bx)$ and $\Pr(j)$ in
+order to estimate the Bayes rule. They make many assumptions so the
+methods are not always useful.
+
+
+\subsection{Constructing tree classifiers}
+Notice how big the space of all possible classifiers is. In the simple
+case where ${\cal X} = \{0,1\}^p$ this space has $2^p$ elements. 
+
+Binary trees are a special case of this partition. Binary trees are
+constructed by repeated splits of the subsets of ${\cal X}$ into two
+descendant subsets, beginning with ${\cal X}$ itself. 
+
+\setlength{\unitlength}{1.0cm}
+\begin{center}
+\begin{picture}(12,11)
+
+% circles
+\thicklines
+\put(6,10){\circle{2}}
+\put(3.5,7.5){\circle{2}}
+\put(8.5,7.5){\circle{2}}
+\put(10.5,4.5){\circle{2}}
+
+% boxes
+\put(1.25,3.5){\framebox(1.5,1.5)[]{${\cal X}_5$}}
+\put(4.25,3.5){\framebox(1.5,1.5)[]{${\cal X}_6$}}
+\put(6.25,3.5){\framebox(1.5,1.5)[]{${\cal X}_7$}}
+\put(8.25,0.5){\framebox(1.5,1.5)[]{${\cal X}_8$}}
+\put(11.25,0.5){\framebox(1.5,1.5)[]{${\cal X}_9$}}
+
+% lines
+\put(5.5,9.5){\line(-1,-1){1.5}}
+\put(6.5,9.5){\line(1,-1){1.5}}
+\put(3,7){\line(-1,-2){1}}
+\put(4,7){\line(1,-2){1}}
+\put(8,7){\line(-1,-2){1}}
+\put(9,7){\line(1,-2){1}}
+\put(10,4){\line(-1,-2){1}}
+\put(11,4){\line(1,-2){1}}
+
+% text
+\put(6,10){\makebox(0,0)[]{${\cal X}$}}
+\put(3.5,7.5){\makebox(0,0)[]{${\cal X}_2$}}
+\put(8.5,7.5){\makebox(0,0)[]{${\cal X}_3$}}
+\put(10.5,4.5){\makebox(0,0)[]{${\cal X}_4$}}
+
+\put(6,8.75){\makebox(0,0)[]{Split 1}}
+\put(3.45,6){\makebox(0,0)[]{Split 2}}
+\put(8.45,6){\makebox(0,0)[]{Split 3}}
+
+\put(10.45,3){\makebox(0,0)[]{Split 4}}
+\end{picture} \end{center}
+
+The subsets created by the splits are called {\it nodes}. The subsets
+which are not split are called terminal nodes. 
+
+Each terminal nodes gets
+assigned to one of the classes. So if we had 3 classes we could get $A_1
+= {\cal X}_5 \cup {\cal X}_9$, $A_2 ={\cal X}_6$ and $A_3 ={\cal X}_7 \cup {\cal X}_8$.
+If we are using  the data we assign the class most frequently found in
+that subset of ${\cal X}$. We call these classification tress.
+
+Various question still remain to be answered
+\begin{itemize}
+\item How do we define truth?
+\item How do we construct the trees from data?
+\item How do we assess trees, i.e. what makes a good tree?
+\end{itemize}
+
+The first problem in tree construction is how to use $\cal L$ to
+determine the binary splits of $\cal X$ into smaller and smaller
+pieces. The fundamental idea is to select each split of a subset so that
+the data in each of the descendant subsets are ``purer'' than the data
+in the parent subset.
+
+This can be implemented in the following way
+
+\begin{itemize}
+\item Define the node proportions $p(j|t)$ to be the proportion of
+  cases $\bx_n \in t$ belonging to class $j$ so that $\sum_j p(j|t) =
+  1$.
+
+\item Define a measure of impurity $i(t)$ as a nonnegative function
+  $\phi$ such that it reaches its maximum at $\phi(1/n,\dots,1/n)$,
+$\phi(1,0,\dots,0)=0$,  and is symmetric with respect to its entries.
+
+A popular example is the entropy
+\[
+i(t) = - \sum_{j=1}^J p(j|t) \log p(j|t),
+\]
+but there are many other choices.
+
+\item Define a set $\cal S$ of binary splits $s$ at each node. Then we
+  chose the split that minimize the impurity of the new left and right
+  nodes
+\[
+\Delta i(s,t) = i(t) - p_L i(t_l) + p_R i(t_R)
+\]
+
+\end{itemize}
+
+
+There are many different possible splits. For continuous variables
+there are an infinite amount. We need to define the set of splits
+$\cal S$ that we consider.
+
+Most implementations require that the the splits are defined by only
+one covariate, but fancier versions permit the use of linear combinations. 
+
+If the covariate is continuous or ordered then the split must be
+defined by $x < c$ and $x \geq c$.  
+
+If the covariate is categorical then we simply consider all splits
+that divide original set into two.
+
+\setlength{\unitlength}{1.0cm}
+\begin{center}
+\begin{picture}(12,11)
+
+% circles
+\thicklines
+\put(6,10){\circle{2}}
+\put(3.5,7.5){\circle{2}}
+\put(8.5,7.5){\circle{2}}
+\put(10.5,4.5){\circle{2}}
+
+% boxes
+\put(1.25,3.5){\framebox(1.5,1.5)[]{1}}
+\put(4.25,3.5){\framebox(1.5,1.5)[]{2}}
+\put(6.25,3.5){\framebox(1.5,1.5)[]{1}}
+\put(8.25,0.5){\framebox(1.5,1.5)[]{2}}
+\put(11.25,0.5){\framebox(1.5,1.5)[]{3}}
+
+% lines
+\put(5.5,9.5){\line(-1,-1){1.5}}
+\put(6.5,9.5){\line(1,-1){1.5}}
+\put(3,7){\line(-1,-2){1}}
+\put(4,7){\line(1,-2){1}}
+\put(8,7){\line(-1,-2){1}}
+\put(9,7){\line(1,-2){1}}
+\put(10,4){\line(-1,-2){1}}
+\put(11,4){\line(1,-2){1}}
+
+% text
+\put(6,10){\makebox(0,0)[]{$x_1$}}
+\put(3.5,7.5){\makebox(0,0)[]{$x_2$}}
+\put(8.5,7.5){\makebox(0,0)[]{$x_3$}}
+\put(10.5,4.5){\makebox(0,0)[]{$x_2$}}
+
+\put(4.25,9.25){\makebox(0,0)[]{$< 5$}}
+\put(7.75,9.25){\makebox(0,0)[]{$\ge 5$}}
+\put(1.75,6){\makebox(0,0)[]{$> 3$}}
+\put(5.25,6){\makebox(0,0)[]{$\le 3$}}
+\put(6.75,6){\makebox(0,0)[]{$= 2$}}
+\put(10.25,6){\makebox(0,0)[]{$\ne 2$}}
+\put(8.75,3){\makebox(0,0)[]{$> 1$}}
+\put(12.25,3){\makebox(0,0)[]{$\le 1$}}
+\end{picture} 
+\end{center}
+
+Now all we need is a stopping rule and we are ready to create trees. A
+simple stopping rule is that $\Delta i(s,t) < \delta$, but this does
+not work well in practice. 
+
+What is usually done is that we let the trees grow to a size that is
+bigger than what we think makes sense and then prune. We remove node
+by node and compare the trees using estimates of $R^*(d)$.
+
+Sometimes to save time and/or choose smaller trees we define a
+penalized criterion based on  $R^*(d)$. 
+
+
+The big issue here is \emph{model selection}.  The model
+selection problem consists of four orthogonal components.
+
+\begin{enumerate}
+
+\item Select a space of models
+
+\item Search through model space
+
+\item Compare models
+  \begin{itemize}
+    \item of the same size
+    \item of different sizes (penalize complexity)
+  \end{itemize}
+
+\item Assess the performance of a procedure
+
+\end{enumerate}
+
+%\vsphalf
+
+\textbf{Important points}:
+\begin{itemize}
+\item Components 2 and 3 are often confused (e.g., in
+  stepwise regression).  That's bad.  
+
+\item People often forget component 1.
+  
+\item People almost always ignore component 4; it can be the hardest.
+
+\end{itemize} 
+
+
+Better trees may be found by doing a one-step ``look ahead,'' but this
+comes with the cost of a great increase in computation.
+
+
+\subsection{Regression Trees}
+If instead of classification we are interested in predicting we can
+assign a predictive value to each of the terminal nodes. Notice that
+this defines an estimate for the regression function
+$\E(Y|X_1,\dots,X_n)$ that is like a multidimensional bin smoother.
+We call these regression trees.
+
+Regression trees are constructed in a similar way to classification
+trees. They are used for the case where $Y$ is a
+continuous random variable. 
+
+
+
+A regression tree partitions $x$-space into disjoint regions $A_k$
+and provides a fitted value $\E(y | x \in A_k)$ within each region.
+
+\setlength{\unitlength}{1.0cm}
+\begin{center}
+\begin{picture}(12,11)
+
+% circles
+\thicklines
+\put(6,10){\circle{2}}
+\put(3.5,7.5){\circle{2}}
+\put(8.5,7.5){\circle{2}}
+\put(10.5,4.5){\circle{2}}
+
+% boxes
+\put(1.25,3.5){\framebox(1.5,1.5)[]{13}}
+\put(4.25,3.5){\framebox(1.5,1.5)[]{34}}
+\put(6.25,3.5){\framebox(1.5,1.5)[]{77}}
+\put(8.25,0.5){\framebox(1.5,1.5)[]{51}}
+\put(11.25,0.5){\framebox(1.5,1.5)[]{26}}
+
+% lines
+\put(5.5,9.5){\line(-1,-1){1.5}}
+\put(6.5,9.5){\line(1,-1){1.5}}
+\put(3,7){\line(-1,-2){1}}
+\put(4,7){\line(1,-2){1}}
+\put(8,7){\line(-1,-2){1}}
+\put(9,7){\line(1,-2){1}}
+\put(10,4){\line(-1,-2){1}}
+\put(11,4){\line(1,-2){1}}
+
+% text
+\put(6,10){\makebox(0,0)[]{$x_1$}}
+\put(3.5,7.5){\makebox(0,0)[]{$x_2$}}
+\put(8.5,7.5){\makebox(0,0)[]{$x_3$}}
+\put(10.5,4.5){\makebox(0,0)[]{$x_2$}}
+
+\put(4.25,9.25){\makebox(0,0)[]{$< 5$}}
+\put(7.75,9.25){\makebox(0,0)[]{$\ge 5$}}
+\put(1.75,6){\makebox(0,0)[]{$> 3$}}
+\put(5.25,6){\makebox(0,0)[]{$\le 3$}}
+\put(6.75,6){\makebox(0,0)[]{$= 2$}}
+\put(10.25,6){\makebox(0,0)[]{$\ne 2$}}
+\put(8.75,3){\makebox(0,0)[]{$> 1$}}
+\put(12.25,3){\makebox(0,0)[]{$\le 1$}}
+\end{picture} \end{center}
+
+In other words, this is a decision tree where the outcome is a
+fitted value for $y$.
+
+
+We need a new definition $d(\bx)$ and $R^*(d)$.
+
+Now $d(\bx_j)$ will simply be the average of the terminal node where
+$\bx_j$ lies. So $d(\bx)$ defines a step-function ${\mathbb R}^p
+\rightarrow {\mathbb R}$.
+
+Instead of misclassification rate, we can define mean squared error
+\[
+R^*(d) = \E[ Y - d(\bx) ]^2
+\]
+
+The rest is pretty much the same.
+\subsection{General points}
+
+From Karl Broman's notes.
+
+\begin{itemize}
+
+\item This is most natural when the explanatory variables are
+  categorical (and it is especially nice when they are \emph{binary}).
+
+\item There is nothing special about the tree structure...the tree
+  just partitions $x$-space, with a fitted value in each region.
+
+\item \textbf{Advantage}: These models go after
+  \emph{interactions\/} immediately, rather than as an afterthought.  
+
+\item \textbf{Advantage}: Trees can be easy to explain to
+  non-statisticians. 
+  
+\item \textbf{Disadvantage}: Tree-space is huge, so we may need
+  \emph{a lot\/} of data.
+  
+\item \textbf{Disadvantage}: It can be hard to assess uncertainty in
+  inference about trees.
+
+\item \textbf{Disadvantage}: The results can be quite variable.  (Tree
+  selection is not very \emph{stable}.)
+
+\item \textbf{Disadvantage}: Actual \emph{additivity\/} becomes a mess
+  in a binary tree.  This problem is somewhat alleviated by allowing
+  splits of the form $x_1 + b x_2 < (\ge) \; d$.
+
+\end{itemize}
+
+
+
+
+
+\centerline{\textbf{Computing with trees}}
+
+%\HRule
+
+%\vsphalf
+
+
+\textbf{R}: \verb|library(tree)|; \verb|library(rpart)|  
+[MASS, ch 10]
+
+%\vspone
+
+\textbf{An important issue}: Storing trees
+
+%\vsphalf
+
+Binary trees are composed of nodes (root node, internal nodes and
+terminal nodes).
+
+%\vsphalf
+
+\emph{Root and internal nodes}:
+\begin{itemize}
+\item Splitting rule (variable + what goes to right)
+\item Link to left and right daughter nodes
+\item Possibly a link to the parent node (null if this is the root
+  node)
+\end{itemize}
+
+\emph{Terminal nodes}:
+\begin{itemize}
+\item Fitted value
+\item Possibly a link to the parent node
+\end{itemize}
+
+%\vspone
+
+\textbf{C}: Use pointers and structures (\verb|struct|)
+
+%\vsphalf
+
+\textbf{R}: It beats me.  Take a look.
+
+
+
+
+\textbf{Ref}: Breiman et al (1984) Classification and regression
+trees.  Wadsworth.

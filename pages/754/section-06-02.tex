@@ -1,0 +1,60 @@
+\section{Smoothing and Penalized Least Squares }
+In Section 4.4.1 we saw that the smoothing spline solution to a
+penalized least squares is a linear smoother.
+
+Using the notation of Section 4.4.1, we can write the penalized
+criterion as 
+\[
+(\by - \bB\bg{\theta})'(\by - \bB\bg{\theta}) +
+\lambda\bg{\theta}'\bg{\Omega}\bg{\theta}
+\]
+
+Setting derivatives with respect to $\bg{\theta}$ equal to 0 gives
+the estimating equation:
+\[
+(\bB'\bB + \lambda\bg{\Omega})\bg{\theta} = \bB'\by
+\]
+the $\hat{\bg{\theta}}$ that solves this equation will give us the
+estimate $\hat{\g} = \bB \hat{\bg{\theta}}$.
+
+
+Write:
+\[
+\hat{\g} = \bB \bg{\theta} = \bB(\bB'\bB + \lambda \bg{\Omega})^{-1}
+\bB'\by =  ({\mathbf I} + \lambda {\mathbf K})^{-1}\by
+\]
+where ${\mathbf K} = \bB'^{-} \bg{\Omega} \bB^{-}$. 
+
+Notice we can
+write the penalized criterion as
+\[
+(\by - \g)'(\by - \g) + \lambda \g' {\mathbf K} \g
+\]
+
+If we plot the rows of this linear smoother we will see that it is
+like a kernel smoother.
+
+
+
+\begin{figure}[htb]
+\caption{Kernels of a smoothing spline.}
+\begin{center}
+\epsfig{figure=Plots/plot-06-03.ps,angle=270,width=\textwidth}
+\end{center}
+\end{figure}
+
+Notice that for any linear smoother  with a symmetric and nonnegative
+definite $\bS$, i.e. there $\bS^{-}$ exists, then 
+we can argue in reverse: $\hat{\f}=\bS\by$ is the value that minimizes the
+penalized least squares criteria of the form
+\[
+(\by - \f)'(\by - \f) + \f'(\bS^{-} - I)\f.
+\]
+
+Some of the smoothers presented in this class are not symmetrical but
+are close. In fact for many of them one can show that asymptotically
+they are symmetric.
+
+
+
+

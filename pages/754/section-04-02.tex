@@ -1,0 +1,127 @@
+\section{Local Polynomials}
+In practical situations, a statistician is rarely blessed with simple
+linear relationship between the predictor $X$ and the observed output
+$Y$. That is, as a description of the regression function $f$, the
+model 
+\[
+g(x;\bg{\theta}) = \theta_1 + \theta_2 x, x \in I
+\]
+typically ignores obvious features in the data. This is certainly the
+case for the values of $^{87} Sr$. 
+
+The Strontium data set was collected to test several hypotheses 
+about the catastrophic events that occurred approximately 65 million
+years ago. The data contains Age in million of years and the ratios
+described here. There is a division between
+two geological time periods, the Cretaceous (from 66.4 to 144 million
+years ago) and the 
+Tertiary (spanning from about 1.6 to 66.4 million years ago). Earth
+scientist believe that the boundary between these periods is
+distinguished by tremendous changes in climate that accompanied a mass
+extension of over half of the species inhabiting the planet at the
+time. Recently, the compositions of Strontium (Sr) isotopes in sea
+water has been used to evaluate several hypotheses about the cause of
+these extreme events. The dependent variable of the data-set is related to
+the isotopic make up of Sr measured for the shells of marine
+organisms. The Cretaceous-Tertiary boundary is referred to as
+KTB. There data shows a 
+peak is at this time and this is used as 
+evidence that a meteor collided with earth. 
+
+The data presented in the Figure \ref{4.1} represents standardized ratio of
+strontium-87 isotopes ($^{87}$Sr) to strontium-86 isotopes ($^{86}$Sr)
+contained in the shells of foraminifera fossils taken form cores
+collected by deep sea drilling. For each sample its time in history is
+computed and  the standardized ratio is computed:
+\[
+^{87}\delta \mbox{Sr} = \left( \frac{ ^{87}\mbox{Sr}/^{86}\mbox{Sr sample}}{^{87}\mbox{Sr}/^{86}\mbox{Sr sea
+    water}} - 1\right) \times 10^5.
+\] 
+Earth scientist expect that $^{87}\delta \mbox{Sr}$ is a smooth-varying
+function of time and that deviations from smoothness are  mostly
+measurement error. 
+
+
+\begin{figure}[h]
+\centerline{\epsfig{figure=Plots/plot-04-01.ps,angle=270,width=.8\textwidth}}
+\caption{\label{f4.1}  $^{87}\delta \mbox{Sr}$ data.}
+\end{figure}
+
+To overcome this deficiency, we might
+consider a more flexible polynomial model. Let ${\cal P}_k$ denote the
+linear space of polynomials in $x$ of order at most $k$ defined as
+\[
+g(x;\bg{\theta}) = \theta_1 + \theta_2 x + \dots + \theta_k x^{k-1},
+x\in I
+\]
+for the parameter vector $\bg{\theta} = (\theta_1,\dots,\theta_k) \in
+{\mathbb R}^k$. Note that the space ${\cal P}_k$ consists of
+polynomials having degree at most $k-1$.
+
+In exceptional cases, we have reasons to believe that the regression
+function $f$ is in fact a high-order polynomial. This parametric
+assumption could be based on physical or physiological models
+describing how the data were generated. 
+
+
+For historical values of $^{87}
+\delta Sr$ we consider polynomials simply because our scientific
+intuition tells us that $f$ should be
+smooth. 
+
+Recall Taylor's theorem: polynomials are good at approximating
+well-behaved functions in reasonably tight neighborhoods. If all we can
+say about $f$ is that it is smooth in some sense, then either
+implicitly or explicitly we consider high-order polynomials because
+of their favorable approximation properties. 
+
+If $f$ is not in ${\cal P}_k$ then our
+estimates will be biased by an amount that 
+reflects the approximation error incurred by a polynomial model.
+
+% Given $(X_i,Y_i), i=1,\dots,n$ a unique OLS estimate
+% $\hat{\bg{\theta}}$ exists provided there are at least $k$ unique
+% values of $\{X_i\}$ 
+
+% HOMEWORK: prove
+
+Computational Issue: The basis of monomials
+\[
+B_j(x) = x^{j-1} \mbox{ for } j=1,\dots,k
+\]
+ is not well suited for numerical calculations ($x^8$ can be VERY BIG
+ compared to $x$). While convenient for analytical manipulations
+ (differentiation, 
+integration), this basis is {\it ill-conditioned} for $k$ larger than
+$8$ or $9$. Most statistical packages use the orthogonal Chebyshev
+polynomials (used by the R command {\tt poly()}).
+
+
+An alternative to polynomials is to consider the space ${\cal
+  PP}_k(\bt)$ of piecewise polynomials with break points
+  $\bt=(t_0,\dots,t_{m+1})'$. 
+Given a sequence $a = t_0 < t_1 < \dots < t_m < t_{m+1} = b$,
+  construct $m+1$ (disjoint) intervals
+\[
+I_l = [t_{l-1},t_l), 1 \leq l \leq m \mbox{ and } I_{m+1} =
+[t_m,t_{m+1}],
+\]
+whose union is $I=[a,b]$. Define the piecewise polynomials of order
+$k$  
+\[
+g(x) = \left\{   \begin{array}{cc}
+    g_1(x) = \theta_{1,1} + \theta_{1,2} x + \dots + \theta_{1,k}
+    x^{k-1},&x \in I_1\\
+    \vdots&\vdots\\
+    g_{m+1}(x) = \theta_{m+1,1} + \theta_{m+1,2} x + \dots + \theta_{m+1,k}
+    x^{k-1},&x \in I_{k+1}.
+\end{array}
+\right.
+\]
+
+In homework 2, we saw or will see that piecewise polynomials are a
+linear space that present an
+alternative to polynomials. However, it is hard to justify the breaks
+in the function $g(x;\hat{\bg{\theta}})$. 
+
+

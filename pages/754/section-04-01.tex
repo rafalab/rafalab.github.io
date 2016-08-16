@@ -1,0 +1,209 @@
+\section{Linear Spaces}
+In this chapter our approach to estimating $f$ involves the use of
+finite dimensional linear spaces. 
+
+Remember what a linear space is? Remember definitions of dimension,
+linear subspace, orthogonal projection, etc...
+
+Why use linear spaces? 
+\begin{itemize}
+\item Makes estimation and statistical computations easy.
+\item Has nice geometrical interpretation.
+\item It actually can specify a broad range of models given we have 
+  discrete data.
+\end{itemize}
+
+Using linear spaces we can define many families of function $f$; 
+straight lines, polynomials, splines, functions with two continuous
+derivatives, and many other spaces (these are examples for the case
+where $\bx$ is a scalar). The point is: we have many options.
+
+Notice that in most practical situation we will have  observations
+$(\bX_i,Y_i), i=1,\dots,n$. In some situations we are only interested
+in estimating $f(\bX_i),i=1,\dots,n$. In fact, in many situations it
+is all that matters from a statistical point of view. We will write
+$\f$ when referring to the this vector and $\hat{\f}$ when referring to
+an estimate. Think of how its different to know $f$ and know $\f$.
+
+Let's say we are interested in estimating $\f$. A common practice in
+statistics is to assume that $\f$ lies in some {\it linear space}, or
+is well approximated by a $\g$ that lies in some {\it linear space}. 
+
+For example for simple linear regression we assume that $\f$ lies in the
+linear space 
+of lines:
+\[
+\alpha + \beta \bx, (\alpha,\beta)' \in {\mathbb R}^2.
+\]
+
+For linear regression in general we assume that $\f$ lies in the
+linear space of linear combinations of the covariates or rows of the
+design matrix. How do we write it out?
+
+Note: Through out this chapter $f$ is used to denote the true
+regression function and $g$ is used to denote an arbitrary function in
+a particular space of functions. It isn't necessarily true that $f$ lies
+in this space of function. Similarly we use $\f$ to denote the true function
+evaluated at the design points or observed covariates and $\g$ to
+denote an arbitrary function evaluated at the design points or
+observed covariates. 
+
+
+Now we will see how and why it's useful to use linear models in a more
+general setting. 
+
+A linear model  of order $p$ for the
+regression function (\ref{fdef}) consists of a $p$-dimensional linear 
+space $\cal G$, having as a basis the function 
+\[
+B_j(\bx), j=1,\dots,p
+\]
+defined for $\bx \in I$. Each member  $g \in \cal G$ can be written
+uniquely as a linear combination 
+\[
+g(\bx) = g(\bx; \bg{\theta}) = \theta_1 B_1(\bx) + \dots + \theta_p
+B_p(\bx)
+\]
+for some value of the coefficient vector $\bg{\theta} =
+(\theta_1,\dots,\theta_p)' \in {\mathbb R}^p$. 
+
+Notice that $\bg{\theta}$ specifies the point $g \in \cal G$. 
+
+How would you write this out for linear regression?
+
+
+Given observations $(\bX_i,Y_i), i=1,\dots,n$ the least squares
+estimate (LSE) of $\f$ or 
+equivalently $f(\bx)$ is defined by $\hat{f}(\bx) =
+g(\bx;\hat{\bg{\theta}})$, 
+where 
+\[
+\hat{\bg{\theta}} = \arg\min_{\bg{\theta} \in {\mathbb R}^p} \sum_{i=1}^n \{Y_i -
+g(\bX_i,\bg{\theta})\}^2.
+\]
+Define the vector $\g = \{g(x_1),\dots,g(x_n)\}'$. Then the distribution
+of the observations of $Y | X=x$ are in the family 
+\begin{equation}
+\label{nonparametric}
+\{ N(\g,\sigma^2 {\mathbf I}_n); \g = [g(x_1),\dots,g(x_n)]', \, g \in {\cal G}\}
+\end{equation}
+and if we assume the errors $\varepsilon$ are IID normal and that $f \in \cal
+  G$ we have that $\hat{\f} = 
+[g(x_1;\hat{\bg{\theta}}),\dots,g(x_n;\hat{\bg{\theta}})]$ is the  
+maximum likelihood estimate. The estimand $\f$ is an $n \times 1$
+  vector. But how many parameters are we really estimating?
+
+Equivalently we can think of the
+distribution is in the family 
+\begin{equation}
+\label{parametric}
+\{N(\bB \bg{\theta},\sigma^2); \bg{\theta} \in {\mathbb R}^p\}
+\end{equation}
+and the maximum likelihood estimate for $\bg{\theta}$ is
+$\hat{\bg{\theta}}$. Here $\bB$ is a matrix of basis elements defined soon...
+
+Here we start seeing for the first time where the name {\it non-parametric}
+comes from. How are the approaches (\ref{nonparametric}) and
+(\ref{parametric}) different?
+
+Notice that obtaining $\hat{\bg{\theta}}$ is easy because of the
+linear model set-up. The ordinary least square estimate is 
+\[
+(\bB'\bB)\hat{\bg{\theta}} = \bB'\bY
+\]
+where $\bB$ is is the $n \times p$ design matrix with elements
+$[\bB]_{ij}=B_j(\bX_i)$. When this solution is unique we refer to
+$g(x;\hat{\bg{\theta}})$ as the OLS projection of $\bY$ into $\cal G$
+(as learned in the first term).
+
+
+%%%Plagerized
+\subsection{Parametric versus non-parametric}
+In some cases, we have reason to believe that the function $f$ is
+actually a member of some linear space $\cal G$. Traditionally,
+inference for regression models depends on $f$ being representable
+as some combination of known predictors. Under this assumption, $f$
+can be written as a combination of basis elements for some value of
+the coefficient vector $\bg{\theta}$. This provides a {\it
+parametric} specification for $f$. No matter how many observations we
+collect, there is no need to look outside the fixed,
+finite-dimensional, linear space $\cal G$ when estimating $f$. 
+
+
+In practical situations, however, we would rarely believe such
+relationship to be exactly true. Model spaces $\cal G$ are understood
+to provide (at best) approximations to $f$; and as we collect more and
+more samples, we have the freedom to audition richer and richer
+classes of models. In such cases, all we might be willing to say about
+$f$ is that it is {\it smooth} in some sense, a common assumption
+being that $f$ have two bounded derivatives. Far from the assumption
+that $f$ belong to a fixed, finite-dimensional linear space, we
+instead posit a {\it nonparametric} specification for $f$. In this
+context, model spaces are employed mainly in our approach to
+inference; first in the questions we pose about an estimate, and then
+in the tools we apply to address them. For example, we are less
+interested in the actual values of the coefficient $\bg{\theta}$,
+e.g. whether or not an element of $\bg{\theta}$ is significantly
+different from zero to the 0.05 level. Instead we concern ourselves
+with functional properties of $g(\bx; \hat{\bg{\theta}})$, the
+estimated curve or surface, e.g. whether or not a peak is real.
+
+To ascertain the local behavior of OLS projections onto approximation
+spaces $\cal G$, define the pointwise, mean squared error (MSE) of
+$\hat{g}(\bx) = g(\bx;\hat{\bg{\theta}})$ as 
+\[
+\E \{ f(\bx) - \hat{g}(\bx) \}^2 = \bias^2\{\hat{g}(\bx)\} +
+\var\{\hat{g}(\bx)\}
+\]
+where 
+\begin{equation}
+\label{bias}
+\bias\{\hat{g}(\bx)\} = f(x) - \E\{\hat{g}(\bx)\}
+\end{equation}
+and
+\[
+\var\{\hat{g}(\bx)\} = \E\{\hat{g}(\bx) - \E[\hat{g}(\bx)]\}^2
+\]
+When the input values $\{\bX_i\}$ are deterministic the expectations
+above are with respect to the noisy observation ${Y_i}$. In practice,
+MSE is defined in this way even in the random design case, so we look
+at expectations conditioned on $\bX$. 
+
+When we do this, standard results in regression theory can be applied
+to derive an expression for the variance term
+\[
+\var\{\hat{g}(\bx)\} = \sigma^2 \bB(\bx)'(\bB'\bB)^{-1}\bB(\bx)
+\]
+where $\bB(\bx) = (B_1(\bx),\dots,B_p(\bx))'$, and the error variance is
+assumed constant.
+
+Under the parametric specification that  
+$f \in \cal G$, what is the bias? 
+
+ This leads to
+classical t- and F-hypothesis tests and associated parametric
+confidence intervals for $\bg{\theta}$. Suppose on the other hand,
+that $f$ is not a member of $\cal G$, but rather can be reasonably
+approximated by an element in $\cal G$. The bias (\ref{bias}) now reflects
+the ability of functions in $\cal G$ to capture the essential features
+of $f$.
+
+
+% where the dist$(f,{\cal G})$ is defined as
+% \[
+%  \mbox{dist}(f,{\cal G}) = \min_{g \in \cal G} ||f-g||,
+% \]
+% for some norm.
+% An example of a norm that is used frequently is the $L_{\infty}$ 
+% \[
+% || f - g||_{\infty} = \sup_{\bx \in I} | f(x) - g(x) |.
+% \]
+% In general we characterize the contribution of bias to the MSE through
+% the {\it approximation rate} obtained by $\cal G$ given our
+% assumptions about the regularity or smoothness of $f$. Broadly, the
+% better the approximation rate (the more flexible the space $\cal G$,
+% the lower the bias. As we will see, however, we pay for improved
+% approximation power with excess degrees of freedom (e.g. by moving
+% from a linear to quadratic or cubic polynomial) and hence incur extra
+% variability.
+%\newpage

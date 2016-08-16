@@ -1,0 +1,76 @@
+%%%%this file inputes all section-02-*.tex files. 
+\chapter{Overview of various smoothers}
+A scatter plot smoother is a tool for finding structure in a scatter
+plot: $(x_1,y_1),\dots,(x_n,y_n)$
+
+
+\begin{figure}[htp]
+\caption{\label{f2.1} CD4 cell count since seroconversion for HIV
+  infected men.} 
+\centerline{\epsfig{figure=Plots/plot-02-01.ps,angle=270,width=.8\textwidth}}
+\end{figure}
+
+\begin{itemize}
+\item Suppose that we consider $\by = (y_1,\dots,y_n)'$ as the {\it response
+measurements} and $\bx = (x_1,\dots,x_n)'$ as the {\it design points}.
+
+\item We can think of $\bx$ and $\by$ as outcomes of random variable $X$
+and $Y$. However, for scatter plot smoothers we don't
+really need stochastic assumptions, it can be considered as a
+descriptive tool.
+
+\item A scatter plot smoother can be defined as a function (remember
+  the general definition of {\it function}) of $\bx$ and
+$\by$ with domain at least containing the values in $\bx$: $s =
+\bS[\by | \bx]$. 
+ 
+\item There is usually a ``recipe'' that gives $s(x_0)$, which is the function
+$\bS[\by | \bx]$ evaluated at $x_0$,  for all $x_0$. We will be
+calling $x_0$ the {\it target value} when we giving the recipe. Note:
+Some recipes don't give an $s(x_0)$ for all $x_0$, but only for the
+$x$'s included in $\bx$. 
+
+\end{itemize}
+
+Note we will call the vector $\{s(x_1),\dots,s(x_n)\}'$ as {\it the smooth}.
+
+Here is a stupid example: If we assume a random desing model and take
+expectations over the empirical distribution $\hat{F}$, defined by the
+observations, we have for any $x_0 \in \{x_1,\dots,x_n\}$, 
+\[
+E_{\hat{F}}[Y|X=x_0] = \ave \{ y_i; x_i = x_0\}. 
+\]
+Define $s(x_0)=\E_{\hat{F}}[Y|X=x_0]$. What happens if the $x_i$ are
+unique? 
+
+Since $Y$ and $X$ are, in general,  non-categorical we don't expect to
+find many replicates at any given value of $X$. This means that we
+could end up with the data again, $s(x_0)=y_0$ for all $x_0$. Not very
+smooth!
+
+Note: For convenience, through out this chapter,  we assume that the
+data are sorted by $X$. 
+
+Many smoothers force  $s(x)$ to be a smooth function of $x$. This is
+a fancy way of saying we think data points that are close (in $x$)
+should have roughly the same expectation. 
+
+\newpage
+
+\input{section-02-01}
+
+\newpage
+
+\input{section-02-02}
+
+\newpage
+
+\input{section-02-03}
+
+\input{section-02-04}
+
+\input{section-02-05}
+
+
+
+

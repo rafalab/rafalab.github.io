@@ -1,0 +1,308 @@
+\section{Economical Bases: Wavelets and REACT estimators }
+If one consider the ``equally spaced'' Gaussian regression:
+\begin{equation}
+\label{lastmodel}
+y_i = f(t_i) + \varepsilon_i, i=1,\dots,n
+\end{equation}
+$t_i = (i-1)/n$ and the $\varepsilon_i$s IID $N(0,\sigma^2)$, many things
+simplify. 
+ 
+We can write this in matrix notation: the response vector $\by$ is 
+$N_n(\f,\sigma^2{\mathbf I})$ 
+with $\f=\{f(t_1),\dots,f(t_n)\}'$. 
+
+As usual we want to find an estimation  procedure that minimizes risk:
+\[
+n^{-1} \E || \hat{\f} - \f ||^2 = n^{-1} \E \left[ \sum_{i=1}^m \{
+ \hat{f}(t_i) - f(t_i) \}^2\right].
+\]
+
+We have seen that the MLE is $\hat{f}_i = y_i$ which intuitively does
+not seem very useful. There is actually an  
+important result in statistics that makes this more precise. 
+
+Stein (1956) noticed that the MLE is 
+inadmissible: There is an estimation 
+procedure producing estimates with smaller risk that the MLE for any 
+$\f$.
+
+To develop a non-trivial theory MLE won't do. A popular procedure is
+to specify
+some fixed class $\cal F$ of functions where  $f$ lies and seek an
+estimator $\hat{f}$ attaining minimax risk  
+\[
+\inf_{\hat{f}} \sup_{f \in {\cal F}} R(\hat{f},f)
+\]
+
+By restricting $f \in \cal F$ we make assumptions on the smoothness of
+$f$. For example, the $L^2$ Sobolev family makes an assumption 
+on the number $m$ of continuous derivatives and a limits the size of the
+$m$th derivative.
+
+
+\subsection{Useful transformations}
+Remember  $\f \in {\mathbb R}^n$ and that there are many
+orthogonal bases for this space. Any orthogonal basis can be
+represented with an 
+orthogonal transform $\bU$ that gives us the coefficients for any $\f$
+by multiplying $\bxx = \bU' \f$. This means that we can represent any
+vector as $\f = \bU \bxx$. 
+
+Remember that the eigen analysis of smoothing splines we can view the
+eigenvectors a such a transformation.
+
+If we are smart, we can choose a transformation $\bU$ such that $\bxx$
+has some useful interpretation. Furthermore, certain
+transformation may be more ``economical'' as we will see.
+
+For {\bf equally spaced data} a widely used transformation is the 
+Discrete Fourier Transform (DFT).  Fourier's theorem says that any $\f
+\in {\mathbb R}^n$  
+can be re-written as 
+\[
+f_i = a_0 + \sum_{k=1}^{n/2 - 1} \left\{
+  a_{k} \cos \left(\frac{2\pi k}{n}  \, i \right) \, 
+  + b_{k} \sin \left(\frac{2 \pi k}{n} \,i \right) \right\} + a_{n/2}
+  \cos (\pi i) 
+\]
+for $i=1,\dots,n$. This defines a basis and the coefficients $\ba = 
+(a_0,a_1,b_1,\dots,\dots,a_{n/2})'$ can be obtained via $\ba = \bU'
+\f$ with $\bU$ having columns of sines and cosines:
+\begin{eqnarray*} 
+  U_1 &=& [n^{-1/2}: 1 \leq i \leq n] \\
+  U_{2k} &=& [(2/n)^{1/2}\sin\{2\pi k i/n\} : 1 \leq i \leq
+  n], k=1,\dots,n/2 \\
+  U_{2k+1} &=& [(2/n)^{1/2}\cos\{2\pi k i/n\} : 1 \leq i \leq
+  n], k=1,\dots,n/2-1.
+\end{eqnarray*}
+Note: This can easily be changed to the case where $n$ is odd by
+substituting $n/2$ by $\lfloor n/2 \rfloor$ and taking out the last
+term last term $a_{\lceil n/2 \rceil}$.
+
+If a signal is close to a sine wave $f(t) = \cos(2 \pi j t / n +
+\phi)$ for some integer $1\leq j \leq n$, only 
+two of the coefficients in $\ba$ will be big, namely the ones associated with
+the columns $2j-1$ and $2j$, the
+rest will be close to 0. 
+
+This makes the basis associated with the DFT very economical (and the
+{\it periodogram a 
+good detector of hidden periodicities)}. Consider that if we where to
+transmit the 
+signal, say using modems and a telephone line, it would be more
+``economical'' to send $\ba$ instead of 
+the $\f$. Once $\ba$ is received, $\f=\bU\ba$ is reconstructed. This
+is basically what data compression is all about.
+
+Because we are dealing with equally spaced data, the coefficients of
+the DFT are also related to smoothness. Notice that 
+the columns of $U$ are increasing in frequency and thus decreasing in
+smoothness. This means that a ``smooth'' $\f$ should have only the
+first $\ba = \bU'\f$ 
+relatively different 
+from 0. 
+
+
+\begin{figure}[htb]
+\begin{center}
+\epsfig{figure=Plots/plot-06-09.ps,angle=270,width=.75\textwidth}
+\end{center}
+\end{figure}
+
+A close relative of the DFT is the 
+Discrete Cosine Transform (DCT).
+\begin{eqnarray*}
+  U_1 &=& [n^{-1/2}: 1 \leq i \leq n] \\
+  U_k &=& [(2/n)^{1/2}\cos\{\pi(2i-1)k/(2/n)\} : 1\ \leq i \leq n],
+  k=2,\dots,n 
+\end{eqnarray*}
+
+
+
+Economical bases together with ``shrinkage'' ideas can be used to
+reduce risk and even to obtain estimates with minimax properties. We
+will see this through an example
+
+\subsection{An example}
+We consider body temperature data taken from a mouse every 30 minutes
+for a day, so we have $n=48$. We believe measurements will have  
+measurement error and maybe environmental variability so we use a
+stochastic model  like
+(\ref{lastmodel}). We expect body temperature to  change 
+``smoothly'' through-out the day  so we believe $f(x)$ is
+smooth. Under this assumption $\bxx=\bU'\f$, with $\bU$ the DCT,
+should have only a few coefficients that are ``big''. 
+
+Because the transformation is orthogonal we have that $\bz = \bU'\by$
+is $N(\bxx,\sigma^2 {\mathbf I})$. An idea we learn from Stein (1956)
+is to consider linear shrunken estimates $\hat{\bxx} = \{ \bw\bz; \bw
+\in [0,1]^n\}$. Here the product $\bw \bz$ is taken component-wise
+like in S-plus. 
+
+We can then choose the shrinkage coefficients that
+minimize the risk
+\[
+E || \hat{\bxx} - \bxx||^2 = E || \bU \hat{\bxx}  - \f||^2.
+\]
+Remember that $\bU \bxx  = \bU \bU'\f = \f$.
+
+Relatively simple calculations show that  $\tilde{\bw} = \bxx^2/(\bxx^2
++ \sigma^2)$ minimizes the risk over all possible $\bw \in {\mathbb
+  R}^n$.  The MLE obtained, with $\bw = (1,\dots,1)'$, minimizes 
+the risk only if $\tilde{\bw} =  (1,\dots,1)'$ which only happens when
+there is no variance!   
+ 
+
+\begin{figure}[htb]
+\caption{\label{f6.4.2}Fitted curves obtained when using shrinkage
+coefficients of the from $\bw = 
+(1,1,\dots,1,0,\dots,0)$, with $2m+1$ the number of 1s used.}
+\begin{center}
+\epsfig{figure=Plots/plot-06-10.ps,angle=270,width=.75\textwidth}
+\end{center}
+\end{figure}
+
+Notice that $\tilde{\bw}$ makes sense because it shrinks
+coefficients with small signal to noise ratio. By shrinking small
+coefficients closer to 0 we reduce variance and the bias we add is not
+very large, thus reducing risk. However, we don't know $\bxx$ nor
+$\sigma^2$ so in practice we can't produce $\tilde{\bw}$. Here is
+where having economical bases are helpful: we construct estimation
+procedures that shrink more aggressively the coefficients for which we have
+a-priori knowledge that they are ``close to 0'' i.e. have small signal
+to noise ratio.  Two examples of such procedure are:
+
+In Figure \ref{f6.4.1}, we show for the body temperature data the
+the fitted curves obtained when using shrinkage
+coefficients of the from $\bw = 
+(1,1,\dots,1,0,\dots,0)$.
+
+
+\begin{figure}[htb]
+\caption{\label{f6.4.2}Estimates obtained with harmonic model and with REACT. We
+  also show the $\bz$ and how they have been shrunken.}
+\begin{center}
+  \epsfig{figure=Plots/plot-06-11.ps,angle=270,width=.75\textwidth}
+\end{center}
+\end{figure}
+
+If Figure \ref{f6.4.2} we show the fitted curve obtained with $\bw =
+(1,1,\dots,1,0,\dots,0)$ and using REACT. 
+In the first plot we show the coefficients shrunken to 0
+with crosses. In the second $\bz$ plot we show $\bw \bz$ with
+crosses. Notice that only the first few coefficients of the
+transformation are ``big''. Here are the same pictures for data
+obtained for 6 consecutive weekends.
+
+Finally in Figure \ref{f6.4.3} we show the two fitted curves and
+compare them to the average obtained from observing many days of data.
+
+\begin{figure}[htb]
+\caption{\label{f6.4.3} Comparison of two fitted curves to the 
+average obtained from observing many days of data.}
+
+\begin{center}
+\epsfig{figure=Plots/plot-06-12.ps,angle=270,width=.75\textwidth}
+\end{center}
+\end{figure}
+
+
+
+Notice that using $\bw = (1,1,1,1,0,\dots,0)$ reduces to a parametric
+model that assumes $f$ is a sum of 4 cosine functions. 
+
+Any smoother with a smoothing matrix $\bS$ that is a
+projection, e.g. linear regression, splines, can be consider a special
+case of what we have described here. 
+
+Choosing the transformation $\bU$ is an important step in these
+procedure. The theory developed for Wavelets motivate a choice of
+$\bU$ that is especially good at handling functions $\f$ that have
+``discontinuities''.  
+
+\subsection{Wavelets}
+The following plot show a nuclear magnetic resonance (NMR) signal. 
+
+
+
+\begin{figure}[htb]
+\begin{center}
+\epsfig{figure=Plots/plot-06-13.ps,angle=270,width=.5\textwidth}
+\end{center}
+\end{figure}
+
+
+The signal does appear to have some added noise so  we could use 
+(\ref{lastmodel}) to model the process. However,  $f(x)$ appears to
+have a peak at around $x=500$ making it not very smooth at that point.
+
+Situations like these are where wavelets analyses is especially useful
+for ``smoothing''. Now a more appropriate word is ``de-noising''.
+
+The Discrete Wavelet Transform defines an orthogonal basis just like
+the DFT and DCT. However the columns of DWT are locally smooth. This
+means that the coefficients can be interpreted as local smoothness of
+the signal for different locations. 
+
+Here are the columns of the Haar DWT, the simplest wavelet.
+
+
+\begin{figure}[htb]
+\begin{center}
+\epsfig{figure=Plots/plot-06-14.ps,angle=270,width=.5\textwidth}
+\end{center}
+\end{figure}
+
+%\centerline{\epsfig{figure=plot28.ps,angle=270,width=\textwidth}}
+
+Notice that these are step function. However, there are ways (they
+involve complicated math and no closed forms) to create ``smoother''
+wavelets. The following are the columns of DWT using the Daubechies wavelets
+
+
+
+\begin{figure}[htb]
+\begin{center}
+\epsfig{figure=Plots/plot-06-15.ps,angle=270,width=.5\textwidth}
+\end{center}
+\end{figure}
+
+%\centerline{\epsfig{figure=plot29.ps,angle=270,width=\textwidth}}
+
+The following plot shows the coefficients of the DWT by smoothness
+level and by location:
+
+
+
+\begin{figure}[htb]
+\begin{center}
+\epsfig{figure=Plots/plot-06-16.ps,angle=270,width=.5\textwidth}
+\end{center}
+\end{figure}
+
+%\centerline{\epsfig{figure=plot30.ps,angle=270,width=\textwidth}}
+
+Using wavelet with shrinkage seems to perform better at de-noising
+than smoothing splines and loess as shown by the following figure.
+
+
+\begin{figure}[htb]
+\begin{center}
+\epsfig{figure=Plots/plot-06-17.ps,angle=270,width=.5\textwidth}
+\end{center}
+\end{figure}
+
+%\centerline{\epsfig{figure=plot31.ps,angle=270,width=\textwidth}}
+
+
+
+
+
+
+\begin{figure}[htb]
+\begin{center}
+\epsfig{figure=Plots/plot-06-18.ps,angle=270,width=.5\textwidth}
+\end{center}
+\end{figure}
+
+The last plot is what the wavelet estimate looks like for the temperature data

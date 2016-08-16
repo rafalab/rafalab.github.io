@@ -1,0 +1,24 @@
+\chapter{Resampling methods: Bias, Variance, and their trade-off}
+We have defined various smoothers and nonparametric estimation
+techniques. In classical statistical theory we usually assume that the
+underlying model generating the data is in the family of models we
+are considering. For nonparametrics this assumptions is relaxed and
+asymptotic and finite sample bias and variance 
+estimates are not always easy to find in closed form. In this Chapter
+we discuss some resampling methods that are commonly used to get
+approximations of bias, variance, confidence intervals, etc... 
+
+In particular we will look at the problem of choosing smoothing
+parameters. Remember how most of the smoothers we have defined have
+some parameter that controls the smoothness of the final smooth or
+curve estimate. For kernel smoothers we defined the scale parameter, for
+local regression we defined the span or bandwidth, and for smoothing
+splines we had the penalty term. We will call all of these {\it
+the  smoothing parameter} and denote it with $\lambda$. It should be
+clear from the context which of the specific smoothing parameters we
+are referring to.
+
+
+\input{section-05-01.tex}
+\input{section-05-02.tex}
+\input{section-05-03.tex}

@@ -1,0 +1,37 @@
+\section{Mixed Models and Splines}
+
+Mixed models are defined by 
+\[
+\by = \bX \bb + \bZ \bu + \beps
+\]
+where $\by$ is a vector of $n$ observable random variables, $\bb$
+is vector of $p$ unknown parameters having fixed values (fixed
+effects), $\bX$ and $\bZ$ are known matrices and $\bu$ and
+$\beps$ are vector, of length $q$ and $n$, of unobservable variables
+(random 
+effects) such that $\E(\bu)=0$ and $\E(\beps)=0$ and 
+\[
+\var\left[ \begin{array}{c} \bu \\ \beps \end{array} \right] 
+= 
+\left[ \begin{array}{cc} G&0\\ 0&R \end{array} \right] \sigma^2
+\].
+Here $R$ and $G$ are known positive definite matrices and $\sigma^2$
+is a positive constant.
+
+Random effects are especially useful to introduce correlation to the
+random part of the model.
+
+Robinson (1991) describes how the best linear unbiased predictor of
+$\by$ is a ``good thing''. Speed (1991) notes that after defining an
+appropriate $\bX$, $\bZ$, and $G$ we have that natural smoothing are
+BLUPs.
+
+The smoothing parameter is included in the $G$ and one can view it a
+``nuisance'' parameter. Robinson (1991) suggests REML estimation
+as a way of ``estimating'' the smoothness parameter. Speed notes that
+this is equivalent to Wahba's Generalized Maximum Likelihood estimate
+of the smoothing parameter. 
+
+Furthermore, this idea permits us to model nested curves in a natural
+way. See Brumback and Rice (1998).
+

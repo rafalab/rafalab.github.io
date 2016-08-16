@@ -1,0 +1,99 @@
+\section{Linear Smoothers: Influence, Variance, and Degrees of Freedom}
+All the smoothers we have discussed in this class are linear
+smoothers. The
+estimates of the regression function can be written as 
+\[
+\hat{\f} = \bS \by.
+\]
+
+For some of the smoothers we have defined we can define a weight sequence
+for any $x$ and define
+\[
+\hat{f}(x) = \sum_{i=1}^n W_i (x) y_i.
+\]
+
+
+How can we characterize the amount of smoothing being performed? The
+smoothing parameters provide a characterization, but it is not ideal
+because it does not permit us to compare between different smoothers
+and for smoothers like loess it does not take into account the shape
+of the weight function nor the degree of the polynomial being fit.
+
+We now use the connections between smoothing and multivariate linear
+regression (they are both linear smoothers) to characterize pointwise
+criteria that characterize the amount of smoothing at a single point
+and global criteria that characterize the global amount of smoothing.
+
+We will define variance reduction, influence, and degrees of freedom
+for linear smoothers.
+
+
+The variance of the interpolation estimate is $\var[y_1] =
+\sigma^2$. The variance of our smooth estimate is 
+\[
+\var[\hat{f}(x)] = \sigma^2 \sum_{i=1}^n W_i^2(x)
+\]
+so we define $\sum_{i=1}^n W_i^2(x)$ as the variance reduction. Under
+mild conditions one can show that this is less than 1.
+
+\begin{figure}[htb]
+\caption{Degrees of freedom for loess and smoothing splines as
+functions of the smoothing parameter}
+\begin{center}
+\epsfig{figure=Plots/plot-06-01.ps,angle=270,width=.8\textwidth}
+\end{center}
+\end{figure}
+
+Because 
+\[
+\sum_{i=1}^n \var[\hat{f}(x_i)] = \tr(\bS\bS')\sigma^2,
+\]
+the total variance reduction from $\sum_{i=1}^n \var[y_i]$ is
+$\tr(\bS\bS')/n$. 
+
+
+In linear regression the variance reduction is related to the degrees of
+freedom, or number of parameters. For linear regression, $\sum_{i=1}^n
+\var[\hat{f}(x_i)] 
+= p \sigma^2$. One widely used definition of degrees of freedoms for
+smoothers is $df = \tr(\bS\bS')$.
+
+The sensitivity of the fitted value, say $\hat{f}(x_i)$, to the data
+point $y_i$ can be
+measured by $W_i(x_i)/\sum_{i=1}^n W_n(x_i)$ or $\bS_{ii}$ (remember
+the denominator is usually 1).
+
+The total influence or sensitivity is $\sum_{i=1}^n W_i(x_i) =
+\tr(\bS)$.
+
+In linear regression $\tr(\bS)=p$ is also equivalent to the degrees of
+freedom. This is also used as a definition of degrees of freedom.
+
+
+
+
+
+\begin{figure}[htb]
+\caption{Comparison of three definition of degrees of freedom}
+\begin{center}
+\epsfig{figure=Plots/plot-06-02.ps,angle=270,width=.8\textwidth}
+\end{center}
+\end{figure}
+
+
+Finally we notice that 
+\[
+\E[ (\by - \hat{\f})'(\by - \hat{\f}) ] = \{n - 2\tr(\bS) +
+\tr(\bS\bS')\}\sigma^2
+\]
+In the linear regression case this is $(n-p)\sigma^2$. We therefore denote 
+$n - 2\tr(\bS) + \tr(\bS\bS')$ as the residual degrees of freedom. A
+third definition of degrees of freedom of a smoother is then
+$2\tr(\bS) - \tr(\bS\bS')$.
+
+Under relatively mild assumptions we can show that 
+\[
+1 \leq \tr(\bS\bS') \leq \tr(\bS) \leq 2\tr(\bS) - \tr(\bS\bS') \leq n
+\]
+
+

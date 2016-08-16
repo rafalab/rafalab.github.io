@@ -1,0 +1,122 @@
+\section{The bias-variance trade-off}
+
+In smoothing in general there is a fundamental trade-off between the
+bias and variance of the estimate, and this trade-off is governed by
+the smoothing parameter. 
+
+Through out this section we will be using an artifical example defined
+by
+\begin{equation}
+\label{sinexample}
+y_i = 5 \sin (1/x) + \epsilon_i, i=1,\dots,n
+\end{equation}
+with the $\epsilon_i$ IID $N(0,1)$ or $t_3$. 
+
+\begin{figure}
+\centerline{\epsfig{figure=Plots/plot-05-01.ps,angle=270,width=.8\textwidth}}
+\caption{Outcomes of model with $f(x) = 5\sin(1/x)$ and IID normal
+  errors with $\sigma^2=1$}
+\end{figure}
+
+The trade-off is most easily seen in the case of the running mean
+smoother. The fitted running-mean smooth can be written as
+\[
+\hat{f}_k(x_0) = \frac{1}{2k+1} \sum_{i \in N^S_k(x_0)} y_i
+\]
+Under model (\ref{simplemodel}). The variance is easy to
+compute. What is it? 
+
+The bias is
+\[
+\E[\hat{f}_k(x_0)] -f(x_0) =  \frac{1}{2k+1} \sum_{i \in N^S_k(x_0)}
+\{ f(x_i) - f(x_0)   \}
+\]
+
+
+Notice that as $k$, in this case the smoothing parameter, grows the
+variances decreases. However, the bigger the $k$ the more $f(x_i)$'s
+get into the bias.
+
+We have no idea of what $\sum_{i \in N^S_k(x_0)} f(x_i)$ is
+because we don't know $f$! Let's see this in a more precise (not
+much more) way. 
+
+
+Say we think that $f$ is smooth enough for us to assume that its second
+derivative $f''(x_0)$ is bounded. Taylor's theorem says we can write 
+\[
+f(x_i) = f(x_0) + f'(x_0) (x_i - x_0) + \frac{1}{2}f''(x_0)(x_i-x_0)^2 +
+o(|x_i-x_0|^2).
+\]
+Because $ \frac{1}{2}f''(x_0)(x_i-x_0)^2$ is $O(|x_i-x_0|^2)$ we stop
+being precise and write 
+\[
+f(x_i) \approx f(x_0) + f'(x_0) (x_i - x_0) + \frac{1}{2}f''(x_0)(x_i-x_0)^2.
+\]
+Implicit here is the assumption that $|x_i-x_0|$ is small. This is the
+way these asymptotics work. We assume that the kernel size
+goes to 0 as $n$ gets big. 
+
+
+Why did we only go up to the second derivative?
+
+To makes things simple, let's assume that the covariates $x$ are {\it equally spaced} and
+let $\Delta = x_{j+1}-x_j$ we can write 
+\[
+(2k+1)^{-1}\sum_{i \in N^S_k(x_0)} f(x_i) \approx f(x_0) + (2k+1)^{-1}\frac{k(k+1)}{6} f''(x_0) \Delta^2
+\]
+So now we see that the bias increases with $k^2$ and the second
+derivative of the ``true'' function $f$. This agrees with our
+intuition.
+ 
+Now that we have
+\[
+\E\{\hat{f}_k(x_0) - f(x_0)\}^2 \approx \frac{\sigma^2}{2k+1} + \frac{k(k+1)}{6} f''(x_0) \Delta^2
+\]
+we can actually find an optimal $k$
+\[
+k_{opt} = \left\{ \frac{9\sigma^2}{2\Delta^4\{f''(x_i)\}^2}\right\}
+\]
+Usually this is not useful in practice because we have no idea of what
+$f''(x)$ is like. So how do we chose smoothing parameters?
+
+In Figure \ref{f5.1.2} we show the smooths obtained with a running
+mean smoother with bandwidths of 0.01 and 0.1 on 25 replicates defined
+by (\ref{sinexample}). The bias-variance trade-off can be clearly seen.
+
+\begin{figure}
+\centerline{\epsfig{figure=Plots/plot-05-02.ps,angle=270,width=.8\textwidth}}
+\caption{\label{f5.1.2}Smooths using running-mean smoother with bandwidths of .01
+  and 0.1. To the right are the smooths 25 replicates}
+\end{figure}
+
+
+\subsection{Bias-variance trade-off for linear smoothers}
+Define $\bS_{\lambda}$ as the hat matrix for a particular smoother when
+the smoothing parameter $\lambda$ is used. The ``smooth'' will be
+written as $\hat{\f}_{\lambda} = \bS_{\lambda} \by$. 
+
+Define 
+\[
+\bv_{\lambda} = \f - \E(\bS_{\lambda}\by)
+\] 
+as the {\it bias} vector.
+
+Define $\ave(\bx^2) = n^{-1} \sum_{i=1}^n x_i^2$ for any vector
+$\bx$. We can derive the following formulas:
+\begin{eqnarray*}
+\mbox{MSE}(\lambda) &=& n^{-1} \sum_{i=1}^n
+\var\{\hat{f}_{\lambda}(x_i)\} + \ave ( \bv_{\lambda}^2 ) \\
+&=& n^{-1}\tr(\bS_{\lambda}\bS_{\lambda}') \sigma^2 + n^{-1}
+\bv_{\lambda}'\bv_{\lambda}\\
+\mbox{PSE}(\lambda) &=& \{1 + n^{-1} \tr(\bS_{\lambda}\bS_{\lambda}')
+\} \sigma^2 +  n^{-1}
+\bv_{\lambda}'\bv_{\lambda}.
+\end{eqnarray*}
+
+Notice for least-squares regression $\bS_{\lambda}$ is idempotent so
+that $\tr(\bS_{\lambda}\bS_{\lambda}') = \tr(\bS_{\lambda}) =
+\mbox{rank}(\bS_{\lambda})$ which is usually the
+number of parameters in the model. This is why we will sometimes refer
+to $\tr(\bS_{\lambda}\bS_{\lambda}')$ as the {\it equivalent number of
+  parameters} or degrees of freedom of our smoother.

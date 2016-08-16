@@ -3,11 +3,26 @@ layout: template1
 title: Teaching
 ---
 
-## Data Science
 
-We teach an [introductory
-data science class](<a href="http://datasciencelabs.github.io/">) at the Harvard School of Public Health. 
+#### [HarvardX Biomedical Data Science Online Curriculum](https://genomicsclass.github.io/book/pages/classes.html)
 
-We also have developed several online courses on data analysis that are offered by HarvardX which have been completed by thousands of studnets. These courses are divided into two series: [Data Analysis for the Life Sciences](https://www.edx.org/xseries/data-analysis-life-sciences) and [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis). Much of the material is included in a [book](https://amzn.com/1498775675) with a [online version](https://leanpub.com/dataanalysisforthelifesciences) available for free.
+#### [Statistics and R for the Life Sciences](https://www.edx.org/course/data-analysis-life-sciences-1-statistics-harvardx-ph525-1x)
+
+#### [Data Analysis for the Life Sciences XSeries](https://www.edx.org/xseries/data-analysis-life-sciences)
+
+#### [Genomics Data Analysis XSeries](https://www.edx.org/xseries/genomics-data-analysis)
+
+#### [Introduction to Data Science](http://datasciencelabs.github.io/)
+
+#### [Blog post on teachin data scinece](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
+
+#### Previous courses
+
+- [Statistical Learning: Nonparametric and
+   Algorithmic Approaches]({{ site.baseurl }}/pages/649)
+
+- [Applied Nonparametric and Modern Statistics]({{ site.baseurl }}/pages/754)
+
+- [Advanced Statistical Methods]({{ site.baseurl }}/pages/bio751)
 
 

@@ -1,0 +1,18 @@
+\section{Projection Pursuit}
+One solution is projection-pursuit. It assumes a model of the form
+\[
+f(X_1,\dots,X_n) = \sum_{j=1}^p f_j\{\bg{\alpha}_j'\bX\}
+\]
+where $\bg{\alpha}_j ' \bX$ denotes a one dimensional projection of the
+vector $(X_1,\dots,X_p)'$ and $f_j$ is an arbitrary function of this
+projection. 
+
+
+The model builds up the regression surface by estimating these
+univariate regressions along carefully chosen projections defined by
+the $\bg{\alpha}_k$. Thus for $K=1$ and $p=2$ the regression surface
+looks like a corrugated sheet and is constant in the directions
+orthogonal to $\bf{\alpha}_k$.
+
+If you don't see how this solves the problem of dimensionality, the
+next section will help you understand.

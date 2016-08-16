@@ -1,0 +1,36 @@
+\section{Running-mean/moving average}
+Since we have no replicates and we want to force $s(x)$ to be smooth
+we can use the motivation that under some stastical model, for any
+$x_0$ values of $f(x)=\E[Y|X=x]$ for 
+$x$ close to $x_0$ are similar. 
+
+How do we define close? 
+A formal definition is the {\it symmetric nearest neighborhood}
+\[
+N^S(x_i) = \{ \max(i-k,1),\dots,i-1,i,i+1,\min(i+k,n) \}
+\]
+
+We may now define running mean as:
+\[
+s(x_i) = \ave_{j \in N^S(x_i)} \{ y_j \}
+\]
+
+We can also forget about the symmetric part and simply define the
+nearest $k$ neighbors. 
+
+
+\begin{figure}[htp]
+\caption{\label{f2.4} CD4 cell count since seroconversion for HIV infected men.}
+\centerline{\epsfig{figure=Plots/plot-02-04.ps,angle=270,width=.8\textwidth}}
+\end{figure}
+
+This usually too wiggly to be considered useful.  Why do you think?
+
+Notice we can also fit a line instead of a constant. This procedure is
+called running-line.
+
+Can you write out the recipe for $s(x_i)$ for the running-line smoother?
+
+
+
+

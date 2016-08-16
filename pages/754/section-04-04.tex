@@ -1,0 +1,91 @@
+\section{Natural Smoothing Splines}
+Natural splines add the constrain that the function must be linear after
+the knots at the end points. This forces 2 more restrictions since
+$f''$ must be 0 at the end points, i.e the space has $k + 4 - 2$
+parameters because of 
+this extra 2 constrains. 
+
+So where do we put the knots? How many do we use? There are some
+data-driven procedures for doing this. Natural Smoothing Splines
+provide another approach.
+
+What happens if the knots coincide with the dependent variables
+$\{X_i\}$. Then there is a function $g \in \cal G$, the space of cubic
+splines with knots at $(x_1,\dots,x_n)$, with
+$g(x_i) = y_i, i,\dots,n$, i.e. we haven't smoothed at all.
+
+Consider the following problem: among all functions 
+$g$ with two  continuous first two derivatives, find one that minimizes
+the penalized residual sum of squares
+\[
+\sum_{i=1}^n \{ y_i - g(x_i) \}^2 + \lambda \int_a^b \{g''(t)\}^2 \,
+dt
+\]
+where $\lambda$ is a fixed constant, and $a \leq x_1 \leq \dots \leq
+x_n \leq b$. It can be shown (Reinsch 1967) that the solution to this
+problem is a 
+natural cubic spline with knots at the values of $x_i$ (so there are
+$n-2$ interior knots and $n-1$ intervals). Here $a$ and
+$b$ are arbitrary as long as they contain the data.
+
+It seems that this procedure is over-parameterized since a
+natural cubic spline as this one will have $n$ degrees of
+freedom. However we will see that the penalty makes this go down.
+
+\subsection{Computational Aspects}
+We use the fact that the solution is a natural cubic spline and write
+the possible answers as
+\[
+g(x) = \sum_{j=1}^{n} \theta_j B_j(x)
+\]
+where $\theta_j$ are the coefficients and $B_j(x)$ are the basis
+functions. Notice that if these were cubic splines the functions lie
+in a $n+2$ dimensional space, but the natural splines are an $n$
+dimensional subspace. 
+
+Let $\bB$ be the $n \times n$ matrix defined by
+\[
+B_{ij} = B_j(x_i)
+\]
+and a penalty matrix $\bg{\Omega}$ by
+\[
+\Omega_{ij} = \int_a^b B_i''(t)B_j''(t) \, dt
+\]
+now we can write the penalized criterion as
+\[
+(\by - \bB\bg{\theta})'(\by - \bB\bg{\theta}) +
+\lambda\bg{\theta}'\bg{\Omega}\bg{\theta}
+\]
+It seems there are no boundary derivatives constraints but they are
+implicitly imposed by the penalty term.
+
+Setting derivatives with respect to $\bg{\theta}$ equal to 0 gives
+the estimating equation:
+\[
+(\bB'\bB + \lambda\bg{\Omega})\bg{\theta} = \bB'\by.
+\]
+The $\hat{\bg{\theta}}$ that solves this equation will give us the
+estimate $\hat{\g} = \bB \hat{\bg{\theta}}$.
+
+Is this a linear smoother?
+
+Write:
+\[
+\hat{\g} = \bB \bg{\theta} = \bB(\bB'\bB + \lambda \bg{\Omega})^{-1}
+\bB'\by =  ({\mathbf I} + \lambda {\mathbf K})^{-1}\by
+\]
+where ${\mathbf K} = \bB -1 ' \bg{\Omega} \bB^{-1}$. Notice we can
+write the criterion as
+\[
+(\by - \g)'(\by - \g) + \lambda \g' {\mathbf K} \g
+\]
+
+If we look at the ``kernel'' of this linear smoother we will see that
+it is similar to the other smoothers presented in this class.
+
+\begin{figure}[h] 
+\centerline{\epsfig{figure=Plots/plot-04-02.ps,width=.8\textwidth}}
+\caption{Smoothing spline fitted using different penalties.}
+\end{figure}
+
+

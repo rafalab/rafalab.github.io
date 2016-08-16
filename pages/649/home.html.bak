@@ -1,0 +1,160 @@
+<html>
+<style type="text/css">
+ADDRESS	{font-family: Arial, Helvetica;}
+BODY	{font-family: Arial, Helvetica;}
+TD      {font-family: Arial, Helvetica; font-weight: Bold;}
+P       {font-family: Arial, Helvetica; text-align: justify;}
+A:link  {text-decoration:none;}
+A:vlink  {text-decoration:none;}
+</style>
+
+<head>
+   <title>Statistical Learning: Algorithmic and Nonparametric Approaches  </title>
+</head>
+<body>
+<A name="Outline"></a>
+<h1>
+<Center>
+<b>Statistical Learning: Algorithmic and Nonparametric Approaches </b>
+</Center>
+</h1>
+
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<!--  <br> Class number: 140.644 (Fourth term) -->
+<!--  <br> Taught by: Rafael A. Irizarry -->
+<!--  <br> Office: E3035 -->
+
+<br>
+In this web page you will find
+<UL>
+  <li> The <A href="#outline"> class outline</a>. For each section, you can obtain the class
+      notes in pdf and the R 
+      code used to generate the analyses and graphs.
+  <li> Links for <a href="#homework"> homework </a>: data needed,
+      assignments sheets in pdf, and the latex files. 
+  <li> <a href="#books"> Books </a> often referenced
+  <li> <a href="#computing"> Computing resource</a>.
+  <li> <a href="#info"> Class general information</a>.
+</UL> 
+<br>
+<CENTER><HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<A name="outline"><b> Class outline (subject to change):</b> </a> 
+<ol type="I">  
+<li> Review of probability, the central limit
+theorem, and inference  [<a href="section-01.pdf">PDF</a>]
+<li> Introduction to Regression and Prediction  [<a href="section-02.pdf">PDF</a>,<a href="code-02.R">R</a>]
+<li> Overview of Supervised Learning [<a href="section-03.pdf">PDF</a>,<a href="code-03.R">R</a>]
+<li> Linear Methods for Regression  [<a href="section-04.pdf">PDF</a>,<a href="code-04.R">R</a>]
+<li> Linear Methods for Classification  [<a href="section-05.pdf">PDF</a>,<a href="code-05.R">R</a>]
+<li> Splines, Wavelets, and Friends  [<a href="section-06.pdf">PDF</a>,<a href="code-06.R">R, <a href="code-06.S">S-Plus</a>]
+<li> Kernel Methods [<a href="section-07.pdf">PDF</a>,<a href="code-07.R">R</a>]
+<li> Model Assessment and Selection  [<a href="section-08.pdf">PDF</a>,<a href="code-08.R">R</a>]
+<li> Model Inference and Averaging  [<a href="section-09.pdf">PDF</a>]
+<ul>
+<li> Reseampling
+<li> Bootstrap
+<li> Bayesian Inference
+<li> EM and MCMC
+</ul>
+<li> Additive Models, Trees, and Related Methods [<a href="section-10.pdf">PDF</a>]
+<ul>
+<li> Boosting and Aditive Trees
+<li> Neural Nets
+<li> Support Vector Machines
+<li> Clustering
+</ol>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<p><b>Homeworks:</b>
+<ul>
+<li>Homework 1 [Due 2/17]: 
+Look through the top journal in your field for a paper
+ in which a regression analysis was performed, many covariates were
+ available, and p-values were reported. 
+<ul>
+<li> Discuss how the model was motivated. Deductively, emipirically,
+both or neither? 
+<li> Give me your thoughts on their model choice? Could they 
+have done something differently? Are the results described model
+driven? 
+<li> Where does the p in p-value come from? i.e. Where does the
+randomness come from? Random sample, randomization, or nature...? If
+nature, then write a parragraph explain how.
+</ul>
+</ul>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<p><b>Data-sets:</b>
+<ul>
+<li> Prostate Cancer Data [<a href="prostate.html">Description</a>,
+<a href="prostate.RData">R image</a>, 
+<a href="prostate.csv">CSV file</a>]  ]
+<li> Vowel Training Data [<a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.info">Description</a>, <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.train"> Train</a>, <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/vowel.test"> Test</a>,  <a href="vowel.RData">R Image</a>]
+<li> Strontium Data [<a href="Sr.dat">text file</a>] 
+</ul>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<a name="books"> <b>Recommended Books</b>
+<UL>
+<li> T. Hastie, R. Tibshirani, and J. H. Fried. (2001) The Elements of
+  Statistical Learning.  Springer-Verlag: New York. [ <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/">Web Page</a>]
+  <li> Venables, W.N. and Ripley, B.D. (2002) <i> Modern Applied
+      Statistics with S-Plus. </i> Springer-Verlag: New York.
+  <li>  Brian D. Ripley. (1996) Pattern Recognition and Neural
+  Networks. Cambridge University Press.
+</UL>
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+<a name="computing"> <b> Resources</b>
+
+<UL>
+  <LI><a href="http://www.biostat.jhsph.edu/~kbroman/Rintro/">R</a>
+</UL>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+<a name="info"> <b> Class General Info</b>
+<br>
+
+<UL>
+<li> Course title: Statistical Learning: Algorithmic and
+Nonparametric Approaches (140.644)
+<li> Lab Hour: 
+<li> Instructor: <A HREF="http://www.biostat.jhsph.edu/~ririzarr">Rafael Irizarry</a>
+<li> <A HREF="http://www.biostat.jhsph.edu/">
+Department of Biostatistics</a>
+<li> Phone 410-614-5157, email: <a href="mailto:rafa@jhu.edu">rafa@jhu.edu</a>
+<li> I assume you know: Linear algebra and statistical principles at
+  a 651--654 level.
+<li> It will be useful to learn one of the following programming
+  languages:
+  R (recommended), S-Plus, or MATLAB. 
+<li> Grading: 3 homeworks 60%, 2 quizzes 20%, 1 project 20%
+<li> Course description: Teaches public health students to use modern,
+computationally-based methods for exploring and drawing inferences
+from data.  After a brief review of probability, the central limit
+theorem, and inference, the course covers resampling methods,
+nonparametric regression, prediction, and dimension reduction and
+clustering.  Specifically covers: Monte Carlo simulation, bootstrap
+cross-validation, splines, local weighted regression, CART, random
+forests, neural networks, support vector machines, and hierarchical
+clustering.  
+
+
+</UL>
+
+<HR SIZE=5 WIDTH="100%"></DT></CENTER>
+
+Last updated: 1/18/2004
+
+<BR>
+<BR>
+<BR>
+<p>You are visitor number <img SRC="http://counter.digits.com/wc/-d/4/rafelon" HSPACE=4 VSPACE=2 BORDER=0 height=10 width=40 align=CENTER> 
+
+
+</body>
+</html>

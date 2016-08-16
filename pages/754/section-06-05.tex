@@ -1,0 +1,43 @@
+\section{Bayesian Model for Cubic Splines}
+Notice that the above definition can be easily extended to a Bayesian
+problem: If we define a distribution for $f$, say $dP(f)$ then we may
+consider the average risk
+\[
+\int_f  \E [ || \hat{g} - f ||^2 | f] \, dP(f)
+\]
+as a criterion. 
+
+This follows section 3.6 in the book by Hastie and Tibshirani.
+
+The cubic smoothing spline can be derived from a number of Bayesian
+models for smoothing. The details are hard, but can be found in a book
+by Wahba.
+
+Here we will demonstrate a fairly simple example.
+
+Remember we can write any natural cubic spline as 
+\[
+g(x) = \bB(x) \bg{\theta}.
+\]
+Consider the following Bayesian set-up:
+
+Model assumptions: Assume the data $\by$ follow a Gaussian distribution $N(\bB
+\bg{\theta}, \sigma^2 {\mathbf I}_n)$. 
+
+Prior assumptions: Assume $\bg{\theta}$ follows a multivariate
+Gaussian prior distribution with mean $0$ and variance
+$\sigma^2/\lambda  \bg{\Omega}^{-1}$. 
+
+it follows that the posterior distribution of $\bg{\theta}$ is
+multivariate Gaussian with mean 
+\[
+\E(\bg{\theta}|\by) = \bB(\bB'\bB +  \lambda \bg{\Omega})^{-1} \bB'\by
+\]
+which is the natural smoothing spline estimate of $\bg{\theta}$.
+
+
+
+
+
+
+
