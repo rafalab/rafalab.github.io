@@ -19,7 +19,7 @@ packages my lab has contributed to are:
 - _CQN_: removing GC-content bias from expression level RNA-Seq data
 - _rnaseqcomp_: implementation of benchmarks for RNA-seq quantification pipelines. 
 - _minfi_: Preprocessing and analysis of Illumina methylation arrays
-- _bumphunter_: Software for detectig differentially methylated regions (DMR)
+- _bumphunter_: Software for detecting differentially methylated regions (DMR)
 -  _affy_: preprocessing methods for Affymetrix expression arrays, e.g. RMA
 - _gcrma_: sequence based background correction for
 - _frma_: frozen RMA and gene expression barcode 
