@@ -35,7 +35,7 @@ Several of my projects, including this website, are developed on [GitHub](https:
 
 - [The code for DALS](https://github.com/genomicsclass)
 - [bumphunter](https://github.com/rafalab/bumphunter)
-- [THe code for my Data Science Class](https://github.com/datasciencelabs)
+- [The code for my Data Science Class](https://github.com/datasciencelabs)
 - [This webpage](https://github.com/rafalab/rafalab.github.io)
 - [rafalib](https://github.com/rafalab/rafalib)
 
