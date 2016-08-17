@@ -37,7 +37,7 @@ title: people
 
 - Zhijin Wu 2005 (Brown University, Full Professor)
 - Benilton Carvalho 2008 (Universidade Estadual de Campinas, Assistant Professor)
-- Mathew McCall 2010 (University of Rochester, Assistant Professor)
+- Matthew McCall 2010 (University of Rochester, Assistant Professor)
 - Hao Wu 2010 (Emory University, Associate Professor)
 - Samara Kiihl 2013 (Universidade Estadual de Campinas, Assistant
                       Professor)
