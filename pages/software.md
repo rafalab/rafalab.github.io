@@ -50,5 +50,4 @@ All the code used to create the figures, tables and results in the _Data Analysi
 
 ### rafalib
 
-The _rafalib_ package contains sseries of shortcuts for routine tasks originally developed to facilitate data exploration. It is available on [CRAN](https://cran.r-project.org/web/packages/rafalib/). The code is also hosted on [GitHub](https://github.com/rafalab/rafalib).
-
+The _rafalib_ package contains a series of shortcuts for routine tasks originally developed to facilitate data exploration. It is available on [CRAN](https://cran.r-project.org/web/packages/rafalib/). The code is also hosted on [GitHub](https://github.com/rafalab/rafalib).
