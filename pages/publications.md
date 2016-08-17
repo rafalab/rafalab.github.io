@@ -48,7 +48,7 @@ buy a <a href="https://amzn.com/1498775675">paper copy</a>.
 
 ### Gene Expression Analysis
 
-- [Batch Efffects](http://www.ncbi.nlm.nih.gov/pubmed/20838408) 
+- [Batch Effects](http://www.ncbi.nlm.nih.gov/pubmed/20838408) 
 - [Gene Expression Barcode](http://www.ncbi.nlm.nih.gov/pubmed/17906632)
 - [Across Lab Comparison](http://www.ncbi.nlm.nih.gov/pubmed/15846361)
 - [Affycomp](http://www.ncbi.nlm.nih.gov/pubmed/16410320) 
