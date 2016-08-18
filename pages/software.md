@@ -19,7 +19,7 @@ packages my lab has contributed to are:
 - _CQN_: removing GC-content bias from expression level RNA-Seq data
 - _rnaseqcomp_: implementation of benchmarks for RNA-seq quantification pipelines. 
 - _minfi_: Preprocessing and analysis of Illumina methylation arrays
-- _bumphunter_: Software for detectig differentially methylated regions (DMR)
+- _bumphunter_: Software for detecting differentially methylated regions (DMR)
 -  _affy_: preprocessing methods for Affymetrix expression arrays, e.g. RMA
 - _gcrma_: sequence based background correction for
 - _frma_: frozen RMA and gene expression barcode 
@@ -35,7 +35,7 @@ Several of my projects, including this website, are developed on [GitHub](https:
 
 - [The code for DALS](https://github.com/genomicsclass)
 - [bumphunter](https://github.com/rafalab/bumphunter)
-- [THe code for my Data Science Class](https://github.com/datasciencelabs)
+- [The code for my Data Science Class](https://github.com/datasciencelabs)
 - [This webpage](https://github.com/rafalab/rafalab.github.io)
 - [rafalib](https://github.com/rafalab/rafalib)
 
@@ -50,5 +50,4 @@ All the code used to create the figures, tables and results in the _Data Analysi
 
 ### rafalib
 
-The _rafalib_ package contains sseries of shortcuts for routine tasks originally developed to facilitate data exploration. It is available on [CRAN](https://cran.r-project.org/web/packages/rafalib/). The code is also hosted on [GitHub](https://github.com/rafalab/rafalib).
-
+The _rafalib_ package contains a series of shortcuts for routine tasks originally developed to facilitate data exploration. It is available on [CRAN](https://cran.r-project.org/web/packages/rafalib/). The code is also hosted on [GitHub](https://github.com/rafalab/rafalib).
