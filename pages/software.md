@@ -23,7 +23,6 @@ packages my lab has contributed to are:
 -  _affy_: preprocessing methods for Affymetrix expression arrays, e.g. RMA
 - _gcrma_: sequence based background correction for
 - _frma_: frozen RMA and gene expression barcode 
-- ymetrix expression arrays.
 - _oligo_: preprocessing methods for general applications of arrays
 - _crlmm_: genotype calling and copy number analysis for SNP arrays
 - _affycomp_: engine software for affycomp website
