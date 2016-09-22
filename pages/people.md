@@ -41,7 +41,7 @@ title: people
 - Hao Wu 2010 (Emory University, Associate Professor)
 - Samara Kiihl 2013 (Universidade Estadual de Campinas, Assistant
                       Professor)
-- Eitan Halper-Sromberg 2013 (University of Colorado, Medical Studente)
+- Eitan Halper-Sromberg 2013 (University of Colorado, Medical Student)
 
 #### Past Visitors 
 - Ana Ciconelle
