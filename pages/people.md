@@ -5,7 +5,6 @@ title: people
 
 #### Current Lab Members
 
-- Stephanie Chan (Graduate Student, joint with Tianxi Cai)
 - Yered Hammurabi Pita-Juarez (Graduate Student)
 - Stephanie Hicks (Postdoc)
 - Rafael Irizarry (Principal Investigator)
