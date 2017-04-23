@@ -25,8 +25,8 @@ buy a <a href="https://amzn.com/1498775675">paper copy</a>.
 - [Alpine](https://www.ncbi.nlm.nih.gov/pubmed/27669167)
 - [DerFinder](http://www.ncbi.nlm.nih.gov/pubmed/24398039)
 - [BSmooth](http://www.ncbi.nlm.nih.gov/pubmed/23034175)
-- [Sequencing technology does not eliminate biological variability](http://www.ncbi.nlm.nih.gov/pubmed/23034175)
-- [CQN](http://www.ncbi.nlm.nih.gov/pubmed/21747377)
+- [Sequencing technology does not eliminate biological variability](https://www.ncbi.nlm.nih.gov/pubmed/21747377)
+- [CQN](https://www.ncbi.nlm.nih.gov/pubmed/22285995)
 
 
 ### Epigenetics
