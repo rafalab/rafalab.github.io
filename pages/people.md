@@ -10,7 +10,6 @@ title: people
 - Rafael Irizarry (Principal Investigator)
 - Keegan Korthauer (Postdoc)
 - David Nunes (Administrative Support Specialist)
-- Joe Paulson (FOL = Friend of the lab)
 - Matthew Ploenzke (Rotation student)
 - Alejandro Reyes (Postdoc)
 - Chinmay Shukla (Graduate Student, joint with John Rinn)
@@ -41,6 +40,9 @@ title: people
 - Samara Kiihl 2013 (Universidade Estadual de Campinas, Assistant
                       Professor)
 - Eitan Halper-Sromberg 2013 (University of Colorado, Medical Student)
+
+#### FFOL (Former Friends of the Lab)
+- Joseph N. Paulson (Genentech)
 
 #### Past Visitors 
 - Ana Ciconelle
