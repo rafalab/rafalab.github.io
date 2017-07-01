@@ -8,6 +8,7 @@ title: people
 - Yered Hammurabi Pita-Juarez (Graduate Student)
 - Stephanie Hicks (Postdoc)
 - Rafael Irizarry (Principal Investigator)
+- Patrick Kimes (Postdoc)
 - Keegan Korthauer (Postdoc)
 - David Nunes (Administrative Support Specialist)
 - Matthew Ploenzke (Rotation student)
