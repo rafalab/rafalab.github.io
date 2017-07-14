@@ -5,6 +5,7 @@ title: people
 
 #### Current Lab Members
 
+- Claire Duvallet (FOL = Friend of the Lab)
 - Yered Hammurabi Pita-Juarez (Graduate Student)
 - Stephanie Hicks (Postdoc)
 - Rafael Irizarry (Principal Investigator)
