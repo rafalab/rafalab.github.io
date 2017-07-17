@@ -1,5 +1,5 @@
 ***
-# HarvardX Biomedical Data Science Open Online Training Curriculum
+# HarvardX Biomedical Data Science\n Open Online Training Curriculum
 
 In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for biomedical data science. The courses are divided into two series, Data Analysis for the Life Sciences and Genomics Data Analysis, and the course [Using Python for Research](https://www.edx.org/course/using-python-research-harvardx-ph526x). This page includes the course material for the two series
 
