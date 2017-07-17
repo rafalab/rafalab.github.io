@@ -2,13 +2,13 @@
 # HarvardX Biomedical Data Science
 # Open Online Training Curriculum
 
-In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for biomedical data science. The courses are divided into two series, Data Analysis for the Life Sciences and Genomics Data Analysis, and the course [Using Python for Research](https://www.edx.org/course/using-python-research-harvardx-ph526x). This page includes the course material for the two series
+In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for biomedical data science. The courses are divided into two series, [Data Analysis for the Life Sciences](series_1) and [Genomics Data Analysis](series_2), and the course [Using Python for Research](https://www.edx.org/course/using-python-research-harvardx-ph526x). This page includes links to the course material for the two series including video lectures, the relevant [book](http://genomicsclass.github.io/book/)
+ chapter, and the course itself. Note that you must be logged in to [EdX](https://www.edx.org/) in order to access the course material. 
 
-The following page includes links to the material presented in the first four courses of the PH525 Data Analysis series. The links are to the video lectures, the book, and the course itself. Note that you must be logged in to [EdX](https://www.edx.org/) in order to access the course material. Course materials can also be located here: [Course Material](http://genomicsclass.github.io/book/)
+There is a book available for the first series. You can donwload a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
+  
 
-  
-  
-### Series 1 Contents:      
+### <a id="series_1"> Series 1 Contents:      
 
 Statistics and R for the Life Sciences (PH525.1x)   
 <a href="#Module_1_Week_1">  | Week 1 |  </a> <a href="#Module_1_Week_2">  | Week 2 |  </a> <a href="#Module_1_Week_3">  | Week 3 |  </a> <a href="#Module_1_Week_4"> |  Week 4  | </a> 
@@ -163,12 +163,7 @@ High-Dimensional Data Analysis (PH525.4x)
 | Motivating Factor Analysis | 02:21 | [Youtube](https://www.youtube.com/watch?v=_7agXi7xdwE) | [Chapter10](http://genomicsclass.github.io/book/pages/factor_analysis.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |
 | Surrogate Variable Analysis (SVA) | 06:04 | [Youtube](https://www.youtube.com/watch?v=cdJ4Ta4Y5Ow) | [Chapter10](http://genomicsclass.github.io/book/pages/adjusting_with_factor_analysis.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |    
 
-## Proceed to Series 2: [Bioconductor and its Applications](/PH525_2_2x.md) >   
-
------------------------------------------
-#### < Previous Lesson: [Series 1: Biomedical Data Science](/README.md)  
-
-# Series 2: Bioconductor and its Applications     
+# <a id="series_2"> Series 2: Bioconductor and its Applications     
 
 Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays (PH525.5x)     
 <a href="#Module_5_Week_1">  | Week 1 |  </a> <a href="#Module_5_Week_2">  | Week 2 |  </a> <a href="#Module_5_Week_3a">  | Week 3a | </a> <a href="#Module_5_Week_3b">  | Week 3b | </a> <a href="#Module_5_Week_4"> |  Week 4  | </a> 
@@ -358,19 +353,9 @@ Case Studies in Functional Genomics (PH525.7x)
 
 
 
-## Other sources of help
+# Relevant Links
 
 - [RStudio](https://www.rstudio.com/), [R project](http://www.r-project.org/), and [Bioconductor](http://bioconductor.org/)
 - [RStudio's cheatsheets](https://www.rstudio.com/resources/cheatsheets/) 
 - [PH525x Statistics for Genomics Book](http://genomicsclass.github.io/book/)  
-
---------- 
-
-
-
-------------------
-
-
-  
-  
 
