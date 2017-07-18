@@ -353,3 +353,10 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 - [Bioconductor](http://bioconductor.org/)
 - [RStudio's cheatsheets](https://www.rstudio.com/resources/cheatsheets/) 
 
+### Contributors
+
+- Rafael A. Irizarry
+- Heather Sternshein
+- Mike Love
+- Vince Carey
+- Shirley Liu
