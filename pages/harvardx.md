@@ -25,7 +25,7 @@ This page includes links to the course material for [Data Analysis for the Life 
 
 There is a book available for the first series. You can donwload a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
   
-
+## <a id="series_1">Data Analysis for the Life Sciences</a>
 
 ### <a id="Module_1_Week_1">[Statistics and R for the Life Sciences](https://www.edx.org/course/statistics-r-harvardx-ph525-1x-0)</a>    
 
@@ -105,45 +105,45 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 
 | Lecture Title | Time | Video | Material | Course | 
 |---|---|---|---|---|
-|**_Week 1_**| | | | |
+|**_Week 1: Multiple Comparisons_**| | | | |
 | An Example of High-throughput Data | 06:53 | [Youtube](https://www.youtube.com/watch?v=ujAU9T9QX24) | [Chapter6](http://genomicsclass.github.io/book/pages/intro_to_highthroughput_data.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/92dbe89dc80c4fc084cad3f00b0381f7/69acac412aef4d1cbb58358157bcedf9/) |
 | The challenge of multiple testing | 08:27 | [Youtube](https://www.youtube.com/watch?v=yobqXdAts14) | [Chapter6](http://genomicsclass.github.io/book/pages/multiple_testing.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/92dbe89dc80c4fc084cad3f00b0381f7/69acac412aef4d1cbb58358157bcedf9/) |
 | p-values Are Random Variables | 03:23 | [Youtube](https://www.youtube.com/watch?v=EASx5PljTW8) | [Chapter6](http://genomicsclass.github.io/book/pages/eda_for_highthroughput.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/92dbe89dc80c4fc084cad3f00b0381f7/69acac412aef4d1cbb58358157bcedf9/) |
-|<a id="Module_3_Week_2">**_Week 2_**</a>| | | | |
+|**_Week 2: Error Rates_**| | | | |
 | Error Rates and Procedures | 04:26 | [Youtube](https://www.youtube.com/watch?v=r_pjo-kuotQ) | [Chapter6](http://genomicsclass.github.io/book/pages/multiple_testing.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/d3b2bf581b4d479c922cdd6897acee6a/) |
 | Error Rates and Procedures Examples | 05:36 | [Youtube](https://www.youtube.com/watch?v=pn3UllO26FE) | [Chapter6](http://genomicsclass.github.io/book/pages/multiple_testing.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/d3b2bf581b4d479c922cdd6897acee6a/) |
 | Bonferroni Correction | 03:52 | [Youtube](https://www.youtube.com/watch?v=X6R1pptBHZA) | [Chapter6](http://genomicsclass.github.io/book/pages/multiple_testing.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/d3b2bf581b4d479c922cdd6897acee6a/) |
 | False Discovery Rate and Benjamini–Hochberg procedure | 08:06 | [Youtube](https://www.youtube.com/watch?v=ylKVIye4d_c) | [Chapter6](http://genomicsclass.github.io/book/pages/multiple_testing.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/d3b2bf581b4d479c922cdd6897acee6a/) |
 | q-values | 04:05 | [Youtube](https://www.youtube.com/watch?v=tomS-c321rI) | [Chapter6](http://genomicsclass.github.io/book/pages/multiple_testing.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/d3b2bf581b4d479c922cdd6897acee6a/) |
-|<a id="Module_3_Week_3">**_Week 3_**</a>| | | | |
+|  **_Week 3: Statistical Models_**| | | | |
 | Introduction to Statistical Models | 05:10 | [Youtube](https://www.youtube.com/watch?v=G0kHJgp4WHI) | [Chapter7](http://genomicsclass.github.io/book/pages/modeling.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/49490541db654710a492ce1c63213df3/) |
 | Poisson Example from RNA-seq | 04:20 | [Youtube](https://www.youtube.com/watch?v=KuxRYdG1EdQ) | [Chapter7](http://genomicsclass.github.io/book/pages/modeling.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/49490541db654710a492ce1c63213df3/) |
 | Maximum Likelihood Estimate | 04:47 | [Youtube](https://www.youtube.com/watch?v=5gRv65ULTYI) | [Chapter7](http://genomicsclass.github.io/book/pages/modeling.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/49490541db654710a492ce1c63213df3/) |
 | Models for Variance | 03:50 | [Youtube](https://www.youtube.com/watch?v=GCxezZ6iI6I) | [Chapter7](http://genomicsclass.github.io/book/pages/modeling.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/49490541db654710a492ce1c63213df3/) |
-|<a id="Module_3_Week_4">**_Week 4_**</a>| | | | |
+|**_Week 4: Introduction to Bayesian Analysis_**| | | | |
 | Bayes' Rule | 05:53 | [Youtube](https://www.youtube.com/watch?v=ea8V_J1fS7o) | [Chapter7](http://genomicsclass.github.io/book/pages/bayes.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b6b894ea512c43f8a67bfdd62d9e9c8d/) |
 | Bayes' Rule in Practice | 09:59 | [Youtube](https://www.youtube.com/watch?v=TdfedTLc-nI) | [Chapter7](http://genomicsclass.github.io/book/pages/bayes.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b6b894ea512c43f8a67bfdd62d9e9c8d/) |
 | Hierarchical Models in Practice | 04:56 | [Youtube](https://www.youtube.com/watch?v=FNyoM_PFf54) | [Chapter7](http://genomicsclass.github.io/book/pages/hierarchical_models.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b6b894ea512c43f8a67bfdd62d9e9c8d/) |
 | Plots: Volcano plots and p-value histograms, boxplots, and MAplots | 08:58 | [Youtube](https://www.youtube.com/watch?v=XeZpS07sLrQ) | [Chapter7](http://genomicsclass.github.io/book/pages/hierarchical_models.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/87ca7437577a49d28cb69c7463ae8a87/) |
 
 
-## <a id="Module_4_Week_1">High-Dimensional Data Analysis (PH525.4x)</a>  
+### [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis-harvardx-ph525-4x-0)</a>  
 
 
 | Lecture Title | Time | Video | Material | Course | 
 |---|---|---|---|---|
-|**_Week 1_**| | | | |
+|**_Week 1: Distance_**| | | | |
 | Introduction | 00:52 | [Youtube](https://www.youtube.com/watch?v=sBgMdGUTYWY) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/92dbe89dc80c4fc084cad3f00b0381f7/2527ed19795c415f8bc5957597175864/) |
 | Distance | 03:51 | [Youtube](https://www.youtube.com/watch?v=QYlggeDGLmc) | [Chapter8](http://genomicsclass.github.io/book/pages/distance.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/92dbe89dc80c4fc084cad3f00b0381f7/2527ed19795c415f8bc5957597175864/) |
 | Distance (in practice) | 00:00 | [Youtube](https://www.youtube.com/watch?v=B0MFoHr23u8) | [Chapter8](http://genomicsclass.github.io/book/pages/distance.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/92dbe89dc80c4fc084cad3f00b0381f7/2527ed19795c415f8bc5957597175864/) |
 | Distance Reduction Motivation | 00:00 | [Youtube](https://www.youtube.com/watch?v=uu964pCDGaw) | [Chapter8](http://genomicsclass.github.io/book/pages/distance.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/92dbe89dc80c4fc084cad3f00b0381f7/2527ed19795c415f8bc5957597175864/) |
-|<a id="Module_4_Week_2">**_Week 2_**</a>| | | | |
+|**_Week 2: Principal Component Analysis_**| | | | |
 | Projections | 06:02 | [Youtube](https://www.youtube.com/watch?v=yPecNb3-UXw) | [Chapter8](http://genomicsclass.github.io/book/pages/projections.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/6e82f1976ed243b0aa14d68136e1559e/) |
 | Rotations | 01:54 | [Youtube](https://www.youtube.com/watch?v=QYbeZXKQsCc) | [Chapter8](http://genomicsclass.github.io/book/pages/rotations.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/6e82f1976ed243b0aa14d68136e1559e/) |
 | SVD | 15:57 | [Youtube](https://www.youtube.com/watch?v=5K-h9eOilsg) | [Chapter8](http://genomicsclass.github.io/book/pages/svd.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/6e82f1976ed243b0aa14d68136e1559e/) |
 | MDS | 05:22 | [Youtube](https://www.youtube.com/watch?v=RKncuSbrF_o) | [Chapter8](https://github.com/genomicsclass/labs/blob/master/highdim/mds.Rmd) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/6e82f1976ed243b0aa14d68136e1559e/) |
 | PCA | 04:51 | [Youtube](https://www.youtube.com/watch?v=-bbLn9tv7i8) | [Chapter8](http://genomicsclass.github.io/book/pages/pca_motivation.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/86eb94e33a704cecbccfcfad3830258c/6e82f1976ed243b0aa14d68136e1559e/) |
-|<a id="Module_4_Week_3">**_Week 3_**</a>| | | | |
+|**_Week 3: Clustering and Machine Learning_** | | | |
 | Clustering | 06:11 | [Youtube](https://www.youtube.com/watch?v=NqH8kUfsFGc) | [Chapter9](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/6551b34198154249bb29f977be995fb4/) |
 | How Randomness Affects Clustering | 02:45 | [Youtube](https://www.youtube.com/watch?v=waqcU-Lxc-I) | [Chapter9](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/6551b34198154249bb29f977be995fb4/) |
 | Hiearchichal Clustering in R | 07:09 | [Youtube](https://www.youtube.com/watch?v=3OB4_th9UsA) | [Chapter9](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/6551b34198154249bb29f977be995fb4/) |
@@ -156,7 +156,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Smoothing | 07:45 | [Youtube](https://www.youtube.com/watch?v=6n0a0H24aJ8) | [Chapter9](http://genomicsclass.github.io/book/pages/smoothing.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/20be257ec0c341309492de6a7f2e695a/) |
 | K-Nearest Neighbors | 07:44 | [Youtube](https://www.youtube.com/watch?v=bNa9kGXFP2s) | [Chapter9](http://genomicsclass.github.io/book/pages/smoothing.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/20be257ec0c341309492de6a7f2e695a/) |
 | Cross Validation | 09:20 | [Youtube](https://www.youtube.com/watch?v=5Oxd690dd_0) | [Chapter9](http://genomicsclass.github.io/book/pages/crossvalidation.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/b634ab308e304cf3ad83f1e964465517/20be257ec0c341309492de6a7f2e695a/) |
-|<a id="Module_4_Week_4">**_Week 4_**</a>| | | | |
+|**_Week 4: Confounding and Batch Effects_**| | | | |
 | Confounding | 06:46 | [Youtube](https://www.youtube.com/watch?v=aqUpNV8pgRs) | [Chapter10](http://genomicsclass.github.io/book/pages/confounding.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |
 | Confounding in Genomics | 03:34 | [Youtube](https://www.youtube.com/watch?v=f8IM3KfUCH0) | [Chapter10](http://genomicsclass.github.io/book/pages/confounding.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |
 | EDA with PCA | 05:12 | [Youtube](https://www.youtube.com/watch?v=4Gnxh5HgJlM) | [Chapter10](http://genomicsclass.github.io/book/pages/eda_with_pca.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |
@@ -166,19 +166,9 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Motivating Factor Analysis | 02:21 | [Youtube](https://www.youtube.com/watch?v=_7agXi7xdwE) | [Chapter10](http://genomicsclass.github.io/book/pages/factor_analysis.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |
 | Surrogate Variable Analysis (SVA) | 06:04 | [Youtube](https://www.youtube.com/watch?v=cdJ4Ta4Y5Ow) | [Chapter10](http://genomicsclass.github.io/book/pages/adjusting_with_factor_analysis.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |    
 
-# <a id="series_2"> Series 2: Genomics Data Analysis   
+## <a id="series_2"> Genomics Data Analysis   
 
-Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays (PH525.5x)     
-<a href="#Module_5_Week_1">  | Week 1 |  </a> <a href="#Module_5_Week_2">  | Week 2 |  </a> <a href="#Module_5_Week_3a">  | Week 3a | </a> <a href="#Module_5_Week_3b">  | Week 3b | </a> <a href="#Module_5_Week_4"> |  Week 4  | </a> 
-
-High-performance computing for reproducible genomics with Bioconductor (PH525.6x)  
-<a href="#Module_6_Week_1">| Week 1 |</a> <a href="#Module_6_Week_2">| Week 2 |</a> <a href="#Module_6_Week_3">| Week 3 |</a> <a href="#Module_6_Week_4">| Week 4 |</a>  
-
-Case Studies in Functional Genomics (PH525.7x)     
-<a href="#Module_7_Week_1">| RNA-Seq |</a> <a href="#Module_7_Week_2">| DNA Methylation | </a> <a href="#Module_7_Week_3">| ChIP-Seq |</a>  
-
-
-## <a id="Module_5_Week_1">Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays (PH525.5x)</a>  
+## Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays </a>  
 
 
 | Lecture Title | Time | Video | Material | Course | 
