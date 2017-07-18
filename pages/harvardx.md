@@ -168,7 +168,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 
 ## <a id="series_2" style="text-decoration:none"></a> Genomics Data Analysis Series 
 
-## [Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays](https://www.edx.org/course/introduction-bioconductor-annotation-harvardx-ph525-5x-0)   
+### [Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays](https://www.edx.org/course/introduction-bioconductor-annotation-harvardx-ph525-5x-0)   
 
 
 | Lecture Title | Time | Video | Material | Course | 
