@@ -27,7 +27,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
   
 ## <a id="series_1" style="text-decoration:none"></a>Data Analysis for the Life Sciences Series
 
-### <a id="Module_1_Week_1">[Statistics and R for the Life Sciences](https://www.edx.org/course/statistics-r-harvardx-ph525-1x-0)</a>    
+### <a id="Module_1_Week_1">[Statistics and R](https://www.edx.org/course/statistics-r-harvardx-ph525-1x-0)</a>    
 
 | Lecture Title | Time  | Video | Material | Course| 
 |---|-------|-------|----------|--------|
