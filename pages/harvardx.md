@@ -168,7 +168,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 
 ## <a id="series_2"> Genomics Data Analysis   
 
-## Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays </a>  
+## [Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays](https://www.edx.org/course/introduction-bioconductor-annotation-harvardx-ph525-5x-0) </a>  
 
 
 | Lecture Title | Time | Video | Material | Course | 
@@ -187,7 +187,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Next Generation Sequencing Technology 1: Brief Introduction to the Mechanics of NGS | 08:29 | [Youtube](https://youtu.be/jQuShWX0ERU) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/2273065cc0f649b69c1240a58f7ab080/8ae8a72e65ee4ef88d035cf15825debe/?child=first) |
 | Next Generation Sequencing Technology 2: Applications of NGS in Genomics | 06:46 | [Youtube](https://youtu.be/89KFBHER5cM) | N/A| [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/2273065cc0f649b69c1240a58f7ab080/8ae8a72e65ee4ef88d035cf15825debe/?child=first) |
 | Mapping Algorithms and Software | 11:50 | [Youtube](https://youtu.be/n7gbw4DjE9o) | [Mapping](http://genomicsclass.github.io/book/pages/bioc1_align.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/2273065cc0f649b69c1240a58f7ab080/8ae8a72e65ee4ef88d035cf15825debe/?child=first) |
-| <a id="Module_5_Week_2">**_Week 2: Genome-scale data structure and management_**</a> |
+| **_Week 2: Genome-scale data structure and management_**|
 | Overview of data management chapter | 01:21 | [Youtube](https://youtu.be/EU50RNrciFg) | [Management](http://genomicsclass.github.io/book/pages/bioc1_mgt_gsd.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/4b1c7c1d7cfd4b01bc6c2b34a1873627/722a28bad5a844bfa6a6e951f505c96c/?child=last) |
 | Coordination of disparate data types | 05:11 | [Youtube](https://youtu.be/2n8m33Dph4c) | [Management](http://genomicsclass.github.io/book/pages/bioc1_mgt_gsd.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/4b1c7c1d7cfd4b01bc6c2b34a1873627/722a28bad5a844bfa6a6e951f505c96c/?child=last) |
 | Composing an ExpressionSet from basic objects | 01:40 | [Youtube](https://youtu.be/f5OewG5xawM) | [Management](http://genomicsclass.github.io/book/pages/bioc1_mgt_gsd.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/4b1c7c1d7cfd4b01bc6c2b34a1873627/722a28bad5a844bfa6a6e951f505c96c/?child=last) |
@@ -195,7 +195,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Working with NGS data: a BamFileList | 09:39 | [Youtube](https://youtu.be/cWPr871dp7Q) | [Management](http://genomicsclass.github.io/book/pages/bioc1_mgt_gsd.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/4b1c7c1d7cfd4b01bc6c2b34a1873627/722a28bad5a844bfa6a6e951f505c96c/?child=last) | 
 | SummarizedExperiment in depth | 13:36 | [Youtube](https://youtu.be/rjuvzHlaqbM) | [Summarized](http://genomicsclass.github.io/book/pages/bioc1_summex.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/4b1c7c1d7cfd4b01bc6c2b34a1873627/722a28bad5a844bfa6a6e951f505c96c/?child=last) | 
 | Managing and processing large numbers of BED files | 13:09 | [Youtube](https://youtu.be/lfyHX7EYpNg) | [Processing](http://genomicsclass.github.io/book/pages/bioc1_multibed.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/4b1c7c1d7cfd4b01bc6c2b34a1873627/722a28bad5a844bfa6a6e951f505c96c/?child=last) | 
-| <a id="Module_5_Week_3a">**_Week 3a: Genomic ranges and genomic annotation_**</a> |
+| **_Week 3a: Genomic ranges and genomic annotation_** |
 | Motivation and Introduction | 08:35 | [Youtube](https://youtu.be/XhEk_5Uz5OI) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/f8d21189840c46c38f3e658574c50d63/?child=first) |
 | Introduction to Genomic Ranges | 09:26 | [Youtube](https://youtu.be/27TkhfqDydE) | [Ranges](http://genomicsclass.github.io/book/pages/bioc1_igranges.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/f8d21189840c46c38f3e658574c50d63/?child=first) | 
 | Interval ranges: IRanges | 06:37 | [Youtube](https://youtu.be/UuS-IRGW-fE) | [Ranges](http://genomicsclass.github.io/book/pages/bioc1_igranges.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/f8d21189840c46c38f3e658574c50d63/?child=first) | 
@@ -207,7 +207,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Finding the Nearest Gene | 07:03 | [Youtube](https://youtu.be/KflE8sObeMw) | [Ranges](http://genomicsclass.github.io/book/pages/bioc1_igranges.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/f8d21189840c46c38f3e658574c50d63/?child=first) | 
 | Annotating Genes | 04:32 | [Youtube](https://youtu.be/OEyoDzED8Ck) | [Ranges](http://genomicsclass.github.io/book/pages/bioc1_igranges.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/f8d21189840c46c38f3e658574c50d63/?child=first) | 
 | Getting the Sequence of Regions | 11:19 | [Youtube](https://youtu.be/twDnpOUQARg) | [Ranges](http://genomicsclass.github.io/book/pages/bioc1_igranges.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/f8d21189840c46c38f3e658574c50d63/?child=first) | 
-| <a id="Module_5_Week_3b">**_Week 3b: Genomic ranges and genomic annotation_**</a> |
+| **_Week 3b: Genomic ranges and genomic annotation_** |
 | The Human Genome in R | 04:51 | [Youtube](https://youtu.be/VtGdQBq1ZDw) | [Overview](http://genomicsclass.github.io/book/pages/bioc1_annoOverview.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/53c5ed6c5fcb4032bbb138175c36aea4/?child=first) | 
 | LiftOver: Converting Across Versions of the Human Genome | 06:10 | [Youtube](https://youtu.be/chzxzzlf3Vg) | [Overview](http://genomicsclass.github.io/book/pages/bioc1_annoOverview.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/53c5ed6c5fcb4032bbb138175c36aea4/?child=first) | 
 | Exons, Introns, and Transcripts | 02:18 | [Youtube](https://youtu.be/bgLVNfeeETM) | [Overview](http://genomicsclass.github.io/book/pages/bioc1_annoOverview.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/53c5ed6c5fcb4032bbb138175c36aea4/?child=first) | 
@@ -219,7 +219,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Gene Ontology Tables | 02:42 | [Youtube](https://youtu.be/PvCArWGvnOg) | [Overview](http://genomicsclass.github.io/book/pages/bioc1_annoOverview.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/53c5ed6c5fcb4032bbb138175c36aea4/?child=first) |
 | Kyoto Encyclopedia of Genes and Genomes (KEGG) | 03:03 | [Youtube](https://youtu.be/tJPJpbkGjaI) | [Overview](http://genomicsclass.github.io/book/pages/bioc1_annoOverview.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/53c5ed6c5fcb4032bbb138175c36aea4/?child=first) |
 | More on the Homo.sapiens package | 02:40 | [Youtube](https://youtu.be/iQMMTrVhsgE) | [Overview](http://genomicsclass.github.io/book/pages/bioc1_annoOverview.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/dbd8c42a657c495499813074c75a59f4/53c5ed6c5fcb4032bbb138175c36aea4/?child=first) |
-| <a id="Module_5_Week_4">**_Week 4: Inference for computational biology with Bioconductor_**</a> |
+| **_Week 4: Inference for computational biology with Bioconductor_** |
 | Biological Versus Technical Variability | 06:43 | [Youtube](https://youtu.be/7GQprJ-F73Y) | [Variability](http://genomicsclass.github.io/book/pages/bioc1_btvari.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/665e36fad0ef44c7852ab2ba67e535dc/?child=first) |
 | t-tests in Genomics | 07:01 | [Youtube](https://youtu.be/bkP7YZqYvmM) | [Comparisons](http://genomicsclass.github.io/book/pages/bioc1_t_mult.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/665e36fad0ef44c7852ab2ba67e535dc/?child=first) |
 | Moderated t-tests | 12:55 | [Youtube](https://youtu.be/5iNUucEn68w) | [Moderated](http://genomicsclass.github.io/book/pages/bioc1_limma.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/665e36fad0ef44c7852ab2ba67e535dc/?child=first) |
@@ -230,7 +230,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Gene set testing in R part I | 08:29 | [Youtube](https://youtu.be/bfp99aDhjqU) | [Gene Sets](http://genomicsclass.github.io/book/pages/bioc1_geneset_1.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/665e36fad0ef44c7852ab2ba67e535dc/?child=first) |
 | Gene set testing in R part II | 00:00 | N/A | [Gene Sets](http://genomicsclass.github.io/book/pages/bioc1_geneset_1.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/665e36fad0ef44c7852ab2ba67e535dc/?child=first) |
 
-## <a id="Module_6_Week_1">High-performance computing for reproducible genomics with Bioconductor (PH525.6x)</a>  
+### [High-performance computing for reproducible genomics with Bioconductor](https://www.edx.org/course/high-performance-computing-reproducible-harvardx-ph525-6x-0)</a>  
 
 | Lecture Title | Time | Video | Material | Course | 
 |---|---|---|---|---|
@@ -247,7 +247,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Experimentally modifying a shiny app in Rstudio | 03:06 | [Youtube](https://youtu.be/7IXLPPpq-n8) | [Clustering](http://genomicsclass.github.io/book/pages/esHclust.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/6366ba8b0b544fd49889f9ea08be3d88/409b274333554e268f5936ecb05233dd/?child=first) |
 | Multivariate visualization with gene expression data | 06:04 | [Youtube](https://youtu.be/jYWHwn5TgNY) | [Clustering](http://genomicsclass.github.io/book/pages/esHclust.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/6366ba8b0b544fd49889f9ea08be3d88/409b274333554e268f5936ecb05233dd/?child=first) |
 | Closing remarks on genome-scale visualization | 08:20 | [Youtube](https://youtu.be/LnehEGVvlko) | [Remarks](http://genomicsclass.github.io/book/pages/finalViz.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/6366ba8b0b544fd49889f9ea08be3d88/409b274333554e268f5936ecb05233dd/?child=first) |
-| <a id="Module_6_Week_2">**_Week 2: Scalable genomic analysis: basic concepts_**</a> |
+| **_Week 2: Scalable genomic analysis: basic concepts_** |
 | The parallel package: lapply and mclapply | 03:12 | [Youtube](https://youtu.be/X5ZP3XXhLxk) | [Overview](http://genomicsclass.github.io/book/pages/bioc2_parallel.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/ea0c9bdf50cb48459f470deaed4107ad/93b34b1bdebb4a4087e6213b56352e28/?child=first) |
 | BiocParallel and implicit parallelization | 12:34 | [Youtube](https://youtu.be/OA4vyEF9pyQ) | [Overview](http://genomicsclass.github.io/book/pages/bioc2_parallel.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/ea0c9bdf50cb48459f470deaed4107ad/93b34b1bdebb4a4087e6213b56352e28/?child=first) |
 | Introducing the Bioconductor AMI (Amazon Machine Instance) | 09:17 | [Youtube](https://youtu.be/cZZBP5vwW64) | [Amazon](http://genomicsclass.github.io/book/pages/bioc2_HPCami.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/ea0c9bdf50cb48459f470deaed4107ad/93b34b1bdebb4a4087e6213b56352e28/?child=first) |
@@ -257,7 +257,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | An introduction to HDF5 with Bioconductor | 06:48 | [Youtube](https://youtu.be/UBQ2YFmz_V8) | [Interfacing](http://genomicsclass.github.io/book/pages/bioc2_externData.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/ea0c9bdf50cb48459f470deaed4107ad/93b34b1bdebb4a4087e6213b56352e28/?child=first) |
 | Benchmarking out-of-memory strategies | 05:27 | [Youtube](https://youtu.be/0ky-sErQGMk) | [Benchmarking](http://genomicsclass.github.io/book/pages/multiOOM.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/ea0c9bdf50cb48459f470deaed4107ad/93b34b1bdebb4a4087e6213b56352e28/?child=first) |
 | Scalable interrogation of many ranges via sharding | 08:38 | [Youtube](https://youtu.be/v2iRl9_pDFg) | [GRanges](http://genomicsclass.github.io/book/pages/bioc2_hybstor.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/ea0c9bdf50cb48459f470deaed4107ad/93b34b1bdebb4a4087e6213b56352e28/?child=first) |
-| <a id="Module_6_Week_3">**_Week 3: Multi-omic data integration_**</a> |
+| **_Week 3: Multi-omic data integration_** |
 | Integrative exploration 1: TF binding and cyclic gene expression in yeast | 13:51 | [Youtube](https://youtu.be/cY_LxK_1Dms) | [Integration](http://genomicsclass.github.io/book/pages/bioc2_integExamps.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/ec85e58300874a8296df03220cb1ddae/?child=last) |
 | Integrative exploration 2a: A view of the NHGRI human GWAS catalog | 05:28 | [Youtube](https://youtu.be/tNInpIdMIF8) | [Integration](http://genomicsclass.github.io/book/pages/bioc2_integExamps.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/ec85e58300874a8296df03220cb1ddae/?child=last) |
 | Integrative exploration 2b: ESRRA binding in vicinity of pheno-associated variants | 06:15 | [Youtube](https://youtu.be/TuMiU4dtULU) | [Integration](http://genomicsclass.github.io/book/pages/bioc2_integExamps.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/ec85e58300874a8296df03220cb1ddae/?child=last) |
@@ -269,7 +269,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Linking mutations and tumor stage | 03:11 | [Youtube](https://youtu.be/10iBxzdEeVk) | [Overview](http://genomicsclass.github.io/book/pages/tcga.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/ebda060b31a54cd0a2e07950d5afc6dd/?child=first) |
 | Linking expression and stage | 03:19 | [Youtube](https://youtu.be/EqKywEf1o-I) | [Overview](http://genomicsclass.github.io/book/pages/tcga.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/ebda060b31a54cd0a2e07950d5afc6dd/?child=first) |
 | Linking methylation and expression | 04:17 | [Youtube](https://youtu.be/zde-fcKufOU) | [Overview](http://genomicsclass.github.io/book/pages/tcga.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/ebda060b31a54cd0a2e07950d5afc6dd/?child=first) |
-| <a id="Module_6_Week_4">**_Week 4: Fostering reproducible genome-scale analysis_**</a> |
+| **_Week 4: Fostering reproducible genome-scale analysis_** |
 | Informal discussion of reproducibility concepts | 17:50 | [Youtube](https://youtu.be/njTclH3h6K4) | [Reproducibility](http://genomicsclass.github.io/book/pages/bioc2_repro1.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/d3aecd4865f045acb20c5cef79d0e531/d1a8be54a9ff49dd8ee88272342c5894/?child=first) |
 | R packages: How they are built | 03:45 | [Youtube](https://youtu.be/SALAd-Lr55g) | [R Packages](http://genomicsclass.github.io/book/pages/bioc2_rpacks.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/d3aecd4865f045acb20c5cef79d0e531/0bb8aaed5e2b468cb15482c9f7bc20ae/?child=first) |
 | Installing and testing the erbsViz package | 08:38 | [Youtube](https://youtu.be/Nsjf9XomEFk) | [R Packages](http://genomicsclass.github.io/book/pages/bioc2_rpacks.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/d3aecd4865f045acb20c5cef79d0e531/0bb8aaed5e2b468cb15482c9f7bc20ae/?child=first) |
@@ -278,7 +278,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Quick demonstration of knitr concepts | 08:24 | [Youtube](https://youtu.be/fF4FY0kekBQ) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/d3aecd4865f045acb20c5cef79d0e531/8ddc85b9ef4645e0be52de52a59dfc72/?child=first) |
 | Working with Bioconductor's docker containers | 09:12 | [Youtube](https://youtu.be/XgXgfy6Zz78) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/d3aecd4865f045acb20c5cef79d0e531/e97ecc70b7a7482a9699b69833bf1c14/?child=first) |
 
-## <a id="Module_7_Week_1">Case Studies in Functional Genomics (PH525.7x)</a>  
+### [Case Studies in Functional Genomics](https://www.edx.org/course/case-studies-functional-genomics-harvardx-ph525-7x-0)</a>  
 
 
 | Lecture Title | Time | Video | Material | Course | 
@@ -314,7 +314,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Isoform or exon-level expression | 04:07 | [Youtube](https://youtu.be/g_U7V3Qo_XI) | [Exon](http://genomicsclass.github.io/book/pages/rnaseq_exon_usage.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/9b0efe6c8d07414c959e58843dd52e52/4572f8d0dbc247ca8f730db40f5d1273/?child=first) |
 | Differential exon usage with DEXSeq | 07:51 | [Youtube](https://youtu.be/eioEmjjN7YY) | [Exon](http://genomicsclass.github.io/book/pages/rnaseq_exon_usage.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/9b0efe6c8d07414c959e58843dd52e52/4572f8d0dbc247ca8f730db40f5d1273/?child=first) |
 | Differential isoform expression with Cufflinks/cummeRbund | 06:08 | [Youtube](https://youtu.be/oJSvdmbcQlk) | [Exploring](http://genomicsclass.github.io/book/pages/rnaseq_isoform_cummerbund.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/9b0efe6c8d07414c959e58843dd52e52/4572f8d0dbc247ca8f730db40f5d1273/?child=first) |
-| <a id="Module_7_Week_2">**_DNA Methylane_**</a> |
+| **_DNA Methylane_** |
 | Epigenetics | 02:08 | [Youtube](https://youtu.be/zSOn-cM9xWI) | [Methylation](http://genomicsclass.github.io/book/pages/methylation.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/12d14ce571c840e984971aa5e2db5dd2/?child=first) |
 | DNA Methylation | 03:22 | [Youtube](https://youtu.be/Y0TCJk2QvtA) | [Methylation](http://genomicsclass.github.io/book/pages/methylation.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/12d14ce571c840e984971aa5e2db5dd2/?child=first) |
 | CpG islands | 04:06 | [Youtube](https://youtu.be/z-MorcHIhXI) | [Methylation](http://genomicsclass.github.io/book/pages/methylation.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/12d14ce571c840e984971aa5e2db5dd2/?child=first) |
@@ -332,7 +332,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | cellComposition | 08:24 | [Youtube](https://youtu.be/Ak_f_tbgN4c) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
 | blocks | 05:41 | [Youtube](https://youtu.be/xjwzP0XIKuE) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
 | Measuring Methylation from Sequencing | 01:52 | [Youtube](https://youtu.be/vFLuM37iKIY) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/beda5a488da8481891e39acf5bc9d928/?child=first) |
-| <a id="Module_7_Week_3">**_ChIP-Seq_**</a> |
+| **_ChIP-Seq_**|
 | Introduction to transcription regulation | 06:42 | [Youtube](https://youtu.be/yNtahPOVdEE) | [Chip](http://genomicsclass.github.io/book/pages/ChIPseq.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/385f249e33554cda89f9b5ccb73f011b/bce607fe1eba4d8780796a3373bc974d/?child=last) |
 | ChIP-seq technique | 06:50 | [Youtube](https://youtu.be/tn_SZElBDOA) | [Chip](http://genomicsclass.github.io/book/pages/ChIPseq.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/385f249e33554cda89f9b5ccb73f011b/bce607fe1eba4d8780796a3373bc974d/?child=last) |
 | ChIP-seq peak calling | 11:44 | [Youtube](https://youtu.be/933kKxGdD90) | [Chip](http://genomicsclass.github.io/book/pages/ChIPseq.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/385f249e33554cda89f9b5ccb73f011b/bce607fe1eba4d8780796a3373bc974d/?child=last) |
@@ -346,9 +346,10 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 
 
 
-# Relevant Links
+### Relevant Links
 
-- [RStudio](https://www.rstudio.com/), [R project](http://www.r-project.org/), and [Bioconductor](http://bioconductor.org/)
+- [RStudio](https://www.rstudio.com/)
+- [R project](http://www.r-project.org/)
+- [Bioconductor](http://bioconductor.org/)
 - [RStudio's cheatsheets](https://www.rstudio.com/resources/cheatsheets/) 
-- [PH525x Statistics for Genomics Book](http://genomicsclass.github.io/book/)  
 
