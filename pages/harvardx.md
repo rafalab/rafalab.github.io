@@ -25,7 +25,7 @@ This page includes links to the course material for [Data Analysis for the Life 
 
 There is a book available for the first series. You can donwload a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
   
-## <a id="series_1">Data Analysis for the Life Sciences</a>
+## <a id="series_1" style="text-decoration:none">Data Analysis for the Life Sciences Series</a>
 
 ### <a id="Module_1_Week_1">[Statistics and R for the Life Sciences](https://www.edx.org/course/statistics-r-harvardx-ph525-1x-0)</a>    
 
@@ -166,7 +166,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Motivating Factor Analysis | 02:21 | [Youtube](https://www.youtube.com/watch?v=_7agXi7xdwE) | [Chapter10](http://genomicsclass.github.io/book/pages/factor_analysis.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |
 | Surrogate Variable Analysis (SVA) | 06:04 | [Youtube](https://www.youtube.com/watch?v=cdJ4Ta4Y5Ow) | [Chapter10](http://genomicsclass.github.io/book/pages/adjusting_with_factor_analysis.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.4x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/b8713020a2f94d7ea267dd4f080e2ee0/) |    
 
-## <a id="series_2"> Genomics Data Analysis   
+## <a id="series_2" style="text-decoration:none"> Genomics Data Analysis Series </a>
 
 ## [Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays](https://www.edx.org/course/introduction-bioconductor-annotation-harvardx-ph525-5x-0)   
 
