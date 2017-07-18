@@ -4,7 +4,7 @@ title: Teaching
 ---
 
 
-#### [HarvardX Biomedical Data Science Online Curriculum](https://genomicsclass.github.io/book/pages/classes.html)
+#### [HarvardX Biomedical Data Science Online Curriculum](http://rafalab.github.io/pages/harvardx.html)
 
 #### [Statistics and R for the Life Sciences Online Course](https://www.edx.org/course/data-analysis-life-sciences-1-statistics-harvardx-ph525-1x)
 

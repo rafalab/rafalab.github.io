@@ -21,30 +21,11 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for biomedical data science. The courses are divided into the [Data Analysis for the Life Sciences series](https://www.edx.org/xseries/data-analysis-life-sciences), the [Genomics Data Analysis series](https://www.edx.org/xseries/genomics-data-analysis), and the [Using Python for Research course](https://www.edx.org/course/using-python-research-harvardx-ph526x). 
 
-This page includes links to the course material for [Data Analysis for the Life Sciences](#series_1) and  [Genomics Data Analysis](#series_2).
-
-
-the two series including video lectures, the relevant [book](http://genomicsclass.github.io/book/)
- chapter, and the course itself. Note that you must be logged in to [EdX](https://www.edx.org/) in order to access the course material. 
+This page includes links to the course material for [Data Analysis for the Life Sciences](#series_1) and  [Genomics Data Analysis](#series_2) including video lectures, an [R markdown document](http://genomicsclass.github.io/book/) to follow along, and the course itself. Note that you must be logged in to [EdX](https://www.edx.org/) in order to access the course. 
 
 There is a book available for the first series. You can donwload a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
   
 
-### <a id="series_1"> Series 1 Contents:      
-
-Statistics and R for the Life Sciences (PH525.1x)   
-<a href="#Module_1_Week_1">  | Week 1 |  </a> <a href="#Module_1_Week_2">  | Week 2 |  </a> <a href="#Module_1_Week_3">  | Week 3 |  </a> <a href="#Module_1_Week_4"> |  Week 4  | </a> 
- 
-Introduction to Linear Models and Matrix Algebra (PH525.2x)  
-<a href="#Module_2_Week_1">| Week 1 |</a> <a href="#Module_2_Week_2">| Week 2 |</a> <a href="#Module_2_Week_3">| Week 3 |</a> <a href="#Module_2_Week_4">| Week 4 |</a>  
- 
-Statistical Interference and Modeling for High-throughput Experiments (PH525.3x)  
-<a href="#Module_3_Week_1">| Week 1 |</a> <a href="#Module_3_Week_2">| Week 2 | </a> <a href="#Module_3_Week_3">| Week 3 |</a> 
-<a href="#Module_3_Week_4">| Week 4 |</a>  
- 
-High-Dimensional Data Analysis (PH525.4x)   
-<a href="#Module_4_Week_1">| Week 1 | </a> <a href="#Module_4_Week_2">| Week 2 |</a> <a href="#Module_4_Week_3">| Week 3 |</a> 
-<a href="#Module_4_Week_4">| Week 4 |</a>
 
 ## <a id="Module_1_Week_1">Statistics and R for the Life Sciences (PH525.1x) </a>    
 
