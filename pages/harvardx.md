@@ -356,9 +356,10 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 
 ### Contributors
 
-- Rafael A. Irizarry
-- Heather Sternshein
-- Mike Love
-- Vince Carey
-- Shirley Liu
-- Karl Broman
+- Intstuctors: Rafael Irizarry, Vince Carey, Mike Love, Shirley Liu
+- Course Developer: Heather Sternshein
+- Contributed Material: Karl Broman
+- Page Design: Idan Ginsburg, David Nunes
+- Inspiration: [Kasper Hansen's page](https://kasperdanielhansen.github.io/genbioconductor/)
+
+
