@@ -99,7 +99,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | QR Factorization | 13:08 | [Youtube](https://www.youtube.com/watch?v=yL3lrirzNnQ) | [Chapter5](http://genomicsclass.github.io/book/pages/qr_and_regression.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.2x+2T2016/courseware/f2de16b89cd842b183647681adeef8be/c074ffc4587c4aa1b31a7f75969a4494/) |
 
 
-### [Statistical Interference and Modeling for High-throughput Experiments](https://www.edx.org/course/statistical-inference-modeling-high-harvardx-ph525-3x-0)</a>  
+### [Statistical Interference and Modeling for High-throughput Experiments](https://www.edx.org/course/statistical-inference-modeling-high-harvardx-ph525-3x-0)  
 
 
 
@@ -127,7 +127,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Plots: Volcano plots and p-value histograms, boxplots, and MAplots | 08:58 | [Youtube](https://www.youtube.com/watch?v=XeZpS07sLrQ) | [Chapter7](http://genomicsclass.github.io/book/pages/hierarchical_models.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.3x+2T2016/courseware/4ca9b66b0a954ce5ac51184011bd8f77/87ca7437577a49d28cb69c7463ae8a87/) |
 
 
-### [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis-harvardx-ph525-4x-0)</a>  
+### [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis-harvardx-ph525-4x-0)
 
 
 | Lecture Title | Time | Video | Material | Course | 
@@ -168,7 +168,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 
 ## <a id="series_2"> Genomics Data Analysis   
 
-## [Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays](https://www.edx.org/course/introduction-bioconductor-annotation-harvardx-ph525-5x-0) </a>  
+## [Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays](https://www.edx.org/course/introduction-bioconductor-annotation-harvardx-ph525-5x-0)   
 
 
 | Lecture Title | Time | Video | Material | Course | 
@@ -230,7 +230,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Gene set testing in R part I | 08:29 | [Youtube](https://youtu.be/bfp99aDhjqU) | [Gene Sets](http://genomicsclass.github.io/book/pages/bioc1_geneset_1.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/665e36fad0ef44c7852ab2ba67e535dc/?child=first) |
 | Gene set testing in R part II | 00:00 | N/A | [Gene Sets](http://genomicsclass.github.io/book/pages/bioc1_geneset_1.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.5x+2T2017/courseware/b634ab308e304cf3ad83f1e964465517/665e36fad0ef44c7852ab2ba67e535dc/?child=first) |
 
-### [High-performance computing for reproducible genomics with Bioconductor](https://www.edx.org/course/high-performance-computing-reproducible-harvardx-ph525-6x-0)</a>  
+### [High-performance computing for reproducible genomics with Bioconductor](https://www.edx.org/course/high-performance-computing-reproducible-harvardx-ph525-6x-0)
 
 | Lecture Title | Time | Video | Material | Course | 
 |---|---|---|---|---|
@@ -278,7 +278,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Quick demonstration of knitr concepts | 08:24 | [Youtube](https://youtu.be/fF4FY0kekBQ) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/d3aecd4865f045acb20c5cef79d0e531/8ddc85b9ef4645e0be52de52a59dfc72/?child=first) |
 | Working with Bioconductor's docker containers | 09:12 | [Youtube](https://youtu.be/XgXgfy6Zz78) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.6x+2T2017/courseware/d3aecd4865f045acb20c5cef79d0e531/e97ecc70b7a7482a9699b69833bf1c14/?child=first) |
 
-### [Case Studies in Functional Genomics](https://www.edx.org/course/case-studies-functional-genomics-harvardx-ph525-7x-0)</a>  
+### [Case Studies in Functional Genomics](https://www.edx.org/course/case-studies-functional-genomics-harvardx-ph525-7x-0)
 
 
 | Lecture Title | Time | Video | Material | Course | 
