@@ -17,21 +17,21 @@ padding: 8px;
 tr:nth-child(even){background-color: #f2f2f2}
 </style>
 
-# HarvardX Biomedical Data Science Open Online Training
+## HarvardX Biomedical Data Science Open Online Training
 
 In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for biomedical data science. The courses are divided into the [Data Analysis for the Life Sciences series](https://www.edx.org/xseries/data-analysis-life-sciences), the [Genomics Data Analysis series](https://www.edx.org/xseries/genomics-data-analysis), and the [Using Python for Research course](https://www.edx.org/course/using-python-research-harvardx-ph526x). 
 
-This page includes links to the course material for [Data Analysis for the Life Sciences](#series_1) and  [Genomics Data Analysis](#series_2) including video lectures, an [R markdown document](http://genomicsclass.github.io/book/) to follow along, and the course itself. Note that you must be logged in to [EdX](https://www.edx.org/) in order to access the course. 
+This page includes links to the course material for [Data Analysis for the Life Sciences](#series_1) and  [Genomics Data Analysis](#series_2) including video lectures, an [R markdown document](http://genomicsclass.github.io/book/) to follow along, and the course itself. Note that you must be logged in to [EdX](https://www.edx.org/) to access the course. Registration is free. We also include links to the course pages.
 
 There is a book available for the first series. You can donwload a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
   
 
 
-## <a id="Module_1_Week_1">Statistics and R for the Life Sciences (PH525.1x) </a>    
+### <a id="Module_1_Week_1">[Statistics and R for the Life Sciences](https://www.edx.org/course/statistics-r-harvardx-ph525-1x-0)</a>    
 
 | Lecture Title | Time  | Video | Material | Course| 
 |---|-------|-------|----------|--------|
-|**_Week 1_**|  
+|**_Week 1: R_**|  
 | Getting Started with  R   | 06:26 | [Youtube](https://www.youtube.com/watch?v=p8F_wreHTzw) | [Chapter 0](http://genomicsclass.github.io/book/pages/getting_started.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.1x+2T2016/courseware/2273065cc0f649b69c1240a58f7ab080/77c6a41ee38544c28d2d95ef7889cdb8/) | 
 | GitHub                    | 03:31 | [Youtube](https://www.youtube.com/watch?v=HSXwLm6txoo) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.1x+2T2016/courseware/2273065cc0f649b69c1240a58f7ab080/77c6a41ee38544c28d2d95ef7889cdb8/) | 
 | RStudio                   | 04:31 | [Youtube](https://www.youtube.com/watch?v=YgqxQFQf1qg)  | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.1x+2T2016/courseware/2273065cc0f649b69c1240a58f7ab080/77c6a41ee38544c28d2d95ef7889cdb8/) | 
