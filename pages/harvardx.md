@@ -23,7 +23,7 @@ In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for bi
 
 This page includes links to the course material for [Data Analysis for the Life Sciences](#series_1) and  [Genomics Data Analysis](#series_2) including video lectures, an [R markdown document](http://genomicsclass.github.io/book/) to follow along, and the course itself. Note that you must be logged in to [EdX](https://www.edx.org/) to access the course. Registration is free. We also include links to the course pages.
 
-There is a book available for the first series. You can donwload a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
+There is a book available for the first series. You can donwnload a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
   
 ## <a id="series_1" style="text-decoration:none"></a>Data Analysis for the Life Sciences Series
 
