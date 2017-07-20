@@ -23,7 +23,7 @@ In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for bi
 
 This page includes links to the course material for [Data Analysis for the Life Sciences](#series_1) and  [Genomics Data Analysis](#series_2) including video lectures, an [R markdown document](http://genomicsclass.github.io/book/) to follow along, and the course itself. Note that you must be logged in to [EdX](https://www.edx.org/) to access the course. Registration is free. We also include links to the course pages.
 
-There is a book available for the first series. You can donwload a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
+There is a book available for the first series. You can download a [free pdf](https://leanpub.com/dataanalysisforthelifesciences), buy a [hard copy](https://www.amazon.com/Data-Analysis-Life-Sciences-R/dp/1498775675/ref=sr_1_1?s=books&ie=UTF8&qid=1500332088&sr=1-1), or access the [R markdowns](http://genomicsclass.github.io/book/) used to create the book.
   
 ## <a id="series_1" style="text-decoration:none"></a>Data Analysis for the Life Sciences Series
 
@@ -328,7 +328,7 @@ There is a book available for the first series. You can donwload a [free pdf](ht
 | Reading Raw 450K Array Data | 08:34 | [Youtube](https://youtu.be/d4P0rVwW5U8) | [450K](http://genomicsclass.github.io/book/pages/minfi.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/ec5cf09c05c140998c9db526497b4045/?child=first) |
 | Downloading Data | N/A  | N/A | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
 | InferenceForDNAmeth | 07:54 | [Youtube](https://youtu.be/PKvAPWHsASQ) | [Inference](http://genomicsclass.github.io/book/pages/inference_for_DNAmeth.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
-| InferenceForDNAMethInR | 08:49 | [Youtube](https://youtu.be/bJQZDTVIfS4) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
+| InferenceForDNAMethInR | 08:49 | [Youtube](https://youtu.be/bJQZDTVIfS4) | [Inference](http://genomicsclass.github.io/book/pages/inference_for_DNAmeth.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
 | CpGIslandShores | 10:23 | [Youtube](https://youtu.be/3QUFnny-q_o) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
 | cellComposition | 08:24 | [Youtube](https://youtu.be/Ak_f_tbgN4c) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
 | blocks | 05:41 | [Youtube](https://youtu.be/xjwzP0XIKuE) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/093767bc7691414f9d31b13de8d10fa2/bb26649c7b5b41d48826726dfa14082a/?child=first) |
