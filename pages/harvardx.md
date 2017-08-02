@@ -23,7 +23,7 @@ In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for bi
 
 This page includes links to the course material for the three courses:
 
-* [Data Analysis for the Life Sciences](#series_1) and  
+* [Data Analysis for the Life Sciences](#series_1)  
 * [Genomics Data Analysis](#series_2) 
 * [Using Python for Research](#python)
 
@@ -351,7 +351,7 @@ There is a book available for the first series. You can download a [free pdf](ht
 | Cistrome Analysis Pipeline Hands-On | 09:53 | [Youtube](https://youtu.be/2-2XpNiz7VE) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/385f249e33554cda89f9b5ccb73f011b/eef33dba04ea4e558b046f51628b32a1/?child=first) |
 | BETA Software Suite | 13:09 | [Youtube](https://youtu.be/CRsflDp0XBQ) | N/A | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.7x+2T2017/courseware/385f249e33554cda89f9b5ccb73f011b/eef33dba04ea4e558b046f51628b32a1/?child=first) |  
 
-## <a id="python" style="text-decoration:none"></a> Using Python for Research
+## <a id="python" style="text-decoration:none"></a> [Using Python for Research](https://www.edx.org/course/using-python-research-harvardx-ph526x)
 
 
 | Series Number | Lecture Title | Time | Video | 
