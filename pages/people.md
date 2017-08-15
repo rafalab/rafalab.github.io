@@ -12,7 +12,7 @@ title: people
 - Patrick Kimes (Postdoc)
 - Keegan Korthauer (Postdoc)
 - David Nunes (Administrative Support Specialist)
-- Matthew Ploenzke (Rotation student)
+- Matthew Ploenzke (Graduate Student)
 - Alejandro Reyes (Postdoc)
 - Chinmay Shukla (Graduate Student, joint with John Rinn)
 - Ayshwarya Subramanian (Postdoc)
