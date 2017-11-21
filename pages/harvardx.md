@@ -439,7 +439,6 @@ There is a book available for the first series. You can download a [free pdf](ht
 
 
 
-
 ## Relevant Links
 
 - [RStudio](https://www.rstudio.com/)

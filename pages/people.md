@@ -12,10 +12,10 @@ title: people
 - Patrick Kimes (Postdoc)
 - Keegan Korthauer (Postdoc)
 - David Nunes (Administrative Support Specialist)
+- Alex Ocampo (Graduate Student)
 - Matthew Ploenzke (Graduate Student)
 - Alejandro Reyes (Postdoc)
 - Chinmay Shukla (Graduate Student, joint with John Rinn)
-- Ayshwarya Subramanian (Postdoc)
 - Mingxiang Teng (Postdoc)
 - Will Townes (Graduate Student)
 
@@ -32,6 +32,7 @@ title: people
 - Sutirtha Chakraborty (National Institute of Biomedical Genomics)
 - Di Wu (University of North Carolina, Assistant Professor)
 - Michael Love (University of North Carolina, Assistant Professor)
+- Ayshwarya Subramanian (Broad Institute)
 
 #### PhD Alumni
 
