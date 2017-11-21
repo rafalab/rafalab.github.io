@@ -37,7 +37,7 @@ buy a <a href="https://amzn.com/1498775675">paper copy</a>.
 - [Bumphunter](http://www.ncbi.nlm.nih.gov/pubmed/22422453)
 - [BSmooth](http://www.ncbi.nlm.nih.gov/pubmed/23034175)
 - [minfi](http://www.ncbi.nlm.nih.gov/pubmed/24478339)
-- [HMM CpG Islands paper](http://www.ncbi.nlm.nih.gov/pubmed/20212320) [HMM CpG Islands databased](http://www.haowulab.org/software/makeCGI/index.html)
+- HMM CpG Islands [[paper](http://www.ncbi.nlm.nih.gov/pubmed/20212320); [database](http://www.haowulab.org/software/makeCGI/index.html)]
 - [CpG Shores](http://www.ncbi.nlm.nih.gov/pubmed/19151715)
 
 
