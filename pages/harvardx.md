@@ -435,9 +435,21 @@ There is a book available for the first series. You can download a [free pdf](ht
 | 4.3.5 | Plotting the Degree Distribution  | 05:51 |  [Youtube](http://www.youtube.com/watch?v=oCErVjFx8cU) |  
 | 4.3.6 | Descriptive Statistics of Empirical Social Networks  | 07:17 |  [Youtube](http://www.youtube.com/watch?v=ZXIGwmea6yw) | 
 | 4.3.7 | Finding the Largest Connected Component  | 10:00 |  [Youtube](http://www.youtube.com/watch?v=TQSgE7qRits) | 
-
-
-
+|**Series 5.0**||||
+| 5.1.1 | Introduction to Statistcal Learning | 08:11 |  [Youtube](https://www.youtube.com/watch?v=AC6yU8LUZSg&feature=youtu.be) | 
+| 5.1.2 | Generating example regression data | 05:03 |  [Youtube](https://www.youtube.com/watch?v=lOpZriaev3E&feature=youtu.be) | 
+| 5.1.3 | Simple linear regression | 03:38 |  [Youtube](https://www.youtube.com/watch?v=pJ7WsO6c8SA&feature=youtu.be) | 
+| 5.1.4 | Least squares estimation in code  | 05:02 |  [Youtube](https://www.youtube.com/watch?v=bThQG7KlaBM&feature=youtu.be) |
+| 5.1.5 | Simple linear regression in code  | 07:22 |  [Youtube](https://www.youtube.com/watch?v=_W8VA-5XRTo&feature=youtu.be) | 
+| 5.1.6 | Multiple linear regression  | 01:43 |  [Youtube](https://www.youtube.com/watch?v=SNlpgjVPGkk&feature=youtu.be) |
+| 5.1.7 | Scikit learn for Linear Regression  | 09:15 |  [Youtube](https://www.youtube.com/watch?v=HLB6ZVpq0V4&feature=youtu.be) | 
+| 5.1.8 | Assessing Model Accuracy  | 08:49 |  [Youtube](https://www.youtube.com/watch?v=wxqZtvmJW7M&feature=youtu.be) |
+| 5.2.1 | Generating Example Classification Data  | 07:59 |  [Youtube](https://www.youtube.com/watch?v=lKHm204w2qA&feature=youtu.be) | 
+| 5.2.2 | Logistic Regression  | 05:10 |  [Youtube](https://www.youtube.com/watch?v=HV8E3F0mbkg&feature=youtu.be) | 
+| 5.2.3 | Logistic Regression in Code  | 10:50 |  [Youtube](https://www.youtube.com/watch?v=pytp3HCcaIk&feature=youtu.be) | 
+| 5.2.4 | Computing Predictive Probability Across the Grid  | 09:29 |  [Youtube](https://www.youtube.com/watch?v=wqrOIOlP3TM&feature=youtu.be) | 
+| 5.3.1 | Tree-Based Methods for Regression and Classification  | 07:12 |  [Youtube](https://www.youtube.com/watch?v=FHE0OK1IkY0&feature=youtu.be) | 
+| 5.3.2 | Random Forest Predictions  | 04:24 |  [Youtube](https://www.youtube.com/watch?v=-IyHVFq942E&feature=youtu.be) | 
 
 ## Relevant Links
 
