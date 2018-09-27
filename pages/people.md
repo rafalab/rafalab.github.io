@@ -37,7 +37,7 @@ title: people
 
 #### PhD Alumni
 
-- [Zhijin Wu](http://www.stat.brown.edu/zwu/) 2005 (Brown University, Full Professor)
+- [Zhijin Wu](http://www.stat.brown.edu/zwu/) 2005 (Brown University, Associate Professor)
 - Benilton Carvalho 2008 (Universidade Estadual de Campinas, Assistant Professor)
 - [Matthew McCall](https://mnmccall.com/) 2010 (University of Rochester, Assistant Professor)
 - [Hao Wu](http://www.haowulab.org/) 2010 (Emory University, Associate Professor)
