@@ -16,7 +16,6 @@ title: people
 - Matthew Ploenzke (Graduate Student)
 - Samuela Pollack (Software Engineer)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
-- [Mingxiang Teng](https://tengmx.github.io/) (Postdoc)
 - [Will Townes](https://willtownes.github.io/) (Graduate Student)
 
 #### Past Postdocs
@@ -34,6 +33,7 @@ title: people
 - [Michael Love](https://mikelove.github.io/) (University of North Carolina, Assistant Professor)
 - Ayshwarya Subramanian (Broad Institute)
 - [Stephanie Hicks](http://www.stephaniehicks.com/) (Johns Hopkins University, Assistant Professor)
+- [Mingxiang Teng](https://tengmx.github.io/) (Moffitt Cancer Center, Assistant Member)
 
 #### PhD Alumni
 
