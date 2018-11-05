@@ -13,7 +13,7 @@ title: people
 - [Keegan Korthauer](http://kkorthauer.org/) (Postdoc)
 - Jane Liang (Graduate Student)
 - Alex Ocampo (Graduate Student)
-- Matthew Ploenzke (Graduate Student)
+- [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
 - Samuela Pollack (Software Engineer)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
 - [Will Townes](https://willtownes.github.io/) (Graduate Student)
