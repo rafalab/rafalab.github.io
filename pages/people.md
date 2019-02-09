@@ -15,6 +15,7 @@ title: people
 - [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
 - Samuela Pollack (Software Engineer)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
+- [Kelly Street](https://github.com/kstreet13/) (Postdoc)
 - [Will Townes](https://willtownes.github.io/) (Graduate Student)
 
 #### Past Postdocs
