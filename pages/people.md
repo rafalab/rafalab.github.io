@@ -49,7 +49,7 @@ title: people
 #### FFOL (Former Friends of the Lab)
 
 - Joseph N. Paulson (Genentech)
-- [Claire Duvallet](https://cduvallet.github.io/) (FOL = Friend of the Lab)
+- [Claire Duvallet](https://cduvallet.github.io/) (Biobot Analytics)
 
 #### Past Visitors 
 
