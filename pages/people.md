@@ -43,7 +43,7 @@ title: people
 - [Hao Wu](http://www.haowulab.org/) 2010 (Emory University, Associate Professor)
 - [Samara Kiihl](https://samarafk.github.io/) 2013 (Universidade Estadual de Campinas, Assistant Professor)
 - Eitan Halper-Sromberg 2013 (University of Colorado, Medical Student)
-- Yered Hammurabi Pita-Juarez 2018 (Harvard Medical School, Postdoc)
+- [Yered H. Pita-Juárez](https://yeredh.github.io) 2018 (Harvard Medical School, Postdoc)
 - Chinmay Shukla 2018 (True Fit)
 
 #### FFOL (Former Friends of the Lab)
