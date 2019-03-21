@@ -6,6 +6,7 @@ title: people
 #### Current Lab Members
 
 - Rolando Acosta (Graduate Student)
+- Kareem Carr (Graduate Student)
 - [Claire Duvallet](https://cduvallet.github.io/) (FOL = Friend of the Lab)
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
