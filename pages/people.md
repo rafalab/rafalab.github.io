@@ -6,7 +6,6 @@ title: people
 #### Current Lab Members
 
 - Rolando Acosta (Graduate Student)
-- [Claire Duvallet](https://cduvallet.github.io/) (FOL = Friend of the Lab)
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
 - [Patrick Kimes](http://pkimes.org/) (Postdoc)
@@ -16,6 +15,7 @@ title: people
 - [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
 - Samuela Pollack (Software Engineer)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
+- [Kelly Street](https://github.com/kstreet13/) (Postdoc)
 - [Will Townes](https://willtownes.github.io/) (Graduate Student)
 
 #### Past Postdocs
@@ -38,7 +38,7 @@ title: people
 #### PhD Alumni
 
 - [Zhijin Wu](http://www.stat.brown.edu/zwu/) 2005 (Brown University, Associate Professor)
-- Benilton Carvalho 2008 (Universidade Estadual de Campinas, Assistant Professor)
+- [Benilton Carvalho](https://scholar.google.com/citations?hl=es&user=44vQTS4AAAAJ) 2008 (Universidade Estadual de Campinas, Assistant Professor)
 - [Matthew McCall](https://mnmccall.com/) 2010 (University of Rochester, Assistant Professor)
 - [Hao Wu](http://www.haowulab.org/) 2010 (Emory University, Associate Professor)
 - [Samara Kiihl](https://samarafk.github.io/) 2013 (Universidade Estadual de Campinas, Assistant Professor)
@@ -47,15 +47,19 @@ title: people
 - Chinmay Shukla 2018 (True Fit)
 
 #### FFOL (Former Friends of the Lab)
+
 - Joseph N. Paulson (Genentech)
+- [Claire Duvallet](https://cduvallet.github.io/)
 
 #### Past Visitors 
+
 - Ana Ciconelle
 - Lieven Clement
 - Julia Engelmann
 - Matt Ritchie
 
 #### Summer Students
+
 - 2014: Esther Fervrier, Markus Havell, and  Savion Smith 
 - 2015: Pedro Mu&ntilde;oz Agrinsoni, Kevin Kupiec, and Randy Williams 
 - 2016: Alejandra DeJesús-Soto, Mark Ruprecht and Patricia Vera-González
