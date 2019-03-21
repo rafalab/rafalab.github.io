@@ -6,6 +6,7 @@ title: people
 #### Current Lab Members
 
 - Rolando Acosta (Graduate Student)
+- Kareem Carr (Graduate Student)
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
 - [Patrick Kimes](http://pkimes.org/) (Postdoc)
