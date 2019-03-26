@@ -39,12 +39,8 @@ Several of my projects, including this website, are developed on [GitHub](https:
 - [rafalib](https://github.com/rafalab/rafalib)
 
 
-### Introduction to Data Science code
 
-All the code used to create the figures, tables and results in the
-
-
-### Introduction to Data Science 
+### Introduction to Data Science  code
 
 All the code used to create the figures, tables and results in the _Introduction to Data Science_ [book](https://github.com/rafalab/dsbook)
 Data Analysis for the Life Sciences_ [book](https://github.com/rafalab/dsbook) are hosted on GitHub.
