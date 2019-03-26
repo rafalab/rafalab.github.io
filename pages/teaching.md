@@ -3,6 +3,7 @@ layout: template1
 title: Teaching
 ---
 
+#### [Professional Certificate in Data Science](https://online-learning.harvard.edu/series/professional-certificate-data-science)
 
 #### [HarvardX Biomedical Data Science Online Curriculum](http://rafalab.github.io/pages/harvardx.html)
 
