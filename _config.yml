@@ -35,7 +35,6 @@ nav-links:
     People: "pages/people.html"
     Research: "pages/research.html"
     Publications: "pages/publications.html"
-    GitHub: "https://github.com/rafalab"
     Software: "pages/software.html"
     Teaching: "pages/teaching.html"
 # --- Footer options --- #
