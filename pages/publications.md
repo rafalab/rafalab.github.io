@@ -12,10 +12,11 @@ Google Scholar</a> or
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA">PubMed
 </a></p>
 
-p> You can download a <a
+<p> You can download a <a
 href="https://leanpub.com/datasciencebook">PDF</a>
 of the Introduction to Data Science book or visit the  
 <a href="https://rafalab.github.io/dsbook/">web version</a>.
+</p>
 
 <p> You can also <a
 href="https://leanpub.com/dataanalysisforthelifesciences">download</a>
