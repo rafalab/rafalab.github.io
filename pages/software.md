@@ -31,7 +31,7 @@ packages my lab has contributed to are:
 
 Several of my projects, including this website, are developed on [GitHub](https://github.com/rafalab). This includes
 
-
+- [The code for the Introduction to Data Science book](https://github.com/rafalab/dsbook)
 - [The code for DALS](https://github.com/genomicsclass)
 - [bumphunter](https://github.com/rafalab/bumphunter)
 - [The code for my Data Science Class](https://github.com/datasciencelabs)
