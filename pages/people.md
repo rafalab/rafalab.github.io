@@ -65,4 +65,5 @@ title: people
 - 2015: Pedro Mu&ntilde;oz Agrinsoni, Kevin Kupiec, and Randy Williams 
 - 2016: Alejandra DeJesús-Soto, Mark Ruprecht and Patricia Vera-González
 - 2017: Jace Gilbert, Daniel Meza, Jeff Joseph
+- 2018: Michael Figueroa and Jaziel Torres
 		  
