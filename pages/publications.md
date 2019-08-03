@@ -10,7 +10,7 @@ To see a list with all my papers you can visit
 <a href="https://scholar.google.com/citations?user=nFW-2Q8AAAAJ&hl=en&oi=ao">
 Google Scholar</a> or
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA">PubMed
-</a></p>
+</a>. ORCID: 0000-0002-3944-4309</p>
 
 <p> You can download a <a
 href="https://leanpub.com/datasciencebook">PDF</a>
