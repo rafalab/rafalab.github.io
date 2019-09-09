@@ -10,7 +10,6 @@ title: people
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
 - [Patrick Kimes](http://pkimes.org/) (Postdoc)
-- [Keegan Korthauer](http://kkorthauer.org/) (Postdoc)
 - Jane Liang (Graduate Student)
 - Alex Ocampo (Graduate Student)
 - [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
@@ -35,6 +34,7 @@ title: people
 - Ayshwarya Subramanian (Broad Institute)
 - [Stephanie Hicks](http://www.stephaniehicks.com/) (Johns Hopkins University, Assistant Professor)
 - [Mingxiang Teng](https://tengmx.github.io/) (Moffitt Cancer Center, Assistant Member)
+- [Keegan Korthauer](http://kkorthauer.org/) (University of British Columbia, Assistant Professor)
 
 #### PhD Alumni
 
