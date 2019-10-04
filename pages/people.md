@@ -10,13 +10,13 @@ title: people
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
 - [Patrick Kimes](http://pkimes.org/) (Postdoc)
+- Jill Lundell (Postdoc)
 - Jane Liang (Graduate Student)
-- Alex Ocampo (Graduate Student)
+- Mercedeh Movassagh (Postdoc)
+- Senthil Kumar Muthiah (Postdoc)
 - [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
-- Samuela Pollack (Software Engineer)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
 - [Kelly Street](https://github.com/kstreet13/) (Postdoc)
-- [Will Townes](https://willtownes.github.io/) (Graduate Student)
 
 #### Past Postdocs
 
@@ -45,12 +45,13 @@ title: people
 - [Samara Kiihl](https://samarafk.github.io/) 2013 (Universidade Estadual de Campinas, Assistant Professor)
 - Eitan Halper-Sromberg 2013 (University of Colorado, Medical Student)
 - [Yered H. Pita-Juárez](https://yeredh.github.io) 2018 (Harvard Medical School, Postdoc)
-- Chinmay Shukla 2018 (True Fit)
+- [Chinmay Shukla](https://cshukla.github.io/) 2018 (True Fit)
+- [Will Townes](https://willtownes.github.io/) 2019 (Princeton University, Postdoc)
 
 #### FFOL (Former Friends of the Lab)
 
 - Joseph N. Paulson (Genentech)
-- [Claire Duvallet](https://cduvallet.github.io/)
+- [Claire Duvallet](https://cduvallet.github.io/) (Biobot Analytics)
 
 #### Past Visitors 
 
