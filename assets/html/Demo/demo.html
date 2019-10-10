@@ -1,0 +1,390 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; SunOS 5.6 sun4u) [Netscape]">
+   <meta name="CREATED" content="19991015;13450300">
+   <meta name="CHANGEDBY" content="Rafael Irizarry RAI">
+   <meta name="CHANGED" content="19991015;13470900">
+   <title>Synthesizing music using the local harmonic model</title>
+</head>
+<body>
+&nbsp;
+<center>
+<h1>
+<a NAME="top"></a><b><font size=+0>Rafael A. Irizarry's</font></b></h1></center>
+
+<center>
+<h1>
+<b><font size=+0>Music and Statistics Demo</font></b></h1></center>
+
+<center><b>Spectrograms of Harmonic Instruments</b>
+<br><img SRC="img7.gif" NAME="Graphic1" BORDER=0 height=213 width=455 align=BOTTOM>
+<br><b>Non-Harmonic Instruments</b>
+<br><img SRC="img8.gif" NAME="Graphic2" BORDER=0 height=213 width=455 align=BOTTOM>
+<br><img SRC="img9.gif" NAME="Graphic3" BORDER=0 height=19 width=219 align=BOTTOM>
+<br>Low.............................................High</center>
+
+<hr>
+<br>&nbsp;
+<p><b>How to play the sounds:</b> This page contains sound examples mentioned
+in <a href="http://rafalab.org">some
+of my papers</a> related to music and statistics, mainly 
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=6D560EF15DD7C3B402B9527A9CD88419?doi=10.1.1.35.7021&rep=rep1&type=pdf">this</a> 
+<a href="https://amstat.tandfonline.com/doi/abs/10.1198/016214501753168082#.XZ9j4-dKimk">JASA</a> article . Most sounds, represented by this;
+<img SRC="Sound_Icon.gif" NAME="Graphic4" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM>symbol,
+are in aiff format which is CD quality. Your audio player should be able
+to play these files, all you have to do is click. Four of the files are
+songs so they have been compressed to MP3 files, represented by this symbol&nbsp;<img SRC="MUS07.GIF" NAME="Graphic5" BORDER=0 height=23 width=25 align=BOTTOM>.
+For macs and PCs the&nbsp; <a href="http://www.real.com/">RealPlayer</a>&nbsp;
+(get the FREE version) can play these, for unix you can download . If you
+want to analyze the music files as data, you should get a program like
+<a href="http://www.wins.uva.nl/~robbert/zappa/files/au/help.html">sox</a>
+that can convert aiff files to ascii.
+<br>
+<br>
+Here is a more detailed explanation on how to <a href="howtoconvert.html">convert sound signals into ASCII file</a>
+<br>
+<hr>
+<center>
+<h2>
+<a NAME="statistical"></a><font size=+0>Statistical Applications</font></h2></center>
+<font size=+0>Statistics has been applied in various ways to music. For
+example, various stochastic techniques have been applied</font>
+<br><font size=+0>in composition. The melody and rhythm in this song&nbsp;<a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/markovian-chans.mp3"><img SRC="MUS07.GIF" NAME="Graphic6" BORDER=1 height=23 width=25 align=BOTTOM></a>
+(716 KB mp3 file) are the outcome of a random process. The intervals between
+each note was produces by a Markov chain. The rhythm was chosen at random
+from various rhythmic patterns that fit the riffs being played by the bass
+and the guiro.</font>
+
+<p STYLE="margin-bottom: 0in"><font size=+0>Physicist have studied the
+spectral properties of different musical signals and speculated on the
+possibility of it being so called 1/f noise (learn more about 1/f noise
+and music from a <a href="http://www.stat.berkeley.edu/~brill/Papers/music.ps">paper</a>
+I wrote with <a href="http://www.stat.berkeley.edu/~brill">David Brillinger</a>).</font>The
+following 3 mp3 files are melodies produced with outcomes of an IID process
+(white noise), a random walk&nbsp; (brown noise) and a process with 1/f
+noise (pink noise):
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/white-music.mp3"><img SRC="MUS07.GIF" NAME="Graphic7" BORDER=1 height=23 width=25 align=BOTTOM></a>
+White music (236 KB mp3 file).&nbsp;<a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/brown-music.mp3"><img SRC="MUS07.GIF" NAME="Graphic8" BORDER=1 height=23 width=25 align=BOTTOM></a>
+Brown music (214 KB mp3 file).&nbsp;<a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/pink-music.mp3"><img SRC="MUS07.GIF" NAME="Graphic9" BORDER=1 height=23 width=25 align=BOTTOM></a>
+Pink music (295 KB mp3 file).</center>
+
+<hr>
+<center>
+<h2>
+<font size=+0>Sound Synthesis and Analysis</font></h2></center>
+The application that most interests me is sound synthesis and analysis.
+Sound can be represented as a real-valued function of time. This function
+can be sampled at a small enough rate so that the resulting discrete version
+is a good approximation of the continuous one. This permits one to study
+musical sounds as a discrete time series, an entity for which&nbsp; many
+statistical techniques are available. Physical modeling suggests that many
+musical instruments' sounds may be characterized by a
+<br>deterministic locally periodic and stochastic signal model. In general
+harmonic instruments are better described by this model than non harmonic
+ones.
+<p>The&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic10" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track28.aiff">violin</a>
+,<img SRC="Sound_Icon.gif" NAME="Graphic11" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track16.aiff">trumpet</a>
+and&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic12" BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track22.aiff">guitar</a>
+are all harmonic instruments. The graphs at the beginning of the demo are
+spectrograms of the sound signals. Notice the yellow lines at multiples
+of the fundamental frequency we hear. The&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic13" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track11.aiff">marimba</a>,&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic14" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://biosun01.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track12.aiff">timpani</a>
+and&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic15" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track13.aiff">gong</a>
+are non-harmonic.
+<br>&nbsp;
+
+<p STYLE="margin-bottom: 0in">It is believed that the strength of at the
+different multiple frequencies (the harmonics) somehow determine pitch.
+The <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track16.aiff">trumpet</a>
+has many strong harmonics which is associated with a bright sound. A <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track19.aiff">clarinet
+</a>has
+few strong harmonics. Notice the difference in sound and in their
+<a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/plots.html#plot1">periodograms</a>.
+The high values in the spectrogram that are not at harmonic frequencies
+is what we model as a stochastic signal. Notice that the non-harmonic instruments
+have a lot of "noise".
+<br>
+<hr>
+<center>
+<h2>
+<a NAME="separation"></a><font size=+0>Separation of signal and noise</font></h2></center>
+We are interested in separating the approximately periodic from the stochastic
+signal and finding parametric representations with musical meaning. To
+do so a local harmonic model&nbsp; that tracks&nbsp; changes in pitch and
+in the amplitudes of the harmonics is fit.&nbsp; We are assuming a model
+y(t) = s(t) + e(t), with s(t) an approximately periodic function and e(t)
+noise. The deterministic signal s(t) will have period inversely proportional
+to the fundamental frequency being played. We estimate s(t) using <a href="http://www.biostat.jhsph.edu/~ririzarr/Papers/jasa99.tex">local
+harmonic estimation</a> and use the residuals of this fit as the estimate
+of e(t).
+<h1>
+<font size=+0>Here are some examples of the separation of the two parts:
+(all files have been amplified to same volume)</font></h1>
+
+<center><table BORDER=6 CELLSPACING=4 CELLPADDING=2 >
+<tr>
+<td>
+<center>Instrument</center>
+</td>
+
+<td>
+<center>Original</center>
+</td>
+
+<td>
+<center>Fitted&nbsp;</center>
+</td>
+
+<td>
+<center>Residuals</center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>violin</center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track28.aiff"><img SRC="play.gif" NAME="Graphic16" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track29.aiff"><img SRC="play.gif" NAME="Graphic17" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track30.aiff"><img SRC="play.gif" NAME="Graphic18" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>clarinet</center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track19.aiff"><img SRC="play.gif" NAME="Graphic19" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track20.aiff"><img SRC="play.gif" NAME="Graphic20" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track21.aiff"><img SRC="play.gif" NAME="Graphic21" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>guitar</center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track22.aiff"><img SRC="play.gif" NAME="Graphic22" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track23.aiff"><img SRC="play.gif" NAME="Graphic23" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track24.aiff"><img SRC="play.gif" NAME="Graphic24" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>didjiridoo</center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track43.aiff"><img SRC="play.gif" NAME="Graphic25" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track44.aiff"><img SRC="play.gif" NAME="Graphic26" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track45.aiff"><img SRC="play.gif" NAME="Graphic27" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+</tr>
+</table></center>
+
+<div STYLE="margin-bottom: 0in">Notice that the residuals&nbsp; sound very
+much like what we would expect: a screechy metallic sound for the violin,
+surplus blown air for the clarinet, and a pluck with no tone for the guitar.
+Notice how the separation doesn't work very well for the non-harmonic didjiridoo.</div>
+
+<hr>
+<center>
+<h2>
+<a NAME="window"></a><font size=+0>Window Size Selection</font></h2></center>
+
+<div STYLE="margin-bottom: 0in">Deterministic changes in the signal, such
+as pitch change, suggest that different temporal</div>
+window sizes should be considered in the local estimation. Ways to choose
+appropriate window sizes are developed in <a href="http://www.biostat.jhsph.edu/~ririzarr/Papers/jasa98.ps">this
+paper</a> (postscript file). We carry out the an estimation for a&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic28" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/shak3.aiff">shakuhachi
+flute sound</a> characterized by 3 segment: Rapid change of pitch (0 -
+0.5 secs), fix pitch (0.5 - 3.0 secs), tremolo (3.0 - 4.0 secs), and fixed
+pitch to end the sound. This flute is also characterized by a noisy (windy)
+sound. We fit our procedure with a fixed small window size, a fixed large
+window size, and then using an adaptive window size.
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<center><table BORDER=6 CELLSPACING=4 CELLPADDING=2 >
+<tr>
+<td>
+<center>Window Size</center>
+</td>
+
+<td>
+<center>Fitted</center>
+</td>
+
+<td>
+<center>Residual</center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>Fixed Large</center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/shakbw.fit.aiff"><img SRC="play.gif" NAME="Graphic29" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/shakbw.res.aiff"><img SRC="play.gif" NAME="Graphic30" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>Fixed Small</center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/shaksw.fit.aiff"><img SRC="play.gif" NAME="Graphic31" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/shaksw.res.aiff"><img SRC="play.gif" NAME="Graphic32" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>Dynamic choice</center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/shak.fit.aiff"><img SRC="play.gif" NAME="Graphic33" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+
+<td>
+<center><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/shak.res.aiff"><img SRC="play.gif" NAME="Graphic34" BORDER=0 height=34 width=37 align=BOTTOM></a></center>
+</td>
+</tr>
+</table></center>
+
+<div STYLE="margin-bottom: 0in">If we listen to the sound or look at <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/plots.html#plot2">residual
+plots</a> we notice that the fixed windows over fit and under fit respectively.
+In the residuals sound for the large window fit we hear signal during the
+tremolo and for the small window size fit the fitted signal sounds too
+noisy, too similar to the original. In <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/plots.html#plot3">this
+plot</a> we see how the dynamic window chooses smaller size in parts that
+are less stable.</div>
+
+<hr>
+<center>
+<h2>
+<a NAME="applications"></a><font size=+0>Applications</font></h2></center>
+Amongst other things our analysis provides estimates of the harmonic signal
+and of the noise signal. Different musical composition applications may
+be based on the estimates. The procedure separates harmonic component and
+noise component of signal, provides pitch estimates, and the harmonic signal
+is reconstructed into individual harmonics.<a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/plots.html#plot4">This
+plot</a> is an example of the resulting estimates from an <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track25.aiff">oboe
+sound</a> :
+<br>&nbsp;
+<center>
+<h2>
+<a NAME="uses"></a><b><font size=+0>Uses in composition</font></b></h2></center>
+The function s(t) is defined by parameters that represent local pitch,
+and local amplitude and phase of the harmonics. We may tweak the estimates
+of these parameters to modify s(t) and construct a new sound based on the
+original. We can change pitch, duration, and timbre independently of each
+other. As an example we run the analysis on an&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic35" HSPACE=10 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track25.aiff">oboe
+sound.</a> Musicians say that if one listens to the sound of an oboe closely
+the sound of a soprano is heard at an octave above the pitch of the oboe
+sound. By wiggling the estimated amplitudes of the even harmonics we can
+make the&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic36" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track35.aiff">hidden
+soprano</a> come out. We can amply the residuals obtained when analyzing
+the violin to create the sound of a&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic37" HSPACE=4 BORDER=0 height=29 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track46.aiff">violin
+played by a beginner</a><a href="http://www.stat.berkeley.edu/users/rafa/Demo/badviolin.html">.</a>
+<br>&nbsp;
+<p>
+<hr>
+<center>
+<h2>
+<a NAME="removing"></a><font size=+0>Removing Reverberation</font></h2></center>
+When an instrument is played in a room with echo, signals from previous
+notes may be heard after the instrument has stopped producing the notes.&nbsp;
+Notice in the sound of a&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic38" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ2tone.l.aiff">pipe
+organ playing two notes</a> how we can hear the first note during the playing
+of the second. This can clearly be seen in the <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/plots.html#plot5">spectrogram</a>.
+During the playing of the second note, the yellow line related to the first
+note is still there. We also see the presence of an approximately&nbsp;
+periodic component around the 50 Hz. frequency, this is probably due to
+the sound of the wind going through the organ pipes, an important sounds
+that helps our ears know it's an organ. If we assume the deterministic
+signal s(t) is locally periodic with period equal to the fundamental frequency
+being played and use local harmonic estimation to estimate s(t) and e(t),
+then the <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/plots.html#plot6">spectrogram
+of the residuals</a> shows a yellow line representing the reverb note and
+. Not a good fit.&nbsp; We can also perform <i>residual analysis by ear</i>
+by listening to the&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic39" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/badorgan.aiff">sound
+of the residuals</a>.&nbsp; If we listen to the&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic40" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/track37.aiff">estimate
+of s(t),</a> it sounds similar to the original, they are different because
+we don't hear the reverb during the second note, and also the 50 Hz frequency
+is not heard. It doesn't really sound like an organ anymore. Now if we
+instead fit a model with s(t) composed of three periodic components s<sub>1</sub>(t),
+s<sub>2</sub>(t), and s<sub>3</sub>(t), we obtain a better fit and a separation
+of each component. We can look at <a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/plots.html#plot6">plots</a>
+showing the results and also listen to them:
+<p><img SRC="Sound_Icon.gif" NAME="Graphic41" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ2tone.l.aiff">Original
+sound<a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ2tone.l.aiff"><img SRC="Sound_Icon.gif" NAME="Graphic42" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM></a></a><a href="http://biosun01.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ1.aiff">fitted
+s<sub>1</sub>(t</a>)&nbsp;<img SRC="Sound_Icon.gif" NAME="Graphic43" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM><a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ2.aiff">fitted
+s<sub>2</sub>(t)<a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ2.aiff"><img SRC="Sound_Icon.gif" NAME="Graphic44" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM></a></a><a href="http://biosun01.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ3.aiff">fitted
+s<sub>3</sub>(t)<a href="http://www.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ3.aiff"><img SRC="Sound_Icon.gif" NAME="Graphic45" HSPACE=4 BORDER=0 height=32 width=32 align=BOTTOM></a></a><a href="http://biosun01.biostat.jhsph.edu/~ririzarr/Demo/Sounds/organ.res.aiff">residuals</a>
+
+<p STYLE="margin-bottom: 0in">Note: If you have small speakers with no
+bass, you probably won't hear some of these sounds.
+<br>
+<hr>
+<br>&nbsp;
+<p>I couldn't have made this page without the help of <a href="http://cnmat.CNMAT.Berkeley.EDU/~wessel/">David
+Wessel</a>,&nbsp; <a href="http://cnmat.CNMAT.Berkeley.EDU/~adrian/">Adrian
+Freed</a>, <a href="http://cnmat.CNMAT.Berkeley.EDU/~matt/">Matt Wright</a>
+and the people at <a href="http://cnmat.CNMAT.Berkeley.EDU/">CNMAT</a>.
+
+<p STYLE="margin-bottom: 0in">And also <b>Ofer Licht, </b><a href="http://www.stat.berkeley.edu/~spector">Phil
+Spector</a><b> </b>and <a href="http://www.stat.berkeley.edu/users/brill">David
+Brillinger</a> from the<a href="http://www.stat.berkeley.edu/"> stat department
+at Berkeley</a>.
+<br>
+<hr>
+<br>&nbsp;
+<p>Get the details from <a href="http://www.biostat.jhsph.edu/~ririzarr/Papers/jasa99.ps">this
+paper</a>.
+<br>&nbsp;
+</body>
+</html>
