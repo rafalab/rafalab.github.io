@@ -6,17 +6,21 @@ title: people
 #### Current Lab Members
 
 - Rolando Acosta (Graduate Student)
+- Dylan Cable (Graduate Student)
 - Kareem Carr (Graduate Student)
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
 - [Patrick Kimes](http://pkimes.org/) (Postdoc)
 - Jill Lundell (Postdoc)
-- Jane Liang (Graduate Student)
 - Mercedeh Movassagh (Postdoc)
 - Senthil Kumar Muthiah (Postdoc)
 - [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
 - [Kelly Street](https://github.com/kstreet13/) (Postdoc)
+
+#### FOL (Friends of the Lab)
+
+- Etai Joseph
 
 #### Past Postdocs
 
@@ -62,9 +66,9 @@ title: people
 
 #### Summer Students
 
-- 2014: Esther Fervrier, Markus Havell, and  Savion Smith 
-- 2015: Pedro Mu&ntilde;oz Agrinsoni, Kevin Kupiec, and Randy Williams 
+- 2014: Esther Fervrier, Markus Havell, and  Savion Smith
+- 2015: Kevin Kupiec, Pedro Mu&ntilde;oz Agrinsoni, and Randy Williams
 - 2016: Alejandra DeJesús-Soto, Mark Ruprecht and Patricia Vera-González
-- 2017: Jace Gilbert, Daniel Meza, Jeff Joseph
+- 2017: Jace Gilbert, Jeff Joseph, and Daniel Meza
 - 2018: Michael Figueroa and Jaziel Torres
-		  
+- 2019: Orandy Forth, Claidys Lanzot Cruz, and Sabrina Trombetta 

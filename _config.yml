@@ -17,7 +17,7 @@ baseurl: ""
 title: rafalab
 
 #Default keywords (used if no keywords are specified on a page basis)
-keywords: Irizarry, Rafael
+keywords: Irizarry, Rafael, rafalab, data science
 
 # Short description of your site
 desc: Sample Description
@@ -34,7 +34,7 @@ nav-links:
     About: "pages/about.html"
     People: "pages/people.html"
     Research: "pages/research.html"
-    Publications: "pages/publications.html"
+    Books: "pages/books.html"
     Software: "pages/software.html"
     Teaching: "pages/teaching.html"
 # --- Footer options --- #
@@ -58,7 +58,7 @@ pretty-url: "bchetty.com"
 disqus: 
 
 # Google Analytics Settings
-google_analytics: 
+google_analytics: UA-151564720-1
 
 # Set these options as you need (For more information, check Jekyll's site)
 timezone: "America/New_York"
