@@ -16,7 +16,7 @@ title: people
 - Senthil Kumar Muthiah (Postdoc)
 - [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
-- [Kelly Street](https://github.com/kstreet13/) (Postdoc)
+- [Kelly Street](https://kellystreet.org/) (Postdoc)
 
 #### FOL (Friends of the Lab)
 
