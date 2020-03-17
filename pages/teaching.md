@@ -40,7 +40,7 @@ To use this material to develop your own course you can access videos and course
 
 Graduate-level courses developed for life scientists needing to analyze high-throughput data. Focuses on [Bioconductor](https://www.bioconductor.org/).
 
-To use this material to develop your own course you can access videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
+To use this material to develop your own course you can access some videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
 
 * [Introduction to Bioconductor](https://www.edx.org/course/introduction-to-bioconductor-annotation-and-analys): introduction to measurement technologies, annotation, data organization, differential expression.
 * [Case Studies in Functional Genomics](https://www.edx.org/course/high-performance-computing-for-reproducible-genomi): RNA-Seq, DNA methylation, ChIP-Seq
