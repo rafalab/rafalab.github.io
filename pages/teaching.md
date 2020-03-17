@@ -20,13 +20,21 @@ To use this material to develop your own course you can access and edit the note
 Course series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-science)
 
 * [R Basics](https://www.edx.org/course/data-science-r-basics): Introduction to R.
+
 * [Data Visualization](https://www.edx.org/course/data-science-visualization): Data visualization principles, __ggplot2__.
+
 * [Probability](https://www.edx.org/course/data-science-probability): Expected values, standard errors, Monte Carlo simulations.
+
 * [Inference and Modeling](https://www.edx.org/course/data-science-inference-and-modeling): Estimates, statistical tests, models, Bayesian statistics. 
+
 * [Data Wrangling](https://www.edx.org/course/data-science-wrangling): Importing data, web scraping, reshaping data, __tidyverse__.
+
 * [Productivity Tools](https://www.edx.org/course/data-science-productivity-tools): Linux, Git and GitHub, Rmarkdown, RStudio.
+
 * [Linear Regression](https://www.edx.org/course/data-science-linear-regression): correlation, least squares, multivariate statistics, confounding.
+
 * [Machine Learning](https://www.edx.org/course/data-science-machine-learning): cross validation, kNN, random forests, __caret__ package.
+
 * [Capstone Project](https://www.edx.org/course/data-science-capstone): Do your own data analysis project.
 
 ### [Data Analysis for the Life Sciences](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences)
@@ -38,8 +46,11 @@ To use this material to develop your own course you can access videos and course
 Course series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences).
 
 * [Statistics and R](https://www.edx.org/course/statistics-and-r): Basic statistical inference with R base.
+
 * [Introduction to Linear Models and Matrix Algebra](https://www.edx.org/course/introduction-to-linear-models-and-matrix-algebra): Experimental design, interactions.
+
 * [Statistical Inference and Modeling for High-throughput Experiments](https://www.edx.org/course/statistical-inference-and-modeling-for-high-throug): multiple testing, FDR.
+
 * [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis): PCA, batch effects. 
  
 ### [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis)
@@ -51,7 +62,9 @@ To use this material to develop your own course you can access some videos and c
 Course series landing page is [here](https://www.edx.org/xseries/genomics-data-analysis).
 
 * [Introduction to Bioconductor](https://www.edx.org/course/introduction-to-bioconductor-annotation-and-analys): introduction to measurement technologies, annotation, data organization, differential expression.
+
 *  **Coming soon**: Case Studies in Functional Genomics: RNA-Seq, DNA methylation, ChIP-Seq.
+
 *  **Coming soon**: Advanced Bioconductor: Dataviz, HDF5, TCGA data, ENCODE data.
 
 
@@ -68,7 +81,8 @@ These are course notes for advanced graduate statistics courses. You are free to
 
 ## Writings on teaching data science
 
-* [Applied Statisticians: people want to learn what we do. Let's teach them.](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
+* [Applied Statisticians: people want to learn what we do, let's teach them](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
+
 * [A Guide to teaching data scinece](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2017.1356747#.XnDhTpNKjOQ)
 
 ----
