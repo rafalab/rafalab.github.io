@@ -3,13 +3,13 @@ layout: template1
 title: Teaching
 ---
 
-## Teaching resources
+# Teaching resources
 
-### Online courses
+## Online courses
 
 __Note that all theses course have free audit version.__ Look for the **audit** button.
 
-#### [Introduction to Data Science]((https://www.edx.org/professional-certificate/harvardx-data-science))
+### [Introduction to Data Science]((https://www.edx.org/professional-certificate/harvardx-data-science))
 
 Eight college-level courses and a capstone project.
 
@@ -29,7 +29,7 @@ Course series landing page is [here](https://www.edx.org/professional-certificat
 * [Machine Learning](https://www.edx.org/course/data-science-machine-learning): cross validation, kNN, random forests, __caret__ package.
 * [Capstone Project](https://www.edx.org/course/data-science-capstone): Do your own data analysis project.
 
-#### [Data Analysis for the Life Sciences](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences)
+### [Data Analysis for the Life Sciences](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences)
  
 Four graduate-level courses developed for life scientists suddenly needing to analyze complex data.
 
@@ -42,7 +42,7 @@ Course series landing page is [here](https://www.edx.org/professional-certificat
 * [Statistical Inference and Modeling for High-throughput Experiments](https://www.edx.org/course/statistical-inference-and-modeling-for-high-throug): multiple testing, FDR.
 * [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis): : PCA, batch effects. 
  
-#### [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis)
+### [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis)
 
 Three graduate-level courses developed for life scientists needing to analyze high-throughput data. Focuses on [Bioconductor](https://www.bioconductor.org/).
 
@@ -55,7 +55,7 @@ Course series landing page is [here](https://www.edx.org/xseries/genomics-data-a
 *  **Coming soon**: Advanced Bioconductor: Dataviz, HDF5, TCGA data, ENCODE data.
 
 
-### Class Notes
+## Class Notes
 
 These are course notes for advanced graduate statistics courses. You are free to borrow the material to help develop your own courses.
 
@@ -66,7 +66,7 @@ These are course notes for advanced graduate statistics courses. You are free to
 * [Advanced Statistical Methods]({{ site.baseurl }}/pages/bio751)
 
 
-### Writings on teaching data science
+## Writings on teaching data science
 
 * [Applied Statisticians: people want to learn what we do. Let's teach them.](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
 * [A Guide to teaching data scinece](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2017.1356747#.XnDhTpNKjOQ)
