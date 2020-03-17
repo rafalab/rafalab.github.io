@@ -3,6 +3,8 @@ layout: template1
 title: Teaching
 ---
 
+## Teaching resources
+
 ### Online courses
 
 __Note that all theses course have free audit version.__ Look for the **audit** button.
