@@ -9,7 +9,7 @@ title: Teaching
 
 __Note that all theses course have free audit version.__ Look for the **audit** button.
 
-#### Introduction to Data Science 
+#### [Introduction to Data Science]((https://www.edx.org/professional-certificate/harvardx-data-science))
 
 Eight college-level courses and a capstone project.
 
@@ -29,20 +29,20 @@ Course series landing page is [here](https://www.edx.org/professional-certificat
 * [Machine Learning](https://www.edx.org/course/data-science-machine-learning): cross validation, kNN, random forests, __caret__ package.
 * [Capstone Project](https://www.edx.org/course/data-science-capstone): Do your own data analysis project.
 
-#### Data Analysis for the Life Sciences
+#### [Data Analysis for the Life Sciences](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences)
  
 Four graduate-level courses developed for life scientists suddenly needing to analyze complex data.
 
 To use this material to develop your own course you can access videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
 
-Course series landing page is [here]((https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences).
+Course series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences).
 
 * [Statistics and R](https://www.edx.org/course/statistics-and-r): Basic statistical inference with R base.
 * [Introduction to Linear Models and Matrix Algebra](https://www.edx.org/course/introduction-to-linear-models-and-matrix-algebra): Experimental design, interactions.
 * [Statistical Inference and Modeling for High-throughput Experiments](https://www.edx.org/course/statistical-inference-and-modeling-for-high-throug): multiple testing, FDR.
 * [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis): : PCA, batch effects. 
  
-#### Genomics Data Analysis 
+#### [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis)
 
 Three graduate-level courses developed for life scientists needing to analyze high-throughput data. Focuses on [Bioconductor](https://www.bioconductor.org/).
 
@@ -53,7 +53,6 @@ Course series landing page is [here](https://www.edx.org/xseries/genomics-data-a
 * [Introduction to Bioconductor](https://www.edx.org/course/introduction-to-bioconductor-annotation-and-analys): introduction to measurement technologies, annotation, data organization, differential expression.
 *  **Coming soon**: Case Studies in Functional Genomics: RNA-Seq, DNA methylation, ChIP-Seq.
 *  **Coming soon**: Advanced Bioconductor: Dataviz, HDF5, TCGA data, ENCODE data.
-
 
 
 ### Class Notes
@@ -67,7 +66,7 @@ These are course notes for advanced graduate statistics courses. You are free to
 * [Advanced Statistical Methods]({{ site.baseurl }}/pages/bio751)
 
 
-### [Writings on teaching data science]
+### Writings on teaching data science
 
 * [Applied Statisticians: people want to learn what we do. Let's teach them.](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
 * [A Guide to teaching data scinece](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2017.1356747#.XnDhTpNKjOQ)
