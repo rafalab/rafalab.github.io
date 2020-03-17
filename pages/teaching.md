@@ -51,8 +51,8 @@ To use this material to develop your own course you can access some videos and c
 Course series landing page is [here](https://www.edx.org/xseries/genomics-data-analysis).
 
 * [Introduction to Bioconductor](https://www.edx.org/course/introduction-to-bioconductor-annotation-and-analys): introduction to measurement technologies, annotation, data organization, differential expression.
-* [Case Studies in Functional Genomics](https://www.edx.org/course/high-performance-computing-for-reproducible-genomi): RNA-Seq, DNA methylation, ChIP-Seq
-* [Advanced Bioconductor](https://www.edx.org/course/case-studies-in-functional-genomics): Dataviz, HDF5, TCGA data, ENCODE data.
+*  **Coming soon**: Case Studies in Functional Genomics: RNA-Seq, DNA methylation, ChIP-Seq.
+*  **Coming soon**: Advanced Bioconductor: Dataviz, HDF5, TCGA data, ENCODE data.
 
 
 
@@ -67,7 +67,10 @@ These are course notes for advanced graduate statistics courses. You are free to
 * [Advanced Statistical Methods]({{ site.baseurl }}/pages/bio751)
 
 
-### [Blog post on teaching data science](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
+### [Writings on teaching data science]
+
+* [Applied Statisticians: people want to learn what we do. Let's teach them.](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
+* [A Guide to teaching data scinece](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2017.1356747#.XnDhTpNKjOQ)
 
 ----
 
