@@ -7,16 +7,24 @@ title: Teaching
 
 Note that all theses course have free audit version. 
 
-*[Introduction to Data Science Series](https://www.edx.org/professional-certificate/harvardx-data-science): Eight courses and capstone project
-+[R Basics](https://www.edx.org/course/data-science-r-basics): Introduction to R.
-+[Data Visualization](https://www.edx.org/course/data-science-visualization): Data visualization principles and ggplot2.
-+[Probability](https://www.edx.org/course/data-science-probability) 
-+[Inference and Modeling](https://www.edx.org/course/data-science-inference-and-modeling)
-+[Productivity Tools](https://www.edx.org/course/data-science-productivity-tools): Linux, Git and GitHub, markdown, RStudio.
-+[Linear Regression](https://www.edx.org/course/data-science-linear-regression)
-+[Machine Learning](https://www.edx.org/course/data-science-machine-learning): cross validation, kNN, random forests, caret package.
-+[Capstone Project](https://www.edx.org/course/data-science-capstone)
+* [Introduction to Data Science Series](https://www.edx.org/professional-certificate/harvardx-data-science): Eight introductory courses and acapstone project
++ [R Basics](https://www.edx.org/course/data-science-r-basics): Introduction to R.
++ [Data Visualization](https://www.edx.org/course/data-science-visualization): Data visualization principles and __ggplot2__.
++ [Probability](https://www.edx.org/course/data-science-probability) 
++ [Inference and Modeling](https://www.edx.org/course/data-science-inference-and-modeling)
++ [Data Wrangling](https://www.edx.org/course/data-science-wrangling): importing data, web scraping, wrangling with __tidyverse__.
++ [Productivity Tools](https://www.edx.org/course/data-science-productivity-tools): Linux, Git and GitHub, markdown, RStudio.
++ [Linear Regression](https://www.edx.org/course/data-science-linear-regression)
++ [Machine Learning](https://www.edx.org/course/data-science-machine-learning): cross validation, kNN, random forests, __caret__ package.
++ [Capstone Project](https://www.edx.org/course/data-science-capstone)
+ 
+* [Data Analysis for the Life Sciences](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences): More advanced courses with focus on biology applications.
 
++ [Statistics and R](https://www.edx.org/course/statistics-and-r): Basic statistical inference with R base.
++ [Introduction to Linear Models and Matrix Algebra](https://www.edx.org/course/introduction-to-linear-models-and-matrix-algebra): Experimental design, interactions.
++ [Statistical Inference and Modeling for High-throughput Experiments](https://www.edx.org/course/statistical-inference-and-modeling-for-high-throug): multiple testing, FDR.
++ [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis): : PCA, batch effects. 
+ 
 
 #### [Professional Certificate in Data Science](https://online-learning.harvard.edu/series/professional-certificate-data-science)
 
