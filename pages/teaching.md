@@ -15,7 +15,7 @@ __Note that all theses course have free audit version.__ Look for the **audit** 
 
 Eight college-level courses and a capstone project.
 
-The textbook for this course free [online](https://rafalab.github.io/dsbook/).
+The textbook for this course is [online](https://rafalab.github.io/dsbook/) and the hardcopy (not free) you can get on [Amazon](https://www.amazon.com/dp/0367357984/ref=cm_sw_em_r_mt_dp_U_uhuCEbB0HAJ9H).
 
 Spanish version is being developed [here](https://github.com/rafalab/dslibro).
 
@@ -46,6 +46,8 @@ Course series landing page is [here](https://www.edx.org/professional-certificat
 Four graduate-level courses developed for life scientists suddenly needing to analyze complex data.
 
 To use this material to develop your own course you can access videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
+
+You can downloada a free PDF version of the textbook from [Leanpub](https://leanpub.com/dataanalysisforthelifesciences) and the paperback (not free) you can get on [Amazon](https://www.amazon.com/dp/1498775675/ref=cm_sw_em_r_mt_dp_U_cjuCEb0PPPM4Z).
 
 Course series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences).
 
