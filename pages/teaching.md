@@ -21,10 +21,10 @@ Course series landing page is [here](https://www.edx.org/professional-certificat
 
 * [R Basics](https://www.edx.org/course/data-science-r-basics): Introduction to R.
 * [Data Visualization](https://www.edx.org/course/data-science-visualization): Data visualization principles, __ggplot2__.
-* [Probability](https://www.edx.org/course/data-science-probability): Expected values, standard errors, Monte Carlo simulation, 
+* [Probability](https://www.edx.org/course/data-science-probability): Expected values, standard errors, Monte Carlo simulations.
 * [Inference and Modeling](https://www.edx.org/course/data-science-inference-and-modeling): Estimates, statistical tests, models, Bayesian statistics. 
 * [Data Wrangling](https://www.edx.org/course/data-science-wrangling): Importing data, web scraping, reshaping data, __tidyverse__.
-* [Productivity Tools](https://www.edx.org/course/data-science-productivity-tools): Linux, Git and GitHub, markdown, RStudio.
+* [Productivity Tools](https://www.edx.org/course/data-science-productivity-tools): Linux, Git and GitHub, Rmarkdown, RStudio.
 * [Linear Regression](https://www.edx.org/course/data-science-linear-regression): correlation, least squares, multivariate statistics, confounding.
 * [Machine Learning](https://www.edx.org/course/data-science-machine-learning): cross validation, kNN, random forests, __caret__ package.
 * [Capstone Project](https://www.edx.org/course/data-science-capstone): Do your own data analysis project.
@@ -40,7 +40,7 @@ Course series landing page is [here](https://www.edx.org/professional-certificat
 * [Statistics and R](https://www.edx.org/course/statistics-and-r): Basic statistical inference with R base.
 * [Introduction to Linear Models and Matrix Algebra](https://www.edx.org/course/introduction-to-linear-models-and-matrix-algebra): Experimental design, interactions.
 * [Statistical Inference and Modeling for High-throughput Experiments](https://www.edx.org/course/statistical-inference-and-modeling-for-high-throug): multiple testing, FDR.
-* [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis): : PCA, batch effects. 
+* [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis): PCA, batch effects. 
  
 ### [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis)
 
