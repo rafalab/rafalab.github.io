@@ -5,6 +5,8 @@ title: Teaching
 
 # Teaching resources
 
+----
+
 ## Online courses
 
 __Note that all theses course have free audit version.__ Look for the **audit** button.
@@ -14,6 +16,8 @@ __Note that all theses course have free audit version.__ Look for the **audit** 
 Eight college-level courses and a capstone project.
 
 The textbook for this course free [online](https://rafalab.github.io/dsbook/).
+
+Spanish version is being developed [here](https://github.com/rafalab/dslibro).
 
 To use this material to develop your own course you can access and edit the notes [here](https://github.com/rafalab/dsbook).
 
@@ -67,6 +71,7 @@ Course series landing page is [here](https://www.edx.org/xseries/genomics-data-a
 
 *  **Coming soon**: Advanced Bioconductor: Dataviz, HDF5, TCGA data, ENCODE data.
 
+----
 
 ## Class Notes
 
@@ -78,6 +83,7 @@ These are course notes for advanced graduate statistics courses. You are free to
 
 * [Advanced Statistical Methods]({{ site.baseurl }}/pages/bio751)
 
+----
 
 ## Writings on teaching data science
 
