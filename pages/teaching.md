@@ -50,11 +50,11 @@ To use this material to develop your own course you can access videos and course
 
 ### Class Notes
 
-These are course notes foradvanced graudate statistics courses. You are free to borrow the material to help develop your own courses.
+These are course notes for advanced graduate statistics courses. You are free to borrow the material to help develop your own courses.
 
-* [Statistical Learning: Nonparametric and  Algorithmic Approaches]({{ site.baseurl }}/pages/649)
+* [Statistical Learning: Non-parametric and  Algorithmic Approaches]({{ site.baseurl }}/pages/649)
 
-* [Applied Nonparametric and Modern Statistics]({{ site.baseurl }}/pages/754)
+* [Applied Non-parametric and Modern Statistics]({{ site.baseurl }}/pages/754)
 
 * [Advanced Statistical Methods]({{ site.baseurl }}/pages/bio751)
 
