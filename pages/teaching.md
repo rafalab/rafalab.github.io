@@ -9,13 +9,15 @@ title: Teaching
 
 __Note that all theses course have free audit version.__ Look for the **audit** button.
 
-#### [Introduction to Data Science Series](https://www.edx.org/professional-certificate/harvardx-data-science): 
+#### Introduction to Data Science 
 
 Eight college-level courses and a capstone project.
 
 The textbook for this course free [online](https://rafalab.github.io/dsbook/).
 
 To use this material to develop your own course you can access and edit the notes [here](https://github.com/rafalab/dsbook).
+
+Course series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-science)
 
 * [R Basics](https://www.edx.org/course/data-science-r-basics): Introduction to R.
 * [Data Visualization](https://www.edx.org/course/data-science-visualization): Data visualization principles, __ggplot2__.
@@ -25,24 +27,28 @@ To use this material to develop your own course you can access and edit the note
 * [Productivity Tools](https://www.edx.org/course/data-science-productivity-tools): Linux, Git and GitHub, markdown, RStudio.
 * [Linear Regression](https://www.edx.org/course/data-science-linear-regression): correlation, least squares, multivariate statistics, confounding.
 * [Machine Learning](https://www.edx.org/course/data-science-machine-learning): cross validation, kNN, random forests, __caret__ package.
-* [Capstone Project](https://www.edx.org/course/data-science-capstone)
+* [Capstone Project](https://www.edx.org/course/data-science-capstone): Do your own data analysis project.
 
-#### [Data Analysis for the Life Sciences](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences)
-
-Graduate-level courses developed for life scientists suddenly needing to analyze complex data.
+#### Data Analysis for the Life Sciences
+ 
+Four graduate-level courses developed for life scientists suddenly needing to analyze complex data.
 
 To use this material to develop your own course you can access videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
+
+Course series landing page is [here]((https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences).
 
 * [Statistics and R](https://www.edx.org/course/statistics-and-r): Basic statistical inference with R base.
 * [Introduction to Linear Models and Matrix Algebra](https://www.edx.org/course/introduction-to-linear-models-and-matrix-algebra): Experimental design, interactions.
 * [Statistical Inference and Modeling for High-throughput Experiments](https://www.edx.org/course/statistical-inference-and-modeling-for-high-throug): multiple testing, FDR.
 * [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis): : PCA, batch effects. 
  
-#### [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis)
+#### Genomics Data Analysis 
 
-Graduate-level courses developed for life scientists needing to analyze high-throughput data. Focuses on [Bioconductor](https://www.bioconductor.org/).
+Three graduate-level courses developed for life scientists needing to analyze high-throughput data. Focuses on [Bioconductor](https://www.bioconductor.org/).
 
 To use this material to develop your own course you can access some videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
+
+Course series landing page is [here](https://www.edx.org/xseries/genomics-data-analysis).
 
 * [Introduction to Bioconductor](https://www.edx.org/course/introduction-to-bioconductor-annotation-and-analys): introduction to measurement technologies, annotation, data organization, differential expression.
 * [Case Studies in Functional Genomics](https://www.edx.org/course/high-performance-computing-for-reproducible-genomi): RNA-Seq, DNA methylation, ChIP-Seq
