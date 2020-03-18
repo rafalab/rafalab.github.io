@@ -47,7 +47,7 @@ Four graduate-level courses developed for life scientists suddenly needing to an
 
 To use this material to develop your own course you can access videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
 
-You can downloada a free PDF version of the textbook from [Leanpub](https://leanpub.com/dataanalysisforthelifesciences) and the paperback (not free) you can get on [Amazon](https://www.amazon.com/dp/1498775675/ref=cm_sw_em_r_mt_dp_U_cjuCEb0PPPM4Z).
+You can downloada a free PDF version of the textbook from [Leanpub](https://leanpub.com/dataanalysisforthelifesciences) and the paperback  (not free) you can get on [Amazon](https://www.amazon.com/dp/1498775675/ref=cm_sw_em_r_mt_dp_U_cjuCEb0PPPM4Z).
 
 Course series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences).
 
@@ -89,10 +89,11 @@ These are course notes for advanced graduate statistics courses. You are free to
 
 ## Writings on teaching data science
 
-* [Applied Statisticians: people want to learn what we do, let's teach them](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
+* [Applied Statisticians: People Want to Learn What We Do, Let's Teach Them](http://simplystatistics.org/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/)
 
-* [A Guide to teaching data scinece](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2017.1356747#.XnDhTpNKjOQ)
+* [A Guide to Teaching Data Scinece](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2017.1356747#.XnDhTpNKjOQ)
 
+* [The Role of Academia in Data Science Education](https://hdsr.mitpress.mit.edu/pub/gg6swfqh)
 ----
 
 
