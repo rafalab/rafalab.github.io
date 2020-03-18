@@ -94,6 +94,7 @@ These are course notes for advanced graduate statistics courses. You are free to
 * [A Guide to Teaching Data Scinece](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2017.1356747#.XnDhTpNKjOQ)
 
 * [The Role of Academia in Data Science Education](https://hdsr.mitpress.mit.edu/pub/gg6swfqh)
+
 ----
 
 
