@@ -70,6 +70,18 @@ Presenter: Natalie Dean
 Slides: [PDF](covid/dean.pdf)
 
 My takeaways:
+* It is important that we continue to use randomized trials to evaluate therapies and vaccines. History has shown us that anecdotal reports can lead to innovation, but is not enough to test for efficacy and safety.
+* Clinical trials have 4 phases: 
+- preclinical: tests on animals
+- Phase 1: first in-human trials focusing on safety and establishing dosing.
+- Phase 2a: Larger trials.
+- Phase 2b/3: Largest trials testing the actual intervention.
+* These trials take months if not years, and we are currently trying to shorten this time by staggering the phases.
+* There are several therapeutics being tested including Chloroquine, hydroxychloroquine. Results are still inconclusive.
+* In dire situations like this, doctors can prescribe FDA approved drugs even if they have not been tested for this particular virus. The fact that a drug is being prescribed doesn't mean it works.
+* We should be skeptical of the publication of inconclusive results as it may be simply due to lack of statistical power (not enough individuals in the trial).
+* One big trial is better than many small ones.
+* If you are starting a trial, have a plan in place.
 
 ### Obtaining and Organizing Public Data
 
