@@ -5,7 +5,7 @@ title: COVID Zoomposium
 
 ## COVID-19 Data Science Symposium
 
-After having to postpone our 2020 Zelen Symposium to September 30 co-orgnaizer [Mark Hansen](https://twitter.com/cocteau) suggested we organize and host an online COVID-19 symposium instead. The event was held on April 2, 2020. Here we provide a summary and materials shared by the speakers.
+After having to postpone our 2020 Zelen Symposium to September 30 co-organizer [Mark Hansen](https://twitter.com/cocteau) suggested we organize and host an online COVID-19 symposium instead. The event was held on April 2, 2020. Here we provide a summary and materials shared by the speakers.
 
 Four speakers presented:
 
@@ -17,25 +17,25 @@ Four speakers presented:
 
 Hosts: 
 
-* [Department of Data Science](http://datasciences.dfci.harvard.edu/) at Dana Farber Cancer Institute
+* [Department of Data Science](http://datasciences.dfci.harvard.edu/) at Dana-Farber Cancer Institute
 * [Brown Institute](https://brown.columbia.edu/) at Columbia Journalism School
 
-Below are my takeways from each talk (under construction) and the materials that were shared.
+Below are my takeaways from each talk (under construction) and the materials that were shared.
 
 ### Epidemiological modeling 
 
-Presneter: Caroline Buckee
+Presenter: Caroline Buckee
 
-Slies: [PDF](covid/buckee.pdf)
+Slides: [PDF](covid/buckee.pdf)
 
-My take aways:
-* Mathamatical models provide a framework to simulate scenarious under different conditions. 
-* These simulations are controlled by interpretable model 
+My takeaways:
+* Mathematical models provide a framework to simulate scenarios under different conditions. 
+* These simulations are controlled by interpret able model 
 parameters.
 * One of these, $k$, represents the contact rate. Social distancing reduces $k$.
 * For the model parameters you can derive R0, the average number of people that one person infects with a virus. 
 * We can use these simulations to help guide policy decisions.
-* You will see very different predictions reported by the media and wonder why do different experts give such different predictions. One reason is that the press may be selecting only one of the scenarios described by a sceintific report. It's better to read the original source.
+* You will see very different predictions reported by the media and wonder why do different experts give such different predictions. One reason is that the press may be selecting only one of the scenarios described by a scientific report. It's better to read the original source.
 * As data becomes available we can try to estimate the parameters, but differences in testing and reporting make it difficult.
 * For similar reasons fatality rates are hard to estimate. 
 * Due to these challenges these models are not good for forecasting.
@@ -45,25 +45,25 @@ parameters.
 
 ### Testing 
 
-Presneter: Michael Mina
+Presenter: Michael Mina
 
 Slides: [PDF](covid/mina.pdf)
 
-My take aways:
+My takeaways:
 
 ###  Vaccines & therapeutics
 
-Presneter: Natalie Dean
+Presenter: Natalie Dean
 
 Slides: [PDF](covid/dean.pdf)
 
-My take aways:
+My takeaways:
 
 ### Obtaining and Organizing Public Data
 
 
-Presneter: Alexis Madrigal
+Presenter: Alexis Madrigal
 
 Website: [The COVID Tracking Project](https://covidtracking.com/)
 
-My take aways:
+My takeaways:
