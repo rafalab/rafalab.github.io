@@ -23,7 +23,7 @@ Hosts:
 * [Department of Data Science](http://datasciences.dfci.harvard.edu/) at Dana-Farber Cancer Institute
 * [Brown Institute](https://brown.columbia.edu/) at Columbia Journalism School
 
-Below are my takeaways from each talk (under construction) and the materials that were shared.
+Below are my takeaways from each talk  and the materials that were shared.
 
 ### Epidemiological modeling 
 
@@ -91,3 +91,15 @@ Presenter: Alexis Madrigal
 Website: [The COVID Tracking Project](https://covidtracking.com/)
 
 My takeaways:
+* "There is power in numbers". In an increasingly data-driven world, numbers help reporters convey their message. 
+* When the pandemic was just starting it was very difficult for reporters to obtain data from federal government officials.
+* Some reporters and data scientist took matters into their own hands and started collecting all the data they could find. Mainly from state public health departments.
+* Some of the different people doing this connected, somewhat serendipitous, and started to organize data in one consolidated resource: [The COVID Tracking Projects](https://covidtracking.com/)
+* This resource includes an [data API](https://covidtracking.com/api)! You can type 
+```
+read.csv("http://covidtracking.com/api/states/daily.csv")
+```
+in R to see.
+* Quality control is done in a distributed way. Errors are found by people using the resource.
+* Most errors are traced back to errors in the original data provided by the states.
+
