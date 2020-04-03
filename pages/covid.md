@@ -52,6 +52,9 @@ Presenter: Michael Mina
 Slides: [PDF](covid/mina.pdf)
 
 My takeaways:
+* The general way the current tests work is by identifying unique parts of the virus' RNA and developing  [primers](https://www.nature.com/scitable/definition/primer-305/) that can be used to detect the presence of the viurs in a human sample obtained from a nasal swab using [qPCR](https://en.wikipedia.org/wiki/Real-time_polymerase_chain_reaction).
+* This is a straight-forward test that most hospitals and clinical laboratories are equiped to perform as long as the primers are made avialable. 
+* The WHO developed a test early on that worked well.
 
 ###  Vaccines & therapeutics
 
