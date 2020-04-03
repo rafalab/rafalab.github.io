@@ -3,7 +3,7 @@ layout: template1
 title: COVID Zoomposium
 ---
 
-# COVID-19 Data Science Symposium
+## COVID-19 Data Science Symposium
 
 After having to postpone our 2020 Zelen Symposium to September 30 co-orgnaizer [Mark Hansen](https://twitter.com/cocteau) suggested we organize and host an online COVID-19 symposium instead. The event was held on April 2, 2020. Here we provide a summary and materials shared by the speakers.
 
@@ -22,7 +22,7 @@ Hosts:
 
 Below are my takeways from each talk (under construction) and the materials that were shared.
 
-## Epidemiological modeling 
+### Epidemiological modeling 
 
 Presneter: Caroline Buckee
 
@@ -43,7 +43,7 @@ parameters.
 * COVID-19 is clearly worse than the flu. It has a higher infectious rate, we have less immunity to it, and current fatality rate estimates are higher.
 
 
-## Testing 
+### Testing 
 
 Presneter: Michael Mina
 
@@ -51,7 +51,7 @@ Slides: [PDF](covid/mina.pdf)
 
 My take aways:
 
-##  Vaccines & therapeutics
+###  Vaccines & therapeutics
 
 Presneter: Natalie Dean
 
@@ -59,7 +59,7 @@ Slides: [PDF](covid/dean.pdf)
 
 My take aways:
 
-## Obtaining and Organizing Public Data
+### Obtaining and Organizing Public Data
 
 
 Presneter: Alexis Madrigal
