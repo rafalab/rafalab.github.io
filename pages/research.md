@@ -3,7 +3,7 @@ layout: template1
 title: Research
 ---
 
-## Introduction
+### Introduction
 
 The unprecedented advancements in digital technology during the second half
 of the 20th century has produced a measurement revolution that is
@@ -26,14 +26,15 @@ for free online. This software has tens of
 thousands of users and the scientific publications in which these
 methods are highly cited.
 
-## Publications
+### Publications
 
-Below are links to papers describing some of our best known work.
+
 To see a list with all of Rafael Irizarry's papers you can visit 
-<a href="https://scholar.google.com/citations?user=nFW-2Q8AAAAJ&hl=en&oi=ao">
-Google Scholar</a> or
-<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA">PubMed
-</a>. Rafael's ORCID is 0000-0002-3944-4309</p>
+[Google Scholar](https://scholar.google.com/citations?user=nFW-2Q8AAAAJ&hl=en&oi=ao) or
+[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/?term=irizarry+RA). 
+Below are links to papers describing some of our best known work.
+
+Rafael's ORCID is 0000-0002-3944-4309
 
 ### Single Cell RNA-Seq
 
