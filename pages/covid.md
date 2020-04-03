@@ -11,11 +11,12 @@ After having to postpone our 2020 Zelen Symposium to September 30 co-organizer [
 
 Four speakers presented:
 
-* Caroline Buckee [@CarolineOB](https://twitter.com/Caroline_OF_B), Department of Epidemiology, Harvard University
-* Mike Mina [@michaelmina_lab](https://twitter.com/michaelmina_lab), Department of Epidemiology, Harvard University
+* Caroline Buckee [@CarolineOB](https://twitter.com/Caroline_OF_B), Department of Epidemiology, Harvard University, [Slides](covid/buckee.pdf)
+
+* Mike Mina [@michaelmina_lab](https://twitter.com/michaelmina_lab), Department of Epidemiology, Harvard University, [Slides](covid/mina.pdf)
 * Natalie Dean [@nataliexdean
-](https://twitter.com/nataliexdean), Department of Biostatistics, University of Florida
-* Alexis Madrigal [@alexismadrigal](https://twitter.com/alexismadrigal), The Atlantic
+](https://twitter.com/nataliexdean), Department of Biostatistics, University of Florida, [Slides](covid/dean.pdf)
+* Alexis Madrigal [@alexismadrigal](https://twitter.com/alexismadrigal), The Atlantic, [Web resource](https://covidtracking.com/)
 
 Hosts: 
 
@@ -52,8 +53,11 @@ Presenter: Michael Mina
 Slides: [PDF](covid/mina.pdf)
 
 My takeaways:
-* The general way the current tests work is by identifying unique parts of the virus' RNA and developing  [primers](https://www.nature.com/scitable/definition/primer-305/) that can be used to detect the presence of the viurs in a human sample obtained from a nasal swab using [qPCR](https://en.wikipedia.org/wiki/Real-time_polymerase_chain_reaction).
-* This is a straight-forward test that most hospitals and clinical laboratories are equiped to perform as long as the primers are made avialable. 
+* The general way the current tests work is by identifying unique parts of the virus' RNA and developing  [primers](https://www.nature.com/scitable/definition/primer-305/) that can be used to detect the presence of the virus in a human sample obtained from a nasal swab using [qPCR](https://en.wikipedia.org/wiki/Real-time_polymerase_chain_reaction).
+* This is a straight-forward test that most hospitals and clinical laboratories are equipped to perform as long as the primers are made available. 
+* One reason the testing started late in the US is because the CDC imposed a rule stating that all tests needed to be run by CDC. This was done due to quality control concenrs.
+* A second reson is that the main companies that develop tests like these ()
+
 * The WHO developed a test early on that worked well.
 
 ###  Vaccines & therapeutics
