@@ -3,6 +3,7 @@ layout: template1
 title: COVID Zoomposium
 ---
 
+![flyer](covd/flyer.jpg)
 ## COVID-19 Data Science Symposium
 
 After having to postpone our 2020 Zelen Symposium to September 30 co-organizer [Mark Hansen](https://twitter.com/cocteau) suggested we organize and host an online COVID-19 symposium instead. The event was held on April 2, 2020. Here we provide a summary and materials shared by the speakers.
