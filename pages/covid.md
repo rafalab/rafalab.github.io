@@ -35,7 +35,7 @@ My takeaways:
 * These simulations are controlled by interpretable model 
 parameters.
 * One of these, k, represents the contact rate. Social distancing reduces k.
-* For the model parameters you can derive R0, the average number of people that one person infects with a virus. 
+* For the model parameters you can derive R0, the average number of people that one person infects with the virus. 
 * We can use these simulations to help guide policy decisions.
 * You will see very different predictions reported by the media and wonder why do different experts give such different predictions. One reason is that the press may be selecting only one of the scenarios described by a scientific report. It's better to read the original source.
 * As data becomes available we can try to estimate the parameters, but differences in testing and reporting make it difficult.
@@ -54,11 +54,12 @@ Slides: [PDF](covid/mina.pdf)
 My takeaways:
 * The general way the current tests work is by identifying unique parts of the virus' RNA and developing  [primers](https://www.nature.com/scitable/definition/primer-305/) that can be used to detect the presence of the virus in a human sample obtained from a nasal swab using [qPCR](https://en.wikipedia.org/wiki/Real-time_polymerase_chain_reaction).
 * This is a straight-forward test that most hospitals and clinical laboratories are equipped to perform as long as the primers are made available. 
-* One reason the testing started late in the US is because the CDC imposed a rule stating that all tests needed to be run by CDC. This was done due to quality control concerns. The test developed by the WHO early on that worked well. The CDC decided to develop their own.
+* One reason the testing started late in the US is because the CDC imposed a rule stating that all tests needed to be run by CDC. This was done due to quality control concerns. 
+* However, the test developed by the WHO early on appeared to worked well. The CDC decided to develop their own and apparently, the first versions did not work and took time to notice.
 * A second reason is that the main companies that develop these types of tests (Roche, Thermo Fisher, Quest Diagnostics) did not start to develop COVID test until it was clear tests would be needed. This resulted in a lag.
-* After it was clear that we were going to need many more tests, the restrictions were dropped and today the USA has tested over 1,000,000 people.
+* After it was clear that we were going to need many more tests, the restrictions were dropped and today the USA has tested over 1,000,000 people using moslty tests made by the companies listed above.
 * Now that restrictions have been lifted, many companies and academic researchers are trying to develop tests that are easier to apply. The hope is that we will have something fast and easy to use similar to home pregnancy tests.
-* A problem that this pandemic has revealed is that the supply chain for these tests is not very robust. We have been surprised by which of the many parts needed to develop these tests have been hard to get.
+* A problem that this pandemic has revealed is that the supply chain for these tests is more fragile than expected       . We have been surprised by which of the many parts needed to develop these tests have been hard to get.
 * Testing for antibodies to know who is immune will be crucial for next steps. We need a test that can help use develop strategies for going back to work, etc...
 
 
@@ -71,10 +72,10 @@ Slides: [PDF](covid/dean.pdf)
 My takeaways:
 * It is important that we continue to use randomized trials to evaluate therapies and vaccines. History has shown us that anecdotal reports can lead to innovation, but is not enough to test for efficacy and safety.
 * Clinical trials have 4 phases: 
-- preclinical: tests on animals
-- Phase 1: first in-human trials focusing on safety and establishing dosing.
-- Phase 2a: Larger trials.
-- Phase 2b/3: Largest trials testing the actual intervention.
+  - preclinical: tests on animals
+  - Phase 1: first in-human trials focusing on safety and   establishing dosing.
+  - Phase 2a: Larger trials.
+  - Phase 2b/3: Largest trials testing the actual intervention.
 * These trials take months if not years, and we are currently trying to shorten this time by staggering the phases.
 * There are several therapeutics being tested including Chloroquine, hydroxychloroquine. Results are still inconclusive.
 * In dire situations like this, doctors can prescribe FDA approved drugs even if they have not been tested for this particular virus. The fact that a drug is being prescribed doesn't mean it works.
