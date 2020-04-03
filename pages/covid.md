@@ -12,7 +12,6 @@ After having to postpone our 2020 Zelen Symposium to September 30 co-organizer [
 Four speakers presented:
 
 * Caroline Buckee [@CarolineOB](https://twitter.com/Caroline_OF_B), Department of Epidemiology, Harvard University, [Slides](covid/buckee.pdf)
-
 * Mike Mina [@michaelmina_lab](https://twitter.com/michaelmina_lab), Department of Epidemiology, Harvard University, [Slides](covid/mina.pdf)
 * Natalie Dean [@nataliexdean
 ](https://twitter.com/nataliexdean), Department of Biostatistics, University of Florida, [Slides](covid/dean.pdf)
