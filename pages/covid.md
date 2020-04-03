@@ -3,7 +3,7 @@ layout: template1
 title: COVID Zoomposium
 ---
 
-![](covid/flyer.ppg)
+![](covid/flyer.png)
 
 ## COVID-19 Data Science Symposium
 
