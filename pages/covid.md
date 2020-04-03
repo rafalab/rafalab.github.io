@@ -55,10 +55,13 @@ Slides: [PDF](covid/mina.pdf)
 My takeaways:
 * The general way the current tests work is by identifying unique parts of the virus' RNA and developing  [primers](https://www.nature.com/scitable/definition/primer-305/) that can be used to detect the presence of the virus in a human sample obtained from a nasal swab using [qPCR](https://en.wikipedia.org/wiki/Real-time_polymerase_chain_reaction).
 * This is a straight-forward test that most hospitals and clinical laboratories are equipped to perform as long as the primers are made available. 
-* One reason the testing started late in the US is because the CDC imposed a rule stating that all tests needed to be run by CDC. This was done due to quality control concenrs.
-* A second reson is that the main companies that develop tests like these ()
+* One reason the testing started late in the US is because the CDC imposed a rule stating that all tests needed to be run by CDC. This was done due to quality control concerns. The test developed by the WHO early on that worked well. The CDC decided to develop their own.
+* A second reason is that the main companies that develop these types of tests (Roche, Thermo Fisher, Quest Diagnostics) did not start to develop COVID test until it was clear tests would be needed. This resulted in a lag.
+* After it was clear that we were going to need many more tests, the restrictions were dropped and today the USA has tested over 1,000,000 people.
+* Now that restrictions have been lifted, many companies and academic researchers are trying to develop tests that are easier to apply. The hope is that we will have something fast and easy to use similar to home pregnancy tests.
+* A problem that this pandemic has revealed is that the supply chain for these tests is not very robust. We have been surprised by which of the many parts needed to develop these tests have been hard to get.
+* Testing for antibodies to know who is immune will be crucial for next steps. We need a test that can help use develop strategies for going back to work, etc...
 
-* The WHO developed a test early on that worked well.
 
 ###  Vaccines & therapeutics
 
