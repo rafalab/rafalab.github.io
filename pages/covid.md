@@ -32,9 +32,9 @@ Slides: [PDF](covid/buckee.pdf)
 
 My takeaways:
 * Mathematical models provide a framework to simulate scenarios under different conditions. 
-* These simulations are controlled by interpret able model 
+* These simulations are controlled by interpretable model 
 parameters.
-* One of these, $k$, represents the contact rate. Social distancing reduces $k$.
+* One of these, k, represents the contact rate. Social distancing reduces k.
 * For the model parameters you can derive R0, the average number of people that one person infects with a virus. 
 * We can use these simulations to help guide policy decisions.
 * You will see very different predictions reported by the media and wonder why do different experts give such different predictions. One reason is that the press may be selecting only one of the scenarios described by a scientific report. It's better to read the original source.
