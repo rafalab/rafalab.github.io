@@ -7,7 +7,7 @@ title: COVID Zoomposium
 
 ## COVID-19 Data Science Symposium
 
-After having to postpone our 2020 Zelen Symposium to September 30 co-organizer [Mark Hansen](https://twitter.com/cocteau) suggested we organize and host an online COVID-19 symposium instead. The event was held on April 2, 2020. Here we provide a summary and materials shared by the speakers.
+After having to postpone our 2020 Zelen Symposium to September 30,  co-organizer [Mark Hansen](https://twitter.com/cocteau) suggested we organize and host an online COVID-19 symposium instead. The event was held on April 2, 2020. Here we provide a summary and materials shared by the speakers.
 
 Four speakers presented:
 
@@ -60,7 +60,7 @@ My takeaways:
 * After it was clear that we were going to need many more tests, the restrictions were dropped and today the USA has tested over 1,000,000 people using moslty tests made by the companies listed above.
 * Now that restrictions have been lifted, many companies and academic researchers are trying to develop tests that are easier to apply. The hope is that we will have something fast and easy to use similar to home pregnancy tests.
 * A problem that this pandemic has revealed is that the supply chain for these tests is more fragile than expected       . We have been surprised by which of the many parts needed to develop these tests have been hard to get.
-* Testing for antibodies to know who is immune will be crucial for next steps. We need a test that can help use develop strategies for going back to work, etc...
+* Testing for antibodies to know who is immune will be crucial for next steps. We need a test that can help us develop strategies for going back to work, etc...
 
 
 ###  Vaccines & therapeutics
@@ -70,15 +70,15 @@ Presenter: Natalie Dean
 Slides: [PDF](covid/dean.pdf)
 
 My takeaways:
-* It is important that we continue to use randomized trials to evaluate therapies and vaccines. History has shown us that anecdotal reports can lead to innovation, but is not enough to test for efficacy and safety.
-* Clinical trials have 4 phases: 
-  - preclinical: tests on animals
+* It is important that we continue to use randomized trials to evaluate therapies and vaccines. History has shown us that anecdotal reports can lead to innovation, but are not enough to test for efficacy and safety.
+* In medice, randomized controls trial (clinical trials) have 4 phases: 
+  - Preclinical: tests on animals.
   - Phase 1: first in-human trials focusing on safety and   establishing dosing.
   - Phase 2a: Larger trials.
   - Phase 2b/3: Largest trials testing the actual intervention.
 * These trials take months if not years, and we are currently trying to shorten this time by staggering the phases.
 * There are several therapeutics being tested including Chloroquine, hydroxychloroquine. Results are still inconclusive.
-* In dire situations like this, doctors can prescribe FDA approved drugs even if they have not been tested for this particular virus. The fact that a drug is being prescribed doesn't mean it works.
+* In dire situations like this, doctors can prescribe FDA approved drugs even if they have not been tested for this particular virus. The fact that a drug developed for some other disease, is being prescribed in this way for COVID, doesn't mean it works.
 * We should be skeptical of the publication of inconclusive results as it may be simply due to lack of statistical power (not enough individuals in the trial).
 * One big trial is better than many small ones.
 * If you are starting a trial, have a plan in place.
@@ -95,7 +95,7 @@ My takeaways:
 * When the pandemic was just starting it was very difficult for reporters to obtain data from federal government officials.
 * Some reporters and data scientist took matters into their own hands and started collecting all the data they could find. Mainly from state public health departments.
 * Some of the different people doing this connected, somewhat serendipitous, and started to organize data in one consolidated resource: [The COVID Tracking Projects](https://covidtracking.com/)
-* This resource includes an [data API](https://covidtracking.com/api)! You can type 
+* This resource includes a [data API](https://covidtracking.com/api)! You can type 
 ```
 read.csv("http://covidtracking.com/api/states/daily.csv")
 ```
