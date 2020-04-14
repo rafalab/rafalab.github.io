@@ -63,7 +63,7 @@ Course series landing page is [here](https://www.edx.org/professional-certificat
 
 Three graduate-level courses developed for life scientists needing to analyze high-throughput data. Focuses on [Bioconductor](https://www.bioconductor.org/).
 
-To use this material to develop your own course you can access some videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
+To use this material to develop your own course you can access some videos and course materials [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-genomics).
 
 Course series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-genomics).
 
