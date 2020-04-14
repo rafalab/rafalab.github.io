@@ -65,13 +65,13 @@ Three graduate-level courses developed for life scientists needing to analyze hi
 
 To use this material to develop your own course you can access some videos and course materials [here](http://rafalab.github.io/pages/harvardx.html).
 
-Course series landing page is [here](https://www.edx.org/xseries/genomics-data-analysis).
+Course series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-genomics).
 
 * [Introduction to Bioconductor](https://www.edx.org/course/introduction-to-bioconductor-annotation-and-analys): introduction to measurement technologies, annotation, data organization, differential expression.
 
-*  **Coming soon**: Case Studies in Functional Genomics: RNA-Seq, DNA methylation, ChIP-Seq.
+*  [Case Studies in Functional Genomics](https://www.edx.org/course/case-studies-in-functional-genomics): RNA-Seq, DNA methylation, ChIP-Seq.
 
-*  **Coming soon**: Advanced Bioconductor: Dataviz, HDF5, TCGA data, ENCODE data.
+* [Advanced Bioconductor](https://www.edx.org/course/advanced-bioconductor): Dataviz, HDF5, TCGA data, ENCODE data.
 
 ----
 
