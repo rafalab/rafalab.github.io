@@ -18,6 +18,7 @@ title: people
 - [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
 - [Kelly Street](https://kellystreet.org/) (Postdoc)
+- Luli Zou (Graduate Student)
 
 #### FOL (Friends of the Lab)
 
