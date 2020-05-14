@@ -8,6 +8,7 @@ title: people
 - Rolando Acosta (Graduate Student)
 - Dylan Cable (Graduate Student)
 - Kareem Carr (Graduate Student)
+- Isabella Grabski (Graduate Student)
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
 - [Patrick Kimes](http://pkimes.org/) (Postdoc)
