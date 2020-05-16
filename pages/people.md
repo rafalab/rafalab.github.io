@@ -11,18 +11,13 @@ title: people
 - Isabella Grabski (Graduate Student)
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
-- [Patrick Kimes](http://pkimes.org/) (Postdoc)
+- [Patrick Kimes](https://www.pkimes.com/) (Postdoc)
 - Jill Lundell (Postdoc)
 - Mercedeh Movassagh (Postdoc)
 - Senthil Kumar Muthiah (Postdoc)
 - [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
-- [Alejandro Reyes](http://alejandroreyes.org/) (Postdoc)
 - [Kelly Street](https://kellystreet.org/) (Postdoc)
 - Luli Zou (Graduate Student)
-
-#### FOL (Friends of the Lab)
-
-- Etai Joseph
 
 #### Past Postdocs
 
@@ -41,6 +36,7 @@ title: people
 - [Stephanie Hicks](http://www.stephaniehicks.com/) (Johns Hopkins University, Assistant Professor)
 - [Mingxiang Teng](https://tengmx.github.io/) (Moffitt Cancer Center, Assistant Member)
 - [Keegan Korthauer](http://kkorthauer.org/) (University of British Columbia, Assistant Professor)
+- [Alejandro Reyes](http://alejandroreyes.org/) (Novartis Institute for BioMedical Research)
 
 #### PhD Alumni
 
@@ -51,13 +47,14 @@ title: people
 - [Samara Kiihl](https://samarafk.github.io/) 2013 (Universidade Estadual de Campinas, Assistant Professor)
 - Eitan Halper-Sromberg 2013 (University of Colorado, Medical Student)
 - [Yered H. Pita-Juárez](https://yeredh.github.io) 2018 (Harvard Medical School, Postdoc)
-- [Chinmay Shukla](https://cshukla.github.io/) 2018 (True Fit)
+- [Chinmay Shukla](https://cshukla.github.io/) 2018 (PathAI)
 - [Will Townes](https://willtownes.github.io/) 2019 (Princeton University, Postdoc)
 
 #### FFOL (Former Friends of the Lab)
 
 - Joseph N. Paulson (Genentech)
 - [Claire Duvallet](https://cduvallet.github.io/) (Biobot Analytics)
+- Etai Joseph (AstraZeneca)
 
 #### Past Visitors 
 
