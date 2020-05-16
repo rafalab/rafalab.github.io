@@ -11,7 +11,7 @@ title: Teaching
 
 __Note that all theses course have free audit version.__ Look for the **audit** button.
 
-### [Introduction to Data Science]((https://www.edx.org/professional-certificate/harvardx-data-science))
+### [Introduction to Data Science](https://www.edx.org/professional-certificate/harvardx-data-science)
 
 Eight college-level courses and a capstone project.
 
