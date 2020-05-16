@@ -54,7 +54,7 @@ title: people
 
 - Joseph N. Paulson (Genentech)
 - [Claire Duvallet](https://cduvallet.github.io/) (Biobot Analytics)
-- Etai Joseph (AstraZeneca)
+- Etai Jacob (AstraZeneca)
 
 #### Past Visitors 
 
