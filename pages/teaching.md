@@ -21,7 +21,7 @@ Spanish version is being developed [here](https://github.com/rafalab/dslibro).
 
 To use this material to develop your own course you can access and edit the notes [here](https://github.com/rafalab/dsbook).
 
-Series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-science)
+The series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-science)
 
 * [R Basics](https://www.edx.org/course/data-science-r-basics): Introduction to R.
 
@@ -49,7 +49,7 @@ To use this material to develop your own course you can access videos and course
 
 You can downloada a free PDF version of the textbook from [Leanpub](https://leanpub.com/dataanalysisforthelifesciences) and the paperback  (not free) you can get on [Amazon](https://www.amazon.com/dp/1498775675/ref=cm_sw_em_r_mt_dp_U_cjuCEb0PPPM4Z).
 
-Series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences).
+The series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-life-sciences).
 
 * [Statistics and R](https://www.edx.org/course/statistics-and-r): Basic statistical inference with R base.
 
@@ -65,7 +65,7 @@ Three graduate-level courses developed for life scientists needing to analyze hi
 
 To use this material to develop your own course you can access some videos and course materials [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-genomics).
 
-Series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-genomics).
+The series landing page is [here](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-genomics).
 
 * [Introduction to Bioconductor](https://www.edx.org/course/introduction-to-bioconductor-annotation-and-analys): introduction to measurement technologies, annotation, data organization, differential expression.
 
