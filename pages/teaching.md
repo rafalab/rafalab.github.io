@@ -59,7 +59,7 @@ The series landing page is [here](https://www.edx.org/professional-certificate/h
 
 * [High-Dimensional Data Analysis](https://www.edx.org/course/high-dimensional-data-analysis): PCA, batch effects. 
  
-### [Genomics Data Analysis](https://www.edx.org/xseries/genomics-data-analysis)
+### [Genomics Data Analysis](https://www.edx.org/professional-certificate/harvardx-data-analysis-for-genomics)
 
 Three graduate-level courses developed for life scientists needing to analyze high-throughput data. Focuses on [Bioconductor](https://www.bioconductor.org/).
 
