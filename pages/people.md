@@ -52,6 +52,7 @@ title: people
 
 #### FFOL (Former Friends of the Lab)
 
+- [Andrew Jaffe](http://aejaffe.com/) (Lieber Insitute and JHU)
 - Joseph N. Paulson (Genentech)
 - [Claire Duvallet](https://cduvallet.github.io/) (Biobot Analytics)
 - Etai Jacob (AstraZeneca)
