@@ -21,7 +21,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 In 2014 we received funding from the NIH BD2K initiative to develop MOOCs for biomedical data science. The courses are divided into the [Data Analysis for the Life Sciences series](https://www.edx.org/xseries/data-analysis-life-sciences), the [Genomics Data Analysis series](https://www.edx.org/xseries/genomics-data-analysis), and the [Using Python for Research course](https://www.edx.org/course/using-python-research-harvardx-ph526x). 
 
-This page includes links to the course material for the three courses:
+This page includes links to the course material for the three series:
 
 * [Data Analysis for the Life Sciences](#series_1)  
 * [Genomics Data Analysis](#series_2) 
@@ -35,7 +35,7 @@ There is a book available for the first series. You can download a [free pdf](ht
 
 ### <a id="Module_1_Week_1">[Statistics and R](https://www.edx.org/course/statistics-r-harvardx-ph525-1x-0)</a>    
 
-| Lecture Title | Time  | Video | Material | Course| 
+| Lecture Title | Time  | Video | Material | Course | 
 |---|-------|-------|----------|--------|
 |**_Week 1: R_**|  
 | Getting Started with  R   | 06:26 | [Youtube](https://www.youtube.com/watch?v=p8F_wreHTzw) | [Chapter 0](http://genomicsclass.github.io/book/pages/getting_started.html) | [EdX](https://courses.edx.org/courses/course-v1:HarvardX+PH525.1x+2T2017/courseware/2273065cc0f649b69c1240a58f7ab080/77c6a41ee38544c28d2d95ef7889cdb8/) | 
