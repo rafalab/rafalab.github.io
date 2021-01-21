@@ -11,11 +11,9 @@ title: people
 - Isabella Grabski (Graduate Student)
 - Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
-- [Patrick Kimes](https://www.pkimes.com/) (Postdoc)
 - Jill Lundell (Postdoc)
 - Mercedeh Movassagh (Postdoc)
 - Senthil Kumar Muthiah (Postdoc)
-- [Matthew Ploenzke](https://mploenzke.github.io/) (Graduate Student)
 - [Kelly Street](https://kellystreet.org/) (Postdoc)
 - Luli Zou (Graduate Student)
 
@@ -37,6 +35,7 @@ title: people
 - [Mingxiang Teng](https://tengmx.github.io/) (Moffitt Cancer Center, Assistant Member)
 - [Keegan Korthauer](http://kkorthauer.org/) (University of British Columbia, Assistant Professor)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Novartis Institute for BioMedical Research)
+- [Patrick Kimes](https://www.pkimes.com/) (Genentech)
 
 #### PhD Alumni
 
@@ -49,6 +48,7 @@ title: people
 - [Yered H. Pita-Juárez](https://yeredh.github.io) 2018 (Harvard Medical School, Postdoc)
 - [Chinmay Shukla](https://cshukla.github.io/) 2018 (PathAI)
 - [Will Townes](https://willtownes.github.io/) 2019 (Princeton University, Postdoc)
+- [Matthew Ploenzke](https://twitter.com/mploenzke) 2020 (San Francisco 49ers)
 
 #### FFOL (Former Friends of the Lab)
 
