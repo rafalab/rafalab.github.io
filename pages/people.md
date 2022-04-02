@@ -19,16 +19,16 @@ title: people
 
 #### Past Postdocs
 
-- [Héctor Corrada-Bravo](http://www.hcbravo.org/) (University of Maryland, Associate Professor)
-- [Martin Aryee](http://aryee.mgh.harvard.edu/) (MGH, Assistant Professor)
-- Vasyl Pihur (Google)
-- [Kasper Daniel Hansen](https://www.hansenlab.org/) (Johns Hopkins University, Assistant Professor)
+- [Héctor Corrada-Bravo](http://www.hcbravo.org/) (Genentech)
+- [Martin Aryee](http://aryee.mgh.harvard.edu/) (Dana-Farbar Cancer Institute, Associate Professor)
+- Vasyl Pihur (Snap)
+- [Kasper Daniel Hansen](https://www.hansenlab.org/) (Johns Hopkins University, Associate Professor)
 - Margaret Taub (Johns Hopkins University, Research Associate)
-- David Hiller (Biostatistician at XDx)
-- [Ben Langmead](http://www.langmead-lab.org/) (Johns Hopkins University, Assistant Professor)
+- David Hiller (Senior Biostatistician at Parexel)
+- [Ben Langmead](http://www.langmead-lab.org/) (Johns Hopkins University, Associate Professor)
 - Rumen Kostadinov (Johns Hopkins University, Research Associate)
-- Sutirtha Chakraborty (National Institute of Biomedical Genomics)
-- [Di Wu](http://diwulab.web.unc.edu/) (University of North Carolina, Assistant Professor)
+- Sutirtha Chakraborty (Regional Head - Global Data Science and Analytics)
+- [Di Wu](http://diwulab.web.unc.edu/) (University of North Carolina, Associate Professor)
 - [Michael Love](https://mikelove.github.io/) (University of North Carolina, Assistant Professor)
 - Ayshwarya Subramanian (Broad Institute)
 - [Stephanie Hicks](http://www.stephaniehicks.com/) (Johns Hopkins University, Assistant Professor)
@@ -47,7 +47,7 @@ title: people
 - Eitan Halper-Sromberg 2013 (University of Colorado, Medical Student)
 - [Yered H. Pita-Juárez](https://yeredh.github.io) 2018 (Harvard Medical School, Postdoc)
 - [Chinmay Shukla](https://cshukla.github.io/) 2018 (PathAI)
-- [Will Townes](https://willtownes.github.io/) 2019 (Princeton University, Postdoc)
+- [Will Townes](https://willtownes.github.io/) 2019 (Carnegie Mellon University, Assistant Professor)
 - [Matthew Ploenzke](https://twitter.com/mploenzke) 2020 (San Francisco 49ers)
 
 #### FFOL (Former Friends of the Lab)
