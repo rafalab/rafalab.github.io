@@ -74,4 +74,7 @@ title: people
 - 2018: Michael Figueroa and Jaziel Torres
 - 2019: Orandy Forth, Claidys Lanzot Cruz, and Sabrina Trombetta 
 - 2020: Érick Ivanovich-Méndez, Yan (Runa) Cheng, Addison McGhee, Gabriela Lozano-Pérez
+- 2021: Lizzie Chung, Heriberto (Heri) Lopez, Andrea Nieves-Rivera, Alden Soto
+
+
 
