@@ -14,8 +14,7 @@ title: people
 - Jill Lundell (Postdoc)
 - Mercedeh Movassagh (Postdoc)
 - Senthil Kumar Muthiah (Postdoc)
-- [Kelly Street](https://kellystreet.org/) (Postdoc)
-- Luli Zou (Graduate Student)
+- [Luli Zou](https://lulizou.github.io) (Graduate Student)
 
 #### Past Postdocs
 
@@ -36,6 +35,7 @@ title: people
 - [Keegan Korthauer](http://kkorthauer.org/) (University of British Columbia, Assistant Professor)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Novartis Institute for BioMedical Research)
 - [Patrick Kimes](https://www.pkimes.com/) (Genentech)
+- [Kelly Street](https://kellystreet.org/) (University of Southern California, Assistant Professor)
 
 #### PhD Alumni
 
