@@ -10,7 +10,7 @@ This textbook introduces concepts and skills that can help you tackle real-world
 This book started out as the class notes used in the
  HarvardX [Data Science Series](https://www.edx.org/professional-certificate/harvardx-data-science).
 
-You can buy a hard copy of the book [here](https://www.crcpress.com/Introduction-to-Data-Science-Data-Analysis-and-Prediction-Algorithms-with/Irizarry/p/book/9780367357986)
+You can buy a hard copy of the book [here](https://www.routledge.com/Introduction-to-Data-Science-Data-Analysis-and-Prediction-Algorithms-with/Irizarry/p/book/9780367357986?utm_source=author&utm_medium=shared_link&utm_campaign=B043135_jm1_5ll_6rm_t081_1al_introductiontodatascienceauthorshare)
 
 A free PDF copy is available from [Leanpub](https://leanpub.com/datasciencebook).
 
