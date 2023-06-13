@@ -9,7 +9,6 @@ title: people
 - Dylan Cable (Graduate Student)
 - Kareem Carr (Graduate Student)
 - Isabella Grabski (Graduate Student)
-- Linglin Huang (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
 - Jill Lundell (Postdoc)
 - Mercedeh Movassagh (Postdoc)
@@ -36,6 +35,7 @@ title: people
 - [Alejandro Reyes](http://alejandroreyes.org/) (Novartis Institute for BioMedical Research)
 - [Patrick Kimes](https://www.pkimes.com/) (Genentech)
 - [Kelly Street](https://kellystreet.org/) (University of Southern California, Assistant Professor)
+- Linglin Huang (Postdoctoral fellow, Harvard Medical School)
 
 #### PhD Alumni
 
@@ -73,8 +73,8 @@ title: people
 - 2017: Jace Gilbert, Jeff Joseph, and Daniel Meza
 - 2018: Michael Figueroa and Jaziel Torres
 - 2019: Orandy Forth, Claidys Lanzot Cruz, and Sabrina Trombetta 
-- 2020: Érick Ivanovich-Méndez, Yan (Runa) Cheng, Addison McGhee, Gabriela Lozano-Pérez
-- 2021: Lizzie Chung, Heriberto (Heri) Lopez, Andrea Nieves-Rivera, Alden Soto
-
+- 2020: Érick Ivanovich-Méndez, Yan (Runa) Cheng, Addison McGhee, and Gabriela Lozano-Pérez
+- 2021: Lizzie Chung, Heriberto (Heri) Lopez, Andrea Nieves-Rivera, and Alden Soto
+- 2022: Javlon Nizomov, and Michael Terrefortes Rosado
 
 
