@@ -13,7 +13,6 @@ title: people
 - Jill Lundell (Postdoc)
 - Mercedeh Movassagh (Postdoc)
 - Senthil Kumar Muthiah (Postdoc)
-- [Luli Zou](https://lulizou.github.io) (Graduate Student)
 
 #### Past Postdocs
 
@@ -49,6 +48,8 @@ title: people
 - [Chinmay Shukla](https://cshukla.github.io/) 2018 (PathAI)
 - [Will Townes](https://willtownes.github.io/) 2019 (Carnegie Mellon University, Assistant Professor)
 - [Matthew Ploenzke](https://twitter.com/mploenzke) 2020 (San Francisco 49ers)
+- [Luli Zou](https://lulizou.github.io) (Genentech)
+
 
 #### FFOL (Former Friends of the Lab)
 
