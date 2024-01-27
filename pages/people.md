@@ -5,14 +5,16 @@ title: people
 
 #### Current Lab Members
 
-- Rolando Acosta (Graduate Student)
-- Dylan Cable (Graduate Student)
-- Kareem Carr (Graduate Student)
-- Isabella Grabski (Graduate Student)
 - Rafael Irizarry (Principal Investigator)
-- Jill Lundell (Postdoc)
-- Mercedeh Movassagh (Postdoc)
+- Rolando Acosta (Graduate Student)
+- Kareem Carr (Graduate Student)
+- Eric Weine (Graduate Student)
+- Phillip Nicol (Graduate Student)
+- Mónica Robles Fontán (Graduate Student)
+- Randy Williams (Graduate Student)
 - Senthil Kumar Muthiah (Postdoc)
+- Jared Brown (Postdoc)
+- [Tavor Baharav](https://tavorb.com) (Postdoc)
 
 #### Past Postdocs
 
@@ -26,15 +28,17 @@ title: people
 - Rumen Kostadinov (Johns Hopkins University, Research Associate)
 - Sutirtha Chakraborty (Regional Head - Global Data Science and Analytics)
 - [Di Wu](http://diwulab.web.unc.edu/) (University of North Carolina, Associate Professor)
-- [Michael Love](https://mikelove.github.io/) (University of North Carolina, Assistant Professor)
+- [Michael Love](https://mikelove.github.io/) (University of North Carolina, Associate Professor)
 - Ayshwarya Subramanian (Broad Institute)
-- [Stephanie Hicks](http://www.stephaniehicks.com/) (Johns Hopkins University, Assistant Professor)
+- [Stephanie Hicks](http://www.stephaniehicks.com/) (Johns Hopkins University, Associate Professor)
 - [Mingxiang Teng](https://tengmx.github.io/) (Moffitt Cancer Center, Assistant Member)
 - [Keegan Korthauer](http://kkorthauer.org/) (University of British Columbia, Assistant Professor)
 - [Alejandro Reyes](http://alejandroreyes.org/) (Novartis Institute for BioMedical Research)
 - [Patrick Kimes](https://www.pkimes.com/) (Genentech)
 - [Kelly Street](https://kellystreet.org/) (University of Southern California, Assistant Professor)
 - Linglin Huang (Postdoctoral fellow, Harvard Medical School)
+- Mercedeh Movassagh (Yale School of Medicine, Associate Research Scientist)
+- [Jill Lundell](www.jilllundell.com) (MIT Lincoln Laboratory, Research Data Scientist)
 
 #### PhD Alumni
 
@@ -49,6 +53,8 @@ title: people
 - [Will Townes](https://willtownes.github.io/) 2019 (Carnegie Mellon University, Assistant Professor)
 - [Matthew Ploenzke](https://twitter.com/mploenzke) 2020 (San Francisco 49ers)
 - [Luli Zou](https://lulizou.github.io) (Genentech)
+- Dylan Cable (Stanford University, Postdoc)
+- Isabella Grabski (New York Genome Center, Postdoc)
 
 
 #### FFOL (Former Friends of the Lab)
