@@ -6,7 +6,6 @@ title: people
 #### Current Lab Members
 
 - Rafael Irizarry (Principal Investigator)
-- Rolando Acosta (Graduate Student)
 - Kareem Carr (Graduate Student)
 - Eric Weine (Graduate Student)
 - Phillip Nicol (Graduate Student)
@@ -52,9 +51,10 @@ title: people
 - [Chinmay Shukla](https://cshukla.github.io/) 2018 (PathAI)
 - [Will Townes](https://willtownes.github.io/) 2019 (Carnegie Mellon University, Assistant Professor)
 - [Matthew Ploenzke](https://twitter.com/mploenzke) 2020 (San Francisco 49ers)
-- [Luli Zou](https://lulizou.github.io) (Genentech)
-- Dylan Cable (Stanford University, Postdoc)
-- Isabella Grabski (New York Genome Center, Postdoc)
+- Rolando Acosta 2022 (Regeneron)
+- [Luli Zou](https://lulizou.github.io) 2023 (Genentech)
+- Dylan Cable 2023 (Stanford University, Postdoc)
+- Isabella Grabski 2023 (New York Genome Center, Postdoc)
 
 
 #### FFOL (Former Friends of the Lab)
