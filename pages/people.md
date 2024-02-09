@@ -35,7 +35,6 @@ title: people
 - [Alejandro Reyes](http://alejandroreyes.org/) (Novartis Institute for BioMedical Research)
 - [Patrick Kimes](https://www.pkimes.com/) (Genentech)
 - [Kelly Street](https://kellystreet.org/) (University of Southern California, Assistant Professor)
-- Linglin Huang (Postdoctoral fellow, Harvard Medical School)
 - Mercedeh Movassagh (Yale School of Medicine, Associate Research Scientist)
 - [Jill Lundell](www.jilllundell.com) (MIT Lincoln Laboratory, Research Data Scientist)
 
@@ -52,20 +51,22 @@ title: people
 - [Will Townes](https://willtownes.github.io/) 2019 (Carnegie Mellon University, Assistant Professor)
 - [Matthew Ploenzke](https://twitter.com/mploenzke) 2020 (San Francisco 49ers)
 - Rolando Acosta 2022 (Regeneron)
+- Matthew Quinn 2022 (FM Global)
+- Linglin Huang 2022 (Harvard Medical School, Postdoctoral fellow)
 - [Luli Zou](https://lulizou.github.io) 2023 (Genentech)
 - Dylan Cable 2023 (Stanford University, Postdoc)
-- Isabella Grabski 2023 (New York Genome Center, Postdoc)
-
+- Isabella Grabski 2023 (New York Genome Center, Postdoctoral fellow)
 
 #### FFOL (Former Friends of the Lab)
 
 - [Andrew Jaffe](http://aejaffe.com/) (Lieber Insitute and JHU)
-- Joseph N. Paulson (Genentech)
+- Joseph N. Paulson (N-Power Medicine)
 - [Claire Duvallet](https://cduvallet.github.io/) (Biobot Analytics)
 - Etai Jacob (AstraZeneca)
 
 #### Past Visitors 
 
+- Michael Prummer
 - Helena Crowell
 - Ana Ciconelle
 - Lieven Clement
@@ -83,5 +84,6 @@ title: people
 - 2020: Érick Ivanovich-Méndez, Yan (Runa) Cheng, Addison McGhee, and Gabriela Lozano-Pérez
 - 2021: Lizzie Chung, Heriberto (Heri) Lopez, Andrea Nieves-Rivera, and Alden Soto
 - 2022: Javlon Nizomov, and Michael Terrefortes Rosado
+- 2023: Abdalla, Maya, Chamime, Selma, Genda, Adam
 
 
