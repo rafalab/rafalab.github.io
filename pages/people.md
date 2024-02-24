@@ -7,6 +7,7 @@ title: people
 
 - Rafael Irizarry (Principal Investigator)
 - Kareem Carr (Graduate Student)
+- Anuraag Gopaluni (Graduate Student)
 - Eric Weine (Graduate Student)
 - Phillip Nicol (Graduate Student)
 - Mónica Robles Fontán (Graduate Student)
