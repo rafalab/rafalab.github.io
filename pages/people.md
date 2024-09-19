@@ -15,6 +15,9 @@ title: people
 - Senthil Kumar Muthiah (Postdoc)
 - Jared Brown (Postdoc)
 - [Tavor Baharav](https://tavorb.com) (Postdoc)
+- Yunhui Qi (Postdoc)
+- Ji-Eun Park (Postdoc)
+- Yijun Li (Postdoc)
 
 #### Past Postdocs
 
