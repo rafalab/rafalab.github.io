@@ -12,6 +12,7 @@ title: people
 - Phillip Nicol (Graduate Student)
 - Mónica Robles Fontán (Graduate Student)
 - Randy Williams (Graduate Student)
+- Kevin Kapner (Graduate Student)
 - Senthil Kumar Muthiah (Postdoc)
 - Jared Brown (Postdoc)
 - [Tavor Baharav](https://tavorb.com) (Postdoc)
