@@ -62,6 +62,10 @@ title: people
 - Dylan Cable 2023 (Stanford University, Postdoc)
 - Isabella Grabski 2023 (New York Genome Center, Postdoctoral fellow)
 
+#### Friends of the Lab
+
+- Ramyar Molania (DFCI)
+
 #### FFOL (Former Friends of the Lab)
 
 - [Andrew Jaffe](http://aejaffe.com/) (Lieber Insitute and JHU)
