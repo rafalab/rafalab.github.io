@@ -59,7 +59,7 @@ title: people
 - Matthew Quinn 2022 (FM Global)
 - Linglin Huang 2022 (Harvard Medical School, Postdoctoral fellow)
 - [Luli Zou](https://lulizou.github.io) 2023 (Genentech)
-- Dylan Cable 2023 (Stanford University, Postdoc)
+- [Dylan Cable](https://sph.umich.edu/faculty-profiles/cable-dylan.html) 2023 (University of Michigan, Assistant Professor)
 - Isabella Grabski 2023 (New York Genome Center, Postdoctoral fellow)
 
 #### Friends of the Lab
