@@ -66,6 +66,7 @@ title: people
 #### Friends of the Lab
 
 - Ramyar Molania (DFCI)
+- Chenyue Lu (Harvard-MIT HST MEMP Graduate Student)
 
 #### FFOL (Former Friends of the Lab)
 
