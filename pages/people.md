@@ -6,15 +6,12 @@ title: people
 #### Current Lab Members
 
 - Rafael Irizarry (Principal Investigator)
-- Kareem Carr (Graduate Student)
-- Anuraag Gopaluni (Graduate Student)
 - Eric Weine (Graduate Student)
 - Phillip Nicol (Graduate Student)
 - Mónica Robles Fontán (Graduate Student)
 - Randy Williams (Graduate Student)
 - Kevin Kapner (Graduate Student)
 - Senthil Kumar Muthiah (Postdoc)
-- Jared Brown (Postdoc)
 - [Tavor Baharav](https://tavorb.com) (Postdoc)
 - Yunhui Qi (Postdoc)
 - Ji-Eun Park (Postdoc)
@@ -42,6 +39,7 @@ title: people
 - [Kelly Street](https://kellystreet.org/) (University of Southern California, Assistant Professor)
 - Mercedeh Movassagh (Yale School of Medicine, Associate Research Scientist)
 - [Jill Lundell](www.jilllundell.com) (MIT Lincoln Laboratory, Research Data Scientist)
+- Jared Brown (Armstrong lab at DFCI, Scientist II (Bioinformatics))
 
 #### PhD Alumni
 
@@ -61,6 +59,9 @@ title: people
 - [Luli Zou](https://lulizou.github.io) 2023 (Genentech)
 - [Dylan Cable](https://sph.umich.edu/faculty-profiles/cable-dylan.html) 2023 (University of Michigan, Assistant Professor)
 - Isabella Grabski 2023 (New York Genome Center, Postdoctoral fellow)
+- Anuraag Gopaluni 2025 (Comanche Biopharma)
+- Kareem Carr (Statistical writer)
+
 
 #### Friends of the Lab
 
