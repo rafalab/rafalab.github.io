@@ -11,6 +11,7 @@ title: people
 - Randy Williams (Graduate Student)
 - Kevin Kapner (Graduate Student)
 - Phuc Vu (Graduate Student)
+- Douglas Russo (DFCI Staff)
 - Senthil Kumar Muthiah (Postdoc)
 - [Tavor Baharav](https://tavorb.com) (Postdoc)
 - Yunhui Qi (Postdoc)
