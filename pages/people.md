@@ -7,10 +7,10 @@ title: people
 
 - Rafael Irizarry (Principal Investigator)
 - Eric Weine (Graduate Student)
-- Phillip Nicol (Graduate Student)
 - Mónica Robles Fontán (Graduate Student)
 - Randy Williams (Graduate Student)
 - Kevin Kapner (Graduate Student)
+- Phuc Vu (Graduate Student)
 - Senthil Kumar Muthiah (Postdoc)
 - [Tavor Baharav](https://tavorb.com) (Postdoc)
 - Yunhui Qi (Postdoc)
@@ -61,7 +61,7 @@ title: people
 - Isabella Grabski 2023 (New York Genome Center, Postdoctoral fellow)
 - Anuraag Gopaluni 2025 (Comanche Biopharma)
 - Kareem Carr (Statistical writer)
-
+- Phillip Nicol (Kruskal Instructor, University of Chicago)
 
 #### Friends of the Lab
 
