@@ -11,6 +11,7 @@ title: people
 - Mónica Robles Fontán (Graduate Student)
 - Randy Williams (Graduate Student)
 - Kevin Kapner (Graduate Student)
+- Douglas Russo (DFCI Staff)
 - Senthil Kumar Muthiah (Postdoc)
 - [Tavor Baharav](https://tavorb.com) (Postdoc)
 - Yunhui Qi (Postdoc)
