@@ -87,6 +87,8 @@ Rafael's ORCID is 0000-0002-3944-4309
 
 - [Effects of Hurricane María in Puerto Rico](https://www.ncbi.nlm.nih.gov/pubmed/29809109)
 - [Teaching Data Science](https://www.ncbi.nlm.nih.gov/pubmed/31105314)
+- [Music and Statistics Demo]({{ site.baseurl }}/assets/html/music/)
+- [Ph.D. Thesis: *Statistical Models for Music Sound Signals*]({{ site.baseurl }}/assets/pdf/statistical-models-for-music-sound-signals.pdf)
 - [Local Harmonic Estimation in Musical Sound Signals](http://pubs.amstat.org/doi/abs/10.1198/016214501753168082)
 - [Information Criteria](http://pubs.amstat.org/doi/abs/10.1198/016214501750332875)
 - [Dengue in Thailand](http://www.ncbi.nlm.nih.gov/pubmed/14737166)
@@ -108,7 +110,5 @@ collaborative, group members are expected to be independent.
 
 If you are applying to grad school and are interested in joining the lab, you need to apply and be accepted to the to the [Biostatistics PhD](https://www.hsph.harvard.edu/biostatistics/doctoral-program/) or the [Bioinformatics and Integrative Genomics](http://dms.hms.harvard.edu/big/) programs. Students in this program usually pick an advisor after their first or second year. If the advisor agrees it is a good match the student then becomes an official advisee. This decision is based on the student's performance in their courses or a three month rotation.
 Note that Professor Irizarry is not on the admissions committee for either of these PhD programs and he does not decide who is admitted. For specific questions about the program please contact biostat_admissions@hsph.harvard.edu or dms@hms.harvard.edu respectively.
-
-
 
 
